@@ -1,0 +1,31 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Bot runtime data + logs
+data/notes.db
+data/notes.db-*
+data/*.sqlite*
+logs/
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Dashboard build artifacts
+dashboard/node_modules/
+dashboard/dist/
+dashboard/src/.observablehq/

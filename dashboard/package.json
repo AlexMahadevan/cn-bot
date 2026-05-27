@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf src/.observablehq/cache",
+    "build": "npm run clean && observable build",
+    "dev": "npm run clean && observable preview",
+    "fresh": "npm run clean && observable preview",
+    "deploy": "npm run clean && observable deploy",
+    "observable": "observable"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
