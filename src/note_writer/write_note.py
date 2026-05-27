@@ -35,6 +35,7 @@ from note_writer.llm_util import (
     parse_json,
 )
 from note_writer.relevance_filter import is_on_beat
+from note_writer.specificity_check import has_specific_claim
 
 logger = logging.getLogger(__name__)
 
@@ -147,19 +148,24 @@ def _pick_best_evidence(
         pick = parse_json(
             user_prompt=(
                 "Below is an X post and a list of candidate fact checks. "
-                "Pick the SINGLE candidate that is MOST RELEVANT to evaluating "
-                "the truth of the post's factual claims. A relevant candidate "
-                "may address:\n"
-                "- The exact same claim, OR\n"
-                "- A directly adjacent claim (same topic, same key figures, same numbers)\n"
-                "- A pattern of misleading claims the post is an instance of\n\n"
-                "Be permissive at this stage — a downstream step will fetch the "
-                "actual article text and decide whether to write a note. Your "
-                "job is to find anything plausibly relevant. Only return "
-                "best_index=-1 if NONE of the candidates have any plausible "
-                "bearing on the post's factual content (e.g., they're about "
-                "completely different people, topics, or eras).\n\n"
-                f"Post:\n{post.text}\n\n"
+                "Pick the SINGLE candidate that directly addresses the post's "
+                "SPECIFIC factual claim.\n\n"
+                "Direct match REQUIRES:\n"
+                "- The candidate's claim_text is essentially the same factual "
+                "  assertion as the post (same subject, same predicate, same "
+                "  numbers/dates/quotes), AND\n"
+                "- The fact-check would settle the truth of the post's claim "
+                "  if a reader clicked through.\n\n"
+                "REJECT (return best_index=-1) when:\n"
+                "- The candidate is about the same TOPIC but a different specific claim\n"
+                "- The candidate is about the same PERSON but a different statement\n"
+                "- The candidate is about a similar 'pattern of misinformation' but not this exact one\n"
+                "- The candidate is older than the post and may be about a different event\n"
+                "- You're not sure whether they match — when in doubt, return -1\n\n"
+                "It is far more harmful to pick a loose match (the bot will write "
+                "a wrong note) than to return -1 (the bot will skip and try later "
+                "when better evidence exists). Err on the side of -1.\n\n"
+                f"Post claim: {post.text}\n\n"
                 + (f"Images:\n{images_summary}\n\n" if images_summary else "")
                 + f"Candidates:\n{options}\n\n"
                 "Return JSON: {\"best_index\": <int>, \"reason\": \"...\"}"
@@ -226,14 +232,23 @@ def _summarize_images(post: Post) -> str:
 
 
 def research_post_and_write_note(post: Post) -> NoteResult:
-    """Full pipeline: filter → search FCT → write prose → validate → render."""
+    """Full pipeline: filter → specificity gate → search → write → validate → render."""
     # 1. Relevance filter (cheap, fast)
     on_beat, reason = is_on_beat(post.text)
     if not on_beat:
         logger.info("Off-beat post %s: %s", post.post_id, reason)
         return NoteResult(post=post, refusal=f"Off-beat: {reason}")
 
-    # 2. Image context
+    # 2. Specificity gate — does the post TEXT make a falsifiable claim?
+    # This blocks posts like "Option for ICE riots. Just saying. [video]" whose
+    # claim lives in unseen media. Without this gate, the bot can keyword-match
+    # and write a note about something the post never actually asserted.
+    has_claim, claim_text, claim_reason = has_specific_claim(post.text)
+    if not has_claim:
+        logger.info("No specific claim in post %s: %s", post.post_id, claim_reason)
+        return NoteResult(post=post, refusal=f"No specific falsifiable claim in post text: {claim_reason}")
+
+    # 3. Image context
     images_summary = _summarize_images(post)
 
     # 3. Search for verified fact checks across all evidence sources
