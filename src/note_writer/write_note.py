@@ -36,6 +36,8 @@ from note_writer.llm_util import (
     describe_image,
     parse_json,
 )
+from note_writer.error_check import check_note as check_note_for_hallucination
+from note_writer.opinion_check import passes_opinion_filter
 from note_writer.relevance_filter import is_on_beat
 from note_writer.specificity_check import has_specific_claim
 
@@ -386,16 +388,45 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         logger.warning("Prose rejected for post %s: %s\nProse: %s", post.post_id, why, prose)
         return NoteResult(post=post, refusal=why, evidence=[evidence])
 
-    # 7. Render final note with the VERIFIED URL appended
+    # 7. ClaimOpinion-style filter — does the prose read as opinion/speculation?
+    # Per Alexios's reporting on David Rand's findings, X's ClaimOpinion
+    # classifier systematically downscores political notes that read as opinion.
+    # We approximate it with a Haiku classifier and reject opinion-shaped drafts.
+    ok, why = passes_opinion_filter(prose)
+    if not ok:
+        logger.warning("Opinion filter rejected post %s: %s", post.post_id, why)
+        return NoteResult(post=post, refusal=f"Opinion filter: {why}", evidence=[evidence])
+
+    # 8. Render final note with the VERIFIED URL appended
     note_text = _render_note(prose, evidence.review_url)
 
-    # 8. Final-form validator (length, single URL, exact URL match)
+    # 9. Final-form validator (length, single URL, exact URL match)
     ok, why = _validate_final_note(note_text, evidence.review_url)
     if not ok:
         logger.warning("Final note rejected for post %s: %s", post.post_id, why)
         return NoteResult(post=post, refusal=why, evidence=[evidence])
 
-    # 9. Classify misleading_tags
+    # 10. Hallucination check: does the note state specifics not in the article?
+    # Catches the Craigslist-class failure where Claude embellishes from training data.
+    if article_text:
+        ok, why, unsupported = check_note_for_hallucination(
+            prose,
+            article_text,
+            publisher=evidence.publisher_name,
+            rating=evidence.rating,
+        )
+        if not ok:
+            logger.warning(
+                "Hallucination check rejected post %s: %s\nUnsupported: %s",
+                post.post_id, why, unsupported,
+            )
+            return NoteResult(
+                post=post,
+                refusal=f"Hallucination check: {why} (unsupported: {unsupported})",
+                evidence=[evidence],
+            )
+
+    # 11. Classify misleading_tags
     tags = _classify_tags(post, evidence, note_text)
 
     return NoteResult(

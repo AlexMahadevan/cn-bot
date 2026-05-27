@@ -16,6 +16,7 @@ from note_writer import (
     politifact_search,
     self_fact_check,
     web_search_evidence,
+    x_post_evidence,
 )
 
 logger = logging.getLogger(__name__)
@@ -41,6 +42,16 @@ def gather_for_post(post_text: str, max_total: int = 12) -> List[FactCheckEviden
     Each `FactCheckEvidence` records which tier produced it.
     """
     all_evidence: List[FactCheckEvidence] = []
+
+    # 0. X-as-source — linked tweets the post references. Runs first because
+    # these are most directly relevant when the post quotes/screenshots another
+    # post. Closes the gap Alexios flagged: humans cite X 2.5x more often
+    # than AI bots, because they can reference the original post being misrepresented.
+    try:
+        xp_results = x_post_evidence.gather_for_post(post_text, max_results=3)
+        all_evidence.extend(xp_results)
+    except Exception as e:
+        logger.warning("x_post search errored: %s", e)
 
     # 1. PolitiFact direct (ifcn_verified)
     try:

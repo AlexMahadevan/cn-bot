@@ -63,14 +63,21 @@ def complete(
 T = TypeVar("T", bound=BaseModel)
 
 
+_UNSUPPORTED_KEYS = {"minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum",
+                     "minLength", "maxLength", "multipleOf", "minItems", "maxItems"}
+
+
 def _strictify_schema(node):
-    """Anthropic's structured-outputs API requires additionalProperties: false
-    on every object node. Pydantic doesn't emit that by default — walk the
-    schema and add it.
+    """Sanitize a Pydantic-generated JSON schema for Anthropic structured outputs:
+    - Add additionalProperties: false to every object node (required).
+    - Strip unsupported numeric/string/array constraints (Anthropic rejects them).
     """
     if isinstance(node, dict):
         if node.get("type") == "object" and "additionalProperties" not in node:
             node["additionalProperties"] = False
+        for key in list(node.keys()):
+            if key in _UNSUPPORTED_KEYS:
+                del node[key]
         for v in node.values():
             _strictify_schema(v)
     elif isinstance(node, list):
