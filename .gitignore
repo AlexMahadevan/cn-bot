@@ -34,3 +34,6 @@ data/baselines.jsonl
 dashboard/node_modules/
 dashboard/dist/
 dashboard/src/.observablehq/
+
+# Reference PDFs (third-party content, don't redistribute)
+*.pdf
