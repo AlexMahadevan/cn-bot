@@ -17,6 +17,7 @@ export default {
            <div style="opacity: .7; font-size: 14px;">An open audit of @alexcnotes, an AI Community Notes writer</div>`,
   footer: `<div style="opacity: .6;">
              Built by <a href="https://www.poynter.org/author/alex-mahadevan/">Alex Mahadevan</a> ·
+             <a href="https://github.com/AlexMahadevan/cn-bot">source</a> ·
              Updated automatically from the bot's audit log.
            </div>`,
 

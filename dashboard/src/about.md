@@ -26,7 +26,8 @@ It's also not autonomous in any moral sense. It does what its code does. If it s
 
 - Email: amahadevan [at] poynter.org
 - X: [@amahadevan](https://x.com/amahadevan)
+- Source: [github.com/AlexMahadevan/cn-bot](https://github.com/AlexMahadevan/cn-bot)
 
 ## License
 
-MIT. The code will be published to GitHub once the bot has shipped enough notes for the audit log to be worth reading.
+MIT. Fork it. Run your own. If you do, link this dashboard so people can compare.

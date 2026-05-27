@@ -92,7 +92,17 @@ def log_draft(
     refusal_reason: Optional[str] = None,
     error: Optional[str] = None,
 ) -> None:
+    """Insert or replace a draft row — but never overwrite a 'submitted'
+    outcome with something downstream (e.g., a later run refused).
+    """
     with connect() as conn:
+        existing = conn.execute(
+            "SELECT outcome FROM drafts WHERE post_id = ?", (post_id,)
+        ).fetchone()
+        # Once a post is marked submitted, that's the canonical record.
+        # Don't let a re-processed pass overwrite it with a refusal.
+        if existing and existing["outcome"] == "submitted" and outcome != "submitted":
+            return
         conn.execute(
             """INSERT OR REPLACE INTO drafts
                (post_id, created_at, post_text, outcome, refusal_reason, error,

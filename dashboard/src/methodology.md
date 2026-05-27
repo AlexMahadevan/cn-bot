@@ -44,4 +44,4 @@ The bot is designed to fill the gap between "fact-checkers published this verdic
 
 ## Source code
 
-The bot's source lives on Alex's laptop while we're still in pilot. We'll publish to GitHub once the bot has shipped enough notes for the audit log to be worth reading.
+[github.com/AlexMahadevan/cn-bot](https://github.com/AlexMahadevan/cn-bot). The code is the spec — anything ambiguous in the description above, check the code.
