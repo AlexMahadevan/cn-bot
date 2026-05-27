@@ -140,8 +140,9 @@ def train(training_data: list[dict], epochs: int = 3, lr: float = 2e-4) -> str:
     args = TrainingArguments(
         output_dir=out_dir,
         num_train_epochs=epochs,
-        per_device_train_batch_size=4,
-        gradient_accumulation_steps=4,
+        per_device_train_batch_size=2,
+        gradient_accumulation_steps=8,  # effective batch = 16, same as before
+        gradient_checkpointing=True,    # trade ~30% speed for big memory savings
         learning_rate=lr,
         bf16=True,
         logging_steps=20,
@@ -158,8 +159,8 @@ def train(training_data: list[dict], epochs: int = 3, lr: float = 2e-4) -> str:
         eval_dataset=split["test"],
         args=args,
         tokenizer=tokenizer,
-        max_seq_length=2048,
-        dataset_text_field=None,  # we use prompt+completion explicitly
+        max_seq_length=1024,  # CN notes + tweets fit easily in 1024; saves memory
+        dataset_text_field=None,
         formatting_func=lambda ex: ex["prompt"] + ex["completion"],
     )
 
