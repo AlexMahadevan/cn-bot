@@ -22,10 +22,12 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Iterable
 
-import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from note_writer.llm_util import HAIKU_MODEL, OPUS_MODEL, complete  # noqa: E402
@@ -110,6 +112,8 @@ def main() -> None:
                         default=["opus", "sonnet", "haiku"])
     parser.add_argument("--limit", type=int, default=200,
                         help="Cap test-set size for cost control during iteration.")
+    parser.add_argument("--concurrency", type=int, default=10,
+                        help="Concurrent worker threads (Anthropic API calls in parallel).")
     args = parser.parse_args()
 
     if not TRAIN_PATH.exists():
@@ -124,35 +128,50 @@ def main() -> None:
 
     done = _already_scored()
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    n_run = 0
-    n_skip = 0
 
-    with OUT_PATH.open("a") as out:
-        for rec in test_helpful:
-            tweet_text = rec["tweet"]["tweet_text"]
-            target_note = rec["note"]["text"]
-            for m in args.models:
-                if (rec["note_id"], m) in done:
-                    n_skip += 1
-                    continue
-                try:
-                    generated = _generate_note(m, tweet_text)
-                except Exception as e:
-                    logger.warning("%s failed for %s: %s", m, rec["note_id"], e)
-                    continue
-                out.write(json.dumps({
-                    "note_id": rec["note_id"],
-                    "tweet_id": rec["tweet"]["tweet_id"],
-                    "model": m,
-                    "tweet_text": tweet_text,
-                    "target_note": target_note,
-                    "generated_note": generated,
-                    "target_tags": rec["note"]["tags"],
-                }) + "\n")
-                out.flush()
+    # Build the work queue
+    jobs = []
+    for rec in test_helpful:
+        for m in args.models:
+            if (rec["note_id"], m) not in done:
+                jobs.append((rec, m))
+    n_skip = len(args.models) * len(test_helpful) - len(jobs)
+    logger.info("Queued %d generations (%d skipped — already done)", len(jobs), n_skip)
+
+    write_lock = threading.Lock()
+    n_run = 0
+
+    def _worker(job):
+        rec, m = job
+        tweet_text = rec["tweet"]["tweet_text"]
+        try:
+            generated = _generate_note(m, tweet_text)
+        except Exception as e:
+            logger.warning("%s failed for %s: %s", m, rec["note_id"], e)
+            return None
+        record = {
+            "note_id": rec["note_id"],
+            "tweet_id": rec["tweet"]["tweet_id"],
+            "model": m,
+            "tweet_text": tweet_text,
+            "target_note": rec["note"]["text"],
+            "generated_note": generated,
+            "target_tags": rec["note"]["tags"],
+        }
+        with write_lock:
+            with OUT_PATH.open("a") as out:
+                out.write(json.dumps(record) + "\n")
+        return m
+
+    # Concurrent execution. 10 workers = ~10x speedup since calls are I/O bound.
+    with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
+        futures = [pool.submit(_worker, j) for j in jobs]
+        for f in as_completed(futures):
+            result = f.result()
+            if result is not None:
                 n_run += 1
-                if n_run % 10 == 0:
-                    logger.info("Generated %d (skipped %d already done)", n_run, n_skip)
+                if n_run % 25 == 0:
+                    logger.info("Generated %d / %d", n_run, len(jobs))
 
     logger.info("Done. generated=%d skipped=%d", n_run, n_skip)
     logger.info("Output: %s", OUT_PATH)
