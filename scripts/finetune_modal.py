@@ -46,6 +46,11 @@ image = (
         "bitsandbytes==0.44.0",
         "sentencepiece",
         "protobuf",
+        # TRL imports rich for its training progress UI; not pulled in by default
+        "rich",
+        # SFTTrainer needs tensorboard or wandb installed for logging when
+        # report_to is anything other than "none"
+        "tensorboard",
     )
 )
 

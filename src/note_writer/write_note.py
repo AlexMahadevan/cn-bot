@@ -190,10 +190,32 @@ def _pick_best_evidence(
     if len(candidates) == 1:
         return candidates[0]
 
-    options = "\n\n".join(
-        f"[{i}] Publisher: {c.publisher_name}\nRating: {c.rating}\nClaim: {c.claim_text}\nTitle: {c.review_title or '(no title)'}\nURL: {c.review_url}"
-        for i, c in enumerate(candidates)
-    )
+    def _fmt_candidate(i: int, c: FactCheckEvidence) -> str:
+        # Different tiers display differently — IFCN evidence has rating + claim_text;
+        # primary sources have a title + snippet but no formal verdict; X-posts are
+        # original quotes/photos the misleading post may be misrepresenting.
+        tier_label = {
+            "ifcn_verified": "IFCN fact-check (has explicit verdict)",
+            "primary_source": "Primary source (gov data / official record)",
+            "self_fact_check": "News or primary source (no formal verdict)",
+            "x_post": "Original X post the current post may be misrepresenting",
+        }.get(c.evidence_tier, c.evidence_tier or "evidence")
+        lines = [
+            f"[{i}] {tier_label}",
+            f"    Publisher: {c.publisher_name}",
+        ]
+        if c.rating:
+            lines.append(f"    Rating: {c.rating}")
+        if c.claim_text:
+            lines.append(f"    Claim/title: {c.claim_text[:200]}")
+        elif c.review_title:
+            lines.append(f"    Title: {c.review_title[:200]}")
+        if c.snippet and c.snippet != c.claim_text:
+            lines.append(f"    Snippet: {c.snippet[:200]}")
+        lines.append(f"    URL: {c.review_url}")
+        return "\n".join(lines)
+
+    options = "\n\n".join(_fmt_candidate(i, c) for i, c in enumerate(candidates))
 
     class _Pick(BaseModel):  # type: ignore
         best_index: int = -1
@@ -202,24 +224,30 @@ def _pick_best_evidence(
     try:
         pick = parse_json(
             user_prompt=(
-                "Below is an X post and a list of candidate fact checks. "
-                "Pick the SINGLE candidate that directly addresses the post's "
-                "SPECIFIC factual claim.\n\n"
-                "Direct match REQUIRES:\n"
-                "- The candidate's claim_text is essentially the same factual "
-                "  assertion as the post (same subject, same predicate, same "
-                "  numbers/dates/quotes), AND\n"
-                "- The fact-check would settle the truth of the post's claim "
-                "  if a reader clicked through.\n\n"
+                "Below is an X post and a list of candidate evidence sources. "
+                "Pick the SINGLE candidate that would let a Community Note "
+                "writer directly correct or contextualize the post's main "
+                "factual claim.\n\n"
+                "Candidates come in several tiers — all are valid:\n"
+                "- IFCN FACT-CHECK: a verdict like 'False' / 'Pants on Fire'. "
+                "  Match when the fact-check addresses the same specific claim.\n"
+                "- PRIMARY SOURCE (gov data, news, official record): cite when "
+                "  the source contains the actual fact that contradicts the "
+                "  post (e.g., the real Treasury figure, the actual quote, "
+                "  the official report). The note doesn't need a 'rating' — "
+                "  it can just say 'Per [source], the actual figure is X.'\n"
+                "- ORIGINAL X POST: cite when the current post is "
+                "  misrepresenting another X post (a misattributed quote, "
+                "  a doctored screenshot, a missing-context reply).\n\n"
+                "Picking criteria — choose a candidate that:\n"
+                "- Speaks directly to the post's specific factual claim, AND\n"
+                "- Would settle the question for a reader who clicked through.\n\n"
                 "REJECT (return best_index=-1) when:\n"
-                "- The candidate is about the same TOPIC but a different specific claim\n"
-                "- The candidate is about the same PERSON but a different statement\n"
-                "- The candidate is about a similar 'pattern of misinformation' but not this exact one\n"
-                "- The candidate is older than the post and may be about a different event\n"
-                "- You're not sure whether they match — when in doubt, return -1\n\n"
-                "It is far more harmful to pick a loose match (the bot will write "
-                "a wrong note) than to return -1 (the bot will skip and try later "
-                "when better evidence exists). Err on the side of -1.\n\n"
+                "- All candidates are about the same TOPIC but a different specific claim\n"
+                "- All candidates are about the same PERSON but a different statement\n"
+                "- You're not sure whether any match — when in doubt, return -1\n\n"
+                "It is far more harmful to pick a loose match (the bot will "
+                "write a wrong note) than to return -1.\n\n"
                 f"Post claim: {post.text}\n\n"
                 + (f"Images:\n{images_summary}\n\n" if images_summary else "")
                 + f"Candidates:\n{options}\n\n"
@@ -227,7 +255,7 @@ def _pick_best_evidence(
             ),
             schema=_Pick,
             model=HAIKU_MODEL,
-            max_tokens=256,
+            max_tokens=300,
         )
         if 0 <= pick.best_index < len(candidates):
             logger.info("Picked evidence [%d]: %s", pick.best_index, pick.reason)

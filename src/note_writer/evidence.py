@@ -71,8 +71,21 @@ def gather_for_post(post_text: str, max_total: int = 12) -> List[FactCheckEviden
     except Exception as e:
         logger.warning("Fact Check Tools search errored: %s", e)
 
-    # 3. Anthropic web_search restricted to IFCN domains (ifcn_verified)
-    if not all_evidence:
+    # 3. Self-fact-check — broad search across gov data, major news, IFCN sites.
+    # Runs in PARALLEL with the IFCN-specific sources above (not as fallback).
+    # Real CRH notes often cite primary sources (gov reports, coroner, congressional
+    # transcripts) without any fact-check verdict. We need this tier to contribute
+    # candidates the picker can choose from, not just to backstop empty results.
+    try:
+        sfc_results = self_fact_check.search_for_post(post_text, max_results=5)
+        all_evidence.extend(sfc_results)
+    except Exception as e:
+        logger.warning("self-fact-check errored: %s", e)
+
+    # 4. Constrained web_search to IFCN domains — narrower fallback when other
+    # sources are thin. Still runs even if we already have evidence, since it
+    # may surface IFCN coverage Google FCT's index missed.
+    if len(all_evidence) < 3:
         try:
             ws_results = web_search_evidence.search_for_post(post_text, max_results=5)
             for r in ws_results:
@@ -80,14 +93,6 @@ def gather_for_post(post_text: str, max_total: int = 12) -> List[FactCheckEviden
             all_evidence.extend(ws_results)
         except Exception as e:
             logger.warning("web_search errored: %s", e)
-
-    # 4. Self-fact-check — broad web_search across gov + major news (self_fact_check tier)
-    if not all_evidence:
-        try:
-            sfc_results = self_fact_check.search_for_post(post_text, max_results=6)
-            all_evidence.extend(sfc_results)
-        except Exception as e:
-            logger.warning("self-fact-check errored: %s", e)
 
     deduped = _dedupe_by_url(all_evidence)[:max_total]
     tier_counts = {}
