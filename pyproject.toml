@@ -14,4 +14,5 @@ dependencies = [
     "google>=3.0.0",
     "ruff>=0.12.0",
     "anthropic>=0.104.1",
+    "pandas>=3.0.3",
 ]

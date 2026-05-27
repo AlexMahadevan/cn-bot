@@ -12,8 +12,10 @@ submission. No URL ever reaches X that didn't come from a real fact check.
 
 from __future__ import annotations
 
+import json
 import logging
 import re
+from pathlib import Path
 from typing import List, Optional
 
 from pydantic import BaseModel
@@ -41,6 +43,52 @@ logger = logging.getLogger(__name__)
 
 URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
 NOTE_MAX_CHARS_INCLUDING_URL = 280
+
+_EXEMPLARS_PATH = Path(__file__).resolve().parent.parent / "exemplars.json"
+
+
+def _load_exemplars_block() -> str:
+    """Load and format the few-shot exemplars from src/exemplars.json.
+
+    These are real X Community Notes that human raters have evaluated as
+    helpful or not-helpful. They act as style anchors — Claude calibrates
+    tone, length, citation framing, and what raters reward against this
+    real-world ground truth.
+    """
+    if not _EXEMPLARS_PATH.exists():
+        return ""
+    try:
+        data = json.loads(_EXEMPLARS_PATH.read_text())
+    except Exception as e:
+        logger.warning("Failed to load exemplars: %s", e)
+        return ""
+
+    def fmt(notes: list, label: str) -> str:
+        lines = [f"\n--- {label} ---"]
+        for i, n in enumerate(notes, 1):
+            tags = ", ".join(n.get("tags", [])) or "(no tags)"
+            lines.append(f"[{i}] tags={tags}")
+            lines.append(f"    {n.get('note_text', '').strip()}")
+        return "\n".join(lines)
+
+    helpful = data.get("helpful", [])
+    unhelpful = data.get("unhelpful", [])
+    if not helpful and not unhelpful:
+        return ""
+
+    return (
+        "\n\n## STYLE ANCHORS: real X Community Notes evaluated by raters\n"
+        "These are real notes other writers shipped — NOT relevant to the post "
+        "you're noting now. They calibrate tone, length, citation phrasing, and "
+        "what raters reward. Notice: helpful notes state facts directly with "
+        "specific sources, avoid editorializing, and don't lean on 'Publisher X "
+        "rated this Y' framing when a direct correction is cleaner."
+        f"\n{fmt(helpful, f'CURRENTLY RATED HELPFUL ({len(helpful)} examples — emulate the style')}"
+        f"\n{fmt(unhelpful, f'CURRENTLY RATED NOT HELPFUL ({len(unhelpful)} examples — avoid these patterns')}"
+    )
+
+
+_EXEMPLARS_BLOCK = _load_exemplars_block()
 
 _NOTE_WRITER_SYSTEM = """You write Community Notes for X. Your beat: US political misinformation, particularly around the 2026 midterms.
 
@@ -73,6 +121,11 @@ Examples of good notes (just the prose, URL appended after):
 - "Per the CBO, the actual federal deficit projection is $1.9 trillion for FY2025 — not the figure shown here."
 
 Return only the prose, nothing else. No quotes around it. No prefix."""
+
+# Inject the few-shot exemplars at module load so the system prompt is built once.
+if _EXEMPLARS_BLOCK:
+    _NOTE_WRITER_SYSTEM = _NOTE_WRITER_SYSTEM + _EXEMPLARS_BLOCK
+    logger.info("Loaded note-writer exemplars (%d chars)", len(_EXEMPLARS_BLOCK))
 
 
 def _validate_prose(text: str) -> tuple[bool, str]:
