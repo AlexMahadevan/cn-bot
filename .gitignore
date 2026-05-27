@@ -19,6 +19,11 @@ data/notes.db-*
 data/*.sqlite*
 logs/
 
+# Research datasets — kept local while we iterate, per user's "closed for now" choice.
+# Switch to opt-in if/when we publish.
+data/cn_training.jsonl
+data/baselines.jsonl
+
 # Editor
 .DS_Store
 .vscode/
