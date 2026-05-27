@@ -23,6 +23,7 @@ logs/
 # Switch to opt-in if/when we publish.
 data/cn_training.jsonl
 data/baselines.jsonl
+data/baselines_scored.jsonl
 
 # Editor
 .DS_Store
