@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 from pathlib import Path
 from typing import List, Optional
@@ -36,6 +37,7 @@ from note_writer.llm_util import (
     describe_image,
     parse_json,
 )
+from note_writer import finetune_client
 from note_writer.error_check import check_note as check_note_for_hallucination
 from note_writer.opinion_check import passes_opinion_filter
 from note_writer.relevance_filter import is_on_beat
@@ -399,16 +401,37 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         "Return only the prose, or NO_NOTE."
     )
 
-    try:
-        prose = complete(
-            user_prompt=user_prompt,
-            system=_NOTE_WRITER_SYSTEM,
-            model=OPUS_MODEL,
-            max_tokens=600,
-            effort="high",
+    # Generator: by default Claude Opus 4.7. If CN_BOT_USE_FINETUNED=true is
+    # set in the env AND the Modal endpoint URL is configured, route through
+    # the fine-tuned Qwen 2.5 7B instead. Same downstream validators run
+    # either way, so swapping generators is safe — bad output gets caught.
+    use_qwen = os.getenv("CN_BOT_USE_FINETUNED", "").strip().lower() in ("1", "true", "yes")
+    if use_qwen and finetune_client.is_available():
+        # Tell Qwen the exact char budget so its prose fits with the URL appended.
+        prose_budget_for_qwen = max(60, NOTE_MAX_CHARS_INCLUDING_URL - len(evidence.review_url) - 1)
+        prose = finetune_client.generate_note(
+            post_text=post.text,
+            evidence_text=article_text or evidence.review_title or evidence.claim_text or "",
+            max_chars=prose_budget_for_qwen,
+            max_new_tokens=220,
+            temperature=0.3,
         )
-    except Exception as e:
-        return NoteResult(post=post, error=f"LLM error: {e}", evidence=[evidence])
+        if prose is None:
+            # Fall through to Opus if the fine-tuned endpoint failed.
+            logger.warning("Fine-tuned endpoint returned None for %s; falling back to Opus", post.post_id)
+            use_qwen = False
+
+    if not use_qwen or not finetune_client.is_available():
+        try:
+            prose = complete(
+                user_prompt=user_prompt,
+                system=_NOTE_WRITER_SYSTEM,
+                model=OPUS_MODEL,
+                max_tokens=600,
+                effort="high",
+            )
+        except Exception as e:
+            return NoteResult(post=post, error=f"LLM error: {e}", evidence=[evidence])
 
     # 6. Validate prose has no URL (hallucination guard)
     ok, why = _validate_prose(prose)

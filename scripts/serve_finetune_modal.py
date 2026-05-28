@@ -69,6 +69,8 @@ class GenerateRequest(BaseModel):
     post_text: str
     max_new_tokens: int = 220
     temperature: float = 0.4
+    evidence_text: str | None = None  # optional article text the pipeline retrieved
+    max_chars: int | None = None        # char budget for the prose (URL is appended later)
 
 
 class GenerateResponse(BaseModel):
@@ -108,9 +110,32 @@ class FinetunedNoteWriter:
     def generate(self, request: GenerateRequest) -> GenerateResponse:
         import torch
 
+        budget_line = (
+            f"\n\nIMPORTANT: write at most {request.max_chars} characters of prose. "
+            "Do not include any URL — code will append it after."
+            if request.max_chars
+            else ""
+        )
+
+        if request.evidence_text:
+            user_block = (
+                f"Background article (DO NOT COPY — use it to know what's true):\n"
+                f"{request.evidence_text.strip()}\n\n"
+                f"X post:\n{request.post_text}\n\n"
+                f"Write a SHORT Community Note correcting the post. Use the "
+                f"background to make sure your facts are right. Paraphrase — "
+                f"do not quote or copy the background article verbatim. Do not "
+                f"write a URL.{budget_line}"
+            )
+        else:
+            user_block = (
+                f"X post:\n{request.post_text}\n\n"
+                f"Write the Community Note.{budget_line}"
+            )
+
         prompt = (
             f"<|im_start|>system\n{SYSTEM_PROMPT}<|im_end|>\n"
-            f"<|im_start|>user\nX post:\n{request.post_text}\n\nWrite the Community Note.<|im_end|>\n"
+            f"<|im_start|>user\n{user_block}<|im_end|>\n"
             f"<|im_start|>assistant\n"
         )
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
