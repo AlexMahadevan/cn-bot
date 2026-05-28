@@ -45,6 +45,52 @@ Sample is small (n=6) because the bot's filters are strict by design —
 US-political). The direction is consistent across all four axes, which
 suggests architecture is a real lift even at small n.
 
+## Final leaderboard (the full result)
+
+After adding pipeline + Qwen (fine-tuned model used as the note generator
+inside the bot's pipeline architecture), the complete picture:
+
+| Setup                       | Factual | Style | Neutrality | Pred-h | n   |
+|-----------------------------|---------|-------|------------|--------|-----|
+| **Pipeline + Opus 4.7**     | **3.50** | **4.17** | **4.33** | **2.83** | 6   |
+| Opus 4.7 zero-shot          | 2.80    | 3.31  | 4.11       | 2.39   | 333 |
+| Sonnet 4.6 zero-shot        | 2.45    | 2.80  | 3.70       | 1.94   | 332 |
+| Haiku 4.5 zero-shot         | 1.91    | 2.10  | 3.55       | 1.31   | 332 |
+| Pipeline + Qwen 2.5 7B      | 1.17    | 1.33  | 3.00       | 0.50   | 6   |
+| Qwen 2.5 7B alone           | 0.82    | 1.31  | 1.95       | 0.47   | 331 |
+
+### What this means
+
+1. **Pipeline + Opus is best on every axis.** Architecture + capable LLM dominates.
+2. **Pipeline + Qwen is essentially Qwen alone.** The architecture provides
+   evidence and validators, but a model that produces 0.47-quality output
+   when given only a tweet produces 0.50-quality output when given the
+   tweet plus evidence. The model can't be rescued by retrieval.
+3. **The 25× cost savings of a fine-tuned small model are illusory.**
+   At ~$0.002/note for Qwen vs $0.05/note for Opus, you're paying less
+   per note but producing notes that are unfit to submit.
+4. **Both model AND architecture matter.** The right framing isn't "model
+   vs architecture" — it's that capable LLMs do better inside a good
+   architecture than alone, and a small fine-tuned model can't substitute
+   for the capable LLM even when given the same architecture.
+
+### Why fine-tuning failed here
+
+The fine-tuned Qwen learned the *style* of helpful notes (direct, named
+source, terminal URL) but never learned to *use evidence*. Training was
+on (tweet → note) pairs; injected evidence at inference time is
+out-of-distribution. The model partially copies the evidence article,
+partially confabulates, and partially generates pattern-shaped artifacts
+from training data ("X reader @username says...", "% raw @account",
+hashtags). The pipeline's validators catch some of this but not all.
+
+A fairer fine-tune would train on (tweet + evidence → note) triples,
+teaching the model how to use retrieved context. Building that dataset
+would require running our evidence retrieval over the training set
+before fine-tuning — a meaningful additional step we didn't do here.
+
+That's a reasonable next paper.
+
 ## Fine-tuned Qwen 2.5 7B on its own (the surprise)
 
 We LoRA-tuned Qwen 2.5 7B on 3,237 helpful political notes for 3 epochs

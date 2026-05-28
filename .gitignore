@@ -41,3 +41,5 @@ dashboard/src/.observablehq/
 data/finetuned.jsonl
 data/finetuned_scored.jsonl
 data/pipeline_qwen*.jsonl
+data/pipeline_qwen.jsonl
+data/pipeline_qwen_scored.jsonl
