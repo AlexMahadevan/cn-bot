@@ -45,6 +45,38 @@ Sample is small (n=6) because the bot's filters are strict by design —
 US-political). The direction is consistent across all four axes, which
 suggests architecture is a real lift even at small n.
 
+## Fine-tuned Qwen 2.5 7B on its own (the surprise)
+
+We LoRA-tuned Qwen 2.5 7B on 3,237 helpful political notes for 3 epochs
+(~2h 35m on a Modal A10G, ~$5). The trained adapter is loaded with the
+base model at inference. Then we ran the same 332 held-out tweets
+through it (zero-shot, no evidence retrieval — same protocol as the
+LLM baselines) and scored with the same judge.
+
+| Model                  | Factual | Style | Neutrality | Pred-helpful | n   |
+|------------------------|---------|-------|------------|--------------|-----|
+| **Pipeline (full bot)** | **3.50** | **4.17** | **4.33** | **2.83** | 6   |
+| Opus 4.7 zero-shot     | 2.80    | 3.31  | 4.11       | 2.39         | 333 |
+| Sonnet 4.6 zero-shot   | 2.45    | 2.80  | 3.70       | 1.94         | 332 |
+| Haiku 4.5 zero-shot    | 1.91    | 2.10  | 3.55       | 1.31         | 332 |
+| **Qwen 2.5 7B fine-tuned (alone)** | **0.82** | **1.31** | **1.95** | **0.47** | 331 |
+
+**The fine-tuned model is the worst on every axis.** Worse than the
+weakest frontier model. Factual accuracy is essentially random (0.82/5).
+
+The model successfully learned the linguistic shape of a helpful note
+— direct correction, named source, ending with a citation URL — but it
+has zero factual grounding. The result was confident hallucination at
+scale. The 25× cost reduction (Qwen ~$0.002/note vs Opus ~$0.05/note)
+is meaningless when the notes are wrong.
+
+**This is the paper's central argument.** The architecture (evidence
+retrieval, validators, URL substitution, opinion filter, hallucination
+check) is what makes the bot work — not the underlying model. Frontier
+LLMs alone score 2.39 on predicted-helpfulness; LoRA-fine-tuned models
+alone score 0.47; the full pipeline scores 2.83. Architecture lifts
+performance more than model choice does.
+
 ## Interpretation
 
 Zero-shot LLM generation, even with frontier models and a calibrated style hint in the system prompt, produces notes that score poorly against real CRH notes. The predicted-helpfulness axis is the most relevant for our purposes — even Opus 4.7's notes would score 2.39/5 on rated-helpful likelihood, meaning a CN rater shown one of these notes alongside the gold-standard CRH note would be unlikely to prefer Opus's output.

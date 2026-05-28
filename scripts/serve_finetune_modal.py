@@ -33,6 +33,19 @@ SYSTEM_PROMPT = (
     "rate Currently Rated Helpful."
 )
 
+def _download_base_model():
+    """Pre-bake the Qwen 2.5 7B weights into the container image so cold-start
+    doesn't have to download them from HuggingFace (which takes ~75s and
+    blows past Modal's 60s startup_timeout)."""
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    AutoTokenizer.from_pretrained(BASE_MODEL, trust_remote_code=True)
+    AutoModelForCausalLM.from_pretrained(
+        BASE_MODEL,
+        torch_dtype="auto",
+        trust_remote_code=True,
+    )
+
+
 image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
@@ -45,6 +58,7 @@ image = (
         "sentencepiece",
         "protobuf",
     )
+    .run_function(_download_base_model)
 )
 
 app = modal.App(APP_NAME, image=image)
@@ -65,7 +79,7 @@ class GenerateResponse(BaseModel):
     gpu="A10G",
     volumes={"/models": volume},
     scaledown_window=300,  # keep warm for 5 min between calls
-    timeout=60,
+    timeout=120,            # request timeout — generation may take ~10s
 )
 class FinetunedNoteWriter:
     @modal.enter()
@@ -100,6 +114,15 @@ class FinetunedNoteWriter:
             f"<|im_start|>assistant\n"
         )
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+
+        # Qwen 2.5's chat-template end-of-turn token. Stopping on this prevents
+        # the model from rolling past its own turn and emitting fresh prompt
+        # templates (which it sometimes does at sampling temperatures).
+        im_end_id = self.tokenizer.convert_tokens_to_ids("<|im_end|>")
+        eos_ids = [self.tokenizer.eos_token_id]
+        if im_end_id is not None and im_end_id != self.tokenizer.unk_token_id:
+            eos_ids.append(im_end_id)
+
         with torch.no_grad():
             out = self.model.generate(
                 **inputs,
@@ -108,9 +131,25 @@ class FinetunedNoteWriter:
                 do_sample=True,
                 top_p=0.95,
                 pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=eos_ids,
             )
         completion = self.tokenizer.decode(
             out[0, inputs["input_ids"].shape[1]:],
             skip_special_tokens=True,
         )
+
+        # Belt-and-suspenders: even with eos_token_id set, sampling can
+        # occasionally produce a token sequence that looks like the start
+        # of a fresh user turn. Truncate at the first such marker.
+        for marker in [
+            "<|im_start|>",
+            "<|im_end|>",
+            "\nWrite the Community Note",
+            "\n\nWrite the Community Note",
+            "\nX post:",
+        ]:
+            idx = completion.find(marker)
+            if idx > 0:  # >0 so we don't truncate to empty if it starts with marker
+                completion = completion[:idx]
+
         return GenerateResponse(note_text=completion.strip())

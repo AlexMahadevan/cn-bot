@@ -38,3 +38,5 @@ dashboard/src/.observablehq/
 
 # Reference PDFs (third-party content, don't redistribute)
 *.pdf
+data/finetuned.jsonl
+data/finetuned_scored.jsonl
