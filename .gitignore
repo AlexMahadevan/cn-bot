@@ -43,3 +43,4 @@ data/finetuned_scored.jsonl
 data/pipeline_qwen*.jsonl
 data/pipeline_qwen.jsonl
 data/pipeline_qwen_scored.jsonl
+data/cn_training_v2.jsonl
