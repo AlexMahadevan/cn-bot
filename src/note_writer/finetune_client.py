@@ -33,9 +33,17 @@ _STOP_MARKERS = [
     "<|im_end|>",
     "\nWrite the Community Note",
     "\n\nWrite the Community Note",
+    " Write the Community Note",
+    "Write the Note.",
+    "Write the note.",
+    " Write the Note",
+    " Write the note",
     "\nX post:",
     "\n\nX post:",
+    " X post:",
     "\nUse this evidence",
+    "\nBackground article",
+    " Background article",
 ]
 
 # Qwen was trained on real CN notes which always end in a URL, so it
@@ -44,15 +52,34 @@ _STOP_MARKERS = [
 _URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
 
 
+_LEADING_PREFIXES = (
+    "Write the Community Note.",
+    "Write the Community Note:",
+    "Write the Community Note",
+    "Background:",
+    "Background article:",
+    "Note:",
+    "Community Note:",
+)
+
+
 def _clean(text: str) -> str:
     """Stop-token cleanup + strip Qwen's hallucinated URLs. The pipeline's
     URL-substitution step replaces them with the verified evidence URL."""
     if not text:
         return ""
-    if text.lstrip().startswith("Write the Community Note"):
-        idx = text.find("\n")
-        if idx >= 0:
-            text = text[idx + 1:]
+    # Strip leading prompt-echo artifacts (v2 model sometimes generates
+    # 'Write the Community Note.\n\nBackground: ...' before the actual note).
+    # Loop because the model can stack multiple prefixes.
+    for _ in range(5):
+        stripped = text.lstrip()
+        for prefix in _LEADING_PREFIXES:
+            if stripped.startswith(prefix):
+                stripped = stripped[len(prefix):].lstrip()
+                break
+        else:
+            break
+        text = stripped
     for m in _STOP_MARKERS:
         idx = text.find(m)
         if idx > 0:
