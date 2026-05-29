@@ -1,0 +1,539 @@
+{
+  "generated_at": "2026-05-29T15:52:50+00:00",
+  "totals": {
+    "posts": 780,
+    "off_beat": 536,
+    "evidence_searched": 244,
+    "evidence_found": 131,
+    "notes_written": 11,
+    "submitted": 11
+  },
+  "funnel": [
+    {
+      "label": "Eligible posts seen",
+      "count": 780
+    },
+    {
+      "label": "On-beat (US politics)",
+      "count": 244
+    },
+    {
+      "label": "Evidence found",
+      "count": 131
+    },
+    {
+      "label": "Note drafted",
+      "count": 11
+    },
+    {
+      "label": "Submitted to X",
+      "count": 11
+    }
+  ],
+  "by_day": [
+    {
+      "day": "2026-05-26",
+      "posts": 15,
+      "submitted": 0,
+      "queued": 0,
+      "refused": 15,
+      "errors": 0
+    },
+    {
+      "day": "2026-05-27",
+      "posts": 321,
+      "submitted": 8,
+      "queued": 0,
+      "refused": 313,
+      "errors": 0
+    },
+    {
+      "day": "2026-05-28",
+      "posts": 284,
+      "submitted": 2,
+      "queued": 0,
+      "refused": 282,
+      "errors": 0
+    },
+    {
+      "day": "2026-05-29",
+      "posts": 160,
+      "submitted": 1,
+      "queued": 0,
+      "refused": 159,
+      "errors": 0
+    }
+  ],
+  "refusal_buckets": [
+    {
+      "bucket": "Off-beat (not US politics)",
+      "count": 536
+    },
+    {
+      "bucket": "Other",
+      "count": 105
+    },
+    {
+      "bucket": "Picker: candidate doesn't match claim",
+      "count": 82
+    },
+    {
+      "bucket": "Opus declined to write",
+      "count": 37
+    },
+    {
+      "bucket": "URL validator rejected (hallucination guard)",
+      "count": 7
+    },
+    {
+      "bucket": "Too long (over 280 chars)",
+      "count": 1
+    },
+    {
+      "bucket": "No fact-check found",
+      "count": 1
+    }
+  ],
+  "evidence_tiers": [
+    {
+      "tier": "ifcn_verified",
+      "count": 69
+    },
+    {
+      "tier": "x_post",
+      "count": 58
+    }
+  ],
+  "notes": [
+    {
+      "post_id": "2060125803724320800",
+      "post_url": "https://x.com/i/web/status/2060125803724320800",
+      "created_at": "2026-05-29T10:39:08+00:00",
+      "outcome": "submitted",
+      "post_text": "Do your part and report him to the @FBI and @NFL , illegal streaming is NOT ok and it is SHAMEFUL that a senatorial candidate would brazenly admit to this crime. https://t.co/6pT7AOU6pJ",
+      "note_text": "Per the linked 2013 post by @jamestalarico, his sister was video-calling him via Skype from her iPad to share the game on his laptop\u2014a personal call between family members, not a public broadcast or commercial stream. https://x.com/jamestalarico/status/373961741819846656",
+      "evidence_url": "https://x.com/jamestalarico/status/373961741819846656",
+      "evidence_publisher": "X (@jamestalarico)",
+      "evidence_rating": null,
+      "evidence_tier": "x_post",
+      "misleading_tags": [
+        "MisleadingTag.misinterpreted_satire",
+        "MisleadingTag.missing_important_context",
+        "MisleadingTag.factual_error"
+      ]
+    },
+    {
+      "post_id": "2060048498255356335",
+      "post_url": "https://x.com/i/web/status/2060048498255356335",
+      "created_at": "2026-05-28T23:02:10+00:00",
+      "outcome": "submitted",
+      "post_text": "In Texas Senate race, Ken Paxton falsely claims James Talarico is a vegan  https://t.co/TwxC0NWR4r",
+      "note_text": "PolitiFact rated this False. Talarico denies being vegan and recent campaign posts show him eating egg and cheese tacos, chicken, steak, and a turkey leg. https://www.politifact.com/factchecks/2026/may/27/ken-paxton/in-texas-senate-race-ken-paxton-falsely-claims-jam/",
+      "evidence_url": "https://www.politifact.com/factchecks/2026/may/27/ken-paxton/in-texas-senate-race-ken-paxton-falsely-claims-jam/",
+      "evidence_publisher": "PolitiFact",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error"
+      ]
+    },
+    {
+      "post_id": "2059764660748931497",
+      "post_url": "https://x.com/i/web/status/2059764660748931497",
+      "created_at": "2026-05-28T19:04:22+00:00",
+      "outcome": "submitted",
+      "post_text": "Never forget\u2026\n\nThe Biden Administration did not let Elon use SpaceX to save astronauts who had been stranded for 9 months before the 2024 election because it could possibly help Trump politically.\n\nThink about that.\n\nHuman beings stranded in space.\n\nThat\u2019s the Left.",
+      "note_text": "PolitiFact rated a related claim False. NASA stated the astronauts were delayed due to Starliner safety issues and would return after a SpaceX crew arrived. https://www.politifact.com/factchecks/2025/jan/08/facebook-posts/no-elon-musk-didnt-say-the-boeing-starliner-astron/",
+      "evidence_url": "https://www.politifact.com/factchecks/2025/jan/08/facebook-posts/no-elon-musk-didnt-say-the-boeing-starliner-astron/",
+      "evidence_publisher": "PolitiFact",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
+    {
+      "post_id": "2059717397636907402",
+      "post_url": "https://x.com/i/web/status/2059717397636907402",
+      "created_at": "2026-05-27T23:02:23+00:00",
+      "outcome": "submitted",
+      "post_text": "What the hell is he eating?\n\nIt\u2019s not BBQ\u2014because Talarico is passionately anti-meat.\n\nIs that a tofu log? https://t.co/J9Uvch1RY7",
+      "note_text": "AFP Fact Check rated false the claim that James Talarico is vegan. Talarico has publicly stated he is vegetarian, not vegan, and is not \"anti-meat\" in the absolute sense implied. https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
+    {
+      "post_id": "2059636981882085380",
+      "post_url": "https://x.com/i/web/status/2059636981882085380",
+      "created_at": "2026-05-27T19:03:42+00:00",
+      "outcome": "submitted",
+      "post_text": "James Talarico wants to make our border a \u201cwelcome mat\u201d for illegals\u2014his words! He believes there are 6 genders and wants trans surgeries for kids. \n\nHe\u2019s a far-left radical with no business in the Senate.",
+      "note_text": "AFP Fact Check rated this Misleading. The clip of Talarico saying the border should be a \"welcome mat\" was deceptively edited; in full context he was describing what he opposes, not what he supports. https://factcheck.afp.com/doc.afp.com.A23T99E",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.A23T99E",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "Misleading",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.manipulated_media",
+        "MisleadingTag.missing_important_context",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
+    {
+      "post_id": "2059612146351419416",
+      "post_url": "https://x.com/i/web/status/2059612146351419416",
+      "created_at": "2026-05-27T19:02:47+00:00",
+      "outcome": "submitted",
+      "post_text": "\ud83d\udea8James Talarico Just Declared War on Texas BBQ\ud83d\udea8\n\n\u201cI am proud to say that our campaign has officially become a non-meat campaign. We are only buying vegan products from our local vegan businesses.\u201d\nBro\u2026 you do know you\u2019re in TEXAS, right?\n\nThe state that runs on brisket, ribs, https://t.co/H9XJjdvyhP",
+      "note_text": "AFP Fact Check rated the claim that James Talarico is vegan False. The quoted statement about his campaign going \"non-meat\" is not supported, and Talarico has publicly stated he is not vegan. https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
+    {
+      "post_id": "2059677157694034235",
+      "post_url": "https://x.com/i/web/status/2059677157694034235",
+      "created_at": "2026-05-27T19:01:50+00:00",
+      "outcome": "submitted",
+      "post_text": "Democrats are already lying to voters by pretending like James Talarico eats meat.\n\nHe's operating a meatless campaign. \n\nTalarico is LITERALLY a soy boy. https://t.co/lQkCnkG90A",
+      "note_text": "AFP Fact Check rated the claim that James Talarico is vegan False. Talarico has stated he is a vegetarian, not vegan, and has not run a \"meatless campaign.\" https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
+    {
+      "post_id": "2059466997633605735",
+      "post_url": "https://x.com/i/web/status/2059466997633605735",
+      "created_at": "2026-05-27T19:00:42+00:00",
+      "outcome": "submitted",
+      "post_text": "James Talarico: \"I am proud to say that our campaign has officially become a non-meat campaign. We are only buying vegan products from our local vegan businesses.\" #TXsen\nhttps://t.co/SkZZ05IXMj",
+      "note_text": "AFP Fact Check rated false the claim that James Talarico is vegan. The quote attributed to him about a \"non-meat campaign\" buying only vegan products has no basis in his actual statements. https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.B4427KG",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
+    {
+      "post_id": "2059587386913497287",
+      "post_url": "https://x.com/i/web/status/2059587386913497287",
+      "created_at": "2026-05-27T15:01:54+00:00",
+      "outcome": "submitted",
+      "post_text": "\ud83d\udea8BIG BREAKING: \n\n Confirm by Israel...\n\n\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7According to the latest reports, the USS Abraham Lincoln was hit in a devastating attack, with reports claiming that nearly 200 soldiers were killed in the strike. The incident has sparked major shock and concern. https://t.co/GPsAE01LEj",
+      "note_text": "AFP Fact Check rated this False. The footage shared in posts claiming Iran struck the USS Abraham Lincoln is AI-generated clips and old video, not a real attack on the carrier. https://factcheck.afp.com/doc.afp.com.A2LM9CQ",
+      "evidence_url": "https://factcheck.afp.com/doc.afp.com.A2LM9CQ",
+      "evidence_publisher": "AFP Fact Check",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.manipulated_media",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
+    {
+      "post_id": "2059393175999963533",
+      "post_url": "https://x.com/i/web/status/2059393175999963533",
+      "created_at": "2026-05-27T00:29:29+00:00",
+      "outcome": "submitted",
+      "post_text": "Option for ICE riots. Just saying.  https://t.co/Omfrh60iQd",
+      "note_text": "PolitiFact rated this False. The Craigslist ad was created for an online prank show called \"Goofcon1\" and was not recruiting paid protesters, the show's host told AP. https://www.politifact.com/factchecks/2025/jun/12/tiktok-posts/craigslist-ad-wasnt-recruiting-paid-protesters-in/",
+      "evidence_url": "https://www.politifact.com/factchecks/2025/jun/12/tiktok-posts/craigslist-ad-wasnt-recruiting-paid-protesters-in/",
+      "evidence_publisher": "PolitiFact",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
+    {
+      "post_id": "2059352723795931186",
+      "post_url": "https://x.com/i/web/status/2059352723795931186",
+      "created_at": "2026-05-27T00:28:53+00:00",
+      "outcome": "submitted",
+      "post_text": "RFK Jr: Children who are circumcised early have double the rate of autism\n\nTrump: I've studied this a long time https://t.co/0fzkzkolvn",
+      "note_text": "FactCheck.org rated this False. The circumcision studies cited do not show that Tylenol causes autism, contrary to RFK Jr.'s claim at the Oct. 9 Cabinet meeting. https://www.factcheck.org/2025/10/rfk-jr-s-inaccurate-claims-about-tylenol-circumcision-and-autism/",
+      "evidence_url": "https://www.factcheck.org/2025/10/rfk-jr-s-inaccurate-claims-about-tylenol-circumcision-and-autism/",
+      "evidence_publisher": "FactCheck.org",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "factual_error",
+        "disputed_claim_as_fact"
+      ]
+    }
+  ],
+  "recent_refusals": [
+    {
+      "post_id": "2060089876578480160",
+      "post_url": "https://x.com/i/web/status/2060089876578480160",
+      "created_at": "2026-05-29T15:02:32+00:00",
+      "post_text": "Change June from pride month to veterans month",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: This is a suggestion or proposal, not a factual claim about something that is, was, or happened; it expresses a desire for policy change rather than asserting a verifiable fact.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060295799045497149",
+      "post_url": "https://x.com/i/web/status/2060295799045497149",
+      "created_at": "2026-05-29T15:02:29+00:00",
+      "post_text": "Madueke moved to Arsenal = Made the World Cup list over Cole Palmer. \n\nGarnacho moved to Man Utd = He was dropped by Argentina. \n\nChoose wisely.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses football/soccer player transfers and national team selections with no reference to US politics, politicians, or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060303888239231147",
+      "post_url": "https://x.com/i/web/status/2060303888239231147",
+      "created_at": "2026-05-29T15:02:28+00:00",
+      "post_text": "\ud83d\udea8 28,000 parolees have effectively vanished from the system.\n\nThe DA has called on Parliament to summon Minister Groenewald to explain this shocking failure and outline a plan to get these absconders back into custody. https://t.co/BVQz0b0SBZ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns South African politics (Parliament, Minister Groenewald, parolees system), not US politics or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060235147325096045",
+      "post_url": "https://x.com/i/web/status/2060235147325096045",
+      "created_at": "2026-05-29T15:02:26+00:00",
+      "post_text": "Just a quick fact \u2026..\n\nWest Ham and Crystal Palace have both won a trophy in Europe before Arsenal \u2026\u2026.. https://t.co/v6Jk2iSDRy",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about English Premier League football clubs and their European trophy history, which is sports content with no US political angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060143120801751251",
+      "post_url": "https://x.com/i/web/status/2060143120801751251",
+      "created_at": "2026-05-29T15:02:24+00:00",
+      "post_text": "\ud83d\udca3The IDF just stopped a diabolical plot by Hezbollah. \n\n\ud83c\udf0aThe IRGC\u2019s proxy army planned to blow open Lebanon\u2019s biggest dam and flood the Litani\u2014just to drown Israeli soldiers. \n\nIt would have been an environmental disaster of apocalyptic proportions. https://t.co/fwui5k1hiL",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post concerns Israeli-Lebanese military conflict with no US politician, federal agency, 2026 midterm, or US policy angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060308327221911630",
+      "post_url": "https://x.com/i/web/status/2060308327221911630",
+      "created_at": "2026-05-29T15:02:23+00:00",
+      "post_text": "So Ukraine cannot choose its own heroes without a Polish veto, but their President\u2019s security can wear patches of those who carried out crimes against Ukrainians when visiting Kyiv\u2026\u2026.. https://t.co/c8iKuupkxm https://t.co/uuHax9Owbj",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns Ukrainian and Polish politics with no explicit US angle, federal policy claim, or 2026 midterm relevance.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060239421216080221",
+      "post_url": "https://x.com/i/web/status/2060239421216080221",
+      "created_at": "2026-05-29T15:02:22+00:00",
+      "post_text": "Nobody is telling you how FUCKED Blue Origin's entire rocket program just became.\n\nEveryone is watching the fireball. The explosion. The shockwave.\n\nNobody is talking about the fact that Blue Origin just destroyed the ONLY pad it has.\n\nNew Glenn. A 320-foot rocket. Exploded on https://t.co/Jh52Kp3kuD",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns a commercial space company's rocket failure with no mention of US politicians, federal policy, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060129038522618133",
+      "post_url": "https://x.com/i/web/status/2060129038522618133",
+      "created_at": "2026-05-29T15:02:20+00:00",
+      "post_text": "This Wemby fit \ud83d\udc40\ud83d\udd25\n\nReady for Game 6.\n\n(via @NBA)\nhttps://t.co/v34pRdTAPW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about an NBA player's fashion/outfit for a basketball game, which is entertainment/sports content with no political angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060108294602055733",
+      "post_url": "https://x.com/i/web/status/2060108294602055733",
+      "created_at": "2026-05-29T15:02:19+00:00",
+      "post_text": "Uber burned through its entire $3.4 billion AI budget for 2026 in four months after giving engineers unrestricted access to Claude https://t.co/V0zZgvgR1M",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a private technology company's internal spending and AI budget, with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060021715766329557",
+      "post_url": "https://x.com/i/web/status/2060021715766329557",
+      "created_at": "2026-05-29T15:02:18+00:00",
+      "post_text": "#NEW: Indian MMA fighter killed in Canada after bear attack \ud83d\udc94 https://t.co/lEqQBDpjWx",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a wildlife incident involving a foreign national with no connection to US politics, politicians, elections, or federal policy.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060204085752615419",
+      "post_url": "https://x.com/i/web/status/2060204085752615419",
+      "created_at": "2026-05-29T15:02:16+00:00",
+      "post_text": "\ud83d\udea8 Texas AG Ken Paxton illegally fired staffers who reported his corruption to the FBI.\n\nHe was then sued in court and lost, forcing Texas taxpayers to pay $6.6 million in damages. https://t.co/BJwLKapepe",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@GOP__Ls)"
+    },
+    {
+      "post_id": "2060101944350487019",
+      "post_url": "https://x.com/i/web/status/2060101944350487019",
+      "created_at": "2026-05-29T15:02:05+00:00",
+      "post_text": "\ud83d\udea8DISGRACED PEDO-PROTECTOR JACK SMITH JUST FILED FOR BANKRUPTCY IN VIRGINIA \u2014 THE TRUMP-HATING FREAK IS OFFICIALLY BROKE, DISBARRED, AND UNEMPLOYABLE!\n\nFollow @RedLivesMatterQ \n\nAfter years of weaponizing the Justice Department to persecute President Trump with fake cases and https://t.co/6LKuCLeBhG",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@mcafeenew)"
+    },
+    {
+      "post_id": "2059341987275329973",
+      "post_url": "https://x.com/i/web/status/2059341987275329973",
+      "created_at": "2026-05-29T15:01:53+00:00",
+      "post_text": "Justice Department Sues University of California for Antisemitic Hostile Educational Environment \n\n\u201cEarlier this year, we sued UCLA for subjecting its Jewish and Israeli employees to an antisemitic hostile work environment,\u201d said @AAGDhillon. \u201cNow, the Department of Justice calls https://t.co/4yeh4pVLLW",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@CivilRights)"
+    },
+    {
+      "post_id": "2059998385197760901",
+      "post_url": "https://x.com/i/web/status/2059998385197760901",
+      "created_at": "2026-05-29T15:01:39+00:00",
+      "post_text": "Modern woman from Tik Tok was all excited to go on a date with a rich successful 6\u20194 WH\ud83e\uddd4\ud83c\udffcTE male doctor until he started berating her about her weight and made her split the bill. Why do mid to below mid women think they deserve high value men\u2049\ufe0f\ud83d\ude2d\ud83d\udc51 https://t.co/LqTY6q9jWT",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about dating and relationships with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060312071560921494",
+      "post_url": "https://x.com/i/web/status/2060312071560921494",
+      "created_at": "2026-05-29T15:01:37+00:00",
+      "post_text": "I CANNOT BELIEVE THIS.\n\n\ud83d\udea8BREAKING:\n\nNO RETRIAL FOR MANCHESTER AIRPORT INCIDENT. https://t.co/xEPwtPefCq",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This appears to be about a UK airport incident with no connection to US politics, politicians, or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060307933741695080",
+      "post_url": "https://x.com/i/web/status/2060307933741695080",
+      "created_at": "2026-05-29T15:01:36+00:00",
+      "post_text": "Emirates aircraft carrying Arsenal to Budapest with \u201cEmirates Champions\u201d branding. \ud83c\udfc6\u2708\ufe0f #ucl https://t.co/pqbuSlkgSa",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a sports team (Arsenal) traveling via commercial aircraft for a sporting event, with no US political figures, agencies, or policy content involved.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060170643941794128",
+      "post_url": "https://x.com/i/web/status/2060170643941794128",
+      "created_at": "2026-05-29T15:01:34+00:00",
+      "post_text": "That\u2019s a lie, nice try though https://t.co/2ipnAaC8AF",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post contains only a dismissive comment with no substantive content about US politics, politicians, elections, or policy.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2059994371307573397",
+      "post_url": "https://x.com/i/web/status/2059994371307573397",
+      "created_at": "2026-05-29T15:01:33+00:00",
+      "post_text": "Indigenous traditions, born from the land. Something \u201cIsraelis\u201d do not, and will never, possess. https://t.co/19xNz9yddE",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses foreign politics (Israeli-Palestinian conflict) with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060305020231229684",
+      "post_url": "https://x.com/i/web/status/2060305020231229684",
+      "created_at": "2026-05-29T15:01:29+00:00",
+      "post_text": "No Dembele? \ud83d\ude33 https://t.co/8Tf57YWymW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a sports player (likely Ousmane Demb\u00e9l\u00e9, a professional footballer) and does not reference US politics, politicians, or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060119283653378404",
+      "post_url": "https://x.com/i/web/status/2060119283653378404",
+      "created_at": "2026-05-29T15:01:28+00:00",
+      "post_text": "Serbian President Vu\u010di\u0107 says Serbia operates Chinese missiles with ranges up to 400km and is acquiring more. \n\nHe praised China's weapons performance in the India-Pakistan conflict, claiming Chinese systems destroyed India's S-400 radar.\nhttps://t.co/WR6NAgn8Hh",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns foreign politics (Serbia, China, India-Pakistan) with no US politician, agency, federal policy, or 2026 midterm angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060337909744480503",
+      "post_url": "https://x.com/i/web/status/2060337909744480503",
+      "created_at": "2026-05-29T15:01:27+00:00",
+      "post_text": "SpaceX Reportedly Lowers IPO Valuation Target  https://t.co/MCNCjq5nLd",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns corporate finance and SpaceX's business operations, not US politicians, elections, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060333126396567837",
+      "post_url": "https://x.com/i/web/status/2060333126396567837",
+      "created_at": "2026-05-29T15:01:25+00:00",
+      "post_text": "Nvidia will now pay you to put a mini AI data center on your house making you close to $22,000 a year  https://t.co/xRYUR5k5pO",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a private technology company's commercial offering and has no connection to US politicians, the 2026 midterms, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060064719319269400",
+      "post_url": "https://x.com/i/web/status/2060064719319269400",
+      "created_at": "2026-05-29T15:01:23+00:00",
+      "post_text": "\"Take that Yorch! First Light sold 1.5 million bajillion copies!\"\n\nHere's some Math to illustrate your desperation to 'own' me:\n\nThe game had an alleged budget of $200 million, not including marketing costs.\n\nConsider the 30% cut Steam takes plus Sony and Microsoft's share.\n\nAt https://t.co/knUGUG8k0b",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses video game sales and financial metrics with no reference to US politicians, elections, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060213291968758032",
+      "post_url": "https://x.com/i/web/status/2060213291968758032",
+      "created_at": "2026-05-29T15:01:22+00:00",
+      "post_text": "Nicolas Cage shot a whole Spider-Man show in black and white. Then the studio told him it also had to work in full color. So they filmed every single scene to look right both ways at the same time, and the bill got so big it blew up a deal worth hundreds of millions.\n\nMost black https://t.co/BAmBc3KRMT",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about entertainment and film production with no US political content, figures, or policy implications.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2059693946641477805",
+      "post_url": "https://x.com/i/web/status/2059693946641477805",
+      "created_at": "2026-05-29T15:01:20+00:00",
+      "post_text": "gamer leg vs gamer back who wins https://t.co/k6U7OVDuuh https://t.co/ta5NBzSnJb",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about gaming culture and physical health memes, with no connection to US politicians, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    }
+  ]
+}

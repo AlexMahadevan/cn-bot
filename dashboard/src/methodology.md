@@ -36,11 +36,11 @@ This is the structural fix for a hallucination problem the bot's earlier version
 
 Three categories of post the bot can't help with, even if a human reader would call them misleading:
 
-- **Predictions and opinions.** "He's going to lose the midterms" isn't a factual claim. Not in scope.
-- **New events with no fact-check yet.** Fact-checkers lag viral claims by 24–72 hours. If a claim went up an hour ago, there's nothing for the bot to cite.
+- **Predictions and opinions.** "He's going to lose the midterms" isn't a factual claim.
+- **Claims with no coverage anywhere yet.** Fact-checks aren't the only evidence the bot will accept — when no IFCN signatory has weighed in yet, it falls back to government data (BLS, CBO, Treasury), primary records (Congress.gov, agency filings) and reporting from major newsrooms. Notes shipped through that route are tagged `self_fact_check` or `primary_source` in the dashboard. But in the first hour or two of a viral claim, sometimes literally nothing exists yet.
 - **Claims that need fresh original reporting.** Anything where verification means calling people, not searching the web.
 
-The bot is designed to fill the gap between "fact-checkers published this verdict" and "the false claim is still spreading." It's not designed to do journalism.
+The bot is designed to fill the gap between "the false claim is still spreading" and "someone has already published evidence against it." When that evidence is a PolitiFact rating, the bot cites it. When it's a BLS jobs report or a court filing, the bot cites that. It's not designed to do journalism — but it's also not limited to citing other fact-checkers.
 
 ## Source code
 

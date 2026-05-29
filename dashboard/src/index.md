@@ -1,17 +1,19 @@
 ---
-title: Watching a bot fact-check
+title: Watching a bot attempt to fact-check
 toc: false
 ---
 
-# Watching a bot fact-check
+# Watching a bot attempt to fact-check
 
 ```js
 const bot = FileAttachment("./data/bot.json").json();
 ```
 
-This page shows what an AI Community Notes writer does in public, every day, in detail. The bot is **[@alexcnotes](https://x.com/alexcnotes)** — an AI Note Writer enrolled in X's program. It reads posts X surfaces as candidates for community notes, looks for fact-checks of the claims those posts make, and submits notes when it finds a clean match. It declines most of the time.
+This page shows what an AI Community Notes writer does in public, every day, in detail. The bot is **[@alexcnotes](https://x.com/alexcnotes)** (I don't think I have a cool bird alias for the bot yet, but my human one is Melodious Glacier Quail). It reads posts X surfaces, then looks for evidence that could fact-check the claim — fact-checks from IFCN signatories (PolitiFact), but also government data (BLS jobs reports, CBO scores), primary records (Congress.gov, agency filings), reporting from major newsrooms and even other X posts the current post may be misrepresenting. It submits a community note when it finds a clean match. It honestly declines most of the time.
 
-I built it. I run it. And I publish every step it takes here so other journalists, researchers, and the public can see how this kind of system actually behaves — not how it's described in a pitch deck.
+I was inspired by the excellent work of [Alexios Mantzarlis at Indicator](https://indicator.media/p/8-ai-bots-now-write-50-of-x-s-community-notes). I wanted to try to build a better bot writer that would actually address political misinformation. Especially ahead of the elections. That's why it has a narrow beat. And will probably have a low "helpfulness rating." But that's what we're testing! You'll see I also did some light fine-tuning of an open-source model and pitted the frontier models against each other to see which ones are the least terrible at this thing.
+
+I built it with lots of button smashing with Claude Code. But also with the deep expertise I've developed (sadly) over the [last FIVE years of note-watching](https://www.poynter.org/commentary/2024/x-community-notes-role-2024-presidential-election/). I run it. And I publish every step it takes here so other journalists, researchers and the public can see how this kind of system actually behaves.
 
 ```js
 const t = bot.totals;
@@ -76,7 +78,7 @@ Plot.plot({
 Step by step, what each stage means:
 
 - **Eligible posts seen.** Whatever X returns when the bot asks for posts it could note. Sports, gaming, celebrity drama, foreign politics — anything.
-- **On-beat.** A cheap Claude Haiku call decides whether the post is about US politicians or US political misinformation. Strict by default.
+- **On-beat.** A cheap Claude Haiku call decides whether the post is about US politicians or US political misinformation.
 - **Evidence found.** For on-beat posts, the bot searches PolitiFact, the Google Fact Check Tools API, and (if needed) the broader web. A post passes this stage if at least one fact-check or primary source comes back.
 - **Note drafted.** A Claude Opus call writes the note prose. The bot only writes when the evidence directly addresses the post's claim. When it doesn't, the bot returns `NO_NOTE`.
 - **Submitted to X.** Notes that pass length, URL, and `evaluate_note` pre-flight checks go to X. Still in `test_mode` — X requires it during the AI Note Writer pilot.
@@ -114,7 +116,7 @@ Plot.plot({
 
 The biggest two buckets are by design:
 
-1. **Off-beat.** Most of what X surfaces isn't about US politics. The bot drops it before spending an Opus token on it.
+1. **Off-beat.** Most of what X surfaces isn't about U.S. politics. The bot drops it before spending an Opus token on it.
 2. **Picker: candidate doesn't match claim.** The bot found a fact-check on a related topic, but it doesn't directly rate *this* post's claim. Rather than stretch, the bot returns nothing.
 
 The other two are safety rails:
@@ -132,7 +134,7 @@ const notes = bot.notes;
 
 ${notes.length === 0
   ? html`<div class="warning">The bot hasn't submitted any notes yet. Notes will appear here as they're written. The bot is intentionally conservative — when in doubt, it returns no note rather than a wrong one.</div>`
-  : html`<div class="note">Every entry below shows the post the bot saw, the note it wrote, and the source it cited. Click through to verify any citation yourself.</div>`}
+  : html`<div class="note">Every entry below shows the post the bot saw, the note it wrote and the source it cited.</div>`}
 
 ${html`<div>${notes.map(noteCard)}</div>`}
 
