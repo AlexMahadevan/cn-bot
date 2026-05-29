@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-05-29T19:09:32+00:00",
+  "generated_at": "2026-05-29T21:01:45+00:00",
   "totals": {
-    "posts": 842,
-    "off_beat": 586,
-    "evidence_searched": 256,
-    "evidence_found": 137,
+    "posts": 853,
+    "off_beat": 592,
+    "evidence_searched": 261,
+    "evidence_found": 142,
     "notes_written": 12,
     "submitted": 12
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 842
+      "count": 853
     },
     {
       "label": "On-beat (US politics)",
-      "count": 256
+      "count": 261
     },
     {
       "label": "Evidence found",
-      "count": 137
+      "count": 142
     },
     {
       "label": "Note drafted",
@@ -57,17 +57,17 @@
     },
     {
       "day": "2026-05-29",
-      "posts": 222,
+      "posts": 233,
       "submitted": 2,
       "queued": 0,
-      "refused": 220,
+      "refused": 231,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 586
+      "count": 592
     },
     {
       "bucket": "Other",
@@ -75,11 +75,11 @@
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 84
+      "count": 86
     },
     {
       "bucket": "Opus declined to write",
-      "count": 40
+      "count": 43
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -97,11 +97,11 @@
   "evidence_tiers": [
     {
       "tier": "ifcn_verified",
-      "count": 71
+      "count": 72
     },
     {
       "tier": "x_post",
-      "count": 62
+      "count": 66
     }
   ],
   "notes": [
@@ -302,6 +302,116 @@
   ],
   "recent_refusals": [
     {
+      "post_id": "2060135238794097097",
+      "post_url": "https://x.com/i/web/status/2060135238794097097",
+      "created_at": "2026-05-29T21:01:42+00:00",
+      "post_text": "Drake fans\u2019 parasocial relationship with him is actually hilarious \ud83d\ude2d\ud83d\ude2d https://t.co/aZ7EtLEsYS",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a celebrity (Drake) and fan culture, which is entertainment-focused with no US political content or connection to politicians, policy, or elections.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060177557647990830",
+      "post_url": "https://x.com/i/web/status/2060177557647990830",
+      "created_at": "2026-05-29T21:01:33+00:00",
+      "post_text": "You are aware ABC had to pay $15m to Trump because Stephanopoulos said exactly what you just said, correct? https://t.co/KhM29ymGbE",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@JonathanCohn)"
+    },
+    {
+      "post_id": "2060355030893351081",
+      "post_url": "https://x.com/i/web/status/2060355030893351081",
+      "created_at": "2026-05-29T21:01:19+00:00",
+      "post_text": "There\u2019s a disturbing new trend: racist White girls refusing to give Black men their phone numbers when asked.\n\nExperts warn this microaggression triggers deep inherited trauma from segregation-era rejection, causing many Black guys to unintentionally slap back in frustration.\n\nIs https://t.co/BnDJX4bWfy",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post addresses social dynamics and personal interactions with no connection to US politicians, the 2026 midterms, federal policy, election integrity, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060067737800503605",
+      "post_url": "https://x.com/i/web/status/2060067737800503605",
+      "created_at": "2026-05-29T21:01:16+00:00",
+      "post_text": "Can y'all EVEN IMAGINE the liberal meltdowns if this happens?!?\ud83d\ude02\ud83d\ude02\ud83d\ude02 https://t.co/LPKrU5ig1i",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post is a generic reaction without substantive political content, claim, or named officials; the linked content is not visible in the text provided.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060374737923321913",
+      "post_url": "https://x.com/i/web/status/2060374737923321913",
+      "created_at": "2026-05-29T21:01:15+00:00",
+      "post_text": "A quick reminder that California ranks last in the country in literacy. https://t.co/oGPuYerzec https://t.co/DF39Bq8vND",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@TheKevinDalton)"
+    },
+    {
+      "post_id": "2060108703739924931",
+      "post_url": "https://x.com/i/web/status/2060108703739924931",
+      "created_at": "2026-05-29T21:00:56+00:00",
+      "post_text": "Woohoo!!\n\nSpencer Pratt is now LEADING Karen Bass in the new Emerson poll. \n\n\ud83d\udd34 Spencer Pratt: 35% \n\ud83d\udd35 Karen Bass*: 33% \n\nUndecided: 16% \n\nEmerson (A) | 5/27-28 | 350 LV | \u00b15.2",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2060364786635092439",
+      "post_url": "https://x.com/i/web/status/2060364786635092439",
+      "created_at": "2026-05-29T21:00:43+00:00",
+      "post_text": "$NOW is Trump's #1 portfolio position.\n\nFirst week reclaiming the 21-week EMA.\n\nAnd you think you're late? https://t.co/Ac0bKcGF8S",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about stock trading and technical analysis of a ticker symbol, with no reference to US politicians, policy, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060437676227015166",
+      "post_url": "https://x.com/i/web/status/2060437676227015166",
+      "created_at": "2026-05-29T21:00:40+00:00",
+      "post_text": "Freedom 250 is a nonpartisan organization dedicated to uniting Americans around the nation\u2019s 250th anniversary. \ud83c\uddfa\ud83c\uddf8\ud83e\udd85\n\nThe Great American State Fair is one of Freedom 250\u2019s signature celebrations, bringing together all 50 states and 6 territories in the Nation\u2019s capital for the https://t.co/XA4Ru5WL18",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post describes a nonpartisan anniversary celebration event with no reference to US politicians, campaigns, elections, policy disputes, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060418789187969377",
+      "post_url": "https://x.com/i/web/status/2060418789187969377",
+      "created_at": "2026-05-29T21:00:39+00:00",
+      "post_text": "Under the future FIU pedestrian bridge where drivers absolutely do not stop underneath at red lights after the previous bridge collapsed in 2018 while under construction https://t.co/IfJTekK7y9",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses a local infrastructure issue (FIU pedestrian bridge collapse and traffic behavior) with no connection to US politicians, 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060437535583776951",
+      "post_url": "https://x.com/i/web/status/2060437535583776951",
+      "created_at": "2026-05-29T21:00:38+00:00",
+      "post_text": "BREAKING: America's largest bank JPMorgan is trying to kill the most important crypto bill in US history.\n\nThe CLARITY Act is the first comprehensive legal framework for digital assets ever written in the United States. It would end regulation by enforcement, define which crypto https://t.co/SEjfaVwzn1",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@BullTheoryio)"
+    },
+    {
+      "post_id": "2060377193738645834",
+      "post_url": "https://x.com/i/web/status/2060377193738645834",
+      "created_at": "2026-05-29T21:00:21+00:00",
+      "post_text": "BREAKING: Trump announces proposed terms for a US-Iran deal.\n\nKey terms outlined by Trump:\n\n- Iran must agree to never develop a nuclear weapon\n- The Strait of Hormuz must immediately reopen with unrestricted shipping and no tolls\n- All water mines must be removed or detonated\n- https://t.co/QqMKE2gjP4",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@BullTheoryio)"
+    },
+    {
       "post_id": "2060278555607499237",
       "post_url": "https://x.com/i/web/status/2060278555607499237",
       "created_at": "2026-05-29T19:02:17+00:00",
@@ -438,116 +548,6 @@
       "post_text": "Japan's military-industrial complex is expanding aggressively and rapidly, representing another major development in the country's accelerating remilitarization and raising widespread concerns both within Japan and across the international community, said Chinese Foreign Ministry https://t.co/k6Y08BuhXx",
       "refusal_bucket": "Off-beat (not US politics)",
       "refusal_reason": "Off-beat: This post concerns Japanese military policy and Chinese foreign ministry statements with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060163648014762397",
-      "post_url": "https://x.com/i/web/status/2060163648014762397",
-      "created_at": "2026-05-29T19:01:41+00:00",
-      "post_text": "Baby punched her so hard she couldn\u2019t even get tf back up lmaooooo https://t.co/vEShrPblJp",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes a violent incident with no connection to US politicians, elections, federal policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060317234871091444",
-      "post_url": "https://x.com/i/web/status/2060317234871091444",
-      "created_at": "2026-05-29T19:01:40+00:00",
-      "post_text": "Olandria fans are already beefing with Trinity??? #LoveIsland #LoveIslandUSA https://t.co/r0ZzKygjIr",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about reality TV drama from Love Island, an entertainment show with no political content or US political figures.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060175016633757730",
-      "post_url": "https://x.com/i/web/status/2060175016633757730",
-      "created_at": "2026-05-29T19:01:39+00:00",
-      "post_text": "@pipkinpippa What I find funny is people accusing Lewdtubers of invading the Vtuber scene when myself &amp; melody have been Vtubers longer than Hololive En has existed \ud83d\ude06 Vshojo wouldn\u2019t exist if it wasn\u2019t for Melody *cough* a lewdtuber and if it wasn\u2019t for her most indie Vtubers wouldn\u2019t exist",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about virtual content creators and streaming communities with no connection to US politics, elections, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060002747236106451",
-      "post_url": "https://x.com/i/web/status/2060002747236106451",
-      "created_at": "2026-05-29T19:01:38+00:00",
-      "post_text": "\ud83d\udd25\ud83d\udea8LATEST: A fitness coach in China named Huang Mao was allegedly having an affair and the male homeowner returned unexpectedly which led to Mao climbing out the window and attempt to escape from the ledge leading to his fall that took his life. https://t.co/7RqK17uKrT",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes a foreign incident (China) with no US political angle, US officials, or 2026 midterm relevance.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060271040085840087",
-      "post_url": "https://x.com/i/web/status/2060271040085840087",
-      "created_at": "2026-05-29T19:01:20+00:00",
-      "post_text": "I just realized  that every English word with Q is followed by U. Prove me wrong.",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a linguistic observation about English spelling patterns with no connection to US politics, politicians, elections, or policy.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060391607455645934",
-      "post_url": "https://x.com/i/web/status/2060391607455645934",
-      "created_at": "2026-05-29T19:01:18+00:00",
-      "post_text": "\ud83d\udea8 \ud835\udde1\ud835\uddd8\ud835\uddea: N\u2019Golo Kant\u00e9 arriving with the France National Team. \ud83c\uddeb\ud83c\uddf7 https://t.co/wn7uScUK4U",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is about a foreign soccer player and the France national team, with no US political angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060389947291336822",
-      "post_url": "https://x.com/i/web/status/2060389947291336822",
-      "created_at": "2026-05-29T19:01:17+00:00",
-      "post_text": "CANCELED\n\nThis morning my lawyers received notice pertaining to @DoctorTurtleboy and risk of legal exposure if we host him\n\nThe notice is attached\n\nUnder advisement of counsel we will NOT host him on IRL and must advise\n\nDO NOT FOLLOW HIM OR READ WHAT HE IS SAYING https://t.co/tL0Px5g1qJ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal/legal dispute between private individuals with no US political, electoral, or policy content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2059769946310389777",
-      "post_url": "https://x.com/i/web/status/2059769946310389777",
-      "created_at": "2026-05-29T19:01:16+00:00",
-      "post_text": "Hi, it's me, I'm the reason https://t.co/Uku223rsyI",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post contains only a self-referential claim without naming any US politician, agency, policy, or election-related content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060321540911096108",
-      "post_url": "https://x.com/i/web/status/2060321540911096108",
-      "created_at": "2026-05-29T19:01:14+00:00",
-      "post_text": "Remember that 19 Yazidi girls were burned alive in iron cages by ISIS for refusing to convert to Islam and become sex slaves.\n\nISIS paraded them through the streets of Mosul, then burned them in front of hundreds of people.\n\nNot a single Muslim or Palestinian activist protested https://t.co/FAVJ2PMSGR",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes historical violence by ISIS and makes a claim about activist responses, but contains no reference to US politicians, 2026 midterms, federal policy, election integrity, or US political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060393122522431978",
-      "post_url": "https://x.com/i/web/status/2060393122522431978",
-      "created_at": "2026-05-29T19:01:13+00:00",
-      "post_text": "NEW:\n\nI just got this notification that Candace Owens joined Telegram. \n\nA lot of people use Telegram. It\u2019s a Russian encrypted messaging app that lets you delete and hide your communications with timed deletions. \n\nInteresting how Candace Owens joined Telegram right before she https://t.co/zzTEGWVG3b https://t.co/Nj1WROMFoP",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is incomplete and ends with a link that the reader must click to understand the claim being made, making it impossible to evaluate the specific assertion without viewing unseen media.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060014895173697543",
-      "post_url": "https://x.com/i/web/status/2060014895173697543",
-      "created_at": "2026-05-29T19:01:10+00:00",
-      "post_text": "Last time i checked im not #red. https://t.co/b8IRbdoQQ0",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post is a personal statement with no reference to US politicians, policy, elections, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
