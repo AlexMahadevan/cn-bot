@@ -28,9 +28,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 # The DB lives at template-api-note-writer/data/notes.db.
-# This script is at template-api-note-writer/dashboard/src/data/bot.json.py.
+# This script is at template-api-note-writer/dashboard/tools/build_bot_json.py.
 HERE = Path(__file__).resolve()
-DB_PATH = Path(os.environ.get("CN_BOT_DB", HERE.parent.parent.parent.parent / "data" / "notes.db"))
+DB_PATH = Path(os.environ.get("CN_BOT_DB", HERE.parent.parent.parent / "data" / "notes.db"))
 
 
 def bucket_refusal(reason: str | None) -> str:
