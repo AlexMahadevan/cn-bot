@@ -5,6 +5,8 @@ toc: false
 
 # Watching a bot attempt to fact-check
 
+***[Please support the work of the Poynter Institute and MediaWise.](https://poynterfoundation.fundjournalism.org/mediawise/) Tokens are expensive, but supporting journalism, a free society and a healthy information ecosystem is priceless.***
+
 ```js
 const bot = FileAttachment("./data/bot.json").json();
 ```
