@@ -102,6 +102,4 @@ Those are the things the architecture handles, and they're the things X raters p
 - **Judge.** Claude Opus 4.7 scored all 9 candidates per tweet in one call, candidates labeled A–I and randomly ordered per tweet to mitigate position and self-preference bias.
 - **Axes.** Factual accuracy, style match, opinion neutrality, predicted helpfulness — all 0–5.
 
-A full methodology defense, including known limitations and what a fairer evaluation would do, will appear in the paper.
-
 Source code: [github.com/AlexMahadevan/cn-bot](https://github.com/AlexMahadevan/cn-bot). Replication scripts and raw scores are in the repo.
