@@ -16,7 +16,7 @@ This page shows what an AI Community Notes writer does in public, every day, in 
 <figure style="margin: 2rem 0;">
   <img src="./kind-raspberry-chickadee.jpg" alt="A grey-headed bird with a raspberry-pink chest perched on a mossy branch surrounded by raspberries." style="width: 100%; border-radius: 8px; display: block;" />
   <figcaption style="text-align: center; font-size: 0.85rem; color: var(--theme-foreground-muted); margin-top: 0.5rem; font-style: italic;">
-    Kind Raspberry Chickadee as imagined by Google Gemini. Raspberry chickadees aren't actually a real species — which is exactly the kind of detail this dashboard exists to catch.
+    Kind Raspberry Chickadee as imagined by Google Gemini. Raspberry chickadees aren't actually a real species.
   </figcaption>
 </figure>
 
