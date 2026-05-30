@@ -18,7 +18,7 @@ export default {
 
   // Top-level header / footer
   header: `<div style="font-weight: 600;">Watching a bot attempt to fact-check</div>
-           <div style="opacity: .7; font-size: 14px;">An open audit of @alexcnotes, an AI Community Notes writer</div>`,
+           <div style="opacity: .7; font-size: 14px;">An open audit of Kind Raspberry Chickadee, an AI Community Notes writer</div>`,
   footer: `<div style="opacity: .6;">
              Built by <a href="https://www.poynter.org/author/alex-mahadevan/">Alex Mahadevan</a> ·
              <a href="https://github.com/AlexMahadevan/cn-bot">source</a> ·

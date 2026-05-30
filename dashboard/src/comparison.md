@@ -43,7 +43,7 @@ Scores on 0–5. Pred-helpful is the headline column — the judge's estimate of
 
 The leaderboard above is zero-shot. No retrieval, no validators, just the model writing a note from a tweet. That's a fair comparison for "which model is best at note-writing," but it's not how a working bot operates. A working bot retrieves evidence, picks the best match, checks for opinion language, validates URLs, and decides whether to ship at all.
 
-I ran 332 test tweets through the full @alexcnotes pipeline with Claude Opus 4.7 as the writer. Six tweets passed all the filters and got notes; 326 were refused — most appropriately, for being off-beat. The six that shipped scored like this against the same judge:
+I ran 332 test tweets through the full Kind Raspberry Chickadee pipeline with Claude Opus 4.7 as the writer. Six tweets passed all the filters and got notes; 326 were refused — most appropriately, for being off-beat. The six that shipped scored like this against the same judge:
 
 | Setup | Factual | Style | Neutrality | Pred-helpful | n |
 |---|---|---|---|---|---|

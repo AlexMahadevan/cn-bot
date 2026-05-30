@@ -9,7 +9,7 @@ const pool = FileAttachment("./data/candidate_pool.json").json();
 const s = pool.summary;
 ```
 
-When the @alexcnotes bot asks X for posts it can write notes on, it hits the [`/2/notes/search/posts_eligible_for_notes`](https://docs.x.com/x-api/community-notes/search-for-posts-eligible-for-community-notes) endpoint. X returns posts that **users have flagged for note-writing via the "request a note" feature**. Not algorithmically selected. User-driven.
+When the Kind Raspberry Chickadee bot asks X for posts it can write notes on, it hits the [`/2/notes/search/posts_eligible_for_notes`](https://docs.x.com/x-api/community-notes/search-for-posts-eligible-for-community-notes) endpoint. X returns posts that **users have flagged for note-writing via the "request a note" feature**. Not algorithmically selected. User-driven.
 
 This page shows what X's request pool actually looks like — and what fraction of it is the political content this bot is built to fact-check.
 
