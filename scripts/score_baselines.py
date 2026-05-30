@@ -159,7 +159,9 @@ def main() -> None:
         models = list(item["models"].keys())
         rng_local = random.Random(item["note_id"])
         rng_local.shuffle(models)
-        labels = ["A", "B", "C", "D"][: len(models)]
+        # Support up to 26 candidates (A-Z) so cross-vendor leaderboards
+        # can score all models head-to-head in one judge call.
+        labels = [chr(ord("A") + i) for i in range(len(models))]
         candidates = [(label, item["models"][m]) for label, m in zip(labels, models)]
         label_to_model = dict(zip(labels, models))
 
@@ -180,7 +182,7 @@ def main() -> None:
                 schema=JudgeVerdict,
                 system=_JUDGE_SYSTEM,
                 model=OPUS_MODEL,
-                max_tokens=1500,
+                max_tokens=4000,
             )
         except Exception as e:
             logger.warning("Judge failed for %s: %s", item["note_id"], e)

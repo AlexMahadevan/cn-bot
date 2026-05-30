@@ -31,6 +31,8 @@ from typing import Iterable
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from note_writer.llm_util import HAIKU_MODEL, OPUS_MODEL, complete  # noqa: E402
+from note_writer.multivendor_clients import ALL_MODELS as MULTIVENDOR_MODELS  # noqa: E402
+from note_writer.multivendor_clients import generate_note as multivendor_generate  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -38,11 +40,15 @@ REPO = Path(__file__).resolve().parent.parent
 TRAIN_PATH = REPO / "data" / "cn_training.jsonl"
 OUT_PATH = REPO / "data" / "baselines.jsonl"
 
-MODEL_IDS = {
+ANTHROPIC_MODELS = {
     "opus": OPUS_MODEL,
     "sonnet": "claude-sonnet-4-6",
     "haiku": HAIKU_MODEL,
 }
+
+# Aliases the CLI accepts. Anthropic models route through `complete()`;
+# everything in MULTIVENDOR_MODELS routes through multivendor_generate().
+MODEL_IDS = {**ANTHROPIC_MODELS, **{k: k for k in MULTIVENDOR_MODELS}}
 
 # Hold out a fixed last-N for test so we don't leak training examples.
 # When we fine-tune, training uses train-set indices, eval uses test-set.
@@ -93,16 +99,23 @@ def _already_scored() -> set[tuple[str, str]]:
 
 
 def _generate_note(model_alias: str, tweet_text: str) -> str:
-    model_id = MODEL_IDS[model_alias]
     user_prompt = f"X post:\n\"\"\"\n{tweet_text}\n\"\"\"\n\nWrite the Community Note."
-    return complete(
-        user_prompt=user_prompt,
-        system=_BASELINE_SYSTEM,
-        model=model_id,
-        max_tokens=400,
-        adaptive_thinking=(model_alias == "opus"),  # Opus 4.7 supports adaptive; others don't need
-        effort="medium",
-    ).strip()
+    if model_alias in ANTHROPIC_MODELS:
+        return complete(
+            user_prompt=user_prompt,
+            system=_BASELINE_SYSTEM,
+            model=ANTHROPIC_MODELS[model_alias],
+            max_tokens=400,
+            adaptive_thinking=(model_alias == "opus"),
+            effort="medium",
+        ).strip()
+    if model_alias in MULTIVENDOR_MODELS:
+        return multivendor_generate(
+            model_alias=model_alias,
+            system=_BASELINE_SYSTEM,
+            user=user_prompt,
+        ).strip()
+    raise ValueError(f"Unknown model alias: {model_alias}")
 
 
 def main() -> None:
