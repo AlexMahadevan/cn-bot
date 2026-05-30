@@ -57,22 +57,41 @@ NOT a specific falsifiable claim:
 
 When the post text is short and gestures at a linked image/video without making the claim in words, mark has_specific_claim=false. The bot cannot see the linked media.
 
+If the post includes a "Linked article" section below the post text, use it ONLY to understand what claim the post is implicitly endorsing — the post is treated as sharing/amplifying that article. The CLAIM is then the article's central factual assertion, and claim_text should restate that claim. A linked article does NOT make a vague reaction noteable on its own — the article must contain a specific, falsifiable factual claim that a fact-checker could verify or refute from independent sources.
+
 When the post quotes someone, makes a numeric claim, names a specific event or action, or asserts a stated fact, mark has_specific_claim=true and restate the checkable claim in claim_text.
 
 Return JSON."""
 
 
-def has_specific_claim(post_text: str) -> tuple[bool, str, str]:
+def has_specific_claim(
+    post_text: str,
+    linked_content: str | None = None,
+) -> tuple[bool, str, str]:
     """Return (has_claim, claim_text, reason).
+
+    If linked_content is supplied, it is appended to the prompt as context
+    so Haiku can evaluate posts that share/amplify a linked article. The
+    rule about "no claim in image/video means skip" still applies — linked
+    article text is only used when we actually fetched it.
 
     has_claim=False means the post should be skipped — no note possible.
     """
     if not post_text or len(post_text.strip()) < 15:
         return False, "", "Post too short to contain a checkable claim."
 
+    if linked_content:
+        user_prompt = (
+            f"Post:\n{post_text}\n\n"
+            f"Linked article (use to understand what the post is amplifying):\n"
+            f"{linked_content.strip()}"
+        )
+    else:
+        user_prompt = f"Post:\n{post_text}"
+
     try:
         verdict = parse_json(
-            user_prompt=f"Post:\n{post_text}",
+            user_prompt=user_prompt,
             schema=SpecificityVerdict,
             system=_SYSTEM,
             model=HAIKU_MODEL,

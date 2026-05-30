@@ -42,6 +42,7 @@ from note_writer.error_check import check_note as check_note_for_hallucination
 from note_writer.opinion_check import passes_opinion_filter
 from note_writer.relevance_filter import is_on_beat
 from note_writer.specificity_check import has_specific_claim
+from note_writer.link_expander import expand_post_links
 
 logger = logging.getLogger(__name__)
 
@@ -324,11 +325,24 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         logger.info("Off-beat post %s: %s", post.post_id, reason)
         return NoteResult(post=post, refusal=f"Off-beat: {reason}")
 
-    # 2. Specificity gate — does the post TEXT make a falsifiable claim?
-    # This blocks posts like "Option for ICE riots. Just saying. [video]" whose
-    # claim lives in unseen media. Without this gate, the bot can keyword-match
-    # and write a note about something the post never actually asserted.
-    has_claim, claim_text, claim_reason = has_specific_claim(post.text)
+    # 2a. Link expansion — for posts that share a news article via t.co URL,
+    # follow the link and fetch the article text. Lets the specificity gate
+    # evaluate the post against what the article actually says, without
+    # loosening the rule about unfetched media (images, video, social posts).
+    try:
+        linked_content = expand_post_links(post.text)
+    except Exception as e:
+        logger.warning("link_expander errored for %s: %s", post.post_id, e)
+        linked_content = None
+    if linked_content:
+        logger.info("Linked article content for %s (%d chars)", post.post_id, len(linked_content))
+
+    # 2b. Specificity gate — does the post TEXT (plus any linked article text)
+    # make a falsifiable claim? This blocks posts like "Option for ICE riots.
+    # Just saying. [video]" whose claim lives in unseen media. Without this
+    # gate, the bot can keyword-match and write a note about something the
+    # post never actually asserted.
+    has_claim, claim_text, claim_reason = has_specific_claim(post.text, linked_content=linked_content)
     if not has_claim:
         logger.info("No specific claim in post %s: %s", post.post_id, claim_reason)
         return NoteResult(post=post, refusal=f"No specific falsifiable claim in post text: {claim_reason}")
@@ -400,6 +414,39 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         f"longer than {prose_budget} chars will be rejected. Count carefully. "
         "Return only the prose, or NO_NOTE."
     )
+
+    # Cache export hook for the cross-writer evaluation. When
+    # CN_BOT_PIPELINE_CACHE_FILE is set, dump the full pre-writer state
+    # (post + evidence + article + constructed prompt) to JSONL so the
+    # downstream eval can swap writers without re-running retrieval.
+    cache_path = os.getenv("CN_BOT_PIPELINE_CACHE_FILE", "").strip()
+    if cache_path:
+        try:
+            cache_record = {
+                "post_id": post.post_id,
+                "post_text": post.text,
+                "images_summary": images_summary,
+                "evidence": {
+                    "publisher_name": evidence.publisher_name,
+                    "publisher_site": evidence.publisher_site,
+                    "review_url": evidence.review_url,
+                    "review_title": evidence.review_title,
+                    "review_date": evidence.review_date,
+                    "evidence_tier": evidence.evidence_tier,
+                    "rating": evidence.rating,
+                    "claim_text": evidence.claim_text,
+                    "snippet": evidence.snippet,
+                },
+                "article_text": article_text,
+                "user_prompt": user_prompt,
+                "system_prompt": _NOTE_WRITER_SYSTEM,
+                "prose_budget": prose_budget,
+            }
+            Path(cache_path).parent.mkdir(parents=True, exist_ok=True)
+            with open(cache_path, "a") as f:
+                f.write(json.dumps(cache_record) + "\n")
+        except Exception as e:
+            logger.warning("Cache export failed for %s: %s", post.post_id, e)
 
     # Generator: by default Claude Opus 4.7. If CN_BOT_USE_FINETUNED=true is
     # set in the env AND the Modal endpoint URL is configured, route through
