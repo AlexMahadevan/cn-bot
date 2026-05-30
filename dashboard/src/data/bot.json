@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-30T13:58:41+00:00",
+  "generated_at": "2026-05-30T15:26:06+00:00",
   "totals": {
-    "posts": 1004,
-    "off_beat": 697,
-    "evidence_searched": 307,
-    "evidence_found": 174,
-    "notes_written": 13,
-    "submitted": 13
+    "posts": 1017,
+    "off_beat": 706,
+    "evidence_searched": 311,
+    "evidence_found": 173,
+    "notes_written": 14,
+    "submitted": 14
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1004
+      "count": 1017
     },
     {
       "label": "On-beat (US politics)",
-      "count": 307
+      "count": 311
     },
     {
       "label": "Evidence found",
-      "count": 174
+      "count": 173
     },
     {
       "label": "Note drafted",
-      "count": 13
+      "count": 14
     },
     {
       "label": "Submitted to X",
-      "count": 13
+      "count": 14
     }
   ],
   "by_day": [
@@ -65,37 +65,37 @@
     },
     {
       "day": "2026-05-30",
-      "posts": 130,
-      "submitted": 1,
+      "posts": 143,
+      "submitted": 2,
       "queued": 0,
-      "refused": 129,
+      "refused": 141,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 697
+      "count": 706
     },
     {
       "bucket": "Other",
-      "count": 125
+      "count": 129
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 105
+      "count": 104
     },
     {
       "bucket": "Opus declined to write",
-      "count": 55
+      "count": 53
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 7
+      "count": 8
     },
     {
       "bucket": "Too long (over 280 chars)",
-      "count": 1
+      "count": 2
     },
     {
       "bucket": "No fact-check found",
@@ -109,10 +109,26 @@
     },
     {
       "tier": "x_post",
-      "count": 84
+      "count": 83
     }
   ],
   "notes": [
+    {
+      "post_id": "2060488690179195311",
+      "post_url": "https://x.com/i/web/status/2060488690179195311",
+      "created_at": "2026-05-30T15:00:37+00:00",
+      "outcome": "submitted",
+      "post_text": "&gt; Cops quit on mass the month before \n\n&gt; Safest January ever recorded\n\nIt\u2019s like there\u2019s some sort of correlation here https://t.co/S2ZvoI4arl",
+      "note_text": "Snopes rated False the claim that NYPD officers staged a mass resignation effective January 2026 over political objections. Low morale and workforce decline stem from multiple longstanding factors. https://www.snopes.com/fact-check/nypd-resignitions-mamdani-win/",
+      "evidence_url": "https://www.snopes.com/fact-check/nypd-resignitions-mamdani-win/",
+      "evidence_publisher": "Snopes",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.disputed_claim_as_fact",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
     {
       "post_id": "2060514557307863315",
       "post_url": "https://x.com/i/web/status/2060514557307863315",
@@ -326,209 +342,89 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2060459579352269161",
-      "post_url": "https://x.com/i/web/status/2060459579352269161",
-      "created_at": "2026-05-30T13:57:43+00:00",
-      "post_text": "I like men. \n\n\u24d8 \ud835\udde2\ud835\uddf3\ud835\uddf3\ud835\uddf6\ud835\uddf0\ud835\uddf6\ud835\uddee\ud835\uddf9 \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\ude00\ud835\ude01\ud835\uddee\ud835\ude01\ud835\uddf2\ud835\uddf1 \ud835\ude01\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\uddf6\ud835\ude00 \ud835\ude01\ud835\uddff\ud835\ude02\ud835\uddf2",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal statement with no connection to US politicians, the 2026 midterms, federal policy, election integrity, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060361053960044765",
-      "post_url": "https://x.com/i/web/status/2060361053960044765",
-      "created_at": "2026-05-30T13:57:41+00:00",
-      "post_text": "White people are now demonstrably the biggest victims of racism in Britain.",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a general sociological claim about Britain, not about US politicians, the 2026 midterms, federal/state policy, election integrity, or political misinformation related to US elections.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060372922062295058",
-      "post_url": "https://x.com/i/web/status/2060372922062295058",
-      "created_at": "2026-05-30T13:57:40+00:00",
-      "post_text": "Mind you these mangakas don\u2019t even make half their own main leads look Japanese \ud83d\ude2d forget black and brown discourse for a second",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about manga creators and character design in anime/manga, which is an entertainment topic unrelated to US politics or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060407919380713774",
-      "post_url": "https://x.com/i/web/status/2060407919380713774",
-      "created_at": "2026-05-30T13:57:38+00:00",
-      "post_text": "&gt;Run on biggest deportation program in history.\n&gt;Badly failing at this currently.\n&gt;\"WOW you're just being unrealistic!\" https://t.co/7QT4JcinIQ",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes vague commentary about a deportation program without specific numbers, dates, or checkable assertions; it relies on a linked source to convey its actual claim.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060492298949922902",
-      "post_url": "https://x.com/i/web/status/2060492298949922902",
-      "created_at": "2026-05-30T13:57:34+00:00",
-      "post_text": "BREAKING: Hollywood director Steven Spielberg says the truth about UFOs will \"dislocate society\" and cause humans to question their religions. https://t.co/j2oYmsgpb5",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post is about a celebrity's personal statement on UFOs and religion, with no connection to US politicians, elections, federal policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2059762564775481604",
-      "post_url": "https://x.com/i/web/status/2059762564775481604",
-      "created_at": "2026-05-30T13:57:33+00:00",
-      "post_text": "This is Mars on sol 1353.\n\nThe 1,353rd Martian day of Curiosity's life on the Red Planet.\n\nCuriosity fired off 18 images with its mast-mounted Navcam, stitched into one seamless mosaic of a world 140 million miles from your couch.\n\nThat weird machinery in the frame? That's the https://t.co/IscfG66Bni",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about NASA's Mars rover Curiosity and contains no US political content, politicians, elections, or policy claims.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060134051911016713",
-      "post_url": "https://x.com/i/web/status/2060134051911016713",
-      "created_at": "2026-05-30T13:57:31+00:00",
-      "post_text": "Look up . The sky is putting on a show you won't see again until 2028.\n\nA rare Blue Moon is rising on May 30, peaking in the early hours of May 31 at 8:45 UTC.\n\nIt's the second full moon of May, and the first time two full moons have shared a single calendar month since August https://t.co/Hur0EzmtFp",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a celestial event (Blue Moon) with no connection to US politics, politicians, elections, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060487714030387584",
-      "post_url": "https://x.com/i/web/status/2060487714030387584",
-      "created_at": "2026-05-30T13:57:30+00:00",
-      "post_text": "Ocelot tries to hunt pig who\u2019s too fat to care https://t.co/DQqnXhxESN",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a wildlife/animal content post with no US political figures, election, or policy angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060226284500955291",
-      "post_url": "https://x.com/i/web/status/2060226284500955291",
-      "created_at": "2026-05-30T13:57:28+00:00",
-      "post_text": "Madrasas in India, China &amp; USA\n\nIndia - 24010\nUSA - 200\nChina - 20\n\nThis is why the USA and China developed more than India",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses international education statistics and economic development comparisons between countries with no mention of US politicians, the 2026 midterms, federal policy, or election-related content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060421791479222448",
-      "post_url": "https://x.com/i/web/status/2060421791479222448",
-      "created_at": "2026-05-30T13:57:27+00:00",
-      "post_text": "Isn\u2019t this Akwa-Ocha??\n@nzemmili https://t.co/Sf8DG2mosr",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This appears to be a personal question about a food or beverage product with no US political content or figures mentioned.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060556106984980505",
-      "post_url": "https://x.com/i/web/status/2060556106984980505",
-      "created_at": "2026-05-30T13:57:26+00:00",
-      "post_text": "This is the creativity that restores passion to the soul \ud83d\ude0d\ud83d\udc99\ud83d\udc4c! https://t.co/ZYz0AA01ok",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a generic inspirational post about creativity with no US political content, politicians, policy, or 2026 election references.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060599888727973927",
-      "post_url": "https://x.com/i/web/status/2060599888727973927",
-      "created_at": "2026-05-30T13:57:25+00:00",
-      "post_text": "Lamine\u2019s girlfriend\u2019s brother in the video said:\n\n\u201cHi Stefano, how are you? I\u2019m In\u00e9s\u2019s little brother, and I\u2019m here to tell you that she is in love with you. When she saw you on TikTok, she couldn\u2019t stop telling me how handsome you are. My sister is 20 years old, she studies https://t.co/HW5Rm0abYo https://t.co/afUI9nHVDO",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a personal romantic situation between private individuals with no connection to US politicians, elections, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
       "post_id": "2060511643394506899",
       "post_url": "https://x.com/i/web/status/2060511643394506899",
-      "created_at": "2026-05-30T13:57:24+00:00",
+      "created_at": "2026-05-30T15:25:09+00:00",
       "post_text": "We want the Death Penalty for anyone who rapes a child.",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a general policy opinion statement with no attribution to a specific US politician, agency, campaign, or 2026 midterm context.",
+      "refusal_reason": "Off-beat: This is a general policy opinion with no reference to specific US politicians, legislation, agencies, or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060618539300524396",
       "post_url": "https://x.com/i/web/status/2060618539300524396",
-      "created_at": "2026-05-30T13:57:22+00:00",
+      "created_at": "2026-05-30T15:25:08+00:00",
       "post_text": "I smell a rat. A very big rat\u2026 https://t.co/VtTPT5DvYd",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains only a vague metaphorical statement with no identifiable political content, US officials, policy claims, or election-related information.",
+      "refusal_reason": "Off-beat: The post is a vague statement without any reference to US politicians, policy, elections, or political figures.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060352961629524123",
       "post_url": "https://x.com/i/web/status/2060352961629524123",
-      "created_at": "2026-05-30T13:57:21+00:00",
+      "created_at": "2026-05-30T15:25:07+00:00",
       "post_text": "Western hypocrisy https://t.co/AfS8jBNZf1",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague headline with no specific US political figures, agencies, policies, or 2026 midterm content mentioned.",
+      "refusal_reason": "Off-beat: The post is a vague link without political content, US officials, or 2026 midterm context; without additional context it cannot be classified as on-beat.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060450357583483249",
       "post_url": "https://x.com/i/web/status/2060450357583483249",
-      "created_at": "2026-05-30T13:57:20+00:00",
+      "created_at": "2026-05-30T15:25:05+00:00",
       "post_text": "The original is too easy. All the good stuff is in Region E.\n\nI made a more difficult version: https://t.co/a8vKtggEQK https://t.co/iEnOgQ6WmA",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post appears to be about a game, puzzle, or hobby activity with no political content or US political figures mentioned.",
+      "refusal_reason": "Off-beat: This post appears to be about a game or puzzle with difficulty levels and regions, with no reference to US politics, politicians, elections, or policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060452366978015486",
       "post_url": "https://x.com/i/web/status/2060452366978015486",
-      "created_at": "2026-05-30T13:57:19+00:00",
+      "created_at": "2026-05-30T15:25:04+00:00",
       "post_text": "He\u2019s about to hit the jackpot with that claim https://t.co/d7DtzNnyqT",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains only a vague reference without identifying any US politician, agency, policy, or election-related claim, making it impossible to determine if it concerns US politics.",
+      "refusal_reason": "Off-beat: Post contains no identifiable political figures, claims, policies, or 2026 midterm content\u2014it's too vague and appears to reference an external link without context.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060555551323361384",
       "post_url": "https://x.com/i/web/status/2060555551323361384",
-      "created_at": "2026-05-30T13:57:17+00:00",
+      "created_at": "2026-05-30T15:25:02+00:00",
       "post_text": "It was an honor to voice Hatsune Miku\u2026 https://t.co/5bWilrEC7s",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about voicing a fictional virtual music character and has no connection to US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post is about voicing a virtual music character and is purely entertainment-related with no US political content.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060444461037994397",
       "post_url": "https://x.com/i/web/status/2060444461037994397",
-      "created_at": "2026-05-30T13:57:16+00:00",
+      "created_at": "2026-05-30T15:25:01+00:00",
       "post_text": "\ud83d\udea8 \u203c\ufe0f Spoiler Alert\ud83d\udea8\u203c\ufe0f :\n\nIt\u2019s not a mosque.\n\nIt\u2019s a community centre. And it houses a foodbank.\n\nMore Reform lies.\n\nThey will spout any old bollocks to stir hate. https://t.co/vn2oaSBdpR",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses UK politics (Reform party) and has no US political angle, making it off-beat for a US 2026 midterms-focused service.",
+      "refusal_reason": "Off-beat: This post discusses UK politics (Reform party) with no US political angle, federal policy, or 2026 midterm relevance.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060453413637284195",
       "post_url": "https://x.com/i/web/status/2060453413637284195",
-      "created_at": "2026-05-30T13:57:14+00:00",
+      "created_at": "2026-05-30T15:24:59+00:00",
       "post_text": "\ud83d\udea8 A video of Arsenal training today in preparation for the UCL final against PSG. https://t.co/1YmqBPJF8q",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a European soccer team's training session and has no connection to US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post is about European soccer/football teams and their preparation for a sporting event, with no US political content.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060442309452333505",
       "post_url": "https://x.com/i/web/status/2060442309452333505",
-      "created_at": "2026-05-30T13:57:13+00:00",
+      "created_at": "2026-05-30T15:24:58+00:00",
       "post_text": "This is Nate Paul.\n\nHe was under FBI investigation for fraud. His real estate empire was collapsing after 18 properties filed for bankruptcy in a single year.\n\nHe wrote Ken Paxton a $25,000 check.\n\nThen Paxton directed his AG\u2019s office to hand Paul confidential investigative https://t.co/TIwTj1WpUr",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
@@ -538,40 +434,160 @@
     {
       "post_id": "2060414557642756452",
       "post_url": "https://x.com/i/web/status/2060414557642756452",
-      "created_at": "2026-05-30T13:57:04+00:00",
+      "created_at": "2026-05-30T15:24:50+00:00",
       "post_text": "This literally never happened https://t.co/7TpJSgVOku",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains no identifiable claim, politician, policy, or political content\u2014just a denial with a broken link that cannot be evaluated for topic relevance.",
+      "refusal_reason": "Off-beat: The post contains only a negation and a link with no visible context about the topic being discussed, making it impossible to determine if it concerns US politics.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060594745358110993",
       "post_url": "https://x.com/i/web/status/2060594745358110993",
-      "created_at": "2026-05-30T13:57:02+00:00",
+      "created_at": "2026-05-30T15:24:48+00:00",
       "post_text": "They literally don\u2019t even make sense considering Ho-Oh created them as they are https://t.co/qqwMm5wnCn",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses Pok\u00e9mon lore (Ho-Oh is a fictional creature), not US politics or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post discusses Pok\u00e9mon lore (Ho-Oh), which is entertainment/gaming content with no US political angle.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060377765518422138",
       "post_url": "https://x.com/i/web/status/2060377765518422138",
-      "created_at": "2026-05-30T13:56:58+00:00",
+      "created_at": "2026-05-30T15:24:46+00:00",
       "post_text": "In America, \u201cFree Speech\u201d means you cannot criticise the government or you\u2019ll get sent to a prison camp https://t.co/Bvz20OaWBI https://t.co/SxKZAwqb4G",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes a sarcastic or hyperbolic commentary about free speech in America rather than a specific, falsifiable factual claim; the meaning depends on clicking the linked media to understand what incident the author is referencing.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post makes a sweeping, sarcastic generalization about American free speech rather than a specific, falsifiable factual claim; it gestures at linked media whose content is not visible to verify.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060460479185915923",
       "post_url": "https://x.com/i/web/status/2060460479185915923",
-      "created_at": "2026-05-30T13:56:54+00:00",
+      "created_at": "2026-05-30T15:24:42+00:00",
       "post_text": "No White man wants to Die for a jew\n\nThey should enact a military coup and hang Zelensky https://t.co/aFZMKZpSS7",
+      "refusal_bucket": "URL validator rejected (hallucination guard)",
+      "refusal_reason": "No specific falsifiable claim in post text: The post contains inflammatory opinion and a call to action, but makes no specific, falsifiable factual claim that can be fact-checked. It relies on a linked URL that cannot be assessed, and expresses anti-Semitic sentiment and a call for violent political action rather than stating a verifiable fact about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060680677968781540",
+      "post_url": "https://x.com/i/web/status/2060680677968781540",
+      "created_at": "2026-05-30T15:24:38+00:00",
+      "post_text": "@TeamTalaricoHQ @grok confirm that Ken Paxton wasn't involved in Nate Paul's business ventures and was not charged in Paul's case. Confirm that Paul pled guilty to making a false statement and did not receive any jail time. Confirm neither the FBI nor the DOJ alleged that Paxton did anything",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post contains inflammatory rhetoric and calls for violence but makes no specific, falsifiable factual claim that can be verified; it is an opinion/exhortation rather than a statement of fact about a real event or status.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a request directed at @grok to confirm multiple claims, rather than a direct assertion of facts by the poster; the meaning depends on understanding what confirmation Grok provides, and the post functions as a prompt for verification rather than an independent factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060608519066591454",
+      "post_url": "https://x.com/i/web/status/2060608519066591454",
+      "created_at": "2026-05-30T15:24:36+00:00",
+      "post_text": "True john Ruth https://t.co/KWamvYUZmm",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This appears to be a reference to a fictional character (John Ruth from Tarantino's 'The Hateful Eight') with a shortened URL, containing no US political content, politicians, or election-related claims.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060599880683319713",
+      "post_url": "https://x.com/i/web/status/2060599880683319713",
+      "created_at": "2026-05-30T15:24:34+00:00",
+      "post_text": "This is Viny a resident in Barking. His 9 year old daughter had her packed lunch CONFISCATED because she had a ham sandwich! Pork is banned in Eastbury School in Barking. When Viny went to see the head teacher he was told they would call the police - his daughter was sobbing so https://t.co/iQSRJtVPjW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a local school incident with no connection to US politicians, federal policy, the 2026 midterms, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060078172645777670",
+      "post_url": "https://x.com/i/web/status/2060078172645777670",
+      "created_at": "2026-05-30T15:24:32+00:00",
+      "post_text": "\u201cIt\u2019s pretty well-documented that they didn't stay together much at all, and I believe she had her own home for most of the marriage\u2026\u201d\n\n@AndrewHammel1 on what Michael Jackson's brief marriage to Lisa Marie Presley tells us about him.\n\nWatch: \nhttps://t.co/F96HgI7HIW https://t.co/NCimxj5Rcu",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses Michael Jackson and Lisa Marie Presley's personal relationship, which is entertainment/celebrity gossip with no US political content.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060568780636578240",
+      "post_url": "https://x.com/i/web/status/2060568780636578240",
+      "created_at": "2026-05-30T15:24:31+00:00",
+      "post_text": "Gad Saad's Rate My Professor page is hilarious. \n\nNearly half of the students give him a one, the lowest possible score.\n\nApparently, he doesn't teach anything and just rants about wokeness in his marketing class, sometimes digressing to brag about his book sales. The material is https://t.co/UGeYeM3Ovv",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses a professor's teaching reviews and classroom conduct with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060574533963149786",
+      "post_url": "https://x.com/i/web/status/2060574533963149786",
+      "created_at": "2026-05-30T15:24:30+00:00",
+      "post_text": "BREAKING: Attempted hijacking, (squawk code 7500) reported on United Airlines flight from Chicago to Minneapolis.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a breaking news report about an aviation incident with no connection to US politicians, elections, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060450738434691491",
+      "post_url": "https://x.com/i/web/status/2060450738434691491",
+      "created_at": "2026-05-30T15:24:29+00:00",
+      "post_text": "@ConceptualJames 84% of Bolsheviks were jewish. You're not entitled to your own facts because it's inconvenient for your grift.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post makes a historical claim about Bolshevism unrelated to US politicians, 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060579670639149195",
+      "post_url": "https://x.com/i/web/status/2060579670639149195",
+      "created_at": "2026-05-30T15:24:28+00:00",
+      "post_text": "Update from Attorney General Jennifer Davenport on Public Safety Efforts at Delaney Hall. https://t.co/FP0haQrESy",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a generic announcement that gestures to a link without stating any specific, falsifiable claim in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060471739683901556",
+      "post_url": "https://x.com/i/web/status/2060471739683901556",
+      "created_at": "2026-05-30T15:24:23+00:00",
+      "post_text": "\ud83d\udea8NY Giants\u2019 Abdul Carter EXPOSES Himself as a Petty Divider After SLAMMING Teammate Jaxson Dart for Speaking at Trump Rally:\ud83d\udea8\n\n\u201cIf he chooses to align himself with a man like Trump, it\u2019s my responsibility\u2026 to show my teammates that I\u2019m against that, and to show the world.\u201d https://t.co/8PfDcMWdZ4",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about NFL players and their personal political views, not about US politicians, campaigns, policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060482291076301107",
+      "post_url": "https://x.com/i/web/status/2060482291076301107",
+      "created_at": "2026-05-30T15:24:22+00:00",
+      "post_text": "CLAIM: There is an ongoing hunger strike among the inmates at Delaney.\n\nFACT: There is NO hunger strike at Delaney Hall. All detainees are provided with 3 meals a day. Meals are certified by dietitians.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns an internal facility management claim unrelated to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060134026556375543",
+      "post_url": "https://x.com/i/web/status/2060134026556375543",
+      "created_at": "2026-05-30T15:24:21+00:00",
+      "post_text": "The DEFINITIVE Deep Dive on Every Michael Jackson Allegation from 1993, 2003, and 2013, with @AndrewHammel1\n\nWATCH: https://t.co/wDdhh6cNO5",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about Michael Jackson allegations and entertainment history, with no connection to US politicians, 2026 midterms, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060570691527942200",
+      "post_url": "https://x.com/i/web/status/2060570691527942200",
+      "created_at": "2026-05-30T15:24:17+00:00",
+      "post_text": "Animation studio CloverWorks is holding an Industry Panel !\n\nOn July 4 at Anime Expo at Los Angeles, CloverWorks is set to unveil major updates for some of its biggest projects, including:\n\n- WIND BREAKER Season 3\n- The Fragrant Flower Blooms With Dignity S2\n- My Dress-Up Darling https://t.co/hdIefBnHRN",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about animation studio announcements and anime projects with no US political content, figures, or policy implications.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
