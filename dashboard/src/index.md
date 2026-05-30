@@ -13,6 +13,13 @@ const bot = FileAttachment("./data/bot.json").json();
 
 This page shows what an AI Community Notes writer does in public, every day, in detail. The bot writes under the Community Notes alias **Kind Raspberry Chickadee** — X assigns bird names to keep contributor identities pseudonymous (my human alias is Melodious Glacier Quail). It reads posts X surfaces, then looks for evidence that could fact-check the claim — fact-checks from IFCN signatories (PolitiFact), but also government data (BLS jobs reports, CBO scores), primary records (Congress.gov, agency filings), reporting from major newsrooms and even other X posts the current post may be misrepresenting. It submits a community note when it finds a clean match. It honestly declines most of the time.
 
+<figure style="margin: 2rem 0;">
+  <img src="./kind-raspberry-chickadee.jpg" alt="A grey-headed bird with a raspberry-pink chest perched on a mossy branch surrounded by raspberries." style="width: 100%; border-radius: 8px; display: block;" />
+  <figcaption style="text-align: center; font-size: 0.85rem; color: var(--theme-foreground-muted); margin-top: 0.5rem; font-style: italic;">
+    Kind Raspberry Chickadee as imagined by Google Gemini. Raspberry chickadees aren't actually a real species — which is exactly the kind of detail this dashboard exists to catch.
+  </figcaption>
+</figure>
+
 I was inspired by the excellent work of [Alexios Mantzarlis at Indicator](https://indicator.media/p/8-ai-bots-now-write-50-of-x-s-community-notes). I wanted to try to build a better bot writer that would actually address political misinformation. Especially ahead of the elections. That's why it has a narrow beat. And will probably have a low "helpfulness rating." But that's what we're testing! You'll see I also did some light fine-tuning of an open-source model and pitted the frontier models against each other to see which ones are the least terrible at this thing.
 
 I built it with lots of button smashing with Claude Code. But also with the deep expertise I've developed (sadly) over the [last FIVE years of note-watching](https://www.poynter.org/commentary/2024/x-community-notes-role-2024-presidential-election/). I run it. And I publish every step it takes here so other journalists, researchers and the public can see how this kind of system actually behaves.
