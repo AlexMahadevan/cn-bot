@@ -11,6 +11,7 @@ export default {
   // Show in the sidebar
   pages: [
     { name: "Dashboard", path: "/" },
+    { name: "What X surfaces", path: "/pool" },
     { name: "How it compares", path: "/comparison" },
     { name: "How it works", path: "/methodology" },
   ],
