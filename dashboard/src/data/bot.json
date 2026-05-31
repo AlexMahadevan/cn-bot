@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-30T22:08:18+00:00",
+  "generated_at": "2026-05-31T11:26:21+00:00",
   "totals": {
-    "posts": 1124,
-    "off_beat": 786,
-    "evidence_searched": 338,
-    "evidence_found": 186,
-    "notes_written": 14,
-    "submitted": 14
+    "posts": 1229,
+    "off_beat": 870,
+    "evidence_searched": 359,
+    "evidence_found": 194,
+    "notes_written": 15,
+    "submitted": 15
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1124
+      "count": 1229
     },
     {
       "label": "On-beat (US politics)",
-      "count": 338
+      "count": 359
     },
     {
       "label": "Evidence found",
-      "count": 186
+      "count": 194
     },
     {
       "label": "Note drafted",
-      "count": 14
+      "count": 15
     },
     {
       "label": "Submitted to X",
-      "count": 14
+      "count": 15
     }
   ],
   "by_day": [
@@ -65,33 +65,41 @@
     },
     {
       "day": "2026-05-30",
-      "posts": 250,
+      "posts": 257,
       "submitted": 2,
       "queued": 0,
-      "refused": 248,
+      "refused": 255,
+      "errors": 0
+    },
+    {
+      "day": "2026-05-31",
+      "posts": 98,
+      "submitted": 1,
+      "queued": 0,
+      "refused": 97,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 786
+      "count": 870
     },
     {
       "bucket": "Other",
-      "count": 141
+      "count": 153
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 114
+      "count": 118
     },
     {
       "bucket": "Opus declined to write",
-      "count": 57
+      "count": 60
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 10
+      "count": 11
     },
     {
       "bucket": "Too long (over 280 chars)",
@@ -104,15 +112,31 @@
   ],
   "evidence_tiers": [
     {
-      "tier": "ifcn_verified",
-      "count": 92
+      "tier": "x_post",
+      "count": 97
     },
     {
-      "tier": "x_post",
-      "count": 90
+      "tier": "ifcn_verified",
+      "count": 93
     }
   ],
   "notes": [
+    {
+      "post_id": "2060733024556261627",
+      "post_url": "https://x.com/i/web/status/2060733024556261627",
+      "created_at": "2026-05-31T10:30:33+00:00",
+      "outcome": "submitted",
+      "post_text": "Trump stole the Resolute Desk. It belongs in the White House, not in his Florida club. He MUST return this national treasure NOW https://t.co/peH0GREmwT",
+      "note_text": "Snopes rated this Miscaptioned. Evidence overwhelmingly indicates the 1,300-pound Resolute Desk remains in the Oval Office and was not moved to Mar-a-Lago. https://www.snopes.com/fact-check/resolute-desk-moved-to-mar-a-lago/",
+      "evidence_url": "https://www.snopes.com/fact-check/resolute-desk-moved-to-mar-a-lago/",
+      "evidence_publisher": "Snopes",
+      "evidence_rating": "Miscaptioned",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.manipulated_media"
+      ]
+    },
     {
       "post_id": "2060488690179195311",
       "post_url": "https://x.com/i/web/status/2060488690179195311",
@@ -342,252 +366,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2060792411018633451",
-      "post_url": "https://x.com/i/web/status/2060792411018633451",
-      "created_at": "2026-05-30T22:07:12+00:00",
-      "post_text": "THE INSTANT LIKES????????? https://t.co/lQKajZgJrs",
+      "post_id": "2060919685642617182",
+      "post_url": "https://x.com/i/web/status/2060919685642617182",
+      "created_at": "2026-05-31T11:25:46+00:00",
+      "post_text": "Wemby already top 5 Muslim",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post lacks substantive political content and appears to be commentary on social media engagement metrics rather than US politics or misinformation.",
+      "refusal_reason": "Off-beat: This post is about a sports figure (likely NBA player Victor Wembanyama) and has no connection to US politics, 2026 midterms, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060792407281516864",
-      "post_url": "https://x.com/i/web/status/2060792407281516864",
-      "created_at": "2026-05-30T22:07:11+00:00",
-      "post_text": "BREAKING: Giannis Antetokounmpo wants to be traded to the Miami Heat, per @GrantLiffmann https://t.co/y9Ihfj5xI6",
+      "post_id": "2060913813180879290",
+      "post_url": "https://x.com/i/web/status/2060913813180879290",
+      "created_at": "2026-05-31T11:25:45+00:00",
+      "post_text": "\ud83d\udea8 BREAKING: The Eiffel Tower is engulfed by a massive plume of smoke following a large fire on the Seine Quays! \ud83d\ude31 The situation is escalating rapidly in Paris right now. \ud83c\uddeb\ud83c\uddf7  https://t.co/gP4eqboJ0o",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about professional basketball player trade rumors, which is a sports topic unrelated to US politics or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post is about a foreign incident in Paris with no connection to US politics, politicians, or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060798711379136588",
-      "post_url": "https://x.com/i/web/status/2060798711379136588",
-      "created_at": "2026-05-30T22:07:10+00:00",
-      "post_text": "\ud83d\udca5NEW: Nick Shirley DESTROYS NYC Protester\ud83e\udd23\n\nPROTESTER: \u201cIf I showed up to your kids\u2019 house with cameras demanding to see the kids, would you think that was creepy?\u201d\n\nSHIRLEY: \u201cThe point is there was no kids \u2026 You\u2019re defending fraud right now.\u201d https://t.co/BL51FbnVYY",
+      "post_id": "2060811368325087651",
+      "post_url": "https://x.com/i/web/status/2060811368325087651",
+      "created_at": "2026-05-31T11:25:44+00:00",
+      "post_text": "\ud83d\udea8\ud83c\udf99\ufe0fWayne Rooney: \u201cArsenal have been robbed tonight\u201d \ud83e\udd2f\n\nRooney \ud83d\udde3\ufe0f \u201cI\u2019ll be completely honest, Arsenal were absolutely robbed tonight, there is no other way to put it. You look at that foul on Noni Madueke in the box; it\u2019s a stonewall, 100% clear penalty. How the referee or VAR https://t.co/JpdITYu0KX",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a sports referee decision in a football (soccer) match and contains only sports commentary with no US political content.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060247225725341838",
+      "post_url": "https://x.com/i/web/status/2060247225725341838",
+      "created_at": "2026-05-31T11:25:42+00:00",
+      "post_text": "Indians not being creepy for 1 second challenge: level impossible https://t.co/t9bas5AiRL",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is a generic internet meme/joke about cultural stereotypes with no connection to US politics, politicians, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060826291666874857",
+      "post_url": "https://x.com/i/web/status/2060826291666874857",
+      "created_at": "2026-05-31T11:25:36+00:00",
+      "post_text": "LMAOO my lil sister boyfriend is so funny \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d https://t.co/1NJcx08hRL",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about a family member's boyfriend with no political content or US political figures mentioned.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060671881645084719",
+      "post_url": "https://x.com/i/web/status/2060671881645084719",
+      "created_at": "2026-05-31T11:25:35+00:00",
+      "post_text": "\ud83d\udd34WTF\n\u201cA war broke out between Zimbabweans and South Africans in Mosselbay claiming 3 lives and houses burnt \ud83e\udd27\ud83e\udd27 https://t.co/gtSh1NM7y8",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post describes a foreign conflict in Zimbabwe and South Africa with no connection to US politics, politicians, or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060724998269268314",
+      "post_url": "https://x.com/i/web/status/2060724998269268314",
+      "created_at": "2026-05-31T11:25:33+00:00",
+      "post_text": "Welcome to the  woke  liberal party today Lol \ud83d\ude02\ud83d\ude02 https://t.co/ZVhqXdNdMN",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to a quoted exchange that relies on the linked video to verify the context, claims, and 'destruction' being referenced; the text alone makes no independent, checkable factual assertion.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague, sarcastic commentary reacting to a linked image without stating any specific falsifiable claim in the text itself.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060530427773796737",
-      "post_url": "https://x.com/i/web/status/2060530427773796737",
-      "created_at": "2026-05-30T22:07:07+00:00",
-      "post_text": "This hacker in Battlefield 6 got caught slipping when both teams united to lock him in eternal death loops \ud83d\ude2d https://t.co/ohoD9AwHMm",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a video game (Battlefield 6) and gaming content, not US politics, politicians, or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060748200500179141",
-      "post_url": "https://x.com/i/web/status/2060748200500179141",
-      "created_at": "2026-05-30T22:07:06+00:00",
-      "post_text": "Denying Israel is using dogs to rape Palestinians is the moral equivalence of denying the Nazis murdered 6 millions. https://t.co/ouOBmz3gTy",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns foreign conflict (Israeli-Palestinian), not US politicians, 2026 midterms, federal policy, or election integrity.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060378340666532298",
-      "post_url": "https://x.com/i/web/status/2060378340666532298",
-      "created_at": "2026-05-30T22:07:05+00:00",
-      "post_text": "Different countries, one shared goal: making the internet safer for children &amp; teenagers.\n\nFor the first time, the G7 \u2013 \ud83c\udde8\ud83c\udde6\ud83c\uddeb\ud83c\uddf7\ud83c\udde9\ud83c\uddea\ud83c\uddee\ud83c\uddf9\ud83c\uddef\ud83c\uddf5\ud83c\uddec\ud83c\udde7\ud83c\uddfa\ud83c\uddf8\ud83c\uddea\ud83c\uddfa \u2013 agreed on common principles to protect minors online.\n\nThese principles build on existing measures, such as the #DSA: https://t.co/4nXcSCf4gO https://t.co/bbeDLndk7S",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about international G7 coordination on child online safety and references the EU Digital Services Act, with no mention of US politicians, elections, federal policy claims by US officials, or 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060710851095695646",
-      "post_url": "https://x.com/i/web/status/2060710851095695646",
-      "created_at": "2026-05-30T22:07:03+00:00",
-      "post_text": "A neurologist said:\n\n\u201cStick out your tongue for 40 seconds \u2014 this removes cortisol faster than any pills and breathing exercises.\n\nBig Pharm is panicking:\ud83e\uddf5 https://t.co/I9mxdCQlCb",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is a medical/health claim with no US politician, 2026 election, or political misinformation angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060376971247337849",
-      "post_url": "https://x.com/i/web/status/2060376971247337849",
-      "created_at": "2026-05-30T22:07:02+00:00",
-      "post_text": "\ud83c\udde8\ud83c\uddfa Cuba has done it again.\n\nMeet VAXIRA\u00ae \u2014 a therapeutic cancer vaccine developed by Cuban and Argentine scientists that helps the immune system recognise and destroy lung cancer cells. Approved in both Cuba and Argentina for advanced non-small cell lung cancer.\n\n\ud83d\udd2c It works by https://t.co/RZ2hCEi4yp",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a medical/scientific development in Cuba and Argentina with no US politician, agency, election, or policy angle mentioned.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060708907253702736",
-      "post_url": "https://x.com/i/web/status/2060708907253702736",
-      "created_at": "2026-05-30T22:07:01+00:00",
-      "post_text": "I am in tears. The National Anthem is being sung at President Trump\u2019s MASSIVE Rally in Iowa right now\n\nDonald Trump quite literally SAVED America\n\nMILLIONS feel it \u2764\ufe0f https://t.co/ii6TdT6H6U",
+      "post_id": "2060891761875005585",
+      "post_url": "https://x.com/i/web/status/2060891761875005585",
+      "created_at": "2026-05-31T11:25:30+00:00",
+      "post_text": "Protesting is a 1A right \u2014 destroying federal property isn\u2019t. https://t.co/xjn7qel68n",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post expresses emotional reaction and opinion ('in tears,' 'SAVED America,' 'MILLIONS feel it') without making a specific, falsifiable factual claim; the meaning depends on the linked video/image that cannot be verified without clicking.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post expresses a legal principle and opinion about constitutional rights without making a specific, falsifiable factual claim that can be fact-checked; it gestures at a link without stating a concrete claim in the text itself.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060541050897240414",
-      "post_url": "https://x.com/i/web/status/2060541050897240414",
-      "created_at": "2026-05-30T22:06:58+00:00",
-      "post_text": "\ud83d\udea8 IF THE NATIONAL DEFENSE AUTHORIZATION ACT PASSES, THE ISRAELI AND AMERICAN MILITARIES WILL MERGE! \n\nREAD SECTION 224 OF THE BILL. \n\nWE ARE BECOMING COLONIZED! https://t.co/Y3WL59YfPm",
+      "post_id": "2060900387893448780",
+      "post_url": "https://x.com/i/web/status/2060900387893448780",
+      "created_at": "2026-05-31T11:25:27+00:00",
+      "post_text": "The Eiffel Tower is burning\n\nParis is burning \n\nThousands of Mohammads are on street \n\nThey are turning France in their native place like Syria, Pakistan, Yemen, Sudan..\n\nThey are shouting-Allah-hu-Akbar \n\nDetect them. Detain them. Deport them. https://t.co/umlERc5FNM",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post describes events in France with no mention of US politicians, federal policy, elections, or US government action.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060750813325037986",
+      "post_url": "https://x.com/i/web/status/2060750813325037986",
+      "created_at": "2026-05-31T11:25:26+00:00",
+      "post_text": "my cat has been ramming his head into my boobs a lot lately and i've read stories about how pets sometimes warn their owners of cancerous tumors using the same method so i went to the doctor and got checked and found out that my cat is just a pervert",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about a pet and health, with no connection to US politics, politicians, elections, or policy.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060499197737193475",
+      "post_url": "https://x.com/i/web/status/2060499197737193475",
+      "created_at": "2026-05-31T11:25:25+00:00",
+      "post_text": "The Polish Atrocities Against the German Minority in Poland, compiled by Hans Schadewaldt and published in 1940 by order of the German Foreign Office through Volk und Reich Verlag in Berlin. \n\nThis book documents how Poles murdered, mutilated, raped, and tortured more than 58,000 https://t.co/YUjY2Iu7r2",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns historical events in Poland and Germany with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060381195074978123",
+      "post_url": "https://x.com/i/web/status/2060381195074978123",
+      "created_at": "2026-05-31T11:25:24+00:00",
+      "post_text": "@VerminusM @Eldin713 The Republic of Ireland exists. It has never invaded anyone, never bombed anyone, never interfered in other nations governments.\nSwitzerland likewise exists, never invaded anyone, never bombed anyone, never interfered with other Governments.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses foreign countries (Ireland and Switzerland) with no reference to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060861844894499270",
+      "post_url": "https://x.com/i/web/status/2060861844894499270",
+      "created_at": "2026-05-31T11:25:23+00:00",
+      "post_text": "Touch a cop and this FBI will put you down - thanks to @nicksortor for the video we used facial recognition technology and @FBI arrested a subject within 24 hours\nhttps://t.co/4aRJFd3xHB https://t.co/ew6JFNzKXi",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@FBIDirectorKash)"
     },
     {
-      "post_id": "2060640199949037848",
-      "post_url": "https://x.com/i/web/status/2060640199949037848",
-      "created_at": "2026-05-30T22:06:47+00:00",
-      "post_text": "The street finds its own uses for things. https://t.co/lEXAzvfF3c",
+      "post_id": "2060885548923830375",
+      "post_url": "https://x.com/i/web/status/2060885548923830375",
+      "created_at": "2026-05-31T11:25:12+00:00",
+      "post_text": "A glorious moment, we are taking it back. \u270a\ud83c\udffb https://t.co/S22Cs1zOHZ",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a generic quote about street culture/technology adoption with no connection to US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: The post contains only a vague slogan with an image link and no reference to US politicians, the 2026 midterms, federal policy, election integrity, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060605029002948771",
-      "post_url": "https://x.com/i/web/status/2060605029002948771",
-      "created_at": "2026-05-30T22:06:46+00:00",
-      "post_text": "Always chek your mirror https://t.co/hgQcAcMgxV",
+      "post_id": "2060855882423173208",
+      "post_url": "https://x.com/i/web/status/2060855882423173208",
+      "created_at": "2026-05-31T11:25:10+00:00",
+      "post_text": "Ronda Rousey enjoying her retirement check https://t.co/Iu0HE4Mg1k",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This appears to be a general safety/driving reminder with no reference to US politicians, elections, policy, or political misinformation.",
+      "refusal_reason": "Off-beat: Post about a celebrity athlete enjoying retirement is entertainment/sports content with no US political misinformation angle.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060713031269589353",
-      "post_url": "https://x.com/i/web/status/2060713031269589353",
-      "created_at": "2026-05-30T22:06:45+00:00",
-      "post_text": "If Miriam Adelson is the amazing, phenomemal America-First ally that Trump, JD Vance, Rubio and the Republican party say she is, then why is she massively financially backing James Talrico for the Senate race in Texas?\n\nExplain to me like I'm extra retarded.",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2060725136026644781",
-      "post_url": "https://x.com/i/web/status/2060725136026644781",
-      "created_at": "2026-05-30T22:06:35+00:00",
-      "post_text": "I got pregnant 3 months after dating a guy who immediately went back to his ex.\nWhen I told him, he was thrilled.\nHis girlfriend was even more excited.\nToo excited.\nShe started telling me how I'd give birth, how I'd feed the babies, what they'd call her, and how she'd be raising",
+      "post_id": "2060898158595780649",
+      "post_url": "https://x.com/i/web/status/2060898158595780649",
+      "created_at": "2026-05-31T11:25:09+00:00",
+      "post_text": "Grow a Garden 2 https://t.co/fqVFnV2H6w",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal anecdote about a relationship and pregnancy with no political content or US government/politician involvement.",
+      "refusal_reason": "Off-beat: Post about gardening is a lifestyle topic with no political content or connection to US politicians, elections, or policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060793495317545226",
-      "post_url": "https://x.com/i/web/status/2060793495317545226",
-      "created_at": "2026-05-30T22:06:34+00:00",
-      "post_text": "&gt;\u201dto help stop diseases\u201d\n&gt;releases the insect that is by far the most efficient at SPREADING DISEASES \n\n???? https://t.co/gj7hLYWNIH",
+      "post_id": "2060727116564508947",
+      "post_url": "https://x.com/i/web/status/2060727116564508947",
+      "created_at": "2026-05-31T11:25:08+00:00",
+      "post_text": "I have nothing against Poles and Poland quite the opposite but I will not be bullied into accepting myths which I am aware are being refuted by professional historians whose material I post and whose arguments I present.",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post criticizes a public health or disease control measure without naming specific US politicians, agencies, or 2026 election content; it appears to be general commentary on a controversial insect-release policy rather than political misinformation tied to US officials or campaigns.",
+      "refusal_reason": "Off-beat: This is a personal statement about historical arguments and Poland with no reference to US politicians, the 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060792940285264009",
-      "post_url": "https://x.com/i/web/status/2060792940285264009",
-      "created_at": "2026-05-30T22:06:32+00:00",
-      "post_text": "Andy Burnham is for them, not for you. \n\nVote Reform in Makerfield. https://t.co/5r3u5Nw7G3",
+      "post_id": "2060900656517468233",
+      "post_url": "https://x.com/i/web/status/2060900656517468233",
+      "created_at": "2026-05-31T11:25:07+00:00",
+      "post_text": "This Indie Dev has created a EXCITING and PRECISE SFW platforming game that requires skills to beat.  Also the ATMOSPHERE is incredibly SPOOKY.  This is why Indie Devs are beating Triple A Devs over and over again. https://t.co/iSrUPRvMVB",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UK politics (Andy Burnham is the Mayor of Greater Manchester, England) with no US political angle.",
+      "refusal_reason": "Off-beat: This post is about video game development and indie games, with no connection to US politicians, elections, policy, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060772470949310766",
-      "post_url": "https://x.com/i/web/status/2060772470949310766",
-      "created_at": "2026-05-30T22:06:31+00:00",
-      "post_text": "\ud83d\udea8LEAKED: PSG half time team talk after going down 1-0 to Arsenal in the #UCLFinal  https://t.co/qidMUaARED",
+      "post_id": "2060783446851797367",
+      "post_url": "https://x.com/i/web/status/2060783446851797367",
+      "created_at": "2026-05-31T11:25:06+00:00",
+      "post_text": "\u2018THE MANDALORIAN AND GROGU\u2019 will soon be lost media.\n\nLucasfilm is releasing the film on Disney+ as a 4 part miniseries with no plans for a physical release.\n\n(via: Deadline) https://t.co/igJGDIfT61",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a soccer/sports match between PSG and Arsenal, with no US political content or figures involved.",
+      "refusal_reason": "Off-beat: This post is about entertainment industry news regarding a Star Wars film release, with no US political content or connection to politicians, elections, or federal policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060747057204269235",
-      "post_url": "https://x.com/i/web/status/2060747057204269235",
-      "created_at": "2026-05-30T22:06:30+00:00",
-      "post_text": "Arteta overthinking gene has fucked us man, that rat Havertz shouldn\u2019t be starting at all",
+      "post_id": "2060839256201805878",
+      "post_url": "https://x.com/i/web/status/2060839256201805878",
+      "created_at": "2026-05-31T11:25:04+00:00",
+      "post_text": "\ud83c\uddeb\ud83c\uddf7 This is Paris tonight. A war zone.\n\nMuslims are literally destroying Europe.\n\nThis is a total war of conquest. https://t.co/ILalOQik6s",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses Arsenal football club management and player selection, which is sports content unrelated to US politics or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post is about foreign politics (France/Europe) with no US angle, US politician involvement, or connection to 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060727194436182518",
-      "post_url": "https://x.com/i/web/status/2060727194436182518",
-      "created_at": "2026-05-30T22:06:29+00:00",
-      "post_text": "The Anti-Data Center movement is largely inorganic foreign interference.",
+      "post_id": "2060835076808548659",
+      "post_url": "https://x.com/i/web/status/2060835076808548659",
+      "created_at": "2026-05-31T11:25:02+00:00",
+      "post_text": "Never be this guy https://t.co/IjqNC9nmC2",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses data centers and foreign interference in general activism, not US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: Post is a generic cautionary statement with no visible content, political figures, agencies, policies, or election-related claims.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060753620577251629",
-      "post_url": "https://x.com/i/web/status/2060753620577251629",
-      "created_at": "2026-05-30T22:06:28+00:00",
-      "post_text": "I have said a hundreds of times that fireman and firewoman Do Not get the credit that they deserve. Thank you to all that help and rescue us in desperate time of need.\n\nThe calmness of the Firefighter\u2019s voice. God Bless these Angels. https://t.co/qWZto8PfsR",
+      "post_id": "2060758318327427354",
+      "post_url": "https://x.com/i/web/status/2060758318327427354",
+      "created_at": "2026-05-31T11:25:01+00:00",
+      "post_text": "Absolutely Ridiculous! 10+ Cops Swarm Harmless Over 50s Gathering in Park, \u2018It\u2019s Illegal Activity!\u2019\n\nA group of over 50s having a peaceful gathering in the park get swarmed by more than 10 police officers because it\u2019s \u201cillegal activity.\u201d\n\nNo violence. No drugs. No disorder. Just https://t.co/4AIrsRQKhh",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal expression of appreciation for firefighters with no reference to US politicians, elections, federal policy, or political misinformation.",
+      "refusal_reason": "Off-beat: This post describes a local police response to a gathering with no mention of US politicians, policy, elections, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060116506000662545",
-      "post_url": "https://x.com/i/web/status/2060116506000662545",
-      "created_at": "2026-05-30T22:06:27+00:00",
-      "post_text": "PIP benefits set to be overhauled to push young claimants into work https://t.co/yl4KVJ7Iej",
+      "post_id": "2060665344277029092",
+      "post_url": "https://x.com/i/web/status/2060665344277029092",
+      "created_at": "2026-05-31T11:25:00+00:00",
+      "post_text": "Every woman\u2019s dream man\ud83e\udd0f\ud83c\udffd\ud83e\udd0f\ud83c\udffd https://t.co/13xJ0GsPtF",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses UK welfare policy (Personal Independence Payment), not US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This is a personal comment about physical attractiveness with no political content, context, or reference to US politicians or policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2060732182017245627",
-      "post_url": "https://x.com/i/web/status/2060732182017245627",
-      "created_at": "2026-05-30T22:06:26+00:00",
-      "post_text": "This is TREASON!! \ud83d\ude24\ud83e\udd2c https://t.co/22YS4OXvah",
+      "post_id": "2060745920489083079",
+      "post_url": "https://x.com/i/web/status/2060745920489083079",
+      "created_at": "2026-05-31T11:24:58+00:00",
+      "post_text": "I went on a blind date once and spent the entire dinner thinking he wasn't interested in me.\n\nHe barely looked up from his food, kept checking his phone, and our conversation felt awkward.\n\nI got home, removed my makeup, changed into pajamas, and was already drafting the",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about a blind date with no political content, figures, or policy discussion.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2060538398373228638",
+      "post_url": "https://x.com/i/web/status/2060538398373228638",
+      "created_at": "2026-05-31T11:24:57+00:00",
+      "post_text": "\ud83d\udea8 BREAKING EXCLUSIVE: I INFILTRATED the Antifa camp at Newark ICE with a hidden camera\n\nTens of THOUSANDS of dollars of equipment, food, and even RIOT EQUIPMENT has been supplied.\n\nHot food delivered every hour.\n\nARREST THE FUNDERS, AND THIS WILL STOP https://t.co/n1af46yQGo",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is purely an emotional reaction with no specific factual claim in the text itself; the meaning depends on viewing the linked media which the bot cannot access.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060751194742480998",
-      "post_url": "https://x.com/i/web/status/2060751194742480998",
-      "created_at": "2026-05-30T22:06:22+00:00",
-      "post_text": "\"The UN was able to verify 31 cases of rape and sexual violence primarily in detention settings, but also at checkpoints and during military operations against 14 men, seven women, nine boys, and one girl from the Gaza Strip and the WestBank. \n\nThis is part of a pattern of sexual https://t.co/UfLbtEFO9f",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UN findings about sexual violence in Gaza and the West Bank, which is foreign policy with no direct US politician, agency decision-maker, or 2026 midterm angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060169334291308713",
-      "post_url": "https://x.com/i/web/status/2060169334291308713",
-      "created_at": "2026-05-30T22:06:21+00:00",
-      "post_text": "TREASON \ud83d\udea8\n\nTrumps first year in office has seen the lowest amount of bills passed in modern American history \n\nTrump- (38)\nBiden- (122)\nObama- (125)\nBush - (109) \n\n(77.3M) Americans voted for Trump, not John Thune... he cannot continue on as Majority leader \n\nRemove John Thune https://t.co/S0fEvqT516",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2060462336771518644",
-      "post_url": "https://x.com/i/web/status/2060462336771518644",
-      "created_at": "2026-05-30T22:06:09+00:00",
-      "post_text": "Every country is trying to correct the South Africa issue\n\nMozambique blocks over 5,000 South African trucks from passing through its country. https://t.co/mDs7wqnnda",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is about foreign geopolitical tensions between southern African countries with no direct US political angle, official US government involvement, or 2026 midterm relevance.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post relies entirely on a linked video/image to substantiate its claims; the text alone makes only vague assertions about 'Antifa camp' and 'equipment' without specific, independently verifiable details like dates, named individuals, locations, quantities, or sources.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
