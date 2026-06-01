@@ -16,6 +16,7 @@ import json
 import logging
 import os
 import re
+import threading
 from pathlib import Path
 from typing import List, Optional
 
@@ -32,7 +33,8 @@ from note_writer.evidence import gather_for_post
 from note_writer.evidence_text import fetch_evidence_text
 from note_writer.llm_util import (
     HAIKU_MODEL,
-    OPUS_MODEL,
+    OPUS_MODEL,  # noqa: F401 — kept imported so reverting NOTE_WRITER_MODEL is one line
+    SONNET_MODEL,
     complete,
     describe_image,
     parse_json,
@@ -48,6 +50,16 @@ logger = logging.getLogger(__name__)
 
 URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
 NOTE_MAX_CHARS_INCLUDING_URL = 280
+
+# Guards concurrent appends to the eval cache (CN_BOT_PIPELINE_CACHE_FILE).
+_CACHE_WRITE_LOCK = threading.Lock()
+
+# Model that writes the note prose. Swapped Opus 4.7 -> Sonnet 4.6 on
+# 2026-06-01: the cross-writer benchmark (see dashboard comparison page) found
+# Sonnet retains ~77% of Opus's predicted-helpfulness inside this pipeline at
+# ~1/5 the per-note cost — the architecture flattens the model gap. Revert by
+# setting this back to OPUS_MODEL.
+NOTE_WRITER_MODEL = SONNET_MODEL
 
 _EXEMPLARS_PATH = Path(__file__).resolve().parent.parent / "exemplars.json"
 
@@ -443,15 +455,20 @@ def research_post_and_write_note(post: Post) -> NoteResult:
                 "prose_budget": prose_budget,
             }
             Path(cache_path).parent.mkdir(parents=True, exist_ok=True)
-            with open(cache_path, "a") as f:
-                f.write(json.dumps(cache_record) + "\n")
+            # Serialize appends: multi-KB records written concurrently (the
+            # cross-writer eval runs the pipeline with high concurrency) can
+            # otherwise interleave and corrupt JSONL lines.
+            with _CACHE_WRITE_LOCK:
+                with open(cache_path, "a") as f:
+                    f.write(json.dumps(cache_record) + "\n")
         except Exception as e:
             logger.warning("Cache export failed for %s: %s", post.post_id, e)
 
-    # Generator: by default Claude Opus 4.7. If CN_BOT_USE_FINETUNED=true is
-    # set in the env AND the Modal endpoint URL is configured, route through
-    # the fine-tuned Qwen 2.5 7B instead. Same downstream validators run
-    # either way, so swapping generators is safe — bad output gets caught.
+    # Generator: NOTE_WRITER_MODEL (Sonnet 4.6) by default. If
+    # CN_BOT_USE_FINETUNED=true is set in the env AND the Modal endpoint URL is
+    # configured, route through the fine-tuned Qwen 2.5 7B instead. Same
+    # downstream validators run either way, so swapping generators is safe —
+    # bad output gets caught.
     use_qwen = os.getenv("CN_BOT_USE_FINETUNED", "").strip().lower() in ("1", "true", "yes")
     if use_qwen and finetune_client.is_available():
         # Tell Qwen the exact char budget so its prose fits with the URL appended.
@@ -464,8 +481,9 @@ def research_post_and_write_note(post: Post) -> NoteResult:
             temperature=0.3,
         )
         if prose is None:
-            # Fall through to Opus if the fine-tuned endpoint failed.
-            logger.warning("Fine-tuned endpoint returned None for %s; falling back to Opus", post.post_id)
+            # Fall through to the default writer if the fine-tuned endpoint failed.
+            logger.warning("Fine-tuned endpoint returned None for %s; falling back to %s",
+                           post.post_id, NOTE_WRITER_MODEL)
             use_qwen = False
 
     if not use_qwen or not finetune_client.is_available():
@@ -473,9 +491,9 @@ def research_post_and_write_note(post: Post) -> NoteResult:
             prose = complete(
                 user_prompt=user_prompt,
                 system=_NOTE_WRITER_SYSTEM,
-                model=OPUS_MODEL,
+                model=NOTE_WRITER_MODEL,
                 max_tokens=600,
-                effort="high",
+                effort="high",  # ignored for non-Opus models (see llm_util.complete)
             )
         except Exception as e:
             return NoteResult(post=post, error=f"LLM error: {e}", evidence=[evidence])
