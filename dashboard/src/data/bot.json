@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-01T15:02:21+00:00",
+  "generated_at": "2026-06-01T17:02:31+00:00",
   "totals": {
-    "posts": 1544,
-    "off_beat": 1117,
-    "evidence_searched": 427,
-    "evidence_found": 225,
-    "notes_written": 15,
-    "submitted": 15
+    "posts": 1568,
+    "off_beat": 1136,
+    "evidence_searched": 432,
+    "evidence_found": 229,
+    "notes_written": 17,
+    "submitted": 17
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1544
+      "count": 1568
     },
     {
       "label": "On-beat (US politics)",
-      "count": 427
+      "count": 432
     },
     {
       "label": "Evidence found",
-      "count": 225
+      "count": 229
     },
     {
       "label": "Note drafted",
-      "count": 15
+      "count": 17
     },
     {
       "label": "Submitted to X",
-      "count": 15
+      "count": 17
     }
   ],
   "by_day": [
@@ -81,25 +81,25 @@
     },
     {
       "day": "2026-06-01",
-      "posts": 170,
-      "submitted": 0,
+      "posts": 194,
+      "submitted": 2,
       "queued": 0,
-      "refused": 170,
+      "refused": 192,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1117
+      "count": 1136
     },
     {
       "bucket": "Other",
-      "count": 187
+      "count": 188
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 138
+      "count": 140
     },
     {
       "bucket": "Opus declined to write",
@@ -121,14 +121,46 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 115
+      "count": 116
     },
     {
       "tier": "ifcn_verified",
-      "count": 106
+      "count": 109
     }
   ],
   "notes": [
+    {
+      "post_id": "2061208375279423771",
+      "post_url": "https://x.com/i/web/status/2061208375279423771",
+      "created_at": "2026-06-01T17:02:11+00:00",
+      "outcome": "submitted",
+      "post_text": "\ud83d\udea8 DISGUSTING: Absolute bombshell on Fox News. Treasury Secretary Scott Bessent openly admits the Trump administration is plotting to gut Medicare, Medicaid, and Social Security.\n\nWhen asked about slashing these vital lifelines, he calls it the next step in their agenda. https://t.co/jJNXsRyvPx https://t.co/BGfGUmCmNR",
+      "note_text": "PolitiFact rated this False. The quoted post was not from Bessent's account \u2014 it came from a suspended account that violated X's rules. https://www.politifact.com/factchecks/2025/jan/30/viral-image/this-isnt-an-authentic-post-from-treasury-secretar/",
+      "evidence_url": "https://www.politifact.com/factchecks/2025/jan/30/viral-image/this-isnt-an-authentic-post-from-treasury-secretar/",
+      "evidence_publisher": "PolitiFact",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.manipulated_media"
+      ]
+    },
+    {
+      "post_id": "2061208863278334039",
+      "post_url": "https://x.com/i/web/status/2061208863278334039",
+      "created_at": "2026-06-01T17:01:00+00:00",
+      "outcome": "submitted",
+      "post_text": "\u201cHorses went missing after a barn break-in \u2014 they were found BUTCHERED a mile away.\u201d\n\nIllegal immigrants broke into a family\u2019s ranch, stole their horses; and ate them https://t.co/AQjn696Jwa",
+      "note_text": "PolitiFact rated this Mostly False. Springfield city officials told PolitiFact claims of Haitian immigrants stealing and eating animals are unfounded. https://www.politifact.com/factchecks/2024/sep/09/social-media/authorities-rebut-claims-that-haitian-immigrants-a/",
+      "evidence_url": "https://www.politifact.com/factchecks/2024/sep/09/social-media/authorities-rebut-claims-that-haitian-immigrants-a/",
+      "evidence_publisher": "PolitiFact",
+      "evidence_rating": "Mostly False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
     {
       "post_id": "2060733024556261627",
       "post_url": "https://x.com/i/web/status/2060733024556261627",
@@ -374,252 +406,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2061205610327408773",
-      "post_url": "https://x.com/i/web/status/2061205610327408773",
-      "created_at": "2026-06-01T15:02:19+00:00",
-      "post_text": "I\u2019ve been banned from the UK. I tried to get on a flight to London to attend SXSW London and give a speech at Oxford. I\u2019ve been banned for criticizing Israel. Are we free anymore? This is oppression of Western citizens by our own governments on behalf of a different country!",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UK immigration policy and the user's personal travel ban, not US politicians, the 2026 midterms, federal/state policy, or election integrity.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060045570719506750",
-      "post_url": "https://x.com/i/web/status/2060045570719506750",
-      "created_at": "2026-06-01T15:02:16+00:00",
-      "post_text": "Governor Abigail Spanberger's entire Affordable Virginia Agenda has been signed into law!\n\nShe passed legislation to address the high cost of healthcare, housing, and energy.\n\nRead more about Governor Spanberger's work to make Virginia more affordable:",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2061336177802613056",
-      "post_url": "https://x.com/i/web/status/2061336177802613056",
-      "created_at": "2026-06-01T15:02:06+00:00",
-      "post_text": "This is a really grim decision alongside Cenk.\n\nPeople often talk about dangerous road we'd go down under a Reform government - this is another clear warning we're down there already.\n\nA Labour government doing everything possible to silence criticism of the Israeli Government. https://t.co/XS8GKEFJMe",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses UK Labour Party policy and Israeli government criticism, which is foreign politics with no US angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060863860140081470",
-      "post_url": "https://x.com/i/web/status/2060863860140081470",
-      "created_at": "2026-06-01T15:02:04+00:00",
-      "post_text": "i don't know, should they be allowed to get this? what if they regret their decision later in life? https://t.co/flNG3t8viL",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a vague personal opinion question with no reference to specific US politicians, policies, or 2026 midterm-related topics.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061198231900475417",
-      "post_url": "https://x.com/i/web/status/2061198231900475417",
-      "created_at": "2026-06-01T15:02:03+00:00",
-      "post_text": "TRUMP IS A PEDOPHILE RAPIST WAR CRIMINAL WITH  SO MANY ALLEGATIONS AGAINST HIM THERE'S A LITERAL ENTIRE WIKIPEDIA PAGE DEDICATED TO IT YOU PEOPLE CAN SINCERELY SHUT THE FUCK UP FOREVER NOBODY CARES WHAT YOU HAVE TO SAY ANYMORE https://t.co/xIpQFQzqEc https://t.co/gSxbHlrwoB",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@DebbieSchlussel)"
-    },
-    {
-      "post_id": "2061320955595796603",
-      "post_url": "https://x.com/i/web/status/2061320955595796603",
-      "created_at": "2026-06-01T15:01:53+00:00",
-      "post_text": "\"American cheese has bacteria in it!\"\n\nAll cheese does\n\nIts fermented \n\nMeanwhile Europe allows the sale of cheese with literal maggots in it https://t.co/8Ozd4JFjM6 https://t.co/8HMAAsBSra",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a discussion about cheese production and food standards with no mention of US politicians, the 2026 midterms, federal policy, or election-related content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2055689368887513171",
-      "post_url": "https://x.com/i/web/status/2055689368887513171",
-      "created_at": "2026-06-01T15:01:51+00:00",
-      "post_text": "#TommyRobinson was humiliated in London today. His dwindling numbers were met by a massive counter demonstration. Read our statement \u2b07\ufe0f\n\n(1/5)\n\n#standuptoracism #UTK #UniteTheKingdom https://t.co/pWi979hdER",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UK politics and a UK-based activist, with no US political angle, politicians, or 2026 midterm relevance.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061159415235903569",
-      "post_url": "https://x.com/i/web/status/2061159415235903569",
-      "created_at": "2026-06-01T15:01:50+00:00",
-      "post_text": "Man City become the first team in history to win the Men\u2019s, Women\u2019s &amp; Youth FA Cup in the same season. \n\nAnyone under the age of 25 has grown up to City dominating English football, that\u2019s all they\u2019ve known and that\u2019s why players choose to play for us. It also helps that we\u2019re",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about sports (Manchester City FA Cup wins) with no US political content or connection to US elections or politicians.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061200604974690776",
-      "post_url": "https://x.com/i/web/status/2061200604974690776",
-      "created_at": "2026-06-01T15:01:49+00:00",
-      "post_text": "Proud Brexiteer here. These queues have nothing to do with Brexit and the lying toads claiming that know this. https://t.co/yV62JQKEBH",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about British Brexit politics and UK domestic issues, with no US political angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061144427305853046",
-      "post_url": "https://x.com/i/web/status/2061144427305853046",
-      "created_at": "2026-06-01T15:01:47+00:00",
-      "post_text": "Scotland alone has contributed more to science, culture, and philosophy than the entire American South. https://t.co/CQc9ZWSV27",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a comparative cultural claim about Scotland and the American South with no reference to US politicians, elections, policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061150165864452125",
-      "post_url": "https://x.com/i/web/status/2061150165864452125",
-      "created_at": "2026-06-01T15:01:45+00:00",
-      "post_text": "i\u2019ll catch you and i\u2019ll mishandle you!\ud83d\udca6\ud83d\udca6\ud83d\udca6 https://t.co/mACdCU1OgM https://t.co/sw76ilTrsx",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This appears to be a non-political post with playful language and image links, with no mention of US politicians, policy, elections, or political figures.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061218585356153264",
-      "post_url": "https://x.com/i/web/status/2061218585356153264",
-      "created_at": "2026-06-01T15:01:44+00:00",
-      "post_text": "We haven\u2019t seen this since 09, seeing this in game 1 on the floor is going to feel so nostalgic \ud83d\ude4c\ud83c\udffd\n\nVia @gettyimages https://t.co/66ktcyfeBL",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post is about sports nostalgia and a game, with no reference to US politicians, elections, policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061240130032333114",
-      "post_url": "https://x.com/i/web/status/2061240130032333114",
-      "created_at": "2026-06-01T15:01:43+00:00",
-      "post_text": "Be honest, how long have you been staring? \ud83d\ude3a\n#Furry #Furryfandom #Mursuiter\n#Fursuiter https://t.co/vw4Kwc6ZhE",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a furry fandom post with no US political content, candidates, officials, policy claims, or election-related material.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061374283746512930",
-      "post_url": "https://x.com/i/web/status/2061374283746512930",
-      "created_at": "2026-06-01T15:01:41+00:00",
-      "post_text": "This is counter-productive, authoritarian and chilling. The British state should not be in the business of banning commentators and journalists from entering the country, without compelling reason. Finding their views objectionable is nowhere near enough. \nhttps://t.co/GqUMVB5bqj",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns British state policy and media censorship with no reference to US politicians, the 2026 midterms, federal/state US policy, or election integrity.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061217321977356669",
-      "post_url": "https://x.com/i/web/status/2061217321977356669",
-      "created_at": "2026-06-01T15:01:38+00:00",
-      "post_text": "This is such a wild violation of free speech and a tacit admission that Israel has an outsized influence on the west, ironically proving Hasan correct https://t.co/X4cz3StIDj",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses foreign policy and geopolitical influence rather than US politicians, the 2026 midterms, election integrity, or domestic political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061193620959424811",
-      "post_url": "https://x.com/i/web/status/2061193620959424811",
-      "created_at": "2026-06-01T15:01:37+00:00",
-      "post_text": "I knew there were a lot of fans at the parade today, but the most in English football history is insane. An estimated 1.5m attended, smashing the previous record by Liverpool (750k). We are fucking massive.",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a sports event (English football parade and attendance records) with no US political content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061313310671458775",
-      "post_url": "https://x.com/i/web/status/2061313310671458775",
-      "created_at": "2026-06-01T15:01:35+00:00",
-      "post_text": "As cute as they all are, I\u2019m assuming these rabbits absolutely destroyed the island\u2019s ecology? \ud83d\ude2d https://t.co/S5Ze7aZ9Rk",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is about rabbits and ecology with no mention of US politicians, the 2026 midterms, federal policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061244019364045175",
-      "post_url": "https://x.com/i/web/status/2061244019364045175",
-      "created_at": "2026-06-01T15:01:34+00:00",
-      "post_text": "An IDF Officer has been ASSASSINATED in Beersheba, Israel. \n\nThe IRGC has deeply penetrated Israel.\n\nNetanyahu is no longer safe. https://t.co/JsOuAt18UF",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses Israeli politics and security, which has no US domestic political angle related to the 2026 midterms or US federal policy.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061100175528264076",
-      "post_url": "https://x.com/i/web/status/2061100175528264076",
-      "created_at": "2026-06-01T15:01:31+00:00",
-      "post_text": "From what i know about this entire ethical hacking saga of CBSE.\n\nThis wanna be Nisarga Adhikary is not the guy who found this bug/loophole.\n\nIt is someone else. I know it because news was shared with me before it was made public by the individual who found this bug. It's only me https://t.co/Xd4drYQ0Fl",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses an alleged hacking incident at CBSE (Central Board of Secondary Education, India) and makes claims about credit attribution, with no connection to US politics, politicians, or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061204895592759469",
-      "post_url": "https://x.com/i/web/status/2061204895592759469",
-      "created_at": "2026-06-01T15:01:27+00:00",
-      "post_text": "Speaking English should be a requirement for US citizenship. \n\nPeriod.",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: This is a policy opinion or prescriptive statement about what should be required for citizenship, not a factual claim about what currently is or what has happened.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061402445826208021",
-      "post_url": "https://x.com/i/web/status/2061402445826208021",
-      "created_at": "2026-06-01T15:01:25+00:00",
-      "post_text": "I\u2019m the only candidate running for Governor who worked for President Trump and helped get him elected in South Carolina in 2016 - the very first time he ran. https://t.co/e4IcA3nhK9",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@NancyMace)"
-    },
-    {
-      "post_id": "2061116995668496719",
-      "post_url": "https://x.com/i/web/status/2061116995668496719",
-      "created_at": "2026-06-01T15:01:12+00:00",
-      "post_text": "Met police have confirmed this is the biggest football parade ever held in the country after drafting in support from Merseyside and Manchester police to help with the celebrations. Estimated 1.5m+.",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a UK police operation and football celebration, with no US political angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061401211559891178",
-      "post_url": "https://x.com/i/web/status/2061401211559891178",
-      "created_at": "2026-06-01T15:01:11+00:00",
-      "post_text": "Carrying a kirpan like this also solves the issue of religious belief.  \nWe don\u2019t need a long and sharp blade to fulfil our need to carry a ceremonial dagger. https://t.co/YSLM5ALT4v",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses religious practice and ceremonial objects with no connection to US politics, politicians, elections, or policy.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061154017988813291",
-      "post_url": "https://x.com/i/web/status/2061154017988813291",
-      "created_at": "2026-06-01T15:01:10+00:00",
-      "post_text": "Who said the Mamdani\u2019s would be skipping the NYC Israel parade? I LOVE IT!\n\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf1 https://t.co/fIklmNSEO3",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post references a personal or family decision about attending a parade and does not involve US politicians, policy, elections, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
       "post_id": "2061355434800280007",
       "post_url": "https://x.com/i/web/status/2061355434800280007",
-      "created_at": "2026-06-01T15:01:08+00:00",
+      "created_at": "2026-06-01T17:02:30+00:00",
       "post_text": "WTA Bullying Scandal has been reported this morning - In relational to 3 WTA Players, investigation ongoing  (Part 1) https://t.co/veZKotim7m",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a Women's Tennis Association (WTA) bullying scandal involving sports figures, not US politicians or election-related content.",
+      "refusal_reason": "Off-beat: This post concerns a Women's Tennis Association (WTA) scandal and players, which is a sports matter unrelated to US politicians, the 2026 midterms, or federal policy.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061222686798270489",
+      "post_url": "https://x.com/i/web/status/2061222686798270489",
+      "created_at": "2026-06-01T17:02:28+00:00",
+      "post_text": "The way everyone went quiet as soon as he turned the lights off LMAOOOO https://t.co/YzDcDLlRqQ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is a general social media clip without any mention of US politicians, elections, policy, or political figures.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061215500886253889",
+      "post_url": "https://x.com/i/web/status/2061215500886253889",
+      "created_at": "2026-06-01T17:02:27+00:00",
+      "post_text": "You\u2019ve got to be kidding \ud83e\udd74\n\nHow much further are they going to push this crap! \ud83e\udd26\u200d\u2640\ufe0f https://t.co/2GJjyu7JzI",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post contains no substantive political content, named officials, policy claims, or election-related information\u2014only an emoji reaction without context or linked content accessible in this task.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061292897714962435",
+      "post_url": "https://x.com/i/web/status/2061292897714962435",
+      "created_at": "2026-06-01T17:02:26+00:00",
+      "post_text": "50 cent has reportedly requested for a DNA test to be done on his 14 year old son Sire Jackson after tapes of his baby mama getting piped by Diddy and his associates were released \ud83d\ude33\n\n\u201c right now I\u2019m not sure what to believe , I have to be sure he is mine and I haven\u2019t spend the https://t.co/oJ7Vllge8W",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns celebrity gossip and personal matters involving entertainment figures, with no connection to US politics, politicians, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061231338728861882",
+      "post_url": "https://x.com/i/web/status/2061231338728861882",
+      "created_at": "2026-06-01T17:02:24+00:00",
+      "post_text": "Megyn Kelly didn\u2019t just flip sides for no reason. She got paid in straight cash and shares from Soros Worldwide.\n\nFollow @TruthGuardianQ \n\nNick Shirley and his team of citizen journalists dug up the paper trail and nailed the deposits straight into a numbered account in the https://t.co/jkEA1xy5gy",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@TruthGuardianQ)"
+    },
+    {
+      "post_id": "2061062840417747144",
+      "post_url": "https://x.com/i/web/status/2061062840417747144",
+      "created_at": "2026-06-01T17:02:14+00:00",
+      "post_text": "The slave who raised a panther to kill fourteen slave owners and became legendary. Louisiana, 1847.......\"\n\nThe photograph was taken on August 9th, 1847 in a clearing approximately one mile south of the Bowmont plantation in southern Louisiana by itinerant photographer Henri https://t.co/5GF6f2y1Rj",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a historical narrative about 19th-century Louisiana slavery and an alleged event in 1847, with no connection to current US politicians, the 2026 midterms, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061325169512042552",
+      "post_url": "https://x.com/i/web/status/2061325169512042552",
+      "created_at": "2026-06-01T17:02:12+00:00",
+      "post_text": "What kind of kick-off format is this from Arsenal?? \ud83e\udd14\ud83d\ude02\ud83e\udd37\ud83c\udffe\u200d\u2642\ufe0f https://t.co/gJKzVDlBPo",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about Arsenal (a soccer/football team) and sports, not US politics or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061301378316681605",
+      "post_url": "https://x.com/i/web/status/2061301378316681605",
+      "created_at": "2026-06-01T17:01:54+00:00",
+      "post_text": "Successful first date https://t.co/o6F0PWcXzT",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about a first date with no political content or relevance to US politics, politicians, or elections.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061358311648202950",
+      "post_url": "https://x.com/i/web/status/2061358311648202950",
+      "created_at": "2026-06-01T17:01:52+00:00",
+      "post_text": "\ud83d\udea8 BREAKING: PSG manager Luis Enrique has reportedly submitted his dream 5-man transfer shortlist to the board as he aims to three-peat the UEFA Champions League next season.\n\n\ud83c\uddf3\ud83c\uddf4 Erling Haaland (\u20ac90m)\n\ud83c\uddea\ud83c\uddf8 Pedri Gonz\u00e1lez (\u20ac100m)\n\ud83c\udde7\ud83c\uddf7 Gabriel\u2026See thread https://t.co/cKY4HzxBTl",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about European soccer transfers and has no connection to US politics, the 2026 midterms, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061341800808218973",
+      "post_url": "https://x.com/i/web/status/2061341800808218973",
+      "created_at": "2026-06-01T17:01:51+00:00",
+      "post_text": "Dr Dre reacting to Jay-Z responding to Drake diss\n\n\u201cThese young niggas always throwing shots, forgetting the OGs been in this game for over a decade. They choose to ignore it for the culture, but I guess Hov had to show \u2018em how it\u2019s done\u201d\n\n\u201cTo me, this ain\u2019t beef, it\u2019s just https://t.co/WFQczDh2ts",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about hip-hop artists and music industry disputes, which is entertainment content unrelated to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061442426217103615",
+      "post_url": "https://x.com/i/web/status/2061442426217103615",
+      "created_at": "2026-06-01T17:01:49+00:00",
+      "post_text": "Microsoft Bans Claude Code After AI Costs More Than The Humans It Replaced",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a technology/business story about corporate AI policy, not about US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061427713001374026",
+      "post_url": "https://x.com/i/web/status/2061427713001374026",
+      "created_at": "2026-06-01T17:01:47+00:00",
+      "post_text": "London 2012 https://t.co/HPzW6fE8KR",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Reference to London 2012 Olympics is a sports/entertainment topic with no US political angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061436831712030846",
+      "post_url": "https://x.com/i/web/status/2061436831712030846",
+      "created_at": "2026-06-01T17:01:46+00:00",
+      "post_text": "@AMoneroHodler @PredAlert_ Talking about a legal system when he\u2019s there to meet a child which is ILLEGAL. Fucking sympathizer faggot pedofile",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This appears to be a personal insult or accusation about an unidentified individual with no reference to US politicians, policy, elections, or midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061205763326877878",
+      "post_url": "https://x.com/i/web/status/2061205763326877878",
+      "created_at": "2026-06-01T17:01:45+00:00",
+      "post_text": "Hasan Piker confirms his UK visa has been revoked after pressure from pro-Israel groups\n\nHe was scheduled to speak at the Oxford Union, SXSW London, and to interview Yanis Varoufakis https://t.co/pz9k2u7oSZ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns a streamer's visa status and international travel; it has no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061311862126318014",
+      "post_url": "https://x.com/i/web/status/2061311862126318014",
+      "created_at": "2026-06-01T17:01:43+00:00",
+      "post_text": "The open hostility to gay rights in today\u2019s U.S. creates an anxious environment for fans traveling to attend World Cup matches. Pride Houses, such as the one in San Francisco, offer a safe haven. https://t.co/sTqgCWpM0y",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses international sports (World Cup), travel logistics, and general social attitudes rather than US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061283409285075029",
+      "post_url": "https://x.com/i/web/status/2061283409285075029",
+      "created_at": "2026-06-01T17:01:42+00:00",
+      "post_text": "Everything Trump touches dies. https://t.co/UZeEyYiHk2",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague opinion/metaphor ('Everything Trump touches dies') without a specific, falsifiable factual claim that could be checked without viewing the linked media.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061239110325449032",
+      "post_url": "https://x.com/i/web/status/2061239110325449032",
+      "created_at": "2026-06-01T17:01:38+00:00",
+      "post_text": "We are willing to welcome Smotrich on to our streets, even as the ICC seeks an arrest warrant, but the UK bans Cenk and Hasan Piker?",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns foreign politics (Israeli government minister and ICC warrant) and commentary on UK immigration policy toward media personalities, with no direct connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061399608522416397",
+      "post_url": "https://x.com/i/web/status/2061399608522416397",
+      "created_at": "2026-06-01T17:01:37+00:00",
+      "post_text": "\ud83c\uddea\ud83c\uddf8 A Jewish lesbian couple was denied entry to a public sauna in Barcelona after staff caught them filming in a no-recording zone.\n\nWhen asked if they were Zionists, one of them replied: \"Zionist and Jewish are kind of the same thing.\"\n\nBarcelona has been one of the most vocal",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post describes a local incident in Barcelona, Spain with no mention of US politicians, the 2026 midterms, federal policy, or US election integrity.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061183433683222764",
+      "post_url": "https://x.com/i/web/status/2061183433683222764",
+      "created_at": "2026-06-01T17:01:35+00:00",
+      "post_text": "My current ecosystem. Absolutely obsessed.\n\nShow me yours sweetheart https://t.co/wWymjinVdI",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal post about an ecosystem hobby with no political content or US political figures mentioned.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061433233984606472",
+      "post_url": "https://x.com/i/web/status/2061433233984606472",
+      "created_at": "2026-06-01T17:01:34+00:00",
+      "post_text": "The Christian expression and heritage here is unmatched. \nUnsurprisingly, they are lying to us about Russia. \u271d\ufe0f https://t.co/pNbwPmiq3m",
+      "refusal_bucket": "URL validator rejected (hallucination guard)",
+      "refusal_reason": "No specific falsifiable claim in post text: The post makes vague commentary ('they are lying to us about Russia') without a specific, checkable factual claim, and relies on a linked URL the reader must click to understand the assertion.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061092642147258460",
+      "post_url": "https://x.com/i/web/status/2061092642147258460",
+      "created_at": "2026-06-01T17:01:31+00:00",
+      "post_text": "India is a $4T economy. China is $20T . \n\nIndia spends $12B on education, China spends $800B yearly. \n\nChina is much ahead of us because they give highest priority to their education, while India\u2019s teen had to fight against the incompetent education system of our country.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a foreign policy and economic comparison between India and China with no mention of US politicians, federal policy, 2026 midterms, or US political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061455610982387875",
+      "post_url": "https://x.com/i/web/status/2061455610982387875",
+      "created_at": "2026-06-01T17:01:29+00:00",
+      "post_text": "TNT Sports: \n\n12.6m watched Liverpool v Real Madrid final in 2022 \n\n7m watched Saturday's Champions League Final Arsenal v PSG\n\nGreat viewing figures for both English clubs \ud83d\udcfa https://t.co/o7Mfr3yUmf",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about sports viewership (Champions League football/soccer) with no US political content.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061351595883762004",
+      "post_url": "https://x.com/i/web/status/2061351595883762004",
+      "created_at": "2026-06-01T17:01:28+00:00",
+      "post_text": "When lava hits the ocean, the real danger is the instant steam blast, not the glow \ud83c\udf0b\n\nhttps://t.co/RpHA7k86mo",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a post about volcanic geology and physics with no connection to US politicians, elections, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061290927444902357",
+      "post_url": "https://x.com/i/web/status/2061290927444902357",
+      "created_at": "2026-06-01T17:01:27+00:00",
+      "post_text": "Arsenal parade: 1.5m\nLiverpool parade: 750k\nMan United parade: 500k\nMan City parade: 200k\nTottenham parade: 60k\nChelsea parade: 40k\n\nIt\u2019s safe to say Arsenal are the biggest club in England (Not globally)",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about football/soccer team parade attendance and has no connection to US politics, politicians, or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061300457994096947",
+      "post_url": "https://x.com/i/web/status/2061300457994096947",
+      "created_at": "2026-06-01T17:01:25+00:00",
+      "post_text": "Australia's far-right populist party One Nation overtook the ruling Labor party in a national opinion poll for the first time, buoyed by voter discontent over the center-left government's recent budget measures https://t.co/BBDXCUC8Fm",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about Australian politics with no US angle, federal policy claims, or connection to US politicians, the 2026 midterms, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
