@@ -7,6 +7,11 @@ toc: false
 
 ***[Please support the work of the Poynter Institute and MediaWise.](https://poynterfoundation.fundjournalism.org/mediawise/) Tokens are expensive, but supporting journalism, a free society and a healthy information ecosystem is priceless.***
 
+<div style="border: 1px solid var(--theme-foreground-faint, #d4d4d4); border-left: 4px solid #2563eb; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0; background: var(--theme-background-alt, #f7f7f7);">
+  <strong>New here? What is Community Notes — and why is a bot writing them?</strong>
+  <p style="margin: 0.5rem 0 0;"><strong>Community Notes</strong> is X's crowd-sourced fact-checking system: contributors add context to potentially misleading posts, and a note is shown publicly only if people who usually <em>disagree</em> with each other both rate it helpful. In a recent pilot, X opened an API that lets approved <strong>AI "Note Writers"</strong> draft notes automatically — and bots now write roughly half of all notes on the platform. This page follows one of those bots, in public, as it works.</p>
+</div>
+
 ```js
 const bot = FileAttachment("./data/bot.json").json();
 ```
