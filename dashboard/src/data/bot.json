@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-01T21:02:49+00:00",
+  "generated_at": "2026-06-01T23:03:29+00:00",
   "totals": {
-    "posts": 1594,
-    "off_beat": 1151,
-    "evidence_searched": 443,
-    "evidence_found": 233,
-    "notes_written": 17,
-    "submitted": 17
+    "posts": 1643,
+    "off_beat": 1183,
+    "evidence_searched": 460,
+    "evidence_found": 245,
+    "notes_written": 18,
+    "submitted": 18
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1594
+      "count": 1643
     },
     {
       "label": "On-beat (US politics)",
-      "count": 443
+      "count": 460
     },
     {
       "label": "Evidence found",
-      "count": 233
+      "count": 245
     },
     {
       "label": "Note drafted",
-      "count": 17
+      "count": 18
     },
     {
       "label": "Submitted to X",
-      "count": 17
+      "count": 18
     }
   ],
   "by_day": [
@@ -81,29 +81,29 @@
     },
     {
       "day": "2026-06-01",
-      "posts": 220,
-      "submitted": 2,
+      "posts": 269,
+      "submitted": 3,
       "queued": 0,
-      "refused": 218,
+      "refused": 266,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1151
+      "count": 1183
     },
     {
       "bucket": "Other",
-      "count": 193
+      "count": 198
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 143
+      "count": 151
     },
     {
       "bucket": "Opus declined to write",
-      "count": 72
+      "count": 75
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -121,14 +121,29 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 117
+      "count": 124
     },
     {
       "tier": "ifcn_verified",
-      "count": 112
+      "count": 117
     }
   ],
   "notes": [
+    {
+      "post_id": "2061497549890945378",
+      "post_url": "https://x.com/i/web/status/2061497549890945378",
+      "created_at": "2026-06-01T23:00:44+00:00",
+      "outcome": "submitted",
+      "post_text": "Tina Peters is a felon.\n\nShe propped up Trump\u2019s Big Lie, was convicted by a jury of Coloradans, and has shown no remorse for her crimes.\n\nShe should not be walking free. https://t.co/3GtCp381oa",
+      "note_text": "Per CBS News Colorado, Tina Peters has been released from prison after serving time for voting machine tampering. https://x.com/CBSNewsColorado/status/2061461024771809763",
+      "evidence_url": "https://x.com/CBSNewsColorado/status/2061461024771809763",
+      "evidence_publisher": "X (@CBSNewsColorado)",
+      "evidence_rating": null,
+      "evidence_tier": "x_post",
+      "misleading_tags": [
+        "MisleadingTag.missing_important_context"
+      ]
+    },
     {
       "post_id": "2061208375279423771",
       "post_url": "https://x.com/i/web/status/2061208375279423771",
@@ -406,252 +421,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2061391897025773749",
-      "post_url": "https://x.com/i/web/status/2061391897025773749",
-      "created_at": "2026-06-01T19:03:25+00:00",
-      "post_text": "\ud83d\udea8 BREAKING NEWS! \ud83d\udea8\n\nAnother ancient Buddhist temple has been burned down.\n\nThis time it was the Tokonagesan Senju-ji a 1,219 years old temple in Kyoto built during the Heian period.\n\nThe 90 year old Buddhist priest who looked after the temple for decades was burned in the fire. https://t.co/vnx4Xmfqkt",
+      "post_id": "2060767036134060094",
+      "post_url": "https://x.com/i/web/status/2060767036134060094",
+      "created_at": "2026-06-01T23:03:28+00:00",
+      "post_text": "\ud83d\udea8Breaking: Shocking admission by Indian CDS General Anil Chauhan on his last day:\ud83d\udd25\ud83d\udcaa\ud83c\udffb\n\nIndia should not have started Operation Sindoor due to political miscalculations.\u2694\ufe0f\n\nThank you General for confirming what Pakistan already showed the world.\ud83d\udca5\n\nWhen even their top General https://t.co/07iXromu1K",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post reports on a temple fire in Japan with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: This post concerns Indian military and foreign policy with no US political angle, official, policy claim, or 2026 midterm relevance.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061431397114658889",
-      "post_url": "https://x.com/i/web/status/2061431397114658889",
-      "created_at": "2026-06-01T19:03:23+00:00",
-      "post_text": "CJ Rescues Tommy Vercetti from Area 69 GTA San Andreas Secret Mission https://t.co/Vdf430eTlf",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a video game (GTA San Andreas) mission and contains no US political content, politicians, or election-related material.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061440366406934579",
-      "post_url": "https://x.com/i/web/status/2061440366406934579",
-      "created_at": "2026-06-01T19:03:21+00:00",
-      "post_text": "The Community Puzzles have been CANCELED \u274c\n\nThis comes after a developer was harassed yesterday over a Battle Pass item. https://t.co/6rMBV3u2BO",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns video game development and community events, with no connection to US politicians, elections, federal policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061419336984617394",
-      "post_url": "https://x.com/i/web/status/2061419336984617394",
-      "created_at": "2026-06-01T19:03:20+00:00",
-      "post_text": "\ud83d\udea8 Luis Enrique wowed on how Manchester United broke Arsenal's low block:\n\n\ud83d\udde3\ufe0f Henry:\n\u201cYou kept pressing and pressing. Did it ever feel like Arsenal weren't going to concede?\u201d\n\n\ud83d\udde3\ufe0f Luis Enrique:\n\u201cWe know Arsenal are one of the most organized teams in Europe. When they decide to https://t.co/G1WlBuewV1",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a soccer match between Manchester United and Arsenal with tactical analysis from managers; it contains no US politicians, federal policy, election content, or political misinformation related to the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061451608085364842",
-      "post_url": "https://x.com/i/web/status/2061451608085364842",
-      "created_at": "2026-06-01T19:03:18+00:00",
-      "post_text": "BREAKING: Iran says it has now decided to execute the full blockade of the Bab el-Mandeb Strait as the next operational step following the announcement of ending all negotiations and communication with the US, per Tasnim.\n\nOil is surging over 8%, now at $94.",
+      "post_id": "2061446048086688159",
+      "post_url": "https://x.com/i/web/status/2061446048086688159",
+      "created_at": "2026-06-01T23:03:27+00:00",
+      "post_text": ".@GovSherrillNJ is holding still holding 46 peaceful protesters who were arrested outside the curfew area last night at Essex County Jail next to Delaney Hall.\n\nThey are not being given the right to a phone call. This is all a first amendment violation of their freedom of speech.",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2061074904519262265",
-      "post_url": "https://x.com/i/web/status/2061074904519262265",
-      "created_at": "2026-06-01T19:03:08+00:00",
-      "post_text": "Find the Lady @BarbicanCentre \nMen\u2019s \u2713\nDisabled \u2713\nWomen\u2019s\u2026 now \u201cGender Neutral\u201d (sign slapped over her symbol)\nThe lady vanishes! Men get 3 toilets. Women get none. https://t.co/XMmrug7eec",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes a facility restroom signage issue at a UK venue (Barbican Centre in London) with no US politician, 2026 midterm, or federal policy content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061216022758105403",
-      "post_url": "https://x.com/i/web/status/2061216022758105403",
-      "created_at": "2026-06-01T19:03:07+00:00",
-      "post_text": "THE MONTH OF JUNE IS NOW DECLARED\nVETERAN APPRECIATION MONTH BY \"WE THE PEOPLE\"",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: This is a declaration of intent or personal statement from the poster, not a verifiable factual claim about an official government action or existing state of affairs.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061428904074805418",
-      "post_url": "https://x.com/i/web/status/2061428904074805418",
-      "created_at": "2026-06-01T19:03:03+00:00",
-      "post_text": "Codex just killed weekly resets \ud83d\ude2d\n\nNow you only get monthly resets even on free accounts\n\nInstead of raising prices OpenAI quietly nerfed the resets\n\nCodex 2x usage limit promo already ended and now they took away weekly resets too https://t.co/wIdEyKP8Sx",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about OpenAI's product features and pricing, not US politics, politicians, the 2026 midterms, or election-related matters.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061450858882113884",
-      "post_url": "https://x.com/i/web/status/2061450858882113884",
-      "created_at": "2026-06-01T19:02:41+00:00",
-      "post_text": "\ud83d\udea8 LABOUR ARE FINISHED \n\nMandelson file release\u2026\n\nPat McFadden told Peter Mandelson that Labour MPs always ask \n\"who can we tax in order to pay benefits to others\"\n\n\ud83d\ude2e",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about UK Labour Party politics and does not mention US politicians, the 2026 midterms, or US federal policy.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061285168799727771",
-      "post_url": "https://x.com/i/web/status/2061285168799727771",
-      "created_at": "2026-06-01T19:02:39+00:00",
-      "post_text": "The richest guy on the planet is about to rob your 401K. \ud83d\udc4d https://t.co/LimOCitvaC",
-      "refusal_bucket": "URL validator rejected (hallucination guard)",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes a vague assertion whose meaning depends entirely on clicking the linked URL; the text alone is commentary without a specific, falsifiable factual claim.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060887273072214498",
-      "post_url": "https://x.com/i/web/status/2060887273072214498",
-      "created_at": "2026-06-01T19:02:35+00:00",
-      "post_text": "The Muslim gang riots continue in Paris. \n\nA huge fire was started at the foot of the Eiffel Tower.\n\nNotice how they chant \u201cAllahu Akbar.\u201d This is a religious war, and this is their way of saying \u201cwe own the place now.\u201d https://t.co/MLXSc3IEXi",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes events in Paris, France with no connection to US politicians, the 2026 midterms, federal policy, or US election integrity.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061256774163054990",
-      "post_url": "https://x.com/i/web/status/2061256774163054990",
-      "created_at": "2026-06-01T19:02:34+00:00",
-      "post_text": "Welcome to the shelves: PACK WATCH!\n\nHey, actions have consequences, welcome to the real world. https://t.co/2spdj4uV40",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post appears to be about retail/shelving and personal consequences with no clear connection to US politics, politicians, or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061406904140845427",
-      "post_url": "https://x.com/i/web/status/2061406904140845427",
-      "created_at": "2026-06-01T19:02:32+00:00",
-      "post_text": "Joe Kent is either not very smart or just dishonest.  Israel receives $3.8 billion but spends far more than that buying US military goods.  US also receives intel, tech innovations so that ROI is many times more. New MOU w/ Israel ends aid &amp; will be based on trade. https://t.co/qOA9FqJa5S",
+      "post_id": "2061097455219830950",
+      "post_url": "https://x.com/i/web/status/2061097455219830950",
+      "created_at": "2026-06-01T23:03:16+00:00",
+      "post_text": "\ud83d\udfe5 Graham Platner, Maine Democrat Senate Candidate, has failed the audit.\n\nIt's not surprising since he had a Nazi tattoo, recently did the Nazi salute at an event &amp; referred to his junk as Mein Fuhrer. https://t.co/AGHRUZQasJ",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MarioNawfal)"
+      "evidence_publisher": "X (@TrackIslamUSA)"
     },
     {
-      "post_id": "2061384294182875250",
-      "post_url": "https://x.com/i/web/status/2061384294182875250",
-      "created_at": "2026-06-01T19:02:18+00:00",
-      "post_text": "This photo exists because his iPhone's battery died mid-shutter https://t.co/9mOlHu0k8W",
+      "post_id": "2061430694706864564",
+      "post_url": "https://x.com/i/web/status/2061430694706864564",
+      "created_at": "2026-06-01T23:03:04+00:00",
+      "post_text": "Indian chess master cheats against little boy. #DeportThemAll https://t.co/48y2Edl0P2",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about smartphone battery and photography technology, with no connection to US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post is about chess, not about US politicians, elections, or federal policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061355771330187456",
-      "post_url": "https://x.com/i/web/status/2061355771330187456",
-      "created_at": "2026-06-01T19:02:17+00:00",
-      "post_text": "The Tories waged an ideological war on the idea of social housing, leaving many families stranded without support.\n\nThis Labour government is ending that so everyone, no matter their background or circumstance, can have a secure place of their own.\n\nhttps://t.co/RhoTDMcWuV",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UK politics (Tories and Labour party) with no US political angle, making it outside the scope of US midterm misinformation monitoring.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061457691680059463",
-      "post_url": "https://x.com/i/web/status/2061457691680059463",
-      "created_at": "2026-06-01T19:02:15+00:00",
-      "post_text": "North London turned up like never before. \ud83d\udd34\u2764\ufe0f\n\nMore than 1.5 million fans attended Arsenal's title parade, making it the biggest celebration parade in UK history. \ud83e\udd2f\ud83c\udfc6\n\nAfter 22 years, the wait was worth it. \ud83d\udc4f https://t.co/eNghHYUWtc",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post celebrates an Arsenal football club victory parade, which is a sports event unrelated to US politics or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061364651070226450",
-      "post_url": "https://x.com/i/web/status/2061364651070226450",
-      "created_at": "2026-06-01T19:02:14+00:00",
-      "post_text": "Happy Pride Month from all of us at the Labour Party! https://t.co/BHegS1crXJ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a post from the UK Labour Party, which is foreign politics with no US political angle or 2026 midterm relevance.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061408355336572932",
-      "post_url": "https://x.com/i/web/status/2061408355336572932",
-      "created_at": "2026-06-01T19:02:13+00:00",
-      "post_text": "A little girl was shot dead when she went outside to collect water in Palestine .\n\nWhat kind of threat she was ? \n\nF@ck ISRAEL \ud83d\udd95\ud83c\udffb https://t.co/xNECHSLyIu",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns foreign conflict (Israel-Palestine) with no US politician, federal policy, 2026 midterm, or election integrity angle.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061076674062553438",
-      "post_url": "https://x.com/i/web/status/2061076674062553438",
-      "created_at": "2026-06-01T19:02:11+00:00",
-      "post_text": "On 16 December 1838, the Afrikaaners paid a revenge against the Zuku Kingdom for the murder of illegal immigrants, the Dutch settlers who were stealing land and cows of the Zulu King and his people in what is known today as Battle.of Blood River.  The day later became an official https://t.co/UUa91uD15O",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a historical event from 1838 in South Africa with no connection to US politics, the 2026 midterms, or US political figures.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061301415730102591",
-      "post_url": "https://x.com/i/web/status/2061301415730102591",
-      "created_at": "2026-06-01T19:02:10+00:00",
-      "post_text": "The legacy media is a progressive psy-op https://t.co/XygXO1RV4n",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague assertion without a specific, falsifiable claim\u2014it gestures at a link to support its argument but does not state a checkable fact in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2060800796720050623",
-      "post_url": "https://x.com/i/web/status/2060800796720050623",
-      "created_at": "2026-06-01T19:02:07+00:00",
-      "post_text": "\ud83d\udea8 OFFICIAL: Radu Dragusin has more European titles (1) than Arsenal in their entire history. https://t.co/QVCBO8fVwe",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about sports (football/soccer) and has no US political content.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2061461024771809763",
-      "post_url": "https://x.com/i/web/status/2061461024771809763",
-      "created_at": "2026-06-01T19:02:06+00:00",
-      "post_text": "Tina Peters has been released from prison in Colorado after serving time for voting machine tampering https://t.co/gOMgFsMAPV",
+      "post_id": "2061502262287941634",
+      "post_url": "https://x.com/i/web/status/2061502262287941634",
+      "created_at": "2026-06-01T23:03:03+00:00",
+      "post_text": "Brandon Herrera, a congressional candidate in the district where the Uvalde school shooting took place, dismisses school shooting statistics as a \u201csham.\u201d \u00a0#TX23 https://t.co/kY932F1PHR",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@HouseMajPAC)"
+    },
+    {
+      "post_id": "2061508073026641981",
+      "post_url": "https://x.com/i/web/status/2061508073026641981",
+      "created_at": "2026-06-01T23:02:52+00:00",
+      "post_text": "The Disturbing Evidence Found Inside Michael Jackson\u2019s Bedroom\n\n\u201cThat new biopic has earned almost $1 billion in a month. All it does is chronicle the rise of Michael Jackson from childhood to 1987, which is six years before the first child mo**** scandal. It just kind of lobs https://t.co/IOoUim52EF",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is about entertainment/celebrity and a film biopic, with no connection to US politicians, 2026 midterms, federal policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061511455057346579",
+      "post_url": "https://x.com/i/web/status/2061511455057346579",
+      "created_at": "2026-06-01T23:02:51+00:00",
+      "post_text": "Liverpool had 750k for their parade in 2025.\n\nMan City had 100k for their parade in 2024.\n\nChelsea had 70k for their parade in 2015.\n\nUnited had 250k for their parade in 2013.\n\nYet we have people arguing about whether Arsenal\u2019s parade was 1m or 1.5m. \n\nWhen you\u2019re big, you\u2019re big",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about English football club victory parades and attendance figures, which is sports content with no US political angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061501520651141307",
+      "post_url": "https://x.com/i/web/status/2061501520651141307",
+      "created_at": "2026-06-01T23:02:49+00:00",
+      "post_text": "Pakistan is a major regional power and an important partner for the EU.\n\nToday in Islamabad, I met with Prime Minister @CMShehbaz and Deputy PM and Foreign Minister @MIshaqDar50 for talks on further strengthening EU\u2013Pakistan ties. I also met Chief of Defence Forces Syed Asim https://t.co/R44E4T2Vbe",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns EU-Pakistan diplomatic relations with no US politician, agency, or policy involvement.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061520266858029262",
+      "post_url": "https://x.com/i/web/status/2061520266858029262",
+      "created_at": "2026-06-01T23:02:48+00:00",
+      "post_text": "Scoop: Trump plans to drop \"weaponization\" fund https://t.co/0xzHZAD9aN",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2061080689068462210",
-      "post_url": "https://x.com/i/web/status/2061080689068462210",
-      "created_at": "2026-06-01T19:01:56+00:00",
-      "post_text": "there's no LGBTQ without the 'T' let that be known.",
+      "post_id": "2061269773170704505",
+      "post_url": "https://x.com/i/web/status/2061269773170704505",
+      "created_at": "2026-06-01T23:02:37+00:00",
+      "post_text": "happy pride month to the best transgender in fiction https://t.co/tMj9c9mlkO",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a general statement about LGBTQ terminology with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: Post is about fictional characters and entertainment, not US politicians, 2026 midterms, or federal policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061410130907062314",
-      "post_url": "https://x.com/i/web/status/2061410130907062314",
-      "created_at": "2026-06-01T19:01:55+00:00",
-      "post_text": "Absolute truth from @DefiyantlyFree https://t.co/EUg4hhyuxH",
+      "post_id": "2061047603102629929",
+      "post_url": "https://x.com/i/web/status/2061047603102629929",
+      "created_at": "2026-06-01T23:02:32+00:00",
+      "post_text": "Putin: \u201cRussia is not going to attack Europe - it\u2019s funny for us, it\u2019s laughable\u201d\n\n\u201cCrooks are telling their populations that Russia are going to attack &amp; we have to strengthen our defence\u201d\n\n\u201cMaybe they serve the military industrial complex or want to boost political ratings\u201d https://t.co/VXz1NTgRPI",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains only a vague claim and a link with no substantive political content identifiable from the text alone.",
+      "refusal_reason": "Off-beat: This is a foreign political statement from a Russian leader with no direct connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061484566016041178",
-      "post_url": "https://x.com/i/web/status/2061484566016041178",
-      "created_at": "2026-06-01T19:01:53+00:00",
-      "post_text": "We\u2019re bringing the housing supply up, so your costs come down.\n\nWith Build Canada Homes, we\u2019re building affordable homes at speed and scale \u2014 with Canadian workers, Canadians materials, and Canadian technology. https://t.co/njDp0dipvk",
+      "post_id": "2060924257597636786",
+      "post_url": "https://x.com/i/web/status/2060924257597636786",
+      "created_at": "2026-06-01T23:02:31+00:00",
+      "post_text": "\ud83d\udea8This needs to be treated like domestic terrorism, bc that's exactly what it is \n\nRaise your hand \u270b\ufe0f if you want @SecMullinDHS to ask Trump to federalize the NJ Guard and put an end to this\n\nTHIS ENDS NOW \ud83d\udc47 https://t.co/OK5Tokx6Wy",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to unseen linked media without making a specific, falsifiable factual claim in the text itself; it expresses opinion and demands action rather than asserting a verifiable fact.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061462979221094881",
+      "post_url": "https://x.com/i/web/status/2061462979221094881",
+      "created_at": "2026-06-01T23:02:27+00:00",
+      "post_text": "The US government may make it illegal to completely shut down live-service games https://t.co/fyvKzYjRPs https://t.co/KKzW0djMi0",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is vague commentary about a possible future action ('may make it illegal') and gestures at linked articles without stating a specific, verifiable claim in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061398742897434782",
+      "post_url": "https://x.com/i/web/status/2061398742897434782",
+      "created_at": "2026-06-01T23:02:23+00:00",
+      "post_text": "An oblivious dog walker was called out by an officer using a PA system as he obstructed police from driving through in Dallas, Texas. https://t.co/TUJXWz4lzg",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about Canadian housing policy and the Build Canada Homes program, which is foreign policy with no US political angle.",
+      "refusal_reason": "Off-beat: This is a local incident involving a dog walker and police traffic, with no connection to US politicians, federal policy, elections, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061489508047057329",
+      "post_url": "https://x.com/i/web/status/2061489508047057329",
+      "created_at": "2026-06-01T23:02:22+00:00",
+      "post_text": "HE WON\nYes, Prince Harry regained his state-funded armed security for UK visits. Following a successful review by the UK's Executive Committee for the Protection of Royalty and Public Figures (RAVEC), his official protection was reinstated. This reverses the previous decision",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns UK royal security policy and Prince Harry, which is foreign politics with no US angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061426931162288614",
+      "post_url": "https://x.com/i/web/status/2061426931162288614",
+      "created_at": "2026-06-01T23:02:21+00:00",
+      "post_text": "The laptop hasn't changed in 30 years. NVIDIA just changed it\n\nRTX Spark is their first PC chip ever.\n\n- RTX 5070 level GPU\n- 128GB unified memory\n- 1 petaflop of local AI\n- thin, light, barely throttles unplugged\n\nYour AI agent lives on the machine. 24/7. No cloud.\n\nThis is step https://t.co/b3IKPnnrVc https://t.co/xJyjuwt2Ds",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about consumer technology (NVIDIA chips and laptops) with no connection to US politicians, elections, political policy, or misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061485219811631317",
+      "post_url": "https://x.com/i/web/status/2061485219811631317",
+      "created_at": "2026-06-01T23:02:20+00:00",
+      "post_text": "For the 8th consecutive year, Gov. JB Pritzker has balanced Illinois' budget, maintaining a zero-dollar deficit. https://t.co/zCOJECsHrc",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@factpostnews)"
+    },
+    {
+      "post_id": "2061381430748328096",
+      "post_url": "https://x.com/i/web/status/2061381430748328096",
+      "created_at": "2026-06-01T23:02:10+00:00",
+      "post_text": "lol\n\nIsraeli Float Collapse at NYC Parade https://t.co/rfsO8yITGe",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about a parade float incident with no US political, election, or policy content.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061425683134308355",
+      "post_url": "https://x.com/i/web/status/2061425683134308355",
+      "created_at": "2026-06-01T23:02:09+00:00",
+      "post_text": "Many disagree with Oliver Anthony's opinions, but it doesn't change the fact the #250America crowd would EXPLODE.\n\n\ud83e\ude951st unsigned (no-prior-history artist) to hit #1 on BillBoard.\n\ud83e\ude952 Weeks at #1\n\ud83e\ude95#1 on Spotify, Apple &amp; iTunes. \n\ud83e\ude95356M+ Spotify streams/~250M YouTube views. https://t.co/pVLq8w2JjX",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@JoeDanMedia)"
+    },
+    {
+      "post_id": "2061084345478066338",
+      "post_url": "https://x.com/i/web/status/2061084345478066338",
+      "created_at": "2026-06-01T23:01:58+00:00",
+      "post_text": "I have written to the Chief Constable of Hampshire Police demanding the immediate release of the Henry Nowak police bodycam footage.\n\nNational Police Chiefs' Council guidance does NOT preclude releasing body-cam footage where there is an ongoing investigation, stating:\n\n\"It is https://t.co/l9pCem8Hlb",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post concerns UK police procedures and bodycam footage release, which is foreign law enforcement policy with no US political angle.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061414283976593527",
+      "post_url": "https://x.com/i/web/status/2061414283976593527",
+      "created_at": "2026-06-01T23:01:57+00:00",
+      "post_text": "This is truly heartbreaking The bond between them is so deep and pure . After all the years of working side by side , trusting each other with their lives , the dog doesn't understand transfers or orders - he only knows loyalty and love . Seeing him refuse to let go and run after https://t.co/hof1JYcf5A",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post appears to be about a personal or animal-related story with no connection to US politics, the 2026 midterms, federal policy, or political figures.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061481356799197196",
+      "post_url": "https://x.com/i/web/status/2061481356799197196",
+      "created_at": "2026-06-01T23:01:56+00:00",
+      "post_text": "\ud83d\udea8 HUGE: Mayor Zohran Mamdani to rent-stabilize 200,000 existing homes in NYC. https://t.co/zd8JNFkWz1",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@DemzDeliver)"
+    },
+    {
+      "post_id": "2061468802760499315",
+      "post_url": "https://x.com/i/web/status/2061468802760499315",
+      "created_at": "2026-06-01T23:01:46+00:00",
+      "post_text": "Comic book Callisto vs Insomniac Callisto from the Wolverine game after Sweet Baby inc involvement. https://t.co/UPUJDeLRa2",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post discusses video game character design and comic book adaptations, which are entertainment topics unrelated to US politics, the 2026 midterms, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061420057452753024",
+      "post_url": "https://x.com/i/web/status/2061420057452753024",
+      "created_at": "2026-06-01T23:01:44+00:00",
+      "post_text": "If m kissing a guy and his dick gets hard, do i just go for it without asking or ask first?",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal relationship question with no US political content, politicians, agencies, elections, or policy claims.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2061342611827241101",
+      "post_url": "https://x.com/i/web/status/2061342611827241101",
+      "created_at": "2026-06-01T23:01:43+00:00",
+      "post_text": "four https://t.co/1JdObMEo4t https://t.co/Pv52XLy9bl",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post contains only the word 'four' and two links with no readable content or political context.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
