@@ -14,6 +14,7 @@ export default {
     { name: "What X surfaces", path: "/pool" },
     { name: "How it compares", path: "/comparison" },
     { name: "How it works", path: "/methodology" },
+    { name: "The prompts", path: "/prompts" },
   ],
 
   // Top-level header / footer
