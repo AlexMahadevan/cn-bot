@@ -5,7 +5,7 @@ title: What X surfaces to bots
 # What X surfaces to AI Note Writers
 
 ```js
-const pool = FileAttachment("./data/candidate_pool.json").json();
+const pool = await FileAttachment("./data/candidate_pool.json").json();
 const s = pool.summary;
 ```
 
