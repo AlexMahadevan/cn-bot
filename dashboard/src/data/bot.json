@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-01T10:40:28+00:00",
+  "generated_at": "2026-06-01T11:02:32+00:00",
   "totals": {
     "posts": 1500,
-    "off_beat": 1078,
-    "evidence_searched": 422,
-    "evidence_found": 224,
+    "off_beat": 1079,
+    "evidence_searched": 421,
+    "evidence_found": 223,
     "notes_written": 15,
     "submitted": 15
   },
@@ -15,11 +15,11 @@
     },
     {
       "label": "On-beat (US politics)",
-      "count": 422
+      "count": 421
     },
     {
       "label": "Evidence found",
-      "count": 224
+      "count": 223
     },
     {
       "label": "Note drafted",
@@ -91,15 +91,15 @@
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1078
+      "count": 1079
     },
     {
       "bucket": "Other",
-      "count": 183
+      "count": 184
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 138
+      "count": 137
     },
     {
       "bucket": "Opus declined to write",
@@ -107,7 +107,7 @@
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 14
+      "count": 13
     },
     {
       "bucket": "Too long (over 280 chars)",
@@ -125,7 +125,7 @@
     },
     {
       "tier": "ifcn_verified",
-      "count": 107
+      "count": 106
     }
   ],
   "notes": [
@@ -376,97 +376,97 @@
     {
       "post_id": "2061264400791556155",
       "post_url": "https://x.com/i/web/status/2061264400791556155",
-      "created_at": "2026-06-01T10:40:12+00:00",
+      "created_at": "2026-06-01T11:02:29+00:00",
       "post_text": "The strawberry dubai chocolate man handled this disruptive girl better than most could or would have. \n\nWhere in the world are her parents? https://t.co/BfjklCu19U",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a viral video moment involving a food vendor and a customer with no mention of US politicians, elections, federal policy, or political misinformation.",
+      "refusal_reason": "Off-beat: This post is about a viral video of a person handling a disruptive child and makes no reference to US politicians, the 2026 midterms, federal/state policy, election integrity, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060689190359007409",
       "post_url": "https://x.com/i/web/status/2060689190359007409",
-      "created_at": "2026-06-01T10:40:10+00:00",
+      "created_at": "2026-06-01T11:02:28+00:00",
       "post_text": "We will never associate with this in the name of votes and popularity.\n\nCount us out of inhumanity. https://t.co/0VfQ5tenw2",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post contains only a vague moral statement without naming any US politician, policy, agency, or 2026-midterm-related content.",
+      "refusal_reason": "Off-beat: Post contains no specific claim about US politicians, policy, elections, or verifiable facts\u2014only a vague moral statement without political context or attribution.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061216190207320120",
       "post_url": "https://x.com/i/web/status/2061216190207320120",
-      "created_at": "2026-06-01T10:40:08+00:00",
+      "created_at": "2026-06-01T11:02:26+00:00",
       "post_text": "The open hostility to gay rights in today\u2019s U.S. creates an anxious environment for fans traveling to attend World Cup matches. Pride Houses, such as the one in San Francisco, offer a safe haven. https://t.co/8SUMZtxCQ8",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses the World Cup (international sports event) and LGBTQ+ travel safety, with no mention of US politicians, federal policy, elections, or political misinformation related to the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post discusses World Cup events and LGBTQ+ fan safety at sporting events, which is a sports and lifestyle topic without connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061261392712261898",
       "post_url": "https://x.com/i/web/status/2061261392712261898",
-      "created_at": "2026-06-01T10:40:06+00:00",
+      "created_at": "2026-06-01T11:02:25+00:00",
       "post_text": "Fun fact: Windows 11 only comes in 64-bit, so you can safely delete the legacy folder System32 now! https://t.co/RgHoLILohE",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a computer operating system and software, with no connection to US politics, politicians, elections, or policy.",
+      "refusal_reason": "Off-beat: This post is about computer operating systems and technical software features, with no connection to US politics, politicians, elections, or policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061227896597819833",
       "post_url": "https://x.com/i/web/status/2061227896597819833",
-      "created_at": "2026-06-01T10:40:04+00:00",
+      "created_at": "2026-06-01T11:02:23+00:00",
       "post_text": "Note that the UK Government just banned entry of two American citizens -- @cenkuygur and @hasanthehun  -- not because they criticized or worked against the interests of the UK.\n\nIt was solely because they criticize and oppose the one country deemed sacred and off-limits in the UK https://t.co/PeoY3gAfHA",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns UK government policy and foreign citizens, with no direct connection to US politicians, the 2026 midterms, federal/state policy, or US political misinformation.",
+      "refusal_reason": "Off-beat: This post is about UK government policy and foreign nationals, with no direct connection to US politicians, the 2026 midterms, federal policy, or US election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061140203532894424",
       "post_url": "https://x.com/i/web/status/2061140203532894424",
-      "created_at": "2026-06-01T10:40:03+00:00",
+      "created_at": "2026-06-01T11:02:21+00:00",
       "post_text": "Facts over fear: CBSE has formally clarified that the system issues have been completely resolved. \n\nNow that the infrastructure is secure, continuing a negative narrative only creates groundless panic among families. \n\nDear students, ignore the timeline clutter, trust the https://t.co/IECHsKuXey",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses CBSE (Central Board of Secondary Education, an Indian educational board) system issues and is directed at students; it contains no US political content, officials, or midterm-related material.",
+      "refusal_reason": "Off-beat: This post concerns CBSE (Central Board of Secondary Education), an Indian educational institution, with no US political content or connection to US politicians, federal policy, or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061233324656410990",
       "post_url": "https://x.com/i/web/status/2061233324656410990",
-      "created_at": "2026-06-01T10:40:01+00:00",
+      "created_at": "2026-06-01T11:02:19+00:00",
       "post_text": "\u201cThe West\u201d, whatever the fuck that means, is not free. Revoking the visa of Hasan Piker and Cenk Uygur over criticism of Israel is one of the most brazen and pathetic attacks on free speech I\u2019ve ever seen. The same idiots celebrating this authoritarianism will turn around and",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post criticizes visa decisions regarding content creators but does not name US government officials, cite specific federal policy, reference 2026 midterms, or attribute claims to identifiable US political figures or agencies.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     },
     {
       "post_id": "2061078913812471888",
       "post_url": "https://x.com/i/web/status/2061078913812471888",
-      "created_at": "2026-06-01T10:39:53+00:00",
+      "created_at": "2026-06-01T11:02:18+00:00",
       "post_text": "A leaked video from the Israeli Airforce shows an IDF Apache helicopter firing on its own citizens on October 7th. https://t.co/EOsmxT19YR",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns Israeli military actions and domestic Israeli politics, which is foreign politics without a US political angle.",
+      "refusal_reason": "Off-beat: This post concerns Israeli military actions and foreign politics with no US politician, 2026 midterm, or federal policy angle.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061170709993488499",
       "post_url": "https://x.com/i/web/status/2061170709993488499",
-      "created_at": "2026-06-01T10:39:52+00:00",
+      "created_at": "2026-06-01T11:02:16+00:00",
       "post_text": "The fastest response ever by police!Who dares to mess with the Police? https://t.co/2IrZKfw5Ms",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about police response time to an incident with no mention of US politicians, the 2026 midterms, federal/state policy, election integrity, or political misinformation.",
+      "refusal_reason": "Off-beat: This is a generic post about police response time with no connection to US politicians, the 2026 midterms, federal/state policy, election integrity, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061269216875925624",
       "post_url": "https://x.com/i/web/status/2061269216875925624",
-      "created_at": "2026-06-01T10:39:51+00:00",
+      "created_at": "2026-06-01T11:02:15+00:00",
       "post_text": "\ud83d\udea8 Republican Ken Paxton has been reported to the FBI eight times.\n\nEach time by his own senior staff. https://t.co/EuPaFv5Aeg",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
@@ -476,87 +476,87 @@
     {
       "post_id": "2061115914339360968",
       "post_url": "https://x.com/i/web/status/2061115914339360968",
-      "created_at": "2026-06-01T10:39:40+00:00",
+      "created_at": "2026-06-01T11:02:06+00:00",
       "post_text": "I still don't get why he was cast and not someone younger https://t.co/H4rVpLzOwp",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is about entertainment casting decisions with no US political content or figures mentioned.",
+      "refusal_reason": "Off-beat: This is a post about entertainment/casting decisions with no US political content or connection to politicians, elections, or policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060992207235187118",
       "post_url": "https://x.com/i/web/status/2060992207235187118",
-      "created_at": "2026-06-01T10:39:38+00:00",
+      "created_at": "2026-06-01T11:02:04+00:00",
       "post_text": "The entire Sikh community has been \"demonised\" as one individual has broken the law and been found guilty of murder.\n\nThe murder weapon was NOT a Kirpan (one of the 5 Ks), it has a different name that does not start with K, but the @CPSUK is refusing to share an image of the https://t.co/OFAusDglWk",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a criminal case and community response to it, with no connection to US politicians, 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: This post concerns a criminal case and community relations without reference to US politicians, elections, federal policy, or 2026 midterm-related content.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061121414376149371",
       "post_url": "https://x.com/i/web/status/2061121414376149371",
-      "created_at": "2026-06-01T10:39:37+00:00",
+      "created_at": "2026-06-01T11:02:02+00:00",
       "post_text": "call of duty hasn\u2019t made a dark skin female operator in 5 yrs and yall worried about bugs bunny bundles. let\u2019s lock it in plz",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a complaint about video game content design, not about US politics or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This post discusses video game character design and cosmetics, which is entertainment/gaming content with no US political figure, policy, or 2026 midterm relevance.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061274651154637086",
       "post_url": "https://x.com/i/web/status/2061274651154637086",
-      "created_at": "2026-06-01T10:39:36+00:00",
+      "created_at": "2026-06-01T11:02:01+00:00",
       "post_text": "ZERO tolerance for rioters. https://t.co/PlihmyVEJh https://t.co/pmtb4wXFWJ",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague statement of policy position that gestures at linked images/videos without making a specific, falsifiable factual claim in the text itself.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is vague commentary expressing an opinion about tolerance for rioters, with no specific factual claim that can be verified without clicking the linked images/videos.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061242609004413294",
       "post_url": "https://x.com/i/web/status/2061242609004413294",
-      "created_at": "2026-06-01T10:39:32+00:00",
+      "created_at": "2026-06-01T11:01:57+00:00",
       "post_text": "Hasan Piker gets denied entry to the UK over alleged antisemitism \u2014 then immediately blames 'Israel advocacy organizations' for wielding 'unbelievable amounts of power' over British policy.\n\nThe streamer's response to the ban landed on a classic antisemitic trope about Jewish https://t.co/D5esuvgKK1",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a streamer's immigration denial and personal controversy, not about US politicians, the 2026 midterms, federal/state policy, or election integrity.",
+      "refusal_reason": "Off-beat: This post concerns a foreign policy matter (UK entry denial) involving a streamer/content creator, not US politicians, the 2026 midterms, federal/state policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061051245662478483",
       "post_url": "https://x.com/i/web/status/2061051245662478483",
-      "created_at": "2026-06-01T10:39:31+00:00",
+      "created_at": "2026-06-01T11:01:56+00:00",
       "post_text": "Even dead people cant rest in Lebanon bruh they just bombed the cemetery where my grandfather and his mom are buried",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal anecdote about foreign conflict (Lebanon) with no US political figure, agency, or 2026 midterm angle.",
+      "refusal_reason": "Off-beat: This is a personal anecdote about foreign conflict (Lebanon) with no US political angle, politician involvement, or 2026 midterm relevance.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061209246901948767",
       "post_url": "https://x.com/i/web/status/2061209246901948767",
-      "created_at": "2026-06-01T10:39:30+00:00",
+      "created_at": "2026-06-01T11:01:54+00:00",
       "post_text": "American Christian preacher \"God Logic\" on his UK tour went to a dawah stall and called the Prophet Muhammad a homosexual.\n\nHis friends? Apus and David Wood who curse Muslims and Islam for a living. \n\nAnd THIS man is being celebrated as a leading \"Christian apologist\"\ud83d\udc80\u271d\ufe0f https://t.co/cq2Oa4YM2c",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post describes a religious/theological dispute between Christian and Muslim figures without naming any US politicians, federal officials, or involving 2026 midterms or election integrity.",
+      "refusal_reason": "Off-beat: This post discusses religious figures and interfaith tensions with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2060930584960975095",
       "post_url": "https://x.com/i/web/status/2060930584960975095",
-      "created_at": "2026-06-01T10:39:29+00:00",
+      "created_at": "2026-06-01T11:01:53+00:00",
       "post_text": "\u2626\ufe0f Jesus was a Palestinian Aramean and spoke the Western dialect of Aramaic. And this dialect is still spoken today by Christian and Muslim Arameans in the village of Maaloula in Syria.\n\nVideo by Rana Fakhreddine https://t.co/yLy8NXLfRZ https://t.co/hiajptiqvz",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses historical/religious facts about Jesus and the Aramaic language with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: This post discusses historical linguistic and religious topics with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061074567104172055",
       "post_url": "https://x.com/i/web/status/2061074567104172055",
-      "created_at": "2026-06-01T10:39:27+00:00",
+      "created_at": "2026-06-01T11:01:51+00:00",
       "post_text": ".@POTUS: \"More people are working in the United States right now than at any time ever before.\" \ud83d\udcaa\ud83c\uddfa\ud83c\uddf8 https://t.co/yBMT7paNku",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -566,60 +566,60 @@
     {
       "post_id": "2061064091934818724",
       "post_url": "https://x.com/i/web/status/2061064091934818724",
-      "created_at": "2026-06-01T10:39:17+00:00",
+      "created_at": "2026-06-01T11:01:40+00:00",
       "post_text": "This is how invaders left Paris last night. \n\nThis behaviour should be an instant deportation offence.\n https://t.co/e4gwhr1fZb",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to unseen linked media without making any specific, falsifiable claim in the text itself; the reader must click the link to understand what incident is being referenced.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is vague commentary gesturing at a linked image without stating a specific, checkable factual claim in the text itself; the reader must view the linked image to understand what incident or behavior is being referenced.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061151976683893209",
       "post_url": "https://x.com/i/web/status/2061151976683893209",
-      "created_at": "2026-06-01T10:39:14+00:00",
+      "created_at": "2026-06-01T11:01:37+00:00",
       "post_text": "Grandpa said, \u201cI got bedtime covered\u201d\u2026 then immediately fell straight into the crib https://t.co/n9TmcQtYTz",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal anecdote about a family member and a child's bedtime with no political content or reference to US politics, politicians, or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This is a humorous personal anecdote about a grandfather and a baby with no political content or US political figures involved.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061200079575216193",
       "post_url": "https://x.com/i/web/status/2061200079575216193",
-      "created_at": "2026-06-01T10:39:13+00:00",
+      "created_at": "2026-06-01T11:01:36+00:00",
       "post_text": "This is misleading Because trans women\u2019s rate uses the prison population as the base while men/women use the general population. That\u2019s not statistics, that\u2019s manipulation. https://t.co/wUVsP1I08u",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes a methodological critique of a linked comparison but does not state a specific, falsifiable factual claim in the text itself\u2014it depends on viewing the linked image/article to understand what claim is being criticized.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post criticizes a statistic without stating a specific falsifiable claim in its text\u2014it gestures at a linked image/comparison that readers must view to understand what claim is being made.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061151084370878743",
       "post_url": "https://x.com/i/web/status/2061151084370878743",
-      "created_at": "2026-06-01T10:39:10+00:00",
+      "created_at": "2026-06-01T11:01:32+00:00",
       "post_text": "What were they thinking\ud83d\udc80 https://t.co/njiKDy0529",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post contains only an emoji and a link with no visible political content or US political figure/issue mentioned.",
+      "refusal_reason": "Off-beat: Post is only an emoji and link with no identifiable political content; cannot determine topic without seeing the linked content.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061163050191757506",
       "post_url": "https://x.com/i/web/status/2061163050191757506",
-      "created_at": "2026-06-01T10:39:08+00:00",
+      "created_at": "2026-06-01T11:01:31+00:00",
       "post_text": "The real image is on the left. \n\nThe fake image is on the right.\n\nThe same vehicles, banner, weather etc are in both images.\n\nThis is how insecure Arsenal\u2019s e-fans are. https://t.co/ktC9JaSgIV https://t.co/iayiYvC0yn",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about Arsenal Football Club and fan behavior, which is sports-related and has no US political content.",
+      "refusal_reason": "Off-beat: This post is about Arsenal (a soccer/football club) and fan behavior, with no US political content, 2026 midterm connection, or election integrity angle.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2061097548555633079",
       "post_url": "https://x.com/i/web/status/2061097548555633079",
-      "created_at": "2026-06-01T10:39:07+00:00",
+      "created_at": "2026-06-01T11:01:29+00:00",
       "post_text": "A-LIST CELEBRITY Sabrina Carpenter went LIVE at 2AM and admitted she had a ONE NIGHT STAND with RAPPER Jack Harlow after meeting him backstage at a festival \ud83d\udc40\ud83d\ude33\n\n\u201cI swear I was supposed to stay professional\u201d\n\u201cHe knew exactly what to say every single time\u201d\n\u201cSo yeah we did it\u201d https://t.co/OSxZA9E86E",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about celebrities' personal lives and rumors, with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: This post is about celebrities' personal relationships and entertainment gossip with no connection to US politics, politicians, the 2026 midterms, or election-related content.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
