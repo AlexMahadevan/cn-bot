@@ -55,6 +55,64 @@ The pipeline pulls Opus from 2.44 to 2.83 — a bigger lift than the gap between
 
 That's the finding I want journalists and newsrooms to take away. If you're shopping for an AI fact-checking system, the model brand on the box matters less than the retrieval, validation and refusal logic around it.
 
+## So can you swap Opus for a cheaper writer?
+
+If the architecture does most of the work, the obvious follow-up is: do you still need a frontier model writing the prose? To find out, I ran **84 cached evidence packages through the pipeline nine times — once per writer model — holding the retrieved evidence, prompt, and validators identical.** Only the model writing the note changed. Every shipped note was scored by the same Opus judge against the gold note.
+
+```js
+const writers = [
+  {writer: "Opus 4.7",        vendor: "Anthropic", predH: 3.19, pctOpus: 100, cost: 0.060,  n: 21, paired: null},
+  {writer: "Haiku 4.5",       vendor: "Anthropic", predH: 2.65, pctOpus: 83,  cost: 0.004,  n: 31, paired: -0.44},
+  {writer: "Grok-4",          vendor: "xAI",       predH: 2.58, pctOpus: 81,  cost: 0.012,  n: 26, paired: -0.47},
+  {writer: "Gemini 2.5 Pro",  vendor: "Google",    predH: 2.48, pctOpus: 78,  cost: 0.006,  n: 23, paired: -0.31},
+  {writer: "Sonnet 4.6",      vendor: "Anthropic", predH: 2.47, pctOpus: 77,  cost: 0.012,  n: 32, paired: -0.29},
+  {writer: "Grok-4-fast",     vendor: "xAI",       predH: 2.39, pctOpus: 75,  cost: 0.0007, n: 28, paired: -0.47},
+  {writer: "Gemini 2.5 Flash",vendor: "Google",    predH: 2.18, pctOpus: 68,  cost: 0.0014, n: 39, paired: -0.45},
+  {writer: "GPT-5",           vendor: "OpenAI",    predH: 2.06, pctOpus: 65,  cost: 0.006,  n: 31, paired: -0.46},
+  {writer: "GPT-5-mini",      vendor: "OpenAI",    predH: 1.28, pctOpus: 40,  cost: 0.001,  n: 53, paired: -0.67},
+];
+```
+
+```js
+Plot.plot({
+  marginLeft: 48,
+  marginBottom: 44,
+  height: 400,
+  x: {type: "log", label: "Estimated cost per note ($, log scale) →", grid: true},
+  y: {label: "↑ Predicted helpfulness (0–5)", domain: [1, 3.4], grid: true},
+  color: {legend: true},
+  marks: [
+    Plot.dot(writers, {x: "cost", y: "predH", fill: "vendor", r: 6, tip: true,
+      channels: {writer: "writer", n: "n"}}),
+    Plot.text(writers, {x: "cost", y: "predH", text: "writer", dy: -11, fontSize: 11,
+      fill: "currentColor"}),
+  ],
+})
+```
+
+The shape that matters: **the four most capable writers other than Opus — Haiku, Sonnet, Grok-4, Gemini 2.5 Pro — bunch together at 77–83% of Opus's score, across two orders of magnitude of price.** Only GPT-5-mini falls out of the pack.
+
+| Writer | Vendor | n | Pred-helpful | % of Opus | ~$ / note* | Paired Δ vs Opus** |
+|---|---|---|---|---|---|---|
+| **Opus 4.7** | Anthropic | 21 | 3.19 | 100% | $0.060 | — |
+| Haiku 4.5 | Anthropic | 31 | 2.65 | 83% | $0.004 | −0.44 (n=18) |
+| Grok-4 | xAI | 26 | 2.58 | 81% | $0.012 | −0.47 (n=15) |
+| Gemini 2.5 Pro | Google | 23 | 2.48 | 78% | $0.006 | −0.31 (n=13) |
+| **Sonnet 4.6** | Anthropic | 32 | 2.47 | 77% | $0.012 | **−0.29 (n=17)** |
+| Grok-4-fast | xAI | 28 | 2.39 | 75% | $0.0007 | −0.47 (n=17) |
+| Gemini 2.5 Flash | Google | 39 | 2.18 | 68% | $0.0014 | −0.45 (n=20) |
+| GPT-5 | OpenAI | 31 | 2.06 | 65% | $0.006 | −0.46 (n=13) |
+| GPT-5-mini | OpenAI | 53 | 1.28 | 40% | $0.001 | −0.67 (n=18) |
+
+\* List-price estimate at ~3K input / ~200 output tokens, not metered billing.
+\*\* Mean predicted-helpfulness difference on only the posts where *both* that model and Opus shipped a note — the apples-to-apples cut, since each model ships a different subset.
+
+**Within that top cluster the differences are not reliable at this sample size.** Haiku's raw 2.65 edges Sonnet's 2.47, but that's a mirage: on the 26 posts they *both* wrote, they're tied (Haiku 2.69, Sonnet 2.73), and Haiku simply got an easier slice of posts to ship on. Read the cluster as "roughly equivalent," not a ranking.
+
+So the deciding factor isn't quality — it's cost. **I moved Kind Raspberry Chickadee's writer from Opus 4.7 to Sonnet 4.6.** Sonnet has the smallest measured gap to Opus on matched posts (−0.29 of a point out of 5), at about a fifth of Opus's per-note cost. The bet this whole project makes — that the evidence retrieval and validators, not the model, are what make a note trustworthy — is exactly what lets a mid-tier model do the writing.
+
+**Caveats, stated plainly.** These samples are small (n = 21–53 per model; paired overlaps of 13–20) and the costs are list-price estimates, not billed amounts — treat this as a directional finding, not a leaderboard. Opus scores higher here (3.19) than in the full-pipeline table above (2.83) because this is a different, larger run on cached evidence; use these numbers to compare *writers against each other*, not against the end-to-end figure.
+
 ## What about a fine-tuned model?
 
 I also fine-tuned a Qwen 2.5 7B model on 3,237 real helpful Community Notes — the kind of "small, cheap, specialized" approach a newsroom might try if it didn't want to pay frontier prices forever. Then I dropped it into the pipeline as the writer.
