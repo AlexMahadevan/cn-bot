@@ -7,12 +7,13 @@ Survives bot restarts and gives us a debuggable history for tuning.
 from __future__ import annotations
 
 import json
-import os
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
+
+from note_writer.config import BEAT_MODE, NOTE_WRITER_MODEL
 
 DB_PATH = Path(__file__).parent.parent / "data" / "notes.db"
 
@@ -29,10 +30,12 @@ CREATE TABLE IF NOT EXISTS drafts (
     evidence_rating  TEXT,
     evidence_publisher TEXT,
     evidence_tier    TEXT,                      -- 'ifcn_verified' | 'self_fact_check'
-    misleading_tags  TEXT                       -- JSON list
+    misleading_tags  TEXT,                      -- JSON list
+    beat_mode        TEXT,                      -- 'broad' | 'us_politics' (earn-in phase marker)
+    writer_model     TEXT                       -- model that wrote the note prose
 );
 
--- Migrate existing dbs that predate the evidence_tier column
+-- Migrate existing dbs that predate later columns
 -- (sqlite ignores the column if it already exists)
 
 CREATE TABLE IF NOT EXISTS submissions (
@@ -56,10 +59,11 @@ def _ensure_db() -> None:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(DB_PATH) as conn:
         conn.executescript(_SCHEMA)
-        # Idempotent column add — sqlite has no IF NOT EXISTS for ALTER TABLE
+        # Idempotent column adds — sqlite has no IF NOT EXISTS for ALTER TABLE
         cols = {row[1] for row in conn.execute("PRAGMA table_info(drafts)")}
-        if "evidence_tier" not in cols:
-            conn.execute("ALTER TABLE drafts ADD COLUMN evidence_tier TEXT")
+        for col in ("evidence_tier", "beat_mode", "writer_model"):
+            if col not in cols:
+                conn.execute(f"ALTER TABLE drafts ADD COLUMN {col} TEXT")
 
 
 @contextmanager
@@ -107,8 +111,8 @@ def log_draft(
             """INSERT OR REPLACE INTO drafts
                (post_id, created_at, post_text, outcome, refusal_reason, error,
                 note_text, evidence_url, evidence_rating, evidence_publisher,
-                evidence_tier, misleading_tags)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                evidence_tier, misleading_tags, beat_mode, writer_model)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 post_id,
                 _now(),
@@ -122,6 +126,8 @@ def log_draft(
                 evidence_publisher,
                 evidence_tier,
                 json.dumps([str(t) for t in (misleading_tags or [])]),
+                BEAT_MODE,
+                NOTE_WRITER_MODEL,
             ),
         )
 

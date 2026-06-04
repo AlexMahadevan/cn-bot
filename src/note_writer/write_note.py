@@ -31,10 +31,9 @@ from data_models import (
 )
 from note_writer.evidence import gather_for_post
 from note_writer.evidence_text import fetch_evidence_text
+from note_writer.config import NOTE_WRITER_MODEL
 from note_writer.llm_util import (
     HAIKU_MODEL,
-    OPUS_MODEL,  # noqa: F401 — kept imported so reverting NOTE_WRITER_MODEL is one line
-    SONNET_MODEL,
     complete,
     describe_image,
     parse_json,
@@ -54,14 +53,9 @@ NOTE_MAX_CHARS_INCLUDING_URL = 280
 # Guards concurrent appends to the eval cache (CN_BOT_PIPELINE_CACHE_FILE).
 _CACHE_WRITE_LOCK = threading.Lock()
 
-# Model that writes the note prose. Swapped Sonnet 4.6 -> Haiku 4.5 on
-# 2026-06-02: the cross-writer benchmark (pipeline_cached_scored.jsonl) shows
-# Haiku actually OUTSCORES Sonnet inside this pipeline — predicted-helpfulness
-# 2.65 vs 2.47, factual 3.23 vs 3.03, style 3.84 vs 3.62 — at ~1/3.7 the
-# per-note cost. The architecture flattens the model gap, so the cheaper model
-# wins on both axes. Opus still leads on quality (3.19); revert to OPUS_MODEL
-# for max quality or SONNET_MODEL to undo this change.
-NOTE_WRITER_MODEL = HAIKU_MODEL
+# NOTE_WRITER_MODEL now lives in note_writer.config (Opus during earn-in; the
+# automated evaluator scores note quality and Opus leads our benchmark). The
+# reject + evidence stages stay on Haiku. Override with CN_BOT_NOTE_WRITER.
 
 _EXEMPLARS_PATH = Path(__file__).resolve().parent.parent / "exemplars.json"
 
@@ -466,7 +460,7 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         except Exception as e:
             logger.warning("Cache export failed for %s: %s", post.post_id, e)
 
-    # Generator: NOTE_WRITER_MODEL (Sonnet 4.6) by default. If
+    # Generator: NOTE_WRITER_MODEL (Opus during earn-in; see note_writer.config). If
     # CN_BOT_USE_FINETUNED=true is set in the env AND the Modal endpoint URL is
     # configured, route through the fine-tuned Qwen 2.5 7B instead. Same
     # downstream validators run either way, so swapping generators is safe —

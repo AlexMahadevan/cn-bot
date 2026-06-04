@@ -1,5 +1,14 @@
-"""Beat filter: drop posts that aren't about US politicians or political
-misinformation. Cheap (Haiku) so we don't waste Opus tokens on off-topic posts.
+"""Beat filter: decide whether a post is in scope for note-writing.
+
+Two modes, set by CN_BOT_BEAT_MODE (see note_writer.config):
+  - "broad"       EARN-IN: any post with a specific, checkable factual claim,
+                  on ANY topic. Maximizes note volume to fill the rolling-50
+                  that Community Notes' automated admission evaluator scores.
+  - "us_politics" POST-ADMISSION: only US politicians / political misinformation.
+
+Either way this is a cheap (Haiku) TOPIC triage — it never judges whether a
+claim is true. Specificity, opinion, and evidence gates downstream do the real
+filtering, so this stays permissive on purpose.
 """
 
 from __future__ import annotations
@@ -8,17 +17,18 @@ import logging
 
 from pydantic import BaseModel, Field
 
+from note_writer.config import BEAT_MODE
 from note_writer.llm_util import HAIKU_MODEL, parse_json
 
 logger = logging.getLogger(__name__)
 
 
 class RelevanceVerdict(BaseModel):
-    on_beat: bool = Field(description="True if the post is about US politicians, the 2026 midterms, federal/state policy, election integrity, or political misinformation.")
+    on_beat: bool = Field(description="True if the post is in scope for note-writing per the active beat (see system prompt).")
     reason: str = Field(description="One short sentence explaining why.")
 
 
-_SYSTEM = """You are a TOPIC-FILTERING triage assistant for a Community Notes bot focused on US political misinformation around the 2026 midterms.
+_SYSTEM_US_POLITICS = """You are a TOPIC-FILTERING triage assistant for a Community Notes bot focused on US political misinformation around the 2026 midterms.
 
 YOUR JOB IS ONLY TO IDENTIFY TOPIC, NOT TO JUDGE REALITY.
 - Do NOT decide whether named officials, agencies, or events are "real."
@@ -52,6 +62,34 @@ OFF-BEAT (mark on_beat=false) — only these:
 When in doubt between on-beat and off-beat, MARK ON-BEAT. Downstream filtering will handle false positives. The cost of dropping a real political post here is much higher than the cost of letting one through.
 
 Return JSON."""
+
+
+_SYSTEM_BROAD = """You are a triage assistant for a Community Notes bot in its EARN-IN phase. The bot is temporarily writing notes on ANY topic — not just US politics — to build a track record with Community Notes' automated note evaluator.
+
+YOUR JOB IS ONLY TO DECIDE: does this post contain at least one SPECIFIC, FACTUAL, CHECKABLE claim that a note could correct or add context to? Topic does not matter.
+
+Do NOT judge whether the claim is TRUE, and do NOT decide whether you recognize the people, places, or organizations involved. Your training data may be older than the post. Downstream stages verify facts and require real published evidence — you only decide whether there is something checkable here.
+
+ON-BEAT (mark on_beat=true) — the post makes a concrete factual assertion on ANY subject, e.g.:
+- A statistic, number, or measurable claim ("X has doubled since...", "the rate is Y%")
+- A specific event that did or didn't happen, or a before/after claim
+- A quote or action attributed to a named person, company, or institution
+- A science, health, medical, historical, or nature claim
+- A viral rumor, miracle cure, doctored image, deepfake, or misattributed screenshot
+- A claim about a product, company, sports record, or public figure
+
+OFF-BEAT (mark on_beat=false) — ONLY when the post has nothing to check:
+- Pure opinion, prediction, or value judgment with no underlying fact
+- A joke, meme, or clearly satirical / absurd post (humorously framed)
+- Too vague to contain any checkable claim — a reaction, a gesture, an emoji
+- Purely personal with no factual assertion about the world ("had a great day")
+
+When in doubt, MARK ON-BEAT. Downstream specificity, opinion, and evidence gates will drop anything unworkable — the cost of dropping a checkable post here is higher than letting one through.
+
+Return JSON."""
+
+
+_SYSTEM = _SYSTEM_BROAD if BEAT_MODE == "broad" else _SYSTEM_US_POLITICS
 
 
 def is_on_beat(post_text: str) -> tuple[bool, str]:
