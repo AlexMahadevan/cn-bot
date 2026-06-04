@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-06-03T21:22:23+00:00",
+  "generated_at": "2026-06-04T11:01:53+00:00",
   "totals": {
-    "posts": 1861,
-    "off_beat": 1357,
-    "evidence_searched": 504,
-    "evidence_found": 268,
+    "posts": 1908,
+    "off_beat": 1395,
+    "evidence_searched": 513,
+    "evidence_found": 271,
     "notes_written": 19,
     "submitted": 19
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1861
+      "count": 1908
     },
     {
       "label": "On-beat (US politics)",
-      "count": 504
+      "count": 513
     },
     {
       "label": "Evidence found",
-      "count": 268
+      "count": 271
     },
     {
       "label": "Note drafted",
@@ -102,20 +102,28 @@
       "queued": 0,
       "refused": 50,
       "errors": 0
+    },
+    {
+      "day": "2026-06-04",
+      "posts": 47,
+      "submitted": 0,
+      "queued": 0,
+      "refused": 47,
+      "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1357
+      "count": 1395
     },
     {
       "bucket": "Other",
-      "count": 220
+      "count": 225
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 170
+      "count": 173
     },
     {
       "bucket": "Opus declined to write",
@@ -123,7 +131,7 @@
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 16
+      "count": 17
     },
     {
       "bucket": "Too long (over 280 chars)",
@@ -137,11 +145,11 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 139
+      "count": 141
     },
     {
       "tier": "ifcn_verified",
-      "count": 125
+      "count": 126
     }
   ],
   "notes": [
@@ -453,254 +461,254 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2061825093412737047",
-      "post_url": "https://x.com/i/web/status/2061825093412737047",
-      "created_at": "2026-06-03T12:26:37+00:00",
-      "post_text": "Reminding me of Amy Winehouse on her worst day, here is Post Malone lying on the ground, lighting a cigarette.\n\nThen he walks around like a 90-year-old man who lost his shoes and needs a chiropractic adjustment. \nShould we be worried? \n\n(Bigstepper) https://t.co/c5tCPzPltW",
+      "post_id": "2062210272060706820",
+      "post_url": "https://x.com/i/web/status/2062210272060706820",
+      "created_at": "2026-06-04T11:01:52+00:00",
+      "post_text": "Lawful access is about protecting victims. Bill C-22 would not eliminate warrants, expand surveillance, or weaken encryption. It would help ensure court-authorized orders can be carried out in criminal investigations. https://t.co/FgVoTmv2rD  @npffpn  @StamatakisCPA https://t.co/SEJfVeNueB",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a musician's behavior and health, which is entertainment/celebrity content with no connection to US politicians, elections, policy, or political misinformation.",
+      "refusal_reason": "Off-beat: This post discusses Canadian legislation (Bill C-22) and does not mention US politicians, the 2026 midterms, federal/state policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061999831036334354",
-      "post_url": "https://x.com/i/web/status/2061999831036334354",
-      "created_at": "2026-06-03T12:26:36+00:00",
-      "post_text": "I had this generation too, and it wasn't bad either. I wasn't sure which one was better \ud83d\ude02 https://t.co/axwOzNYy70 https://t.co/77UjA8xW2m",
+      "post_id": "2062072089675231589",
+      "post_url": "https://x.com/i/web/status/2062072089675231589",
+      "created_at": "2026-06-04T11:01:51+00:00",
+      "post_text": "Litteraly no one has red skin bro https://t.co/VsBh1t91cA",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This appears to be a personal opinion comparing generations with no political content, US politicians, or 2026 midterm-related material.",
+      "refusal_reason": "Off-beat: This is a generic statement about skin color with no reference to US politics, politicians, the 2026 midterms, or election-related content.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061924980431217147",
-      "post_url": "https://x.com/i/web/status/2061924980431217147",
-      "created_at": "2026-06-03T12:26:34+00:00",
-      "post_text": "They fumbled Deadpools suit smh \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f #WolverinePS5 https://t.co/d4RFOY69Cr",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a video game (Wolverine PS5) and entertainment/gaming, not US politics or the 2026 midterms.",
+      "post_id": "2062295511546089899",
+      "post_url": "https://x.com/i/web/status/2062295511546089899",
+      "created_at": "2026-06-04T11:01:50+00:00",
+      "post_text": "\ud83d\udea8 BREAKING: \n\nTrump rushed to hospital",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague headline gesture without specific details (no date, no hospital named, no medical condition stated) and appears designed to prompt clicking for more information rather than making a falsifiable claim in the text itself.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061869069020823625",
-      "post_url": "https://x.com/i/web/status/2061869069020823625",
-      "created_at": "2026-06-03T12:26:33+00:00",
-      "post_text": "The Betrayal... Hoomans can never be trusted https://t.co/oUT8x6xp6U",
+      "post_id": "2062208780108972356",
+      "post_url": "https://x.com/i/web/status/2062208780108972356",
+      "created_at": "2026-06-04T11:01:47+00:00",
+      "post_text": "This lady is going to hell https://t.co/HfCkz5wLby",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post expresses a cynical personal opinion about human trustworthiness with no connection to US politicians, the 2026 midterms, federal policy, or election-related content.",
+      "refusal_reason": "Off-beat: A vague religious condemnation of an unnamed person with no visible political content or reference to US politicians, policy, or elections.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061930820622012881",
-      "post_url": "https://x.com/i/web/status/2061930820622012881",
-      "created_at": "2026-06-03T12:26:32+00:00",
-      "post_text": "What in the fuck are they doing \n\nNo fan of God of War is going to want to play this woke ass garbage \n\nYeah let me swap from playing as motherfucking Kratos\n\nTHE GOD OF WAR \n\nA man who fucks multiple woman at once and kills the gods themselves \n\nTo a mid ass mid 40 yo white",
+      "post_id": "2062212640223404476",
+      "post_url": "https://x.com/i/web/status/2062212640223404476",
+      "created_at": "2026-06-04T11:01:45+00:00",
+      "post_text": "We will never forget the Gaza Holocaust. https://t.co/vmUlgOaAA6",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a video game (God of War) and expresses criticism of its creative direction, not about US politicians, elections, or political misinformation.",
+      "refusal_reason": "Off-beat: This post is about foreign conflict (Gaza/Palestine-Israel) with no mention of US politicians, 2026 midterms, federal policy, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061550564236734959",
-      "post_url": "https://x.com/i/web/status/2061550564236734959",
-      "created_at": "2026-06-03T12:26:31+00:00",
-      "post_text": "Do you support this? https://t.co/PVUG8USbS0",
+      "post_id": "2062295248391250203",
+      "post_url": "https://x.com/i/web/status/2062295248391250203",
+      "created_at": "2026-06-04T11:01:43+00:00",
+      "post_text": "\ud83d\udea8\ud83c\uddf0\ud83c\uddfc \ud83c\uddee\ud83c\uddf7 CCTV footage now shows the moment a terminal at Kuwait International Airport was hit, with an Iranian Shahed-136 kamikaze drone slamming into Terminal 1.\n\nThe IRGC denied responsibility for the airport damage and tried to pin it on a malfunctioning Patriot interceptor. https://t.co/2ZyiqlAoXD https://t.co/DMfkzXWLYO",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post contains only a question and link with no discernible political content, context, or claim visible in the text itself.",
+      "refusal_reason": "Off-beat: This post concerns foreign military conflict between Iran and Kuwait with no US political angle, candidate involvement, or federal policy claim.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061870616257417467",
-      "post_url": "https://x.com/i/web/status/2061870616257417467",
-      "created_at": "2026-06-03T12:26:29+00:00",
-      "post_text": "@HurpeBrown Swap or play both ?",
+      "post_id": "2062029006896062483",
+      "post_url": "https://x.com/i/web/status/2062029006896062483",
+      "created_at": "2026-06-04T11:01:42+00:00",
+      "post_text": "Lilmoonie Compilation https://t.co/aTA7Nd8MfG",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is a casual question about game strategy or personal choice with no political content, US political figures, or 2026 midterm-related material.",
+      "refusal_reason": "Off-beat: The post is a link to what appears to be a social media compilation with no identifiable political content, candidates, officials, or policy claims related to US politics or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061910246134554861",
-      "post_url": "https://x.com/i/web/status/2061910246134554861",
-      "created_at": "2026-06-03T12:26:27+00:00",
-      "post_text": "Blueface locked his BM Jaidyn Alexis out of his house, and she tried breaking in through the windows with a shovel after finding out he pays his other BM a $20K monthly allowance \ud83d\udc80\ud83d\ude2d https://t.co/HVOxnEvXnE",
+      "post_id": "2062272639897383373",
+      "post_url": "https://x.com/i/web/status/2062272639897383373",
+      "created_at": "2026-06-04T11:01:40+00:00",
+      "post_text": "DISCORD BANWAVE RIGHT NOW EVERYONE BEWARE https://t.co/QqkAjMGrY3",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a celebrity/entertainment gossip post about a rapper's personal relationship dispute with no connection to US politicians, elections, or political policy.",
+      "refusal_reason": "Off-beat: This post is about Discord platform moderation, not US politics, the 2026 midterms, or election-related misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061999209784422598",
-      "post_url": "https://x.com/i/web/status/2061999209784422598",
-      "created_at": "2026-06-03T12:26:26+00:00",
-      "post_text": "It has been confirmed that the writer for God of War Laufey is none other than Alanah Pearce \n\nShe is known for her passionate defense of ugly AAA characters, particularly Mary Jane in Spider-Man 2, and her belief that games like Stellar Blade should be the exception rather than https://t.co/Hy9tEc4Lr1",
+      "post_id": "2062326864933232692",
+      "post_url": "https://x.com/i/web/status/2062326864933232692",
+      "created_at": "2026-06-04T11:01:39+00:00",
+      "post_text": "All-white jury selected in Karmelo Anthony murder trial. Karmelo is accused of stabbing Austin Metcalf to death at a high school track meet. He faces a sentence of 5 to 99 years or life in prison if convicted of first-degree murder https://t.co/IPpHi2LjlH",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about video game development and character design, with no US political content, election-related material, or political figures involved.",
+      "refusal_reason": "Off-beat: This is a criminal court case involving private individuals with no connection to US politicians, federal policy, 2026 midterms, or election integrity.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061913021136429105",
-      "post_url": "https://x.com/i/web/status/2061913021136429105",
-      "created_at": "2026-06-03T12:26:24+00:00",
-      "post_text": "CONFIRMED\nMelania Trump was a prostitute for Epstein\nSold to Donald when she got too old\n\nI told you. Now there are receipts https://t.co/ZbFN16nggV",
+      "post_id": "2061826430984429813",
+      "post_url": "https://x.com/i/web/status/2061826430984429813",
+      "created_at": "2026-06-04T11:01:37+00:00",
+      "post_text": "Reminder that Mollie Tibbets father told you not to hate immigrants and that we need them for tasty tacos. \nTo be clear, this is what tacos are worth to him:\n-His daughter had a full ear of corn with the shuck on shoved up here ass so hard and so many times her intestines burst, https://t.co/SVN8rBUqzN",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@SilentlySirs)"
+      "evidence_publisher": "X (@frogNscorpion)"
     },
     {
-      "post_id": "2061815239503434007",
-      "post_url": "https://x.com/i/web/status/2061815239503434007",
-      "created_at": "2026-06-03T12:26:14+00:00",
-      "post_text": "Selena Gomez went live and REVEALED that she\u2019s in the Diddy files on a s*x tape\ud83d\udc40\ud83d\ude33. She got 700k Dollars and she really needed money . Gomez said she rather reveals it before it gets leaked \ud83d\ude33\n\n\u201cI needed the 700k Dollars guys \u201c\n\u201cTrust me your favorite artist are in the f*les https://t.co/nH41jkht3e",
+      "post_id": "2062312664135586006",
+      "post_url": "https://x.com/i/web/status/2062312664135586006",
+      "created_at": "2026-06-04T11:01:25+00:00",
+      "post_text": "WE GOT CHUD THE BUILDER HIMSELF at the Blackjack table, NO WAY\ud83d\ude02\ud83d\ude2d https://t.co/z8bI9pmX3A",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about celebrity entertainment and alleged personal scandals unrelated to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "refusal_reason": "Off-beat: This is a casual social media post about someone at a casino with no political content, US politician references, or election-related claims.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061908235615895638",
-      "post_url": "https://x.com/i/web/status/2061908235615895638",
-      "created_at": "2026-06-03T12:26:09+00:00",
-      "post_text": "Ojude-\u00d2ba has always been more than a festival. It is proof of what culture does when itis protected, resourced, and taken seriously.\n\nAt the 2026 edition, I reaffirmed Nigeria's commitment to advancing Ojude-\u00d2ba's inscription on the UNESCO Intangible Cultural Heritage List \u2014 https://t.co/few5UAFyGW",
+      "post_id": "2062098406403874916",
+      "post_url": "https://x.com/i/web/status/2062098406403874916",
+      "created_at": "2026-06-04T11:01:24+00:00",
+      "post_text": "Imagine calling her UGLY and the game WOKE\ud83e\udd26\ud83c\udffb https://t.co/0PWK7CWCkt",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post discusses a Nigerian cultural festival and UNESCO heritage efforts with no US political figures, policy, or 2026 midterm content.",
+      "refusal_reason": "Off-beat: This post appears to be about a video game and entertainment criticism, with no reference to US politicians, elections, or political policy.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061895974478340353",
-      "post_url": "https://x.com/i/web/status/2061895974478340353",
-      "created_at": "2026-06-03T12:26:08+00:00",
-      "post_text": "Israeli occupation soldiers desecrate and destroy a church in Lebanon. https://t.co/0vNQIW1sYO",
+      "post_id": "2062266959601803290",
+      "post_url": "https://x.com/i/web/status/2062266959601803290",
+      "created_at": "2026-06-04T11:01:23+00:00",
+      "post_text": "Watch me do my tatoo myself \ud83d\ude01\ud83d\ude01 https://t.co/F8NfIi0csn",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post concerns foreign military conflict (Israel-Lebanon) with no US politician, 2026 midterm, or federal policy angle.",
+      "refusal_reason": "Off-beat: This is a personal lifestyle post about self-tattooing with no political content or connection to US politics, politicians, or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061564367284658414",
-      "post_url": "https://x.com/i/web/status/2061564367284658414",
-      "created_at": "2026-06-03T12:26:07+00:00",
-      "post_text": "This is the kind of artwork that makes you stop scrolling instantly. \ud83c\udf80\n.\n.\nArt by @RAGGEDYANUS\n#tadc #raghata https://t.co/GsaGnmmOHb",
+      "post_id": "2062173249794932884",
+      "post_url": "https://x.com/i/web/status/2062173249794932884",
+      "created_at": "2026-06-04T11:01:21+00:00",
+      "post_text": "How many times are Greeks and Albanians mentioned in Homer's epic \"Iliad and Odyssey\" https://t.co/mbZXnsJ6M6",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post is about fan artwork and entertainment content with no US political figures, officials, policy, or election-related material.",
+      "refusal_reason": "Off-beat: This is a literary and historical question about ancient Greek epic poetry with no connection to US politics, the 2026 midterms, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061924161212273053",
-      "post_url": "https://x.com/i/web/status/2061924161212273053",
-      "created_at": "2026-06-03T12:26:05+00:00",
-      "post_text": "Skid Row - Los Angeles\n\n2015 Before Karen Bass\n2025 After Karen Bass\n\nVote Spencer Pratt for LA Mayor. https://t.co/rfcCnpvfji",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@BrettN89441)"
-    },
-    {
-      "post_id": "2061770899750047895",
-      "post_url": "https://x.com/i/web/status/2061770899750047895",
-      "created_at": "2026-06-03T12:25:54+00:00",
-      "post_text": "its actually to cleanly jack off their master. look it up. super weird history https://t.co/IuIAyGJuoN",
+      "post_id": "2062315525821137009",
+      "post_url": "https://x.com/i/web/status/2062315525821137009",
+      "created_at": "2026-06-04T11:01:18+00:00",
+      "post_text": "Bro was genuinely scared to death. \ud83d\ude02 \ud83e\udd23 https://t.co/W79nhekiV3",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This appears to be a crude, off-topic comment about an unrelated historical practice with no mention of US politicians, policy, elections, or political figures.",
+      "refusal_reason": "Off-beat: Post is a vague emotional reaction with no identifiable political content, US officials, or 2026-related topics.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061856019706241271",
-      "post_url": "https://x.com/i/web/status/2061856019706241271",
-      "created_at": "2026-06-03T12:25:53+00:00",
-      "post_text": "Crafting Magic with Glue Threads https://t.co/ObKBeNPOWe",
+      "post_id": "2062107442625036356",
+      "post_url": "https://x.com/i/web/status/2062107442625036356",
+      "created_at": "2026-06-04T11:01:16+00:00",
+      "post_text": "Charlize Theron proving age is just a number at 50 https://t.co/3JaD6wEVUZ",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a craft or DIY project with no US political content, politicians, or election-related material.",
+      "refusal_reason": "Off-beat: This is a celebrity entertainment post about an actress' appearance with no US political content, political figures, or election-related material.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061976169059070191",
-      "post_url": "https://x.com/i/web/status/2061976169059070191",
-      "created_at": "2026-06-03T12:25:51+00:00",
-      "post_text": "Rick Chow's store was ransacked and looted after he was acquitted of murder.\n\nAlways finding an excuse to commit violence and steal. https://t.co/KTisElOyUd",
+      "post_id": "2062329709162057837",
+      "post_url": "https://x.com/i/web/status/2062329709162057837",
+      "created_at": "2026-06-04T11:01:15+00:00",
+      "post_text": "\ud83d\udea8BREAKING: New gameplay mechanics from God of War: Laufey have been revealed. https://t.co/J2wax0ueqU",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a local crime and commercial disruption story with no claim about US politicians, federal policy, elections, or political misinformation.",
+      "refusal_reason": "Off-beat: This post is about video game releases and gameplay mechanics, which is entertainment content unrelated to US politics or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061847641076715627",
-      "post_url": "https://x.com/i/web/status/2061847641076715627",
-      "created_at": "2026-06-03T12:25:50+00:00",
-      "post_text": "Senator John Fetterman says he was the only Democrat on the Senate's Fraud Exploratory Committee to vote in favor of opening an investigation into Malia Obama's suspicious USAID grants when she was still living at the White House in 2007.\n\n\"She was just a kid,\" said Fetterman, https://t.co/pvsJGmxchU",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@PaulGoldEagle)"
-    },
-    {
-      "post_id": "2061804478463136064",
-      "post_url": "https://x.com/i/web/status/2061804478463136064",
-      "created_at": "2026-06-03T12:25:38+00:00",
-      "post_text": "When the First Transcontinental Railroad built by the Central Pacific Railroad had to cut through the Sierra Nevada, many believed the task was too high, too cold, and too deadly. The company initially hired a small group of Chinese laborers, barely 50 men. \n\nVery soon, they https://t.co/6O8QKUqRiQ",
+      "post_id": "2062276049376096440",
+      "post_url": "https://x.com/i/web/status/2062276049376096440",
+      "created_at": "2026-06-04T11:01:13+00:00",
+      "post_text": "Clavicular shares photos after undergoing rhinoplasty surgery \ud83d\udc40 https://t.co/pSP1ojWe6R",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about historical railroad construction and labor history with no connection to US politicians, the 2026 midterms, federal policy, or political misinformation.",
+      "refusal_reason": "Off-beat: This post is about a celebrity's cosmetic surgery and has no connection to US politicians, elections, federal policy, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061934653036990730",
-      "post_url": "https://x.com/i/web/status/2061934653036990730",
-      "created_at": "2026-06-03T12:25:37+00:00",
-      "post_text": "Somali Fake daycare owner gets his car impounded. Great work officers. They should impound him too. https://t.co/zUFiMQTQvP",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a local crime story about a daycare operator with no connection to US politicians, the 2026 midterms, federal policy, or election integrity.",
+      "post_id": "2062360035867398178",
+      "post_url": "https://x.com/i/web/status/2062360035867398178",
+      "created_at": "2026-06-04T11:01:12+00:00",
+      "post_text": "The Left is going insane over this video of President Trump suggesting January 6 was an inside job by saying: \"The FBI said, 'Go in, Go in.'\"\n\nPresident Trump stated nothing but facts.\n\nThe Left should stop lying. https://t.co/ydqb9WyDEK",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post makes vague accusations ('The Left is going insane,' 'The Left should stop lying') and gestures at a linked video without stating the specific factual claim in the post text itself; the reader must click the link to understand what assertion is being made.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061940897109987737",
-      "post_url": "https://x.com/i/web/status/2061940897109987737",
-      "created_at": "2026-06-03T12:25:35+00:00",
-      "post_text": "God of War Laufey is coming soon.\n\nCheck out the PlayStation blog for exclusive details on God of War's next chapter \ud83d\udc47 https://t.co/LCJbggRMLz",
+      "post_id": "2062278902383599660",
+      "post_url": "https://x.com/i/web/status/2062278902383599660",
+      "created_at": "2026-06-04T11:01:09+00:00",
+      "post_text": "Zendaya is reportedly pregnant with her first child with Tom Holland. https://t.co/RcqOZyj6AC",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is about a video game release, not US politics or the 2026 midterms.",
+      "refusal_reason": "Off-beat: This is a celebrity entertainment/personal news story with no connection to US politics, the 2026 midterms, or political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061992155250663789",
-      "post_url": "https://x.com/i/web/status/2061992155250663789",
-      "created_at": "2026-06-03T12:25:34+00:00",
-      "post_text": "Regarding the Platner &amp; Collins infidelity stuff: I don\u2019t care about anyone\u2019s affair. At all.\n\nThese days I\u2019m relieved when the scandal involves two consenting adults and not minors.",
+      "post_id": "2062321987893043686",
+      "post_url": "https://x.com/i/web/status/2062321987893043686",
+      "created_at": "2026-06-04T11:01:08+00:00",
+      "post_text": "I keep thinking about this photo taken yesterday. \n\nPrime Minister of Canada, @MarkJCarney, stands in front of an Israeli flag speaking about how hate against any group of peoples is wrong. While, the International Court of Justice has ruled that Israel is committing the crime of https://t.co/TVP54T5erp",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal opinion about private scandals with no mention of US politicians, policy, elections, or political misinformation.",
+      "refusal_reason": "Off-beat: Post concerns Canadian politics and international law regarding Israel, with no direct connection to US politicians, the 2026 midterms, federal/state policy, or US political misinformation.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2061989505603678674",
-      "post_url": "https://x.com/i/web/status/2061989505603678674",
-      "created_at": "2026-06-03T12:25:33+00:00",
-      "post_text": "Democrats just nominated a guy who served as a defense witness for the World Trade Center bomber and who worked for an Al Qaeda front group.\n\nYou know how we say Europe\u2019s problems with Islamism are going to happen here?\n\nWell, they are happening. https://t.co/qGEqHQ5OWK",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@DecisionDeskHQ)"
+      "post_id": "2062258392245100984",
+      "post_url": "https://x.com/i/web/status/2062258392245100984",
+      "created_at": "2026-06-04T11:01:06+00:00",
+      "post_text": "She Sucks at Sports\u2026 https://t.co/UGtwhgiEFh",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post is about sports performance with no US political content or figures mentioned.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     },
     {
-      "post_id": "2062002833801597149",
-      "post_url": "https://x.com/i/web/status/2062002833801597149",
-      "created_at": "2026-06-03T12:25:23+00:00",
-      "post_text": "How in the hell has a defense witness in the 1993 WTC bombing, with ties to Al-Qaeda been nominated by the Democrats to serve in Congress?\n\nIf elected in November, Congress should fully investigate his ties to terrorist organizations and determine whether he is fit to serve. https://t.co/Ss5TqKmdU0",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@DecisionDeskHQ)"
+      "post_id": "2062278679502471198",
+      "post_url": "https://x.com/i/web/status/2062278679502471198",
+      "created_at": "2026-06-04T11:01:05+00:00",
+      "post_text": "Negotiations are over\u2026.. https://t.co/8I1dTO3ZvQ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Post contains no identifiable political content, US officials, policy claims, or 2026 midterm references\u2014just a vague statement with a link that cannot be evaluated without access to the target.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2062247133202571630",
+      "post_url": "https://x.com/i/web/status/2062247133202571630",
+      "created_at": "2026-06-04T11:01:04+00:00",
+      "post_text": "my friend really wants to fuck the security guard at our bar but he only agreed to a threesome do i take one for the team for my girl",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal anecdote about a non-political social situation with no connection to US politicians, elections, policy, or political misinformation.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2062356492825813422",
+      "post_url": "https://x.com/i/web/status/2062356492825813422",
+      "created_at": "2026-06-04T11:01:03+00:00",
+      "post_text": "#BREAKING: Three neo-Nazis who booed during a Melbourne Anzac Day dawn service in 2025 have been found guilty of offensive behaviour. https://t.co/gkfRgVphOS",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post is about Australian criminal justice and a local Australian event, not US politics or the 2026 midterms.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     }
   ]
 }
