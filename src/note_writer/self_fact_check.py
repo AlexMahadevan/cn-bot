@@ -92,7 +92,9 @@ def search_for_post(post_text: str, *, max_results: int = 8) -> List[FactCheckEv
     """
     try:
         response = anthropic_client().messages.create(
-            model="claude-sonnet-4-6",
+            # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). Broad
+            # web_search evidence gathering; raw results, no prose synthesis.
+            model="claude-haiku-4-5",
             max_tokens=2048,
             tools=[
                 {

@@ -54,12 +54,14 @@ NOTE_MAX_CHARS_INCLUDING_URL = 280
 # Guards concurrent appends to the eval cache (CN_BOT_PIPELINE_CACHE_FILE).
 _CACHE_WRITE_LOCK = threading.Lock()
 
-# Model that writes the note prose. Swapped Opus 4.7 -> Sonnet 4.6 on
-# 2026-06-01: the cross-writer benchmark (see dashboard comparison page) found
-# Sonnet retains ~77% of Opus's predicted-helpfulness inside this pipeline at
-# ~1/5 the per-note cost — the architecture flattens the model gap. Revert by
-# setting this back to OPUS_MODEL.
-NOTE_WRITER_MODEL = SONNET_MODEL
+# Model that writes the note prose. Swapped Sonnet 4.6 -> Haiku 4.5 on
+# 2026-06-02: the cross-writer benchmark (pipeline_cached_scored.jsonl) shows
+# Haiku actually OUTSCORES Sonnet inside this pipeline — predicted-helpfulness
+# 2.65 vs 2.47, factual 3.23 vs 3.03, style 3.84 vs 3.62 — at ~1/3.7 the
+# per-note cost. The architecture flattens the model gap, so the cheaper model
+# wins on both axes. Opus still leads on quality (3.19); revert to OPUS_MODEL
+# for max quality or SONNET_MODEL to undo this change.
+NOTE_WRITER_MODEL = HAIKU_MODEL
 
 _EXEMPLARS_PATH = Path(__file__).resolve().parent.parent / "exemplars.json"
 

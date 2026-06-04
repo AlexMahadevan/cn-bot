@@ -86,7 +86,10 @@ def search_for_post(post_text: str, *, max_results: int = 5) -> List[FactCheckEv
     """Use Claude's server-side web_search to find fact-checks across IFCN sites."""
     try:
         response = anthropic_client().messages.create(
-            model="claude-sonnet-4-6",
+            # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). This
+            # call only triggers web_search and returns raw results — no prose
+            # synthesis — so the cheaper model is fine here.
+            model="claude-haiku-4-5",
             max_tokens=2048,
             tools=[
                 {

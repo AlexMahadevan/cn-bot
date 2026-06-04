@@ -40,7 +40,7 @@ def complete(
     *,
     user_prompt: str,
     system: Optional[str | List[dict]] = None,
-    model: str = OPUS_MODEL,
+    model: str = HAIKU_MODEL,  # cheap default; callers pass an explicit model
     max_tokens: int = 4096,
     effort: str = "high",
     adaptive_thinking: bool = True,
