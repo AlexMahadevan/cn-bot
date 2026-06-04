@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-06-04T11:01:53+00:00",
+  "generated_at": "2026-06-04T21:59:13+00:00",
   "totals": {
-    "posts": 1908,
-    "off_beat": 1395,
-    "evidence_searched": 513,
-    "evidence_found": 271,
+    "posts": 1916,
+    "off_beat": 1397,
+    "evidence_searched": 519,
+    "evidence_found": 275,
     "notes_written": 19,
     "submitted": 19
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 1908
+      "count": 1916
     },
     {
       "label": "On-beat (US politics)",
-      "count": 513
+      "count": 519
     },
     {
       "label": "Evidence found",
-      "count": 271
+      "count": 275
     },
     {
       "label": "Note drafted",
@@ -105,21 +105,21 @@
     },
     {
       "day": "2026-06-04",
-      "posts": 47,
+      "posts": 55,
       "submitted": 0,
       "queued": 0,
-      "refused": 47,
+      "refused": 55,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1395
+      "count": 1397
     },
     {
       "bucket": "Other",
-      "count": 225
+      "count": 227
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
@@ -127,7 +127,7 @@
     },
     {
       "bucket": "Opus declined to write",
-      "count": 77
+      "count": 81
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -145,11 +145,11 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 141
+      "count": 144
     },
     {
       "tier": "ifcn_verified",
-      "count": 126
+      "count": 127
     }
   ],
   "notes": [
@@ -461,6 +461,86 @@
   ],
   "recent_refusals": [
     {
+      "post_id": "2062497158381670439",
+      "post_url": "https://x.com/i/web/status/2062497158381670439",
+      "created_at": "2026-06-04T13:45:57+00:00",
+      "post_text": "Olivia Rodrigo says she is \u201copen to collaborating\u201d with Sabrina Carpenter.\n\n(https://t.co/TRdKLOKVAo) https://t.co/6ftRtFjXPW",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@PopBase)"
+    },
+    {
+      "post_id": "2062188106434875405",
+      "post_url": "https://x.com/i/web/status/2062188106434875405",
+      "created_at": "2026-06-04T13:45:45+00:00",
+      "post_text": "women have been playing male protagonists for decades without complaint, yet every year we see grown ass men throwing tantrums over women in games. that should tell you everything you need to know about who's truly ruining gaming now",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is opinion and commentary about gaming culture; while it references women playing male protagonists, it makes no specific, falsifiable factual claim that can be verified\u2014it's an argument about relative behavior and attitudes rather than a checkable assertion.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2062094069111611807",
+      "post_url": "https://x.com/i/web/status/2062094069111611807",
+      "created_at": "2026-06-04T13:45:36+00:00",
+      "post_text": "God of War game with no Kratos = Pepperoni Passion with no pepperoni https://t.co/GKEjUytwHA",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a humorous analogy/comparison expressing an opinion about a hypothetical game scenario, not a factual claim that can be verified or fact-checked.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2062359440725057722",
+      "post_url": "https://x.com/i/web/status/2062359440725057722",
+      "created_at": "2026-06-04T13:45:35+00:00",
+      "post_text": "Notice how only White players for the Spurs put their hand over their heart during the National Anthem.\n\nWemby crosses his arms. \n\nMost of them are probably singing the Black \u201canthem\u201d under their breath.\n\nBlack America has a patriotism problem.  https://t.co/RjbM3uWE92",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@florida_grand)"
+    },
+    {
+      "post_id": "2062379565465698511",
+      "post_url": "https://x.com/i/web/status/2062379565465698511",
+      "created_at": "2026-06-04T13:45:24+00:00",
+      "post_text": "Me when some retard waited too long to merge and now thinks he\u2019s gonna get in front of me https://t.co/Njistbo4mD",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a personal reaction to a traffic situation with no specific factual claim that can be verified or fact-checked.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2062493227626737908",
+      "post_url": "https://x.com/i/web/status/2062493227626737908",
+      "created_at": "2026-06-04T13:45:22+00:00",
+      "post_text": "President Donald Trump, without evidence, is accusing Democrats of trying to \"steal\" the California gubernatorial and Los Angeles mayoral primaries.\n\nHe first called out the use of mail-in ballots in a post on Truth Social. In a follow-up post, he accused Democrats of holding up https://t.co/IXTqRyPMAr",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@ABC7)"
+    },
+    {
+      "post_id": "2062442444407648452",
+      "post_url": "https://x.com/i/web/status/2062442444407648452",
+      "created_at": "2026-06-04T13:45:10+00:00",
+      "post_text": "Trump, without evidence, accuses Democrats of trying to 'steal' California primaries https://t.co/cwi9lZYxDV",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2062285861840945467",
+      "post_url": "https://x.com/i/web/status/2062285861840945467",
+      "created_at": "2026-06-04T13:44:55+00:00",
+      "post_text": "A poor girl was attacked and humiliated by a Muslim woman for going out without a burqa and wearing makeup and perfume.\n\nSick culture and mentality! https://t.co/tWSdovXNEf",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post makes a vague, unverified allegation about an unspecified incident without naming the girl, the attacker, the location, or providing verifiable details; the actual claim depends on viewing the linked media which the bot cannot access.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
       "post_id": "2062210272060706820",
       "post_url": "https://x.com/i/web/status/2062210272060706820",
       "created_at": "2026-06-04T11:01:52+00:00",
@@ -627,86 +707,6 @@
       "post_text": "\ud83d\udea8BREAKING: New gameplay mechanics from God of War: Laufey have been revealed. https://t.co/J2wax0ueqU",
       "refusal_bucket": "Off-beat (not US politics)",
       "refusal_reason": "Off-beat: This post is about video game releases and gameplay mechanics, which is entertainment content unrelated to US politics or the 2026 midterms.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062276049376096440",
-      "post_url": "https://x.com/i/web/status/2062276049376096440",
-      "created_at": "2026-06-04T11:01:13+00:00",
-      "post_text": "Clavicular shares photos after undergoing rhinoplasty surgery \ud83d\udc40 https://t.co/pSP1ojWe6R",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about a celebrity's cosmetic surgery and has no connection to US politicians, elections, federal policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062360035867398178",
-      "post_url": "https://x.com/i/web/status/2062360035867398178",
-      "created_at": "2026-06-04T11:01:12+00:00",
-      "post_text": "The Left is going insane over this video of President Trump suggesting January 6 was an inside job by saying: \"The FBI said, 'Go in, Go in.'\"\n\nPresident Trump stated nothing but facts.\n\nThe Left should stop lying. https://t.co/ydqb9WyDEK",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes vague accusations ('The Left is going insane,' 'The Left should stop lying') and gestures at a linked video without stating the specific factual claim in the post text itself; the reader must click the link to understand what assertion is being made.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062278902383599660",
-      "post_url": "https://x.com/i/web/status/2062278902383599660",
-      "created_at": "2026-06-04T11:01:09+00:00",
-      "post_text": "Zendaya is reportedly pregnant with her first child with Tom Holland. https://t.co/RcqOZyj6AC",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a celebrity entertainment/personal news story with no connection to US politics, the 2026 midterms, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062321987893043686",
-      "post_url": "https://x.com/i/web/status/2062321987893043686",
-      "created_at": "2026-06-04T11:01:08+00:00",
-      "post_text": "I keep thinking about this photo taken yesterday. \n\nPrime Minister of Canada, @MarkJCarney, stands in front of an Israeli flag speaking about how hate against any group of peoples is wrong. While, the International Court of Justice has ruled that Israel is committing the crime of https://t.co/TVP54T5erp",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post concerns Canadian politics and international law regarding Israel, with no direct connection to US politicians, the 2026 midterms, federal/state policy, or US political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062258392245100984",
-      "post_url": "https://x.com/i/web/status/2062258392245100984",
-      "created_at": "2026-06-04T11:01:06+00:00",
-      "post_text": "She Sucks at Sports\u2026 https://t.co/UGtwhgiEFh",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post is about sports performance with no US political content or figures mentioned.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062278679502471198",
-      "post_url": "https://x.com/i/web/status/2062278679502471198",
-      "created_at": "2026-06-04T11:01:05+00:00",
-      "post_text": "Negotiations are over\u2026.. https://t.co/8I1dTO3ZvQ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Post contains no identifiable political content, US officials, policy claims, or 2026 midterm references\u2014just a vague statement with a link that cannot be evaluated without access to the target.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062247133202571630",
-      "post_url": "https://x.com/i/web/status/2062247133202571630",
-      "created_at": "2026-06-04T11:01:04+00:00",
-      "post_text": "my friend really wants to fuck the security guard at our bar but he only agreed to a threesome do i take one for the team for my girl",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a personal anecdote about a non-political social situation with no connection to US politicians, elections, policy, or political misinformation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2062356492825813422",
-      "post_url": "https://x.com/i/web/status/2062356492825813422",
-      "created_at": "2026-06-04T11:01:03+00:00",
-      "post_text": "#BREAKING: Three neo-Nazis who booed during a Melbourne Anzac Day dawn service in 2025 have been found guilty of offensive behaviour. https://t.co/gkfRgVphOS",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This post is about Australian criminal justice and a local Australian event, not US politics or the 2026 midterms.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
