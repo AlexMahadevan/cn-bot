@@ -7,11 +7,12 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import List, Optional, Set
 
 from cnapi.client import CNClient
-from cnapi.evaluate_note import evaluate_note
+from cnapi.evaluate_note import claim_opinion_score, evaluate_note
 from cnapi.get_api_eligible_posts import get_posts_eligible_for_notes
 from cnapi.get_notes_written import already_noted_post_ids, get_notes_written
 from cnapi.submit_note import submit_note
 from data_models import NoteResult, Post
+from note_writer.config import CLAIM_OPINION_MIN
 from note_writer.write_note import research_post_and_write_note
 import storage
 
@@ -80,21 +81,41 @@ class CommunityNotesBot:
 
         note = result.note
 
-        # Pre-flight: evaluate_note dry-run (free safety net)
+        # Pre-flight quality gate: score the draft on X's claim/opinion model
+        # (free dry-run, does not submit) and skip opinion-like notes so they
+        # don't drag the rolling-50 the admission evaluator scores. A genuine API
+        # error fails open — we submit rather than lose a good note to a blip.
         if not skip_evaluate:
             try:
-                eval_resp = evaluate_note(
-                    self.client,
-                    post_id=note.post_id,
-                    note_text=note.note_text,
-                    classification=note.classification,
-                    misleading_tags=note.misleading_tags,
-                    trustworthy_sources=note.trustworthy_sources,
-                    test_mode=True,
+                score = claim_opinion_score(
+                    evaluate_note(self.client, post_id=note.post_id, note_text=note.note_text)
                 )
-                logger.info("evaluate_note for %s: %s", note.post_id, eval_resp)
             except Exception as e:
-                logger.warning("evaluate_note failed for %s (continuing anyway): %s", note.post_id, e)
+                logger.warning("evaluate_note failed for %s (submitting anyway): %s", note.post_id, e)
+                score = None
+
+            if score is not None:
+                logger.info("claim_opinion_score=%.4f for %s", score, note.post_id)
+                if score < CLAIM_OPINION_MIN:
+                    logger.info(
+                        "Gating %s: claim_opinion_score %.4f < %.2f floor (not submitting)",
+                        note.post_id, score, CLAIM_OPINION_MIN,
+                    )
+                    storage.log_draft(
+                        post_id=post.post_id, post_text=post.text,
+                        outcome="refused",
+                        refusal_reason=f"evaluate_note: claim_opinion_score {score:.3f} below {CLAIM_OPINION_MIN:.2f} floor",
+                        note_text=note.note_text,
+                        evidence_url=note.evidence_url,
+                        evidence_rating=evidence.rating if evidence else None,
+                        evidence_publisher=evidence.publisher_name if evidence else None,
+                        evidence_tier=evidence.evidence_tier if evidence else None,
+                        misleading_tags=note.misleading_tags,
+                    )
+                    result.refusal = (
+                        f"claim_opinion_score {score:.3f} below {CLAIM_OPINION_MIN:.2f} floor"
+                    )
+                    return result
 
         if dry_run:
             storage.log_draft(

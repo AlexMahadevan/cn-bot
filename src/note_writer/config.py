@@ -39,3 +39,12 @@ NOTE_WRITER_MODEL = {
     "sonnet": SONNET_MODEL,
     "haiku": HAIKU_MODEL,
 }.get(_WRITER_CHOICE, OPUS_MODEL)
+
+# Pre-submission quality gate. evaluate_note returns a numeric claim_opinion_score
+# (higher = more checkable-claim-like; negative = opinion-like). During earn-in we
+# skip submitting notes below this floor so opinion-ish notes don't drag down the
+# rolling-50 the automated admission evaluator scores — ClaimOpinion is our one
+# soft bucket. Conservative default (0.0) drops only clearly opinion-like notes;
+# raise it as we calibrate against the High/Medium/Low buckets. A note that can't
+# be scored (API error) fails open and still submits.
+CLAIM_OPINION_MIN = float(os.getenv("CN_BOT_CLAIM_OPINION_MIN", "0.0"))
