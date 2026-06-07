@@ -46,4 +46,15 @@ fi
 # 2. Publish the snapshot. refresh.sh regenerates bot.json/candidate_pool.json
 #    and commits only if something changed; we push so Pages rebuilds.
 bash "$REPO/dashboard/tools/refresh.sh" || echo "[run-bot] refresh.sh failed (exit $?)."
-git push || echo "[run-bot] git push failed (exit $?); will retry next run."
+
+# Push with retry/backoff. Scheduled runs often fire right after the laptop
+# wakes, before DNS is ready ("Could not resolve host: github.com"), so a single
+# attempt intermittently fails and the dashboard goes stale until the next run.
+# Retry a few times so a transient network hiccup self-heals within this run.
+push_ok=0
+for attempt in 1 2 3 4; do
+    if git push; then push_ok=1; break; fi
+    echo "[run-bot] git push attempt $attempt failed (exit $?)."
+    [ "$attempt" -lt 4 ] && sleep $((attempt * 15))
+done
+[ "$push_ok" -eq 1 ] || echo "[run-bot] git push still failing after 4 attempts; will retry next run."
