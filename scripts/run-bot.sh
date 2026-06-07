@@ -20,6 +20,19 @@ set -uo pipefail
 REPO="/Users/alexmahadevan/python_projects/template-api-note-writer"
 cd "$REPO"
 
+# Preflight: wait for DNS/network before starting. Scheduled runs often fire
+# right after the laptop wakes, before networking is up, and the bot then dies
+# resolving api.x.com — a silently lost run (costly during the earn-in sprint
+# where note volume matters). Wait up to ~2min for resolution; if it never comes
+# we proceed anyway (no worse than today).
+for attempt in 1 2 3 4 5 6; do
+    if "$REPO/.venv/bin/python" -c "import socket; socket.getaddrinfo('api.x.com', 443)" 2>/dev/null; then
+        break
+    fi
+    echo "[run-bot] network not ready (attempt $attempt): can't resolve api.x.com; waiting 20s..."
+    sleep 20
+done
+
 # Homebrew installs the watchdog as `timeout`/`gtimeout`, but those dirs are
 # not on launchd's minimal PATH — so search known locations and fall back to
 # running without a watchdog rather than failing outright.
