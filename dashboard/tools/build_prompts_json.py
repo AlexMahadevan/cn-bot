@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import ast
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -24,9 +25,11 @@ GATES = [
     {
         "file": "relevance_filter.py", "const": "_SYSTEM",
         "gate": "1. Relevance filter",
-        "summary": "The first gate. A cheap Claude Haiku call decides whether the "
-                   "post is about US politics or political misinformation. Most "
-                   "posts drop out right here — the bot's beat is narrow by design.",
+        "summary": "The first gate. A cheap Claude Haiku call keeps only posts that "
+                   "carry a specific, checkable factual claim. (While the bot earns "
+                   "into Community Notes it considers any topic to build a track "
+                   "record; its standing beat is US political misinformation.) Most "
+                   "posts — jokes, pure opinion, vague takes — drop out right here.",
     },
     {
         "file": "specificity_check.py", "const": "_SYSTEM",
@@ -60,17 +63,52 @@ GATES = [
 ]
 
 
+def _active_beat() -> str:
+    """The beat mode the bot runs under, same default the code uses (config.py)."""
+    return os.getenv("CN_BOT_BEAT_MODE", "broad").strip().lower()
+
+
 def extract_string_const(path: Path, name: str) -> str | None:
-    """Return the value of the first `name = \"...\"` string-literal assignment."""
+    """Return the string value bound to `name`, following one common layer of
+    indirection so the published prompt matches what the bot actually runs:
+
+      - direct literal:   _SYSTEM = "..."                       → the literal
+      - alias:            _SYSTEM = _SYSTEM_BROAD               → resolve target
+      - beat conditional: _SYSTEM = _A if BEAT_MODE == "x" else _B
+                          → resolve whichever branch the active beat selects
+
+    Only module-level assignments are considered (function-local vars with the
+    same name can't shadow). Returns None if it can't resolve to a str literal.
+    """
     tree = ast.parse(path.read_text(encoding="utf-8"))
-    for node in ast.walk(tree):
+    assigns: dict[str, ast.expr] = {}
+    for node in tree.body:
         if isinstance(node, ast.Assign):
             for tgt in node.targets:
-                if (isinstance(tgt, ast.Name) and tgt.id == name
-                        and isinstance(node.value, ast.Constant)
-                        and isinstance(node.value.value, str)):
-                    return node.value.value
-    return None
+                if isinstance(tgt, ast.Name):
+                    assigns[tgt.id] = node.value
+
+    def ifexp_true(test: ast.expr) -> bool:
+        # Evaluate `<Name> == "<const>"` against the active beat; default True.
+        if (isinstance(test, ast.Compare) and len(test.ops) == 1
+                and isinstance(test.ops[0], ast.Eq)
+                and isinstance(test.left, ast.Name)
+                and isinstance(test.comparators[0], ast.Constant)):
+            return _active_beat() == test.comparators[0].value
+        return True
+
+    def resolve(node: ast.expr | None, depth: int = 0) -> str | None:
+        if node is None or depth > 6:
+            return None
+        if isinstance(node, ast.Constant) and isinstance(node.value, str):
+            return node.value
+        if isinstance(node, ast.Name):
+            return resolve(assigns.get(node.id), depth + 1)
+        if isinstance(node, ast.IfExp):
+            return resolve(node.body if ifexp_true(node.test) else node.orelse, depth + 1)
+        return None
+
+    return resolve(assigns.get(name))
 
 
 def main() -> None:
