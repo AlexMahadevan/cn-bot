@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-06-11T11:06:10+00:00",
+  "generated_at": "2026-06-11T15:06:27+00:00",
   "totals": {
-    "posts": 2746,
-    "off_beat": 1565,
-    "evidence_searched": 1181,
-    "evidence_found": 631,
+    "posts": 2793,
+    "off_beat": 1572,
+    "evidence_searched": 1221,
+    "evidence_found": 655,
     "notes_written": 31,
     "submitted": 31
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 2746
+      "count": 2793
     },
     {
       "label": "On-beat (US politics)",
-      "count": 1181
+      "count": 1221
     },
     {
       "label": "Evidence found",
-      "count": 631
+      "count": 655
     },
     {
       "label": "Note drafted",
@@ -161,33 +161,33 @@
     },
     {
       "day": "2026-06-11",
-      "posts": 47,
+      "posts": 94,
       "submitted": 1,
       "queued": 0,
-      "refused": 46,
+      "refused": 93,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 1565
+      "count": 1572
     },
     {
       "bucket": "Other",
-      "count": 518
+      "count": 533
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 384
+      "count": 402
     },
     {
       "bucket": "Opus declined to write",
-      "count": 203
+      "count": 209
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 38
+      "count": 39
     },
     {
       "bucket": "Too long (over 280 chars)",
@@ -201,11 +201,11 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 390
+      "count": 405
     },
     {
       "tier": "ifcn_verified",
-      "count": 237
+      "count": 246
     }
   ],
   "notes": [
@@ -709,254 +709,254 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2064486690811785587",
-      "post_url": "https://x.com/i/web/status/2064486690811785587",
-      "created_at": "2026-06-11T11:06:09+00:00",
-      "post_text": "any update on this? https://t.co/GZlISBMUfP",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains no specific factual claim\u2014it is merely a vague question asking for an update on an external link, with no checkable content visible in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064816208222826873",
-      "post_url": "https://x.com/i/web/status/2064816208222826873",
-      "created_at": "2026-06-11T11:06:07+00:00",
-      "post_text": "The gay ass Fortnite-like kick Chief does \ud83d\udc80 https://t.co/hWIW9IP3H2",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a subjective reaction and joke about a video game move with no specific, checkable factual claim.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064769822953443530",
-      "post_url": "https://x.com/i/web/status/2064769822953443530",
-      "created_at": "2026-06-11T11:06:06+00:00",
-      "post_text": "Trump is using his presidency to enrich himself and his family.\n\nCorruption at its finest.",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post expresses opinion and moral judgment ('corruption at its finest') without making a specific, falsifiable factual claim about a particular transaction, payment, or action that can be independently verified.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064787472731816411",
-      "post_url": "https://x.com/i/web/status/2064787472731816411",
-      "created_at": "2026-06-11T11:06:02+00:00",
-      "post_text": "Wow Claude Fable 5 is unbelievable! \n\nPrompt: \u201cmake a realistic open-world RPG about running for mayor of LA\u201d\n\nThe side quests are so unhinged and even more addicting than Fentanyl. https://t.co/T5Ygph8CzU",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post expresses subjective enthusiasm about a game and relies on a linked image/video to convey its actual content; the text itself contains only opinion and hyperbolic commentary without a specific falsifiable factual claim.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064887614218305806",
-      "post_url": "https://x.com/i/web/status/2064887614218305806",
-      "created_at": "2026-06-11T11:05:58+00:00",
-      "post_text": "This just blew my mind wow https://t.co/OIXtfb96ii https://t.co/WXqVgxRIH4",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains only an expression of amazement with no specific factual claim; the linked content is inaccessible for evaluation.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064926935424078145",
-      "post_url": "https://x.com/i/web/status/2064926935424078145",
-      "created_at": "2026-06-11T11:05:57+00:00",
-      "post_text": "What the fuck is going on in New York \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d https://t.co/pmmlsN39Zk",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague emotional reaction with no specific factual claim that can be checked; the linked content is inaccessible in this context.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064790504118829269",
-      "post_url": "https://x.com/i/web/status/2064790504118829269",
-      "created_at": "2026-06-11T11:05:56+00:00",
-      "post_text": "@PTrubey Prove me wrong then - put your gaming PC in a vaccum and let me know how that works out for you.  \ud83d\udc4d  ill even let you keep the CPU cooler attached \ud83d\ude02",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: This is a sarcastic rhetorical challenge without a factual claim; it relies on common knowledge (components fail in vacuum) rather than asserting a specific, checkable fact about a named subject or event.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064833294353547520",
-      "post_url": "https://x.com/i/web/status/2064833294353547520",
-      "created_at": "2026-06-11T11:05:53+00:00",
-      "post_text": "Late Alex Ekubo's son and daughter led the bible reading at their father's service of songs https://t.co/On0tGEi6tM",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post gestures at a linked image/video without making a specific, falsifiable claim in the text itself; the reader would need to view the link to understand what event occurred or verify details.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064932474233536897",
-      "post_url": "https://x.com/i/web/status/2064932474233536897",
-      "created_at": "2026-06-11T11:05:49+00:00",
-      "post_text": "Honestly, I\u2019ve never seen anything like this!\n\nIran is getting pummeled. \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 https://t.co/ul4TIHXIK9",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is vague commentary expressing an emotional reaction to a linked video; the specific claim about Iran depends entirely on viewing the linked media that the text does not describe.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064888569102000438",
-      "post_url": "https://x.com/i/web/status/2064888569102000438",
-      "created_at": "2026-06-11T11:05:20+00:00",
-      "post_text": "The father of Austin Metcalf broke down in TEARS revealing him and his family are disappointed that Karmelo Anthony only received 35 years in prison instead of receiving the DEATH penalty \ud83d\ude2c\ud83d\udc40\n\n\"He murdered my boy in broad daylight with a kitchen knife\"\n\"He deserves the chair\" https://t.co/7RvzGJ2jVW",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to a linked video/article without making verifiable claims in its own text \u2014 it relies on the reader clicking the link to understand the details and cannot be fact-checked without viewing the linked media.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064922560274325814",
-      "post_url": "https://x.com/i/web/status/2064922560274325814",
-      "created_at": "2026-06-11T11:05:17+00:00",
-      "post_text": "BREAKING: Knicks Fans climb and smash Yellow cab on 7th Avenue in NYC after Knicks win Game 4 of the NBA Finals\n\nVideo by @yyeeaahhhboiii2 | Licensing desk@freedomnews.tv https://t.co/gGuREGp8sL",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@ScooterCasterNY)"
-    },
-    {
-      "post_id": "2064786995075801397",
-      "post_url": "https://x.com/i/web/status/2064786995075801397",
-      "created_at": "2026-06-11T11:05:02+00:00",
-      "post_text": "She killed two boys with intent. Got 15 years.  \n\nThis is what we mean when we say America has a different legal system for black people https://t.co/LlCHCu2xY4",
+      "post_id": "2064926283491127386",
+      "post_url": "https://x.com/i/web/status/2064926283491127386",
+      "created_at": "2026-06-11T15:06:26+00:00",
+      "post_text": "He never posted for Dhurandhar \n\nBut now Virat kohli is putting a story for Alia Bhatt movie \"Alpha\" and promoting it openly.\ud83e\udd21\n\nWhy don't this guy openly support movies which show the reality of Pakistan? What is he afraid of? https://t.co/L2T6cNNqpG",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Holiistically)"
+      "evidence_publisher": "X (@konig0000)"
     },
     {
-      "post_id": "2064163778816770479",
-      "post_url": "https://x.com/i/web/status/2064163778816770479",
-      "created_at": "2026-06-11T11:04:49+00:00",
-      "post_text": "Wazzzupp beijinggg \ud83d\ude37 https://t.co/pU6P41C2OX",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: This is a casual greeting with an emoji and link, containing no specific factual claim to verify.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064282752732578133",
-      "post_url": "https://x.com/i/web/status/2064282752732578133",
-      "created_at": "2026-06-11T11:04:45+00:00",
-      "post_text": "The U.S. World Cup in one horrible photo: https://t.co/qoBxZFChnS",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains no specific factual claim\u2014it's a subjective editorial statement linking to an image without asserting any checkable fact about the U.S. World Cup.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064716553371673039",
-      "post_url": "https://x.com/i/web/status/2064716553371673039",
-      "created_at": "2026-06-11T11:04:43+00:00",
-      "post_text": "New footage of Trump testing the lights at his $60 million White House UFC arena https://t.co/qikVu7BuWQ",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "Snopes.com"
-    },
-    {
-      "post_id": "2064847800836485245",
-      "post_url": "https://x.com/i/web/status/2064847800836485245",
-      "created_at": "2026-06-11T11:04:28+00:00",
-      "post_text": "The whole stadium cannot stop looking at her https://t.co/oVdCuHeauZ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague observation with an embedded link but contains no specific, checkable factual claim about a verifiable event, person, or measurable assertion.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064490590306255159",
-      "post_url": "https://x.com/i/web/status/2064490590306255159",
-      "created_at": "2026-06-11T11:04:26+00:00",
-      "post_text": "@RonDeSantis Yes we have been getting screwed on property taxes while you\u2019ve been governor the last 6-7 yrs",
+      "post_id": "2065003712183931164",
+      "post_url": "https://x.com/i/web/status/2065003712183931164",
+      "created_at": "2026-06-11T15:06:14+00:00",
+      "post_text": "Most crime guns traced by RCMP came from within Canada, internal reports say https://t.co/KvzPgCUSkK",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2064743972203905402",
-      "post_url": "https://x.com/i/web/status/2064743972203905402",
-      "created_at": "2026-06-11T11:04:05+00:00",
-      "post_text": "hello. I am a marine biologist and this is my latest discovery\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f https://t.co/cUxzM3LZmj",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post contains no specific factual claim to check\u2014it only announces a discovery with a link but provides no details about what was discovered, when, where, or any measurable assertion.",
+      "post_id": "2064831298917871890",
+      "post_url": "https://x.com/i/web/status/2064831298917871890",
+      "created_at": "2026-06-11T15:06:03+00:00",
+      "post_text": "America\u2019s doctors just voted for war with RFK Jr. https://t.co/piy6JWJfGO",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague reaction gesture ('just voted for war') that depends entirely on the linked content to convey any specific claim.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2064753268182655319",
-      "post_url": "https://x.com/i/web/status/2064753268182655319",
-      "created_at": "2026-06-11T11:04:03+00:00",
-      "post_text": "Brad Pitt\u2019s daughter Zahara files to legally drop his last name https://t.co/azPoFACwUd",
+      "post_id": "2064992411009634491",
+      "post_url": "https://x.com/i/web/status/2064992411009634491",
+      "created_at": "2026-06-11T15:05:59+00:00",
+      "post_text": "\ud83d\udea8 NEW: Real Madrid will make around \u20ac300 million annually from their 3 main sponsors:\n\n\u2022 Fly Emirates: \u20ac100m\n\u2022 Adidias: \u20ac120m\n\u2022 HP: \u20ac80m\n\nNo other club has even \u20ac250m in revenue from their main sponsors. @diarioas \ud83d\udcb0\ud83e\udd11 https://t.co/aM2T2zGEES",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@PicturesFoIder)"
+      "evidence_publisher": "X (@theMadridZone)"
     },
     {
-      "post_id": "2064799681855557715",
-      "post_url": "https://x.com/i/web/status/2064799681855557715",
-      "created_at": "2026-06-11T11:03:52+00:00",
-      "post_text": "\ud83d\udea8\ud83c\uddee\ud83c\uddeaBREAKING\ud83d\udea8\ud83c\uddee\ud83c\uddea @restoreorderusa has now joined the fight in Belfast\u203c\ufe0f He fired up a Rumble stream and has now shot 5 Police Officers with an AK-47\ud83d\udea8\u203c\ufe0f Who y\u2019all got as the most violent Irishmen in the riots? https://t.co/ITZ7u3Opjn",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@emostablegenius)"
-    },
-    {
-      "post_id": "2064905742029902068",
-      "post_url": "https://x.com/i/web/status/2064905742029902068",
-      "created_at": "2026-06-11T11:03:39+00:00",
-      "post_text": "During dhurandhar telecast BCCI were arranging special screening for Dhurandhar but MI management denied it and none of them watched it.\n\nBut now Rohit Sharma is putting a story for Alia Bhatt movie \"Alpha\" and promoting it openly.\ud83e\udd21\n\nWhy don't this guy openly support movies https://t.co/pqYbSaZgTe https://t.co/A8zRropGHn",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@CourageousRo)"
-    },
-    {
-      "post_id": "2064764918151209247",
-      "post_url": "https://x.com/i/web/status/2064764918151209247",
-      "created_at": "2026-06-11T11:03:25+00:00",
-      "post_text": "I feel like we don\u2019t talk about this enough\u2026 https://t.co/LElIkLXFhM",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post expresses a subjective feeling about discussion frequency without making any specific, checkable factual claim.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2064722171859964127",
-      "post_url": "https://x.com/i/web/status/2064722171859964127",
-      "created_at": "2026-06-11T11:03:23+00:00",
-      "post_text": "Apple has decided not to bring its new Siri AI to iPhones and iPads in the EU, blaming the Digital Markets Act. The Commission\u2019s reply was blunt: this is Apple\u2019s choice, not Europe\u2019s fault. No American multinational can blackmail 450 million consumers by saying: change your https://t.co/vzCw1vAWWZ",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@democrats_eu)"
-    },
-    {
-      "post_id": "2064679915341938725",
-      "post_url": "https://x.com/i/web/status/2064679915341938725",
-      "created_at": "2026-06-11T11:03:10+00:00",
-      "post_text": "Anne Frank's diary is fake jewish propaganda. https://t.co/QuEVAzpJLS",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "Snopes"
-    },
-    {
-      "post_id": "2064403878951686407",
-      "post_url": "https://x.com/i/web/status/2064403878951686407",
-      "created_at": "2026-06-11T11:02:58+00:00",
-      "post_text": "Today, Iowa takes a critical step forward to modernize the state\u2019s legacy data systems by partnering with\u00a0tech industry leaders @awscloud and @Cognizant.\n\nIt\u2019s\u00a0an investment in security, agility and long\u2011term value for Iowans, with projected savings of more than $525M over 10",
+      "post_id": "2065031253166821395",
+      "post_url": "https://x.com/i/web/status/2065031253166821395",
+      "created_at": "2026-06-11T15:05:49+00:00",
+      "post_text": "Francesca Albanese tells mother of Oct. 7 victim to \u2018change medication\u2019 https://t.co/2eNc0BjmIS",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2065024818643169545",
+      "post_url": "https://x.com/i/web/status/2065024818643169545",
+      "created_at": "2026-06-11T15:05:37+00:00",
+      "post_text": "Most guns used in Canadian crimes were not smuggled in from abroad: internal reports https://t.co/GzUZknt6oH",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2064663317272990068",
+      "post_url": "https://x.com/i/web/status/2064663317272990068",
+      "created_at": "2026-06-11T15:05:26+00:00",
+      "post_text": "They denied him a visa, then branded him a terrorist.",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is vague commentary about an unnamed subject without specific details (no person named, no agency identified, no dates, no locations) that would allow fact-checking.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2064798212083355999",
+      "post_url": "https://x.com/i/web/status/2064798212083355999",
+      "created_at": "2026-06-11T15:05:20+00:00",
+      "post_text": "I can't believe I listened to the internet about America, the food is so good here! McDonald's is delicious! We need this back in Hamburg! https://t.co/F32ayQJAdJ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post expresses personal opinions about food taste and a desire for a restaurant, with no specific factual claims that can be verified or fact-checked.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2064922569216807100",
+      "post_url": "https://x.com/i/web/status/2064922569216807100",
+      "created_at": "2026-06-11T15:05:19+00:00",
+      "post_text": "HEY MAGA! \ud83e\udd23\n\nI\u2019ve been saying this from jump. The Reflecting Pool was going to end up looking like a green swamp, not blue. I just didn\u2019t expect it to happen this fast.\n\nOne day after it was filled, there\u2019s already a ton of algae.\n\nAnd let\u2019s be clear: this dude vacuuming the https://t.co/36YxjWEkBm",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@cwebbonline)"
+    },
+    {
+      "post_id": "2064988506699546773",
+      "post_url": "https://x.com/i/web/status/2064988506699546773",
+      "created_at": "2026-06-11T15:05:06+00:00",
+      "post_text": "JUST IN: Apple is rolling out a global update to ensure iPhones cannot be activated or resold if stolen. https://t.co/YM5RAKtiAk",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Coinvo)"
+    },
+    {
+      "post_id": "2064559456361308291",
+      "post_url": "https://x.com/i/web/status/2064559456361308291",
+      "created_at": "2026-06-11T15:04:55+00:00",
+      "post_text": "DNA RESULT REPORTEDLY TURNED THE CASE UPSIDE DOWN \u2014 What Investigators Found \u2026 THE FAMILY SECRET TURNED INTO A NATIONAL NIGHTMARE.\nThe Kruger m\u1d00ssacre has taken a devastating new turn after emerging reports claimed forensic analysts found DNA evidence matching the son of Ernst https://t.co/flUtpVsVjL",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a sensationalized headline gesture that references a linked article; the actual claim depends on clicking the link to understand what DNA evidence was allegedly found.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2065013241097646575",
+      "post_url": "https://x.com/i/web/status/2065013241097646575",
+      "created_at": "2026-06-11T15:04:52+00:00",
+      "post_text": "Why the hell US is attacking Indian Vessels?",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a rhetorical question expressing outrage or confusion rather than making a specific, falsifiable factual claim with named subjects and assertions that could be independently verified.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2064604845571727766",
+      "post_url": "https://x.com/i/web/status/2064604845571727766",
+      "created_at": "2026-06-11T15:04:49+00:00",
+      "post_text": "A Claude pro subscription costs 25k per month. Thats more than what you pay a fresher lol https://t.co/Sw73ybscqZ",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@IndianTechGuide)"
+    },
+    {
+      "post_id": "2064822036636078512",
+      "post_url": "https://x.com/i/web/status/2064822036636078512",
+      "created_at": "2026-06-11T15:04:40+00:00",
+      "post_text": "I suspect either a tray table was down, or one of the window blinds was still half open. https://t.co/67ZyZJvZzF",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is pure speculation without any specific factual claim to check; it offers only a hypothesis about what might have caused something without asserting a verifiable fact.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2064901234675347633",
+      "post_url": "https://x.com/i/web/status/2064901234675347633",
+      "created_at": "2026-06-11T15:04:38+00:00",
+      "post_text": "Per the FBI, Trump knew and funded underage sex parties in Palm Beach. https://t.co/DygzCxgAZ4",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@SpencerHakimian)"
+    },
+    {
+      "post_id": "2064734871545671755",
+      "post_url": "https://x.com/i/web/status/2064734871545671755",
+      "created_at": "2026-06-11T15:04:25+00:00",
+      "post_text": "\"haters say I can't sing 24/7, more like 25/8\nwe tore up Coachella anyways\" \n\n- Sakura on 'ICONIC BY MISTAKE' https://t.co/kl6BRwSNIk",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@HateCrave)"
+    },
+    {
+      "post_id": "2064539246891807026",
+      "post_url": "https://x.com/i/web/status/2064539246891807026",
+      "created_at": "2026-06-11T15:04:14+00:00",
+      "post_text": "So, I'm watching a video on how fake the Trump shooting was. I didn't know this. But, they lowered an American flag on a crane into the backdrop and placed photographers in place for the perfect photo op. \n\nI was always amazed at how six Secret Service agents couldn't keep a https://t.co/l9sHKOEfhW",
+      "refusal_bucket": "URL validator rejected (hallucination guard)",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to an unseen video and relies on a link (indicated by the truncated URL) to complete its meaning; the core assertion depends on viewing external media the fact-checker cannot access.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2064822249245249805",
+      "post_url": "https://x.com/i/web/status/2064822249245249805",
+      "created_at": "2026-06-11T15:04:10+00:00",
+      "post_text": "\ud83d\udea8\ud83e\udd2f Real Madrid will earn a record \u20ac\ud835\udfd0\ud835\udfd7\ud835\udfce \ud835\udc0c\ud835\udc08\ud835\udc0b\ud835\udc0b\ud835\udc08\ud835\udc0e\ud835\udc0d per season from their shirt alone.\n\n\ud83d\udc55 Adidas: \u20ac120M.\n\u2708\ufe0f Emirates: \u20ac100M.\n\ud83d\udcbb HP: \u20ac70M. https://t.co/BAWXJiXJpY",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@MadridXtra)"
+    },
+    {
+      "post_id": "2064953927649599991",
+      "post_url": "https://x.com/i/web/status/2064953927649599991",
+      "created_at": "2026-06-11T15:03:59+00:00",
+      "post_text": "It really seems like people were following two different trials. \n\nThe social media trial of sensationalized rumors and public opinion vs the actual facts. \n\nHere are the lies from the social media court:\n\n- He never had a knife. It was a cleat sharpener. \n- He got jumped by https://t.co/RgiMCSMwMA",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@ofcrdeonjoseph)"
+    },
+    {
+      "post_id": "2064966031290909141",
+      "post_url": "https://x.com/i/web/status/2064966031290909141",
+      "created_at": "2026-06-11T15:03:46+00:00",
+      "post_text": "Starting to question if i am black or brown...\n\nShe is so beautiful, gorgeous a real black woman\u2764\ufe0f\u2764\ufe0f https://t.co/ASrNKXZ0SY",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This post expresses a personal reaction and aesthetic opinion about someone's appearance without making any specific, checkable factual claims.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2065002154365243594",
+      "post_url": "https://x.com/i/web/status/2065002154365243594",
+      "created_at": "2026-06-11T15:03:45+00:00",
+      "post_text": "Most crime guns traced by RCMP came from within Canada, internal reports say. https://t.co/koBkhFZ9sw",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2065005162746322969",
+      "post_url": "https://x.com/i/web/status/2065005162746322969",
+      "created_at": "2026-06-11T15:03:31+00:00",
+      "post_text": "I know I\u2019m going to lose some followers, but I want to say this:\n\nIt is deeply satisfying to see the people of Belfast finally waking up and fighting back. Asylum seekers\u2019 homes and cars torched \u2014 this is what real resistance looks like when governments betray their own citizens https://t.co/xtitnr8HXc",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Aku_700)"
+    },
+    {
+      "post_id": "2064721502159659490",
+      "post_url": "https://x.com/i/web/status/2064721502159659490",
+      "created_at": "2026-06-11T15:03:20+00:00",
+      "post_text": "Teach y\u2019all children to STOP bullying people and stop feeling tough when they are in crowds. That will save a lot of lives! https://t.co/TzCWVkBakv",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post contains only a general hortatory statement about bullying without any specific, checkable factual claim about an event, statistic, person, or verifiable assertion.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2065023622935200018",
+      "post_url": "https://x.com/i/web/status/2065023622935200018",
+      "created_at": "2026-06-11T15:03:19+00:00",
+      "post_text": "Karmelo Anthony, a Black teenager, has been sentenced to 35 years in prison after being convicted by a jury with no Black jurors. Whatever one believes about the verdict itself, we cannot ignore the larger truth that many Americans are wrestling with: justice is still being https://t.co/1vLUN2EtE2",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@BerniceKing)"
+    },
+    {
+      "post_id": "2064824168114217340",
+      "post_url": "https://x.com/i/web/status/2064824168114217340",
+      "created_at": "2026-06-11T15:03:06+00:00",
+      "post_text": "The Metcalf\u2019s also KNEW the judge. This case never stood a chance in any way",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: This is vague commentary about a judge's alleged bias without providing specific, falsifiable facts that could be independently verified.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     }
   ]
 }
