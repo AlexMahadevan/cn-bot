@@ -44,7 +44,14 @@ def main() -> Dict[str, Any]:
     helpful_total = not_helpful_total = somewhat_helpful_total = 0
 
     for n in notes:
-        status = n.get("status") or n.get("test_result") or "unknown"
+        # post_id is nested under `info` in this endpoint's response (a
+        # top-level post_id is absent — observed 2026-06-12). The old code
+        # logged every snapshot under post_id="" so the rows collapsed and
+        # the per-note bucket history was never captured.
+        info = n.get("info") or {}
+        post_id = str(n.get("post_id") or info.get("post_id") or "")
+        test_result = n.get("test_result") or {}
+        status = n.get("status") or test_result or "unknown"
         status_counts[str(status)] += 1
         scoring = n.get("scoring_status") or {}
         if isinstance(scoring, dict):
@@ -53,9 +60,9 @@ def main() -> Dict[str, Any]:
             somewhat_helpful_total += int(scoring.get("somewhat_helpful_count", 0) or 0)
 
         storage.log_rating_snapshot(
-            post_id=str(n.get("post_id", "")),
+            post_id=post_id,
             status=str(status),
-            scoring_status=scoring,
+            scoring_status={"scoring_status": scoring, "test_result": test_result},
         )
 
     # Note-level helpfulness rate: CRH / total

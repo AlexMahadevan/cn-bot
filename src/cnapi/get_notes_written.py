@@ -48,6 +48,16 @@ def get_notes_written(
 
 def already_noted_post_ids(notes: List[Dict[str, Any]]) -> Set[str]:
     """
-    Build a set of post_ids we’ve already noted (field may be missing).
+    Build a set of post_ids we've already noted.
+
+    The endpoint nests post_id under `info` (observed 2026-06-12: 0 of 61
+    notes had a top-level post_id). Reading only the top level silently
+    returned an empty set — the bot's already-noted dedup was dead and only
+    X's feed rotation prevented duplicate notes. Check both locations.
     """
-    return {n.get("post_id") for n in notes if n.get("post_id")}
+    ids: Set[str] = set()
+    for n in notes:
+        pid = n.get("post_id") or (n.get("info") or {}).get("post_id")
+        if pid:
+            ids.add(str(pid))
+    return ids
