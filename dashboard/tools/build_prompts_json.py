@@ -106,6 +106,12 @@ def extract_string_const(path: Path, name: str) -> str | None:
             return resolve(assigns.get(node.id), depth + 1)
         if isinstance(node, ast.IfExp):
             return resolve(node.body if ifexp_true(node.test) else node.orelse, depth + 1)
+        if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+            # e.g. _NOTE_WRITER_SYSTEM = _BEAT_LINE + """..."""
+            left = resolve(node.left, depth + 1)
+            right = resolve(node.right, depth + 1)
+            if left is not None and right is not None:
+                return left + right
         return None
 
     return resolve(assigns.get(name))

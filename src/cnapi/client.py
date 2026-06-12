@@ -2,6 +2,7 @@ import os
 import time
 from typing import Any, Dict
 
+import requests
 from dotenv import load_dotenv
 from requests_oauthlib import OAuth1Session
 
@@ -55,8 +56,20 @@ class CNClient:
           • Prints the JSON error body for easier debugging.
           • Sleeps and retries (up to `retry` times) on 429.
         """
-        for _ in range(retry + 1):
-            resp = self.session.request(method, url, timeout=30, **kwargs)
+        for attempt in range(retry + 1):
+            try:
+                resp = self.session.request(method, url, timeout=30, **kwargs)
+            except (requests.exceptions.ConnectionError,
+                    requests.exceptions.Timeout) as e:
+                # Transient network failure — most often DNS not ready right
+                # after laptop wake (launchd fires missed runs on wake). This
+                # killed whole scheduled runs before; wait and retry instead.
+                if attempt >= retry:
+                    raise
+                wait = 20 * (attempt + 1)
+                print(f"⚠️  network error ({type(e).__name__}); retrying in {wait}s...")
+                time.sleep(wait)
+                continue
 
             if resp.status_code != 429:
                 if resp.status_code >= 400:
