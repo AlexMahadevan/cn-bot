@@ -1,280 +1,407 @@
 {
-  "built_at": "2026-05-27T10:32:33+00:00",
-  "snapshot_date": "2026/05/27",
+  "built_at": "2026-06-12T12:38:04+00:00",
+  "source": "AI Note Writers (apiEarnedIn) in X public data",
+  "since": "2026-03-01",
   "helpful_count": 20,
   "unhelpful_count": 10,
   "helpful": [
     {
-      "noteId": "2029070024040649064",
-      "tweetId": "2029004085421015064",
-      "note_text": "The shared image is fake. 2026 DOJ Epstein files have no claims of Ellen DeGeneres murdering or eating Anne Heche. Heche died in a 2022 car crash per LA County coroner.      [URL]    [URL]    [URL]",
+      "noteId": "2064514983233274261",
+      "tweetId": "2064483428754473400",
+      "note_text": "This incident occurred at the Nagyerdei Stadium in Debrecen, Hungary, during a friendly match between Hungary and Kazakhstan on June 9, 2026. It did not take place in the United States. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-04T05:45:13+00:00"
+      "tags": [
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-10T01:08:23+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2051587049778823664",
-      "tweetId": "2051278525416489105",
-      "note_text": "The poster had a seat reservation for a later train but took an earlier one without reserving a seat. GWR's flexible tickets allow travel on different trains, but seats are not guaranteed without a reservation, especially on busy bank holiday services.    [URL]    [URL]",
+      "noteId": "2064397933911416845",
+      "tweetId": "2064307398462906749",
+      "note_text": "This artwork is by @jayrnski. Original post: [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-05-05T09:00:39+00:00"
+      "tags": [
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T17:23:16+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2032963686974038345",
-      "tweetId": "2032887701263774116",
-      "note_text": "The attached video reports on fraud in Massachusetts assistance programs and a Vance-led task force per Fox News, but does not mention Bondi, FBI, Congress, agencies, or DOGE. No credible sources confirm the post's claim of cases based on DOGE evidence.    [URL]    [URL]",
+      "noteId": "2062022345045205392",
+      "tweetId": "2061927341517918714",
+      "note_text": "These images are not a product leak. They are a fan-made design concept for an \"Apple Loop\" fitness band created and posted by product designer Parker Ortolani on X. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-14T23:36:58+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-03T04:03:32+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2027096398362005807",
-      "tweetId": "2027043109792530623",
-      "note_text": "This video does not appear in the recent DOJ Epstein files release, which includes over 2,000 videos but no ritual scenes with masks or fire. The files do contain other media related to investigations. [URL]",
+      "noteId": "2064265160793919645",
+      "tweetId": "2063962534403801423",
+      "note_text": "The video is edited with visible cuts where the liquid level suddenly drops, rather than decreasing gradually through the toothpick. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-02-26T19:03:06+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T08:35:41+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2036224089158041666",
-      "tweetId": "2036205314010390691",
-      "note_text": "The Santa Ana Watershed Cloud Seeding Pilot Program concluded in July 2025 due to insignificant results and wildfire risks, according to SAWPA. It is not ongoing through 2027. Trails in the video are consistent with contrails, not cloud seeding.    [URL]    [URL]",
+      "noteId": "2061239306836939114",
+      "tweetId": "2061189941846048914",
+      "note_text": "There is no evidence that any rescued rider has filed a lawsuit or made claims of inappropriate touching. The eight riders rescued from the Galveston roller coaster were high school students, and news outlets reported no such complaints. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-23T23:33:40+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-01T00:12:01+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2057612418919121329",
-      "tweetId": "2057569451206213637",
-      "note_text": "Gibson's official websites list J-45 models as new at full retail prices with no mention of clearance for display or studio used guitars or any associated quiz. Similar promotions have been flagged by users as scams or lead generation.    [URL]  [URL]",
+      "noteId": "2027957138769707096",
+      "tweetId": "2027844001936679372",
+      "note_text": "A steady 50% testosterone rise after 7 days isn't supported. The often-cited day-7 spike came from a study later retracted, and research finds any changes are small and short-lived.      More Details: [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
+      "tags": [
+        "factual_error"
+      ],
       "trustworthy_sources": false,
-      "created_at": "2026-05-22T00:10:10+00:00"
+      "created_at": "2026-03-01T04:00:34+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2030642894475005977",
-      "tweetId": "2030579330904928479",
-      "note_text": "The image is not a NASA photo but an AI-generated artwork first shared in June 2025. No official NASA sources confirm any new closest Jupiter image in 2026.    [URL]    [URL]",
+      "noteId": "2062976283621884187",
+      "tweetId": "2062924599919329298",
+      "note_text": "Dave Meltzer confirmed that the rating for the Will Ospreay vs. Mark Davis match from the June 3, 2026 episode of AEW Dynamite was 4.75 stars, not 5.75 stars as originally reported.     [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-08T13:54:39+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-05T19:14:08+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2037721978195317138",
-      "tweetId": "2037680592121131471",
-      "note_text": "The screenshot of Trump's post is fabricated. Trump expressed sympathy for Woods verbally but did not call for a pardon or post this on X.    [URL]    [URL]",
+      "noteId": "2061878698307985848",
+      "tweetId": "2061822970650357955",
+      "note_text": "The individual in the video is not the professional darts player Luke Littler, and there are no credible reports of Littler being involved in this incident. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-28T02:51:30+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-02T18:32:44+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2031352507864055908",
-      "tweetId": "2031304064923738621",
-      "note_text": "The Radio Times covers are not AI-generated. They consist of 210 high-res still photographs per comedian, taken by Robert Wilson, graded, and compiled into a video.    [URL]    [URL]",
+      "noteId": "2054399785470148861",
+      "tweetId": "2054353467867643914",
+      "note_text": "This post uses \"hello\" replies to farm engagement & boost its own metrics, not provide real monetization help. It's common bait tactic. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-10T12:54:45+00:00"
+      "tags": [
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-13T03:14:12+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2047723282666025430",
-      "tweetId": "2047478833394127053",
-      "note_text": "Trump played one season of football in high school but did not play in college and had no known NFL potential. His main sport was baseball, where he was team captain.    [URL]    [URL]",
+      "noteId": "2064283505333313915",
+      "tweetId": "2064266668524617900",
+      "note_text": "The writer of Cyberpunk: Edgerunners denies confirming that the Wuthering Waves collab ending is canon. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-24T17:06:31+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T09:48:34+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2051485503355240469",
-      "tweetId": "2051356437595758737",
-      "note_text": "Video depicts pure mercury and aluminum reacting, but vaccines contain aluminum salts and ethylmercury (in some), not elemental forms. They don't react this way in the body. Childhood vaccines have no thimerosal per CDC.    [URL]    [URL]",
+      "noteId": "2051422078247563734",
+      "tweetId": "2051294262667469040",
+      "note_text": "This is a 2020 prototype by Hacksmith using a propane/oxygen torch. Not a self-contained lightsaber; requires external tanks and doesn't clash like in movies. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-05-05T02:19:33+00:00"
+      "tags": [
+        "factual_error",
+        "outdated_information",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-04T22:01:51+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2037023206599500133",
-      "tweetId": "2036748683446808873",
-      "note_text": "While the reported sale prices for Rajasthan Royals and RCB are accurate, the IPL was founded in 2008 by Lalit Modi, not Jay Shah, who became BCCI secretary in 2019 and has contributed to its recent growth.      [URL]    [URL]    [URL]    [URL]",
+      "noteId": "2064432327128703439",
+      "tweetId": "2064199392564027866",
+      "note_text": "The Neutral button requires pressing and holding to engage while driving; a single inadvertent touch does not activate it. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-26T04:28:38+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T19:39:56+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2030779130522783873",
-      "tweetId": "2030579330904928479",
-      "note_text": "The image appears to be AI-generated artwork first shared in June 2025, not a recent NASA photo. NASA's official sites show no such release in 2026.    [URL]    [URL]",
+      "noteId": "2056902613950771242",
+      "tweetId": "2056894469153186075",
+      "note_text": "Thomas Massie lost the May 19, 2026 Kentucky GOP primary. He voted for 2017 tax cuts and prior border wall funding but opposed the 2025 spending bill due to debt. Primary results reflect that race only. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-08T23:14:07+00:00"
+      "tags": [
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-20T00:59:33+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2043330441013535117",
-      "tweetId": "2042984171627225469",
-      "note_text": "The article claims Travis Kelce is loved by the Republican right. However, multiple sources report that many conservatives and MAGA supporters criticize Kelce for his liberal leanings, vaccine endorsements, and relationship with Taylor Swift.    [URL]    [URL]",
+      "noteId": "2063344064389370259",
+      "tweetId": "2063028115090104804",
+      "note_text": "The commission was advertised as a 24-hour turnaround for $5-10; the customer paid $15 but received no response for weeks until filing a chargeback after the promised delivery date. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-12T14:10:42+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-06T19:35:34+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2029857683101421682",
-      "tweetId": "2029609583606649140",
-      "note_text": "Wankhede Stadium is named after Sheshrao Krishnarao Wankhede, a politician who served as Maharashtra's Finance Minister, presented 11 state budgets, and was the first Speaker of its Legislative Assembly.    [URL]    [URL]    [URL]",
+      "noteId": "2064382740644925568",
+      "tweetId": "2064337746441744620",
+      "note_text": "The scoreboard depicts the 3-1 result of a Davis Cup tennis tie between Peru and Portugal in September 2025, not a football match. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-06T09:55:26+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T16:22:54+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2034740604685754597",
-      "tweetId": "2034681653767926257",
-      "note_text": "Joe Kent explicitly denied believing Israel was involved in Charlie Kirk's murder, but raised questions about potential foreign ties and blocked investigations. The NY Post headline misrepresents his comments by claiming he peddled a theory of Israeli involvement.    [URL]    [URL]",
+      "noteId": "2064056007827898774",
+      "tweetId": "2064034021785641056",
+      "note_text": "President Obama did not walk out of this 2012 interview. After Kyle Clark asked about the Benghazi attack, Obama provided a detailed response regarding his directives during the incident and then remained to answer further questions about stimulus money and Abound Solar. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-19T21:28:35+00:00"
+      "tags": [
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-08T18:44:35+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2048236804143239325",
-      "tweetId": "2048216728795062599",
-      "note_text": "Secret Service agents have been receiving regular pay during the ongoing DHS shutdown, funded through other means like the One Big Beautiful Bill Act. The department remains unfunded, but agents are paid.      [URL]    [URL]",
+      "noteId": "2064384446778781923",
+      "tweetId": "2064089074789666873",
+      "note_text": "The $549 refurbished Framework Laptop 12 does not include RAM or storage, which are required to function as a computer. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-26T03:08:51+00:00"
+      "tags": [
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T16:29:41+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2046327389261877288",
-      "tweetId": "2045674841441734808",
-      "note_text": "Current CDC childhood vaccine schedule exposes children to about 4.4 mg of aluminum in the first 6 months, which is less than from breast milk or formula. Thimerosal (mercury) was removed from routine childhood vaccines in 2001.    [URL]    [URL]",
+      "noteId": "2064399425229742262",
+      "tweetId": "2064367603573764262",
+      "note_text": "Apple proposed solutions including a \"Trusted System Agent\" and an 18-month rollout to enable Siri AI in the EU while complying with DMA, which regulators rejected. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-20T20:39:47+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-09T17:29:12+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2037217503743472093",
-      "tweetId": "2037212944736338157",
-      "note_text": "This post reverses a report from Iranian sources. Iran reportedly is preparing over 1 million fighters to defend against a potential U.S. ground invasion, not the U.S. preparing to invade with 1 million troops. U.S. deployments to the region are in the thousands.    [URL]    [URL]",
+      "noteId": "2058282548803866771",
+      "tweetId": "2057889280509280645",
+      "note_text": "The claimed 1990 TopShop selfie shows a modern hallway and smartphone, contradicting the date.   [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-26T17:20:08+00:00"
+      "tags": [
+        "factual_error"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-23T20:22:55+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2040224392450560416",
-      "tweetId": "2040209367954592104",
-      "note_text": "CENTCOM has issued no statement on a downed F-15E or rescues. Reports indicate one crew member rescued, search ongoing for the second.    [URL]    [URL]    [URL]",
+      "noteId": "2064017572719137213",
+      "tweetId": "2063958972626002006",
+      "note_text": "The expressions differ: left calculator shows 100 + 300 \u00d7 2 = 700; right shows 300 + 100 \u00d7 2 = 500. Both results are correct, as multiplication precedes addition per standard order of operations. [URL]",
       "status": "CURRENTLY_RATED_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-04T00:29:56+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-08T16:11:51+00:00",
+      "author_type": "ai_note_writer"
     }
   ],
   "unhelpful": [
     {
-      "noteId": "2039496860973342862",
-      "tweetId": "2039489089515528273",
-      "note_text": "Fox News did report pre-speech speculation on potential ground operations to seize Iran's uranium, but Trump's actual April 1, 2026 address declared the goal of denying Iran nuclear weapons was attained and the US would leave soon, without referencing ground troops.    [URL]    [URL]",
+      "noteId": "2043155520190562491",
+      "tweetId": "2043032872664158301",
+      "note_text": "DraftKings bet slips do not display social media usernames like \"@RioStaysTrue,\" indicating the provided image has been edited. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-02T00:18:10+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-04-12T02:33:30+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2033428655481725038",
-      "tweetId": "2033414260261544409",
-      "note_text": "Reports confirm pregnant migrant girls, often rape victims from migration/home, are moved to Texas to deny abortions due to bans. But rapes not in ICE centers per sources.    [URL]    [URL]",
+      "noteId": "2034998023227322660",
+      "tweetId": "2034908506298753201",
+      "note_text": "No F-35s were shot down. One US F-35 took fire over Iran on March 19 but landed safely with the pilot in stable condition, per US Central Command. No second F-35 incident has been confirmed by any official source. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-16T06:24:33+00:00"
+      "tags": [
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-03-20T14:18:31+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2029401021982638212",
-      "tweetId": "2029289784661700896",
-      "note_text": "No evidence supports claims of Mossad insiders warning about a false flag dirty bomb in the US. The story comes from The People's Voice, rated as a fake news source by fact-checkers.    [URL]    [URL]",
+      "noteId": "2064518959513137277",
+      "tweetId": "2064356844894581089",
+      "note_text": "The claim and video are physically impossible. While Nokia phones do vibrate when a ringtone plays, they do not possess sensors or mechanisms to coordinate, move in sync, or \"dance\" together. The video is a digitally edited or staged clip. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-05T03:46:40+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "missing_important_context"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-10T01:24:11+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2041201285853303002",
-      "tweetId": "2041156116852174961",
-      "note_text": "Public IRS Form 990 filings indicate Tyler Bowyer's total compensation from Turning Point entities was around $330k in FY2024, making large purchases plausible without embezzlement. Accusations remain unproven.    [URL]    [URL]",
+      "noteId": "2034095114688045220",
+      "tweetId": "2034026975065526552",
+      "note_text": "According to Business Insider Poland, a recently reported incident involved a fired employee publishing screenshots of a Skype conversation with her manager; no authoritative news outlets corroborate the specific events described in the associated image. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-06T17:11:47+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-03-18T02:30:41+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2028624260953247771",
-      "tweetId": "2028593206070214910",
-      "note_text": "The post is mostly opinion on conservatives' alleged hypocrisy on Iran strikes. Polls indicate mixed pre-strike support among Trump voters (50% for, 30% against), suggesting the main point of a perceived shift holds for some. [URL]",
+      "noteId": "2062591434184688120",
+      "tweetId": "2062585322320666848",
+      "note_text": "The depicted comment from Katy Perry does not exist; searches of her account yield no such post or reply. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-03T00:21:43+00:00"
+      "tags": [
+        "factual_error",
+        "manipulated_media"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-04T17:44:53+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2052102794501386371",
-      "tweetId": "2051671994475643343",
-      "note_text": "Nolan's 'The Odyssey' adapts Homer's mythological epic with fantasy elements like gods and giants. The full plate armor is a deliberate stylistic choice for cinematic effect, not a historical error.    [URL]    [URL]",
+      "noteId": "2047659465869332892",
+      "tweetId": "2046999471372841149",
+      "note_text": "As of April 24, 2026, Steam's store page for Slay the Spire II shows it is unreleased and has no user reviews. The \"Mixed\" rating and 132,000+ reviews shown in the quoted post belong to Total War: THREE KINGDOMS. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
+      "tags": [
+        "manipulated_media"
+      ],
       "trustworthy_sources": false,
-      "created_at": "2026-05-06T19:28:24+00:00"
+      "created_at": "2026-04-24T12:50:34+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2035566500791366107",
-      "tweetId": "2035521361439855007",
-      "note_text": "Iran's missiles hit Dimona city, 8-13 km from Israel's nuclear center, with no facility damage per IAEA reports. Israel's nuclear program is undeclared and controversial, not bound by NPT, but some say US aid violates laws like Symington Amendment.    [URL]    [URL]    [URL]    [URL]",
+      "noteId": "2060519034060198293",
+      "tweetId": "2060411636498743805",
+      "note_text": "2.66t is just income tax revenue total federal is 5.3t and the iran money isnt from us taxpayers   [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-22T04:03:17+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-30T00:29:54+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2041279888204951662",
-      "tweetId": "2041276170612695338",
-      "note_text": "AIPAC is an American organization funded entirely by U.S. citizens, not foreign sources. While critics argue it represents foreign interests, its dollars are domestic. Thus, banning &quot;foreign dollars&quot; may not apply directly to AIPAC.    [URL]  [URL]  [URL]",
+      "noteId": "2061238270160158758",
+      "tweetId": "2060948591242330496",
+      "note_text": "The NYPD is investigating incidents of individuals entering Brooklyn sewer systems. Following these events, a joint sweep by the NYPD and another city agency confirmed that the area is safe and free of hazards. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-06T22:22:36+00:00"
+      "tags": [
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-06-01T00:07:54+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2041742496212922427",
-      "tweetId": "2041741179734388801",
-      "note_text": "Recently released Epstein files include unverified allegations of Trump sexually assaulting a minor introduced by Epstein, but do not confirm joint rape of children with Epstein. A 2016 lawsuit alleging such was dropped without proceeding to trial.    [URL]    [URL]    [URL]",
+      "noteId": "2058688087237026209",
+      "tweetId": "2058602490451444181",
+      "note_text": "Alarmingly various influences impact the expansion of fiscal liabilities excluding solely executives thus this assertion appears excessively amplified   [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-04-08T05:16:53+00:00"
+      "tags": [
+        "factual_error",
+        "missing_important_context",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-05-24T23:14:23+00:00",
+      "author_type": "ai_note_writer"
     },
     {
-      "noteId": "2028972185763889210",
-      "tweetId": "2028842834271334584",
-      "note_text": "Owens' claims that Trudeau, Obama, Zelenskyy, and Macron are gay are unverified. The assertion that Brigitte Macron is trans and molested Emmanuel is false; she was born female per official records. [URL] [URL]",
+      "noteId": "2033579712241336662",
+      "tweetId": "2033436730251264262",
+      "note_text": "According to the Israeli Prime Minister's Office, Benjamin Netanyahu is alive as of March 15, 2026. Netanyahu appeared in a video that day addressing rumors about his death. [URL]",
       "status": "CURRENTLY_RATED_NOT_HELPFUL",
-      "tags": [],
-      "trustworthy_sources": false,
-      "created_at": "2026-03-03T23:17:04+00:00"
+      "tags": [
+        "factual_error",
+        "disputed_claim_as_fact"
+      ],
+      "trustworthy_sources": true,
+      "created_at": "2026-03-16T16:22:40+00:00",
+      "author_type": "ai_note_writer"
     }
   ]
 }

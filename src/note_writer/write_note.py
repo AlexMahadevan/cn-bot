@@ -90,12 +90,14 @@ def _load_exemplars_block() -> str:
         return ""
 
     return (
-        "\n\n## STYLE ANCHORS: real X Community Notes evaluated by raters\n"
-        "These are real notes other writers shipped — NOT relevant to the post "
-        "you're noting now. They calibrate tone, length, citation phrasing, and "
-        "what raters reward. Notice: helpful notes state facts directly with "
-        "specific sources, avoid editorializing, and don't lean on 'Publisher X "
-        "rated this Y' framing when a direct correction is cleaner."
+        "\n\n## STYLE ANCHORS: real notes by OTHER AI Note Writers, scored by X's raters\n"
+        "These are real notes that admitted AI bots shipped — NOT relevant to the "
+        "post you're noting now. They calibrate tone, length, citation phrasing, "
+        "and what raters reward FROM BOTS specifically. Notice: helpful notes "
+        "state facts directly with specific sources (dates, places, the actual "
+        "figure, who the original author was), avoid editorializing, and don't "
+        "lean on 'Publisher X rated this Y' framing when a direct correction is "
+        "cleaner."
         f"\n{fmt(helpful, f'CURRENTLY RATED HELPFUL ({len(helpful)} examples — emulate the style')}"
         f"\n{fmt(unhelpful, f'CURRENTLY RATED NOT HELPFUL ({len(unhelpful)} examples — avoid these patterns')}"
     )
@@ -129,7 +131,7 @@ Rules for the prose:
 - **DO NOT add specific numbers, percentages, dates, names, or factual claims that are NOT present in the evidence I show you.** The evidence title and rating are your ONLY source — do not draw on your training-data knowledge to fill in numbers or context. If you want to cite a figure and it's not in the evidence, leave the figure out.
 - No hedging like "some say" — cite the publisher by name.
 - No hashtags, no emojis, no editorializing.
-- Keep it tight: the URL we append takes ~80 characters, so prose must be <= 200 characters.
+- X counts the appended URL as ~1 character toward its 280 limit, so your prose can run up to ~270 characters. Use that room for concrete specifics from the evidence (the date, the place, the actual figure, what the source found) — but don't pad. A tight 180-character note beats a padded 270.
 - Do NOT preface with "Community Note:" or similar.
 - Do NOT include a URL, even a partial one or domain name.
 
@@ -194,9 +196,12 @@ def _validate_final_note(note_text: str, evidence_url: str) -> tuple[bool, str]:
     if final_url != expected:
         return False, f"URL mismatch: note has {final_url!r}, evidence had {expected!r}."
     body_len = len(URL_RE.sub("", note_text).strip())
-    total_len = len(note_text)
+    # X counts each URL as ~1 character toward the 280 limit, not its raw
+    # length (confirmed empirically: 98.7% of 17K API-submitted AI notes fit
+    # 280 only under URL-discounted counting; 70% exceed it raw).
+    total_len = len(URL_RE.sub("X", note_text))
     if total_len > NOTE_MAX_CHARS_INCLUDING_URL:
-        return False, f"Note is {total_len} chars (limit {NOTE_MAX_CHARS_INCLUDING_URL})."
+        return False, f"Note is {total_len} chars URL-discounted (limit {NOTE_MAX_CHARS_INCLUDING_URL})."
     if body_len < 30:
         return False, "Note prose is too short to be substantive."
     return True, ""
@@ -418,8 +423,10 @@ def research_post_and_write_note(post: Post) -> NoteResult:
             "contradicting the post, return NO_NOTE."
         )
 
-    # The URL we'll append takes a known number of chars, plus 1 space.
-    prose_budget = max(60, NOTE_MAX_CHARS_INCLUDING_URL - len(evidence.review_url) - 1)
+    # X counts the appended URL as ~1 character toward the 280 limit (not its
+    # raw length), so the prose budget is nearly the whole limit. Keep ~10
+    # chars of safety margin for the URL token + space + counting quirks.
+    prose_budget = NOTE_MAX_CHARS_INCLUDING_URL - 10
 
     user_prompt = (
         f"X post:\n{post.text}\n\n"
@@ -427,9 +434,8 @@ def research_post_and_write_note(post: Post) -> NoteResult:
         + evidence_block
         + f"\n\nWrite the Community Note PROSE only (no URL — we append it). "
         f"HARD LIMIT: your prose must be {prose_budget} characters or fewer "
-        f"(including spaces and punctuation). The URL we append is "
-        f"{len(evidence.review_url)} characters, and we add 1 space, so anything "
-        f"longer than {prose_budget} chars will be rejected. Count carefully. "
+        f"(including spaces and punctuation); anything longer will be rejected. "
+        f"Use the room for concrete specifics from the evidence, but don't pad. "
         "Return only the prose, or NO_NOTE."
     )
 
@@ -478,7 +484,7 @@ def research_post_and_write_note(post: Post) -> NoteResult:
     use_qwen = os.getenv("CN_BOT_USE_FINETUNED", "").strip().lower() in ("1", "true", "yes")
     if use_qwen and finetune_client.is_available():
         # Tell Qwen the exact char budget so its prose fits with the URL appended.
-        prose_budget_for_qwen = max(60, NOTE_MAX_CHARS_INCLUDING_URL - len(evidence.review_url) - 1)
+        prose_budget_for_qwen = prose_budget
         prose = finetune_client.generate_note(
             post_text=post.text,
             evidence_text=article_text or evidence.review_title or evidence.claim_text or "",
