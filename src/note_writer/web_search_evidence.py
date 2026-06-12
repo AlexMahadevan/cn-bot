@@ -23,6 +23,7 @@ from note_writer.fact_check_api import (
     _is_trusted_publisher,
 )
 from note_writer.llm_util import client as anthropic_client
+from note_writer.web_search_domains import filter_allowed, learn_inaccessible_from_error
 
 logger = logging.getLogger(__name__)
 
@@ -84,37 +85,51 @@ def _infer_rating_from_title(title: str) -> str | None:
 
 def search_for_post(post_text: str, *, max_results: int = 5) -> List[FactCheckEvidence]:
     """Use Claude's server-side web_search to find fact-checks across IFCN sites."""
-    try:
-        response = anthropic_client().messages.create(
-            # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). This
-            # call only triggers web_search and returns raw results — no prose
-            # synthesis — so the cheaper model is fine here.
-            model="claude-haiku-4-5",
-            max_tokens=2048,
-            tools=[
-                {
-                    "type": "web_search_20260209",
-                    "name": "web_search",
-                    "allowed_domains": ALLOWED_DOMAINS,
-                    "max_uses": 2,
-                }
-            ],
-            messages=[
-                {
-                    "role": "user",
-                    "content": (
-                        "Search the web for IFCN-accredited fact-checks of the main factual "
-                        "claim in this X post. Use one or two search queries — focus on the "
-                        "most distinctive keywords. After your searches return, do NOT write "
-                        "a summary or analysis — your job is only to trigger the searches so "
-                        "I can read the raw results.\n\n"
-                        f"Post:\n{post_text}"
-                    ),
-                }
-            ],
-        )
-    except Exception as e:
-        logger.warning("web_search call failed: %s", e)
+    response = None
+    for attempt in range(2):
+        try:
+            response = anthropic_client().messages.create(
+                # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). This
+                # call only triggers web_search and returns raw results — no prose
+                # synthesis — so the cheaper model is fine here.
+                model="claude-haiku-4-5",
+                max_tokens=2048,
+                tools=[
+                    {
+                        "type": "web_search_20260209",
+                        "name": "web_search",
+                        # Haiku 4.5 doesn't support programmatic tool calling, which
+                        # web_search_20260209 requires by default — without this the
+                        # API 400s every call and this tier silently returns [].
+                        "allowed_callers": ["direct"],
+                        # The API 400s the WHOLE request if any allowed domain
+                        # blocks Anthropic's crawler — filter out known blockers
+                        # (learned from prior 400s this process).
+                        "allowed_domains": filter_allowed(ALLOWED_DOMAINS),
+                        "max_uses": 2,
+                    }
+                ],
+                messages=[
+                    {
+                        "role": "user",
+                        "content": (
+                            "Search the web for IFCN-accredited fact-checks of the main factual "
+                            "claim in this X post. Use one or two search queries — focus on the "
+                            "most distinctive keywords. After your searches return, do NOT write "
+                            "a summary or analysis — your job is only to trigger the searches so "
+                            "I can read the raw results.\n\n"
+                            f"Post:\n{post_text}"
+                        ),
+                    }
+                ],
+            )
+            break
+        except Exception as e:
+            if attempt == 0 and learn_inaccessible_from_error(str(e)):
+                continue  # retry once with the blocked domains removed
+            logger.warning("web_search call failed: %s", e)
+            return []
+    if response is None:
         return []
 
     results: List[FactCheckEvidence] = []

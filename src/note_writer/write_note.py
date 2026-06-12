@@ -31,7 +31,7 @@ from data_models import (
 )
 from note_writer.evidence import gather_for_post
 from note_writer.evidence_text import fetch_evidence_text
-from note_writer.config import NOTE_WRITER_MODEL
+from note_writer.config import BEAT_MODE, NOTE_WRITER_MODEL
 from note_writer.llm_util import (
     HAIKU_MODEL,
     complete,
@@ -103,7 +103,17 @@ def _load_exemplars_block() -> str:
 
 _EXEMPLARS_BLOCK = _load_exemplars_block()
 
-_NOTE_WRITER_SYSTEM = """You write Community Notes for X. Your beat: US political misinformation, particularly around the 2026 midterms.
+# Keep the writer's stated beat in sync with the active beat mode. During the
+# broad earn-in phase the writer notes ANY topic; telling it the beat is "US
+# political misinformation" primes it to under-write the non-political posts
+# the earn-in volume depends on.
+_BEAT_LINE = (
+    "You write Community Notes for X. You note posts on ANY topic that make a specific, checkable factual claim."
+    if BEAT_MODE == "broad"
+    else "You write Community Notes for X. Your beat: US political misinformation, particularly around the 2026 midterms."
+)
+
+_NOTE_WRITER_SYSTEM = _BEAT_LINE + """
 
 You will be given:
 - An X post
@@ -488,7 +498,11 @@ def research_post_and_write_note(post: Post) -> NoteResult:
                 user_prompt=user_prompt,
                 system=_NOTE_WRITER_SYSTEM,
                 model=NOTE_WRITER_MODEL,
-                max_tokens=600,
+                # Adaptive thinking tokens count against max_tokens. 600 leaves
+                # almost no headroom once Opus thinks — a long thinking pass
+                # would truncate and the note comes back empty. The cap is not
+                # billed unless used, so the extra headroom is free.
+                max_tokens=2000,
                 effort="high",  # ignored for non-Opus models (see llm_util.complete)
             )
         except Exception as e:

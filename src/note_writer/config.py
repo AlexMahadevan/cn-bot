@@ -44,7 +44,10 @@ NOTE_WRITER_MODEL = {
 # (higher = more checkable-claim-like; negative = opinion-like). During earn-in we
 # skip submitting notes below this floor so opinion-ish notes don't drag down the
 # rolling-50 the automated admission evaluator scores — ClaimOpinion is our one
-# soft bucket. Conservative default (0.0) drops only clearly opinion-like notes;
-# raise it as we calibrate against the High/Medium/Low buckets. A note that can't
-# be scored (API error) fails open and still submits.
-CLAIM_OPINION_MIN = float(os.getenv("CN_BOT_CLAIM_OPINION_MIN", "0.0"))
+# soft bucket (2026-06-12 readout: 18 High / 12 Medium / 2 Low; UrlValidity and
+# HarassmentAbuse are 100% High). Observed scores are bimodal: gated notes all
+# scored <= -0.75, submitted notes all >= +0.66, nothing in between — so a 0.5
+# floor costs no volume on observed data while screening the borderline band
+# most likely to land Medium. A note that can't be scored (API error) fails
+# open and still submits.
+CLAIM_OPINION_MIN = float(os.getenv("CN_BOT_CLAIM_OPINION_MIN", "0.5"))

@@ -85,6 +85,7 @@ class CommunityNotesBot:
         # (free dry-run, does not submit) and skip opinion-like notes so they
         # don't drag the rolling-50 the admission evaluator scores. A genuine API
         # error fails open — we submit rather than lose a good note to a blip.
+        score = None
         if not skip_evaluate:
             try:
                 score = claim_opinion_score(
@@ -92,7 +93,6 @@ class CommunityNotesBot:
                 )
             except Exception as e:
                 logger.warning("evaluate_note failed for %s (submitting anyway): %s", note.post_id, e)
-                score = None
 
             if score is not None:
                 logger.info("claim_opinion_score=%.4f for %s", score, note.post_id)
@@ -111,6 +111,7 @@ class CommunityNotesBot:
                         evidence_publisher=evidence.publisher_name if evidence else None,
                         evidence_tier=evidence.evidence_tier if evidence else None,
                         misleading_tags=note.misleading_tags,
+                        claim_opinion_score=score,
                     )
                     result.refusal = (
                         f"claim_opinion_score {score:.3f} below {CLAIM_OPINION_MIN:.2f} floor"
@@ -126,6 +127,7 @@ class CommunityNotesBot:
                 evidence_publisher=evidence.publisher_name if evidence else None,
                 evidence_tier=evidence.evidence_tier if evidence else None,
                 misleading_tags=note.misleading_tags,
+                claim_opinion_score=score,
             )
             return result
 
@@ -150,6 +152,7 @@ class CommunityNotesBot:
                 evidence_publisher=evidence.publisher_name if evidence else None,
                 evidence_tier=evidence.evidence_tier if evidence else None,
                 misleading_tags=note.misleading_tags,
+                claim_opinion_score=score,
             )
         except Exception as e:
             logger.error("Submission failed for %s: %s", note.post_id, e)
@@ -163,5 +166,6 @@ class CommunityNotesBot:
                 evidence_publisher=evidence.publisher_name if evidence else None,
                 evidence_tier=evidence.evidence_tier if evidence else None,
                 misleading_tags=note.misleading_tags,
+                claim_opinion_score=score,
             )
         return result

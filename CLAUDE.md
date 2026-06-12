@@ -92,10 +92,14 @@ refresh and push.
 - Python ≥3.12; deps in `pyproject.toml`; env in `.env` (X OAuth1 keys,
   `ANTHROPIC_API_KEY`, `FACT_CHECK_API_KEY`). Never commit `.env`.
 - The X API uses OAuth1 (`src/cnapi/client.py`) with naive 429 back-off.
-- Self-fact-check `web_search` against IFCN signatories frequently logs
-  `400 ... domains are not accessible to our user agent` — that's an Anthropic
-  web_search crawler limitation, expected and non-fatal; the bot falls back to
-  PolitiFact + Google Fact Check Tools.
+- The `400 ... domains are not accessible to our user agent` error from
+  Anthropic web_search is **fatal to the whole request**, not just the listed
+  domains — `src/note_writer/web_search_domains.py` learns the blocked domains
+  from the error and retries without them. You should see at most one such
+  warning per tier per process. Repeated 400s mean something else broke.
+  Separately: Haiku 4.5 needs `allowed_callers: ["direct"]` on
+  `web_search_20260209` or every call 400s (this silently killed both
+  web_search tiers from 2026-06-02 to 2026-06-12).
 - The note count X reports (`notes_written`) can exceed what `notes.db` logged
   — see the open reconciliation question in `docs/community-notes-pilot.md`.
 - The git remote is `github.com/AlexMahadevan/cn-bot` (branch `main`); local

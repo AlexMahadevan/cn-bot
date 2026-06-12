@@ -22,6 +22,7 @@ from typing import List
 
 from data_models import FactCheckEvidence
 from note_writer.llm_util import client as anthropic_client
+from note_writer.web_search_domains import filter_allowed, learn_inaccessible_from_error
 
 logger = logging.getLogger(__name__)
 
@@ -90,37 +91,52 @@ def search_for_post(post_text: str, *, max_results: int = 8) -> List[FactCheckEv
     Downstream prompts treat these as 'per [publisher], [evidence]' rather
     than 'X rated this false.'
     """
-    try:
-        response = anthropic_client().messages.create(
-            # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). Broad
-            # web_search evidence gathering; raw results, no prose synthesis.
-            model="claude-haiku-4-5",
-            max_tokens=2048,
-            tools=[
-                {
-                    "type": "web_search_20260209",
-                    "name": "web_search",
-                    "allowed_domains": BROAD_ALLOWED_DOMAINS,
-                    "max_uses": 3,
-                }
-            ],
-            messages=[
-                {
-                    "role": "user",
-                    "content": (
-                        "Search the web for primary sources, official data, or major news "
-                        "coverage that bears on the factual claims in this X post. You're "
-                        "looking for evidence that could SUPPORT or CONTRADICT the claim — "
-                        "do not pre-filter for verdict. Use 1-3 well-targeted queries. "
-                        "After the searches return, do NOT write a summary or analysis — "
-                        "just trigger the searches and stop.\n\n"
-                        f"Post:\n{post_text}"
-                    ),
-                }
-            ],
-        )
-    except Exception as e:
-        logger.warning("self-fact-check web_search failed: %s", e)
+    response = None
+    for attempt in range(2):
+        try:
+            response = anthropic_client().messages.create(
+                # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). Broad
+                # web_search evidence gathering; raw results, no prose synthesis.
+                model="claude-haiku-4-5",
+                max_tokens=2048,
+                tools=[
+                    {
+                        "type": "web_search_20260209",
+                        "name": "web_search",
+                        # Haiku 4.5 doesn't support programmatic tool calling, which
+                        # web_search_20260209 requires by default — without this the
+                        # API 400s every call and this tier silently returns [] (it
+                        # did exactly that from 2026-06-02 to 2026-06-12).
+                        "allowed_callers": ["direct"],
+                        # The API 400s the WHOLE request if any allowed domain
+                        # blocks Anthropic's crawler — filter out known blockers
+                        # (learned from prior 400s this process).
+                        "allowed_domains": filter_allowed(BROAD_ALLOWED_DOMAINS),
+                        "max_uses": 2,
+                    }
+                ],
+                messages=[
+                    {
+                        "role": "user",
+                        "content": (
+                            "Search the web for primary sources, official data, or major news "
+                            "coverage that bears on the factual claims in this X post. You're "
+                            "looking for evidence that could SUPPORT or CONTRADICT the claim — "
+                            "do not pre-filter for verdict. Use 1-3 well-targeted queries. "
+                            "After the searches return, do NOT write a summary or analysis — "
+                            "just trigger the searches and stop.\n\n"
+                            f"Post:\n{post_text}"
+                        ),
+                    }
+                ],
+            )
+            break
+        except Exception as e:
+            if attempt == 0 and learn_inaccessible_from_error(str(e)):
+                continue  # retry once with the blocked domains removed
+            logger.warning("self-fact-check web_search failed: %s", e)
+            return []
+    if response is None:
         return []
 
     results: List[FactCheckEvidence] = []
@@ -130,13 +146,11 @@ def search_for_post(post_text: str, *, max_results: int = 8) -> List[FactCheckEv
         for hit in getattr(block, "content", []) or []:
             url = getattr(hit, "url", None) or (hit.get("url") if isinstance(hit, dict) else None)
             title = getattr(hit, "title", None) or (hit.get("title") if isinstance(hit, dict) else None)
-            snippet = (
-                getattr(hit, "page_age", None)
-                or getattr(hit, "encrypted_content", None)
-                or (hit.get("encrypted_content") if isinstance(hit, dict) else None)
-            )
             # web_search results sometimes carry a 'page_content' / 'text' field
-            # depending on SDK version — try a few names
+            # depending on SDK version — try a few names. Do NOT fall back to
+            # encrypted_content: it's an opaque encrypted blob, not prose, and
+            # feeding it into the evidence-picker prompt is pure noise.
+            snippet = None
             for key in ("text", "content", "snippet"):
                 val = getattr(hit, key, None) or (hit.get(key) if isinstance(hit, dict) else None)
                 if isinstance(val, str) and val:

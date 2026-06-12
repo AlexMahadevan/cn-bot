@@ -32,7 +32,8 @@ CREATE TABLE IF NOT EXISTS drafts (
     evidence_tier    TEXT,                      -- 'ifcn_verified' | 'self_fact_check'
     misleading_tags  TEXT,                      -- JSON list
     beat_mode        TEXT,                      -- 'broad' | 'us_politics' (earn-in phase marker)
-    writer_model     TEXT                       -- model that wrote the note prose
+    writer_model     TEXT,                      -- model that wrote the note prose
+    claim_opinion_score REAL                    -- pre-submit evaluate_note score (gate calibration)
 );
 
 -- Migrate existing dbs that predate later columns
@@ -64,6 +65,8 @@ def _ensure_db() -> None:
         for col in ("evidence_tier", "beat_mode", "writer_model"):
             if col not in cols:
                 conn.execute(f"ALTER TABLE drafts ADD COLUMN {col} TEXT")
+        if "claim_opinion_score" not in cols:
+            conn.execute("ALTER TABLE drafts ADD COLUMN claim_opinion_score REAL")
 
 
 @contextmanager
@@ -95,6 +98,7 @@ def log_draft(
     misleading_tags: Optional[list] = None,
     refusal_reason: Optional[str] = None,
     error: Optional[str] = None,
+    claim_opinion_score: Optional[float] = None,
 ) -> None:
     """Insert or replace a draft row — but never overwrite a 'submitted'
     outcome with something downstream (e.g., a later run refused).
@@ -111,8 +115,9 @@ def log_draft(
             """INSERT OR REPLACE INTO drafts
                (post_id, created_at, post_text, outcome, refusal_reason, error,
                 note_text, evidence_url, evidence_rating, evidence_publisher,
-                evidence_tier, misleading_tags, beat_mode, writer_model)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                evidence_tier, misleading_tags, beat_mode, writer_model,
+                claim_opinion_score)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 post_id,
                 _now(),
@@ -128,6 +133,7 @@ def log_draft(
                 json.dumps([str(t) for t in (misleading_tags or [])]),
                 BEAT_MODE,
                 NOTE_WRITER_MODEL,
+                claim_opinion_score,
             ),
         )
 

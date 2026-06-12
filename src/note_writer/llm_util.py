@@ -52,7 +52,17 @@ def complete(
         "messages": [{"role": "user", "content": user_prompt}],
     }
     if system is not None:
-        kwargs["system"] = system
+        # Mark the (static) system prompt cacheable. The Opus note-writer
+        # system prompt + exemplars is ~4.5K tokens and identical across every
+        # note in a run — cache reads bill at ~0.1x input price. Prompts below
+        # the model's minimum cacheable prefix (4096 tokens on Opus 4.7/Haiku
+        # 4.5) silently skip caching, so this is a no-op for the small ones.
+        if isinstance(system, str):
+            kwargs["system"] = [
+                {"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}
+            ]
+        else:
+            kwargs["system"] = system
     if adaptive_thinking and model == OPUS_MODEL:
         kwargs["thinking"] = {"type": "adaptive"}
         kwargs["output_config"] = {"effort": effort}

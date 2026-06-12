@@ -77,8 +77,12 @@ def _resolve_url(url: str) -> Optional[str]:
         )
         final_url = resp.url or url
 
-        # If we already left t.co via HTTP redirect, we're done
-        if "t.co" not in urlparse(final_url).hostname or "":
+        # If we already left t.co via HTTP redirect, we're done.
+        # (Parenthesization matters: hostname can be None, and the old
+        # `x not in hostname or ""` parsed as `(x not in hostname) or ""`,
+        # which raised TypeError on None and killed link expansion for the
+        # whole post.)
+        if "t.co" not in (urlparse(final_url).hostname or ""):
             resp.close()
             return final_url
 
