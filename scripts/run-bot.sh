@@ -46,13 +46,27 @@ done
 # 1. Run the bot. PYTHONPATH lets imports resolve from src/.
 #    15m ceiling (a healthy 50-post run takes ~2-3 min); --kill-after sends
 #    SIGKILL 30s after SIGTERM in case the process is wedged in a syscall.
+# --num-posts 100 = the full eligible-pool fetch (max_results=100). A single
+# fetch routinely returns ~93 unseen eligible posts, but we were capping at 50
+# and discarding the other ~48 every run. During the earn-in sprint, volume of
+# clean notes is the binding constraint (admission scores the most-recent-50
+# test_mode notes), so we process the whole pool.
+#
+# --concurrency 6 is essential at this volume: the per-post pipeline is almost
+# pure network I/O (Anthropic, X, fact-check APIs, article fetches), and the
+# default is SERIAL (concurrency=1). A claim-heavy pool can hit ~17s/post
+# serially, which blew the 15m ceiling at only ~51 posts (exit 124) — the run
+# got SIGKILLed and submitted nothing. Storage opens a short-lived connection
+# per write (5s busy-timeout), so parallel workers are safe. 6 workers finish
+# 100 posts in ~4 min with wide margin, same API cost (calls just run in
+# parallel); the client already backs off on 429s.
 if [ -n "$TIMEOUT_BIN" ]; then
     PYTHONPATH=src "$TIMEOUT_BIN" --kill-after=30s 15m \
-        "$REPO/.venv/bin/python" "$REPO/src/main.py" --num-posts 50 \
+        "$REPO/.venv/bin/python" "$REPO/src/main.py" --num-posts 100 --concurrency 6 \
         || echo "[run-bot] bot run failed or timed out (exit $?); publishing anyway."
 else
     echo "[run-bot] WARNING: no timeout binary found; running without watchdog."
-    PYTHONPATH=src "$REPO/.venv/bin/python" "$REPO/src/main.py" --num-posts 50 \
+    PYTHONPATH=src "$REPO/.venv/bin/python" "$REPO/src/main.py" --num-posts 100 --concurrency 6 \
         || echo "[run-bot] bot run failed (exit $?); publishing anyway."
 fi
 
