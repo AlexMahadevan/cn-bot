@@ -70,6 +70,13 @@ else
         || echo "[run-bot] bot run failed (exit $?); publishing anyway."
 fi
 
+# 1b. Once a day, rebuild the "AI writers across X" snapshot from X's public
+#     Community Notes dump (streams ~GBs over HTTP, ~5 min). --max-age-hours
+#     makes the other three daily runs a no-op. Failure is non-fatal: the page
+#     just keeps showing the last good snapshot.
+"$REPO/.venv/bin/python" "$REPO/dashboard/tools/build_ai_writers_json.py" --max-age-hours 20 \
+    || echo "[run-bot] ai_writers snapshot build failed (exit $?); keeping previous."
+
 # 2. Publish the snapshot. refresh.sh regenerates bot.json/candidate_pool.json
 #    and commits only if something changed; we push so Pages rebuilds.
 bash "$REPO/dashboard/tools/refresh.sh" || echo "[run-bot] refresh.sh failed (exit $?)."

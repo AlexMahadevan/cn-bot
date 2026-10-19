@@ -13,7 +13,10 @@ python3 dashboard/tools/build_candidate_pool_json.py > dashboard/src/data/candid
 # page can never drift from what the bot actually runs.
 python3 dashboard/tools/build_prompts_json.py > dashboard/src/data/prompts.json
 
+# ai_writers.json is rebuilt separately (slow: streams X's public dumps) by
+# dashboard/tools/build_ai_writers_json.py; commit it here whenever it changed.
 git add dashboard/src/data/bot.json dashboard/src/data/candidate_pool.json dashboard/src/data/prompts.json
+[ -f dashboard/src/data/ai_writers.json ] && git add dashboard/src/data/ai_writers.json
 if git diff --staged --quiet; then
     echo "No changes to dashboard data — skipping commit."
 else

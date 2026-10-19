@@ -12,6 +12,7 @@ export default {
   pages: [
     { name: "Dashboard", path: "/" },
     { name: "What X surfaces", path: "/pool" },
+    { name: "AI writers across X", path: "/ai-writers" },
     { name: "How it compares", path: "/comparison" },
     { name: "How it works", path: "/methodology" },
     { name: "The prompts", path: "/prompts" },
