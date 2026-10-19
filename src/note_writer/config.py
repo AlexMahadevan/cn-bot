@@ -33,6 +33,8 @@ BEAT_MODE = os.getenv("CN_BOT_BEAT_MODE", "broad").strip().lower()
 # scores note quality (esp. the ClaimOpinion bucket, our one soft spot), and
 # Opus leads quality in the cross-writer benchmark. The cheap reject + evidence
 # stages stay on Haiku regardless — this only sets the final note writer.
+# 2026-10-19: Opus 4.7 -> Opus 5.5 and Haiku 4.5 -> Haiku 5.5 (IDs live in
+# llm_util and are env-overridable: CN_BOT_OPUS_MODEL / CN_BOT_HAIKU_MODEL).
 _WRITER_CHOICE = os.getenv("CN_BOT_NOTE_WRITER", "opus").strip().lower()
 NOTE_WRITER_MODEL = {
     "opus": OPUS_MODEL,
@@ -60,3 +62,10 @@ CLAIM_OPINION_MIN = float(os.getenv("CN_BOT_CLAIM_OPINION_MIN", "0.5"))
 URL_LIVENESS_CHECK = os.getenv("CN_BOT_URL_LIVENESS", "1").strip().lower() not in {
     "0", "false", "no", "off",
 }
+
+# Thinking depth for the note writer. Opus 5.5 thinks on every call and
+# `effort` is the only control; its API default is `medium`, and Anthropic's
+# guidance is that Opus 5.5 at medium exceeds Opus 5 at high. The note is
+# ~200 characters of prose over pre-gathered evidence, so medium is plenty.
+# Raise to `high` if the ClaimOpinion gate's pass rate drops.
+WRITER_EFFORT = os.getenv("CN_BOT_WRITER_EFFORT", "medium").strip().lower()

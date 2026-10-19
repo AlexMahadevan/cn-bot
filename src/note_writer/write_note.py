@@ -31,7 +31,7 @@ from data_models import (
 )
 from note_writer.evidence import gather_for_post
 from note_writer.evidence_text import fetch_evidence_text
-from note_writer.config import BEAT_MODE, NOTE_WRITER_MODEL
+from note_writer.config import BEAT_MODE, NOTE_WRITER_MODEL, WRITER_EFFORT
 from note_writer.llm_util import (
     HAIKU_MODEL,
     complete,
@@ -319,7 +319,7 @@ def _classify_tags(post: Post, evidence: FactCheckEvidence, note_text: str) -> L
             ),
             schema=_Tags,
             model=HAIKU_MODEL,
-            max_tokens=200,
+            max_tokens=512,  # headroom for a short think on Haiku 5.5
         )
         tags = [MisleadingTag(t) for t in result.tags if t in MisleadingTag.__members__]
         return tags or [MisleadingTag.factual_error]
@@ -504,12 +504,11 @@ def research_post_and_write_note(post: Post) -> NoteResult:
                 user_prompt=user_prompt,
                 system=_NOTE_WRITER_SYSTEM,
                 model=NOTE_WRITER_MODEL,
-                # Adaptive thinking tokens count against max_tokens. 600 leaves
-                # almost no headroom once Opus thinks — a long thinking pass
-                # would truncate and the note comes back empty. The cap is not
-                # billed unless used, so the extra headroom is free.
-                max_tokens=2000,
-                effort="high",  # ignored for non-Opus models (see llm_util.complete)
+                # Adaptive thinking tokens count against max_tokens and Opus 5.5
+                # thinks on every call. 4096 leaves room for a medium-effort
+                # pass plus the ~60-token note; the cap is not billed unless used.
+                max_tokens=4096,
+                effort=WRITER_EFFORT,
             )
         except Exception as e:
             return NoteResult(post=post, error=f"LLM error: {e}", evidence=[evidence])

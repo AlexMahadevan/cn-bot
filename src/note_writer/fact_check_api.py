@@ -135,8 +135,13 @@ def search_claims(
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
     except requests.HTTPError as e:
-        body = e.response.text[:300] if e.response else ""
-        logger.error("Fact Check Tools API error %s: %s", e.response.status_code if e.response else "?", body)
+        # NB: a requests.Response is falsy for 4xx/5xx (bool(resp) == resp.ok),
+        # so `if e.response` hid every status code behind "?" until 2026-10-19.
+        resp_obj = e.response
+        status = resp_obj.status_code if resp_obj is not None else "?"
+        body = resp_obj.text[:300] if resp_obj is not None else ""
+        logger.error("Fact Check Tools API error %s (query %d chars: %r): %s",
+                     status, len(query), query[:120], body)
         return []
     except requests.RequestException as e:
         logger.error("Fact Check Tools API request failed: %s", e)
@@ -194,9 +199,14 @@ def search_for_post(post_text: str, max_results: int = 10) -> List[FactCheckEvid
             f"Post:\n{post_text}"
         ),
         model=HAIKU_MODEL,
-        max_tokens=60,
-        adaptive_thinking=False,
+        # Haiku 5.5 thinks by default and thinking counts toward max_tokens;
+        # 60 starved the call (empty query -> Google 400) on 2026-10-19.
+        max_tokens=300,
+        adaptive_thinking=False,  # = effort low on current-gen models
     ).strip().strip('"').strip("'")
+    if not query:
+        logger.warning("Keyword extraction returned empty; skipping Fact Check Tools for this post")
+        return []
 
     logger.info("Generated fact-check query: %r", query)
     results = search_claims(query, page_size=max_results)

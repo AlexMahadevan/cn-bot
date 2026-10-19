@@ -95,7 +95,7 @@ def has_specific_claim(
             schema=SpecificityVerdict,
             system=_SYSTEM,
             model=HAIKU_MODEL,
-            max_tokens=300,
+            max_tokens=512,  # headroom for a short think on Haiku 5.5
         )
         return verdict.has_specific_claim, verdict.claim_text, verdict.reason
     except Exception as e:

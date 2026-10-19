@@ -22,7 +22,7 @@ from note_writer.fact_check_api import (
     _is_false_rating,
     _is_trusted_publisher,
 )
-from note_writer.llm_util import client as anthropic_client
+from note_writer.llm_util import client as anthropic_client, HAIKU_MODEL, LEGACY_NO_ADAPTIVE
 from note_writer.web_search_domains import filter_allowed, learn_inaccessible_from_error
 
 logger = logging.getLogger(__name__)
@@ -92,15 +92,18 @@ def search_for_post(post_text: str, *, max_results: int = 5) -> List[FactCheckEv
                 # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). This
                 # call only triggers web_search and returns raw results — no prose
                 # synthesis — so the cheaper model is fine here.
-                model="claude-haiku-4-5",
+                model=HAIKU_MODEL,
                 max_tokens=2048,
+                # Haiku 5.5 thinks by default; keep it short. Legacy Haiku 4.5
+                # (env revert) rejects `effort`, so only send it where supported.
+                **({"output_config": {"effort": "low"}} if HAIKU_MODEL not in LEGACY_NO_ADAPTIVE else {}),
                 tools=[
                     {
                         "type": "web_search_20260209",
                         "name": "web_search",
-                        # Haiku 4.5 doesn't support programmatic tool calling, which
-                        # web_search_20260209 requires by default — without this the
-                        # API 400s every call and this tier silently returns [].
+                        # Keep "direct": on Haiku 4.5 omitting it 400'd every call;
+                        # on Haiku 5.5 omitting it works but routes through the
+                        # dynamic-filtering code-execution path for no benefit here.
                         "allowed_callers": ["direct"],
                         # The API 400s the WHOLE request if any allowed domain
                         # blocks Anthropic's crawler — filter out known blockers

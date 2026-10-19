@@ -13,7 +13,7 @@ A pipeline that does, roughly:
 3. Search PolitiFact, Google Fact Check Tools API, and (only when needed) Anthropic web_search against IFCN signatories.
 4. Pick the best-matching fact check (Claude Haiku).
 5. Fetch the actual article text so Claude has the publisher's own words to ground the note.
-6. Draft prose with Claude Opus 4.7. The model writes only words — code substitutes the verified URL.
+6. Draft prose with Claude Opus 5.5 (Opus 4.7 until 2026-10-19). The model writes only words — code substitutes the verified URL.
 7. Validate length, URL, and a hallucination guard that rejects any prose containing a URL or domain-with-path.
 8. Dry-run score via X's `evaluate_note` endpoint.
 9. Submit via `POST /2/notes` in `test_mode` (required during the AI Note Writer pilot).

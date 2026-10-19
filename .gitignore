@@ -49,3 +49,8 @@ data/pipeline_qwen_v2_scored.jsonl
 
 # Backup files
 data/*.bak.*
+
+# A/B artifacts + DB backups (local only)
+data/ab_*.json
+data/ab*_*.jsonl
+data/notes.db.bak*

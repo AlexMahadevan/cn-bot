@@ -21,7 +21,7 @@ import re
 from typing import List
 
 from data_models import FactCheckEvidence
-from note_writer.llm_util import client as anthropic_client
+from note_writer.llm_util import client as anthropic_client, HAIKU_MODEL, LEGACY_NO_ADAPTIVE
 from note_writer.web_search_domains import filter_allowed, learn_inaccessible_from_error
 
 logger = logging.getLogger(__name__)
@@ -97,16 +97,20 @@ def search_for_post(post_text: str, *, max_results: int = 8) -> List[FactCheckEv
             response = anthropic_client().messages.create(
                 # Haiku 4.5 (swapped from Sonnet 4.6 on 2026-06-02 to cut cost). Broad
                 # web_search evidence gathering; raw results, no prose synthesis.
-                model="claude-haiku-4-5",
+                model=HAIKU_MODEL,
                 max_tokens=2048,
+                # Haiku 5.5 thinks by default; keep it short. Legacy Haiku 4.5
+                # (env revert) rejects `effort`, so only send it where supported.
+                **({"output_config": {"effort": "low"}} if HAIKU_MODEL not in LEGACY_NO_ADAPTIVE else {}),
                 tools=[
                     {
                         "type": "web_search_20260209",
                         "name": "web_search",
-                        # Haiku 4.5 doesn't support programmatic tool calling, which
-                        # web_search_20260209 requires by default — without this the
-                        # API 400s every call and this tier silently returns [] (it
-                        # did exactly that from 2026-06-02 to 2026-06-12).
+                        # Keep "direct": on Haiku 4.5 omitting it 400'd every call
+                        # (this tier silently returned [] from 2026-06-02 to 06-12);
+                        # on Haiku 5.5 omitting it works but routes the search through
+                        # the dynamic-filtering code-execution path (~+15% input
+                        # tokens, extra tool blocks) for no benefit here.
                         "allowed_callers": ["direct"],
                         # The API 400s the WHOLE request if any allowed domain
                         # blocks Anthropic's crawler — filter out known blockers

@@ -103,7 +103,7 @@ def is_on_beat(post_text: str) -> tuple[bool, str]:
             schema=RelevanceVerdict,
             system=_SYSTEM,
             model=HAIKU_MODEL,
-            max_tokens=256,
+            max_tokens=512,  # headroom for a short think on Haiku 5.5
         )
         return verdict.on_beat, verdict.reason
     except Exception as e:

@@ -82,7 +82,7 @@ def opinion_score(note_text: str) -> tuple[int, str, list[str]]:
             schema=OpinionScore,
             system=_SYSTEM,
             model=HAIKU_MODEL,
-            max_tokens=400,
+            max_tokens=600,  # headroom for a short think on Haiku 5.5
         )
         return verdict.opinion_score, verdict.reason, verdict.flagged_phrases
     except Exception as e:
