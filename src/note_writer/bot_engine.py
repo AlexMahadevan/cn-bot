@@ -12,7 +12,8 @@ from cnapi.get_api_eligible_posts import get_posts_eligible_for_notes
 from cnapi.get_notes_written import already_noted_post_ids, get_notes_written
 from cnapi.submit_note import submit_note
 from data_models import NoteResult, Post
-from note_writer.config import CLAIM_OPINION_MIN
+from note_writer.config import CLAIM_OPINION_MIN, URL_LIVENESS_CHECK
+from note_writer.url_liveness import check_url_live
 from note_writer.write_note import research_post_and_write_note
 import storage
 
@@ -80,6 +81,31 @@ class CommunityNotesBot:
             return result
 
         note = result.note
+
+        # Pre-submission URL liveness gate. Earn-in's UrlValidity check needs
+        # >=95% of the 50 most recent notes to cite a URL that returns HTTP 200;
+        # fail closed (see note_writer/url_liveness.py for the policy).
+        if URL_LIVENESS_CHECK:
+            live = check_url_live(note.evidence_url)
+            if not live.ok:
+                logger.warning(
+                    "URL liveness FAILED for %s (%s): %s",
+                    note.post_id, live.detail, note.evidence_url,
+                )
+                storage.log_draft(
+                    post_id=post.post_id, post_text=post.text,
+                    outcome="refused",
+                    refusal_reason=f"url_liveness: {live.detail}",
+                    note_text=note.note_text,
+                    evidence_url=note.evidence_url,
+                    evidence_rating=evidence.rating if evidence else None,
+                    evidence_publisher=evidence.publisher_name if evidence else None,
+                    evidence_tier=evidence.evidence_tier if evidence else None,
+                    misleading_tags=note.misleading_tags,
+                )
+                result.refusal = f"Evidence URL not live ({live.detail}): {note.evidence_url}"
+                return result
+            logger.info("URL liveness OK for %s (%s)", note.post_id, live.detail)
 
         # Pre-flight quality gate: score the draft on X's claim/opinion model
         # (free dry-run, does not submit) and skip opinion-like notes so they

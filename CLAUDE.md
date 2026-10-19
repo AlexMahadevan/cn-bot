@@ -4,6 +4,11 @@ Guidance for Claude Code working in this repo (the `cn-bot` / `@alexcnotes`
 project — an AI Community Notes writer for X, built by Alex Mahadevan at
 Poynter). Read this first; it'll save you from the mistakes below.
 
+> **OKF atlas:** a structured, agent-readable map of this repo lives in
+> `okf/bundle/index.md` (Open Knowledge Format — one concept per file, with
+> provenance). Session hooks in `.claude/` load it automatically. Use it to find
+> *what lives where*; this file and `README.md` remain the prose guidance.
+
 ## What this is
 
 A pipeline that pulls posts eligible for Community Notes, filters to US
@@ -23,10 +28,14 @@ never get rated Helpful by contributors.** Therefore:
 - A **0% "Helpfulness rate" / 0 CRH is normal and expected** — not a sign the
   notes are bad. `src/monitor.py` prints a CRH%-vs-industry-benchmark block
   that is **meaningless in test_mode**. Do not report "below human average."
-- The real pre-admission signal is the **automated evaluator's scores** on the
-  **most recent 50 notes** (the `evaluation_outcome` buckets: `UrlValidity`,
-  `HarassmentAbuse`, `ClaimOpinion`, each `High`/`Medium`/`Low`). Admission to
-  writing public notes is gated on those scores, then a random draw.
+- The real pre-admission signal is X's **earn-in scorecard over the 50 most
+  recently submitted notes** (arXiv:2609.40067): UrlValidity ≥95% HTTP-200,
+  HarassmentAbuse ≥98% clean, ClaimOpinion ≥30% High and ≤30% Low. No random
+  draw. `src/monitor.py` prints PASS/FAIL per check; unevaluated notes count
+  as failing. The only admission signal is `scoring_status.has_access`.
+- 29 of the notes X counts are **unevaluated orphans from July 2025** (the
+  original template run). They sat in the window and held UrlValidity at 94%
+  until the 2026-10-19 relaunch. See the docs for the full story.
 
 Full explanation, sources, and the current status read-out:
 **`docs/community-notes-pilot.md`** — read it before answering any "how's the

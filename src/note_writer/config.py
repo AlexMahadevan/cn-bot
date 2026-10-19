@@ -51,3 +51,12 @@ NOTE_WRITER_MODEL = {
 # most likely to land Medium. A note that can't be scored (API error) fails
 # open and still submits.
 CLAIM_OPINION_MIN = float(os.getenv("CN_BOT_CLAIM_OPINION_MIN", "0.5"))
+
+# Pre-submission URL liveness gate. Earn-in requires >=95% of the 50 most recent
+# notes to cite a URL that resolves to HTTP 200 (arXiv:2609.40067), and nothing
+# upstream guaranteed that until 2026-10-19 (a dry run drafted a note citing a
+# bloomberg.com URL that 403s to bots). On by default; CN_BOT_URL_LIVENESS=0
+# disables it for offline eval runs.
+URL_LIVENESS_CHECK = os.getenv("CN_BOT_URL_LIVENESS", "1").strip().lower() not in {
+    "0", "false", "no", "off",
+}
