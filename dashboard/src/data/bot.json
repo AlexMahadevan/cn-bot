@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-23T19:04:53+00:00",
+  "generated_at": "2026-10-24T00:27:42+00:00",
   "totals": {
-    "posts": 5070,
-    "off_beat": 2189,
-    "evidence_searched": 2881,
-    "evidence_found": 1743,
-    "notes_written": 60,
-    "submitted": 60
+    "posts": 5129,
+    "off_beat": 2201,
+    "evidence_searched": 2928,
+    "evidence_found": 1781,
+    "notes_written": 61,
+    "submitted": 61
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 5070
+      "count": 5129
     },
     {
       "label": "On-beat (US politics)",
-      "count": 2881
+      "count": 2928
     },
     {
       "label": "Evidence found",
-      "count": 1743
+      "count": 1781
     },
     {
       "label": "Note drafted",
-      "count": 60
+      "count": 61
     },
     {
       "label": "Submitted to X",
-      "count": 60
+      "count": 61
     }
   ],
   "by_day": [
@@ -249,29 +249,37 @@
     },
     {
       "day": "2026-10-23",
-      "posts": 270,
+      "posts": 249,
       "submitted": 5,
       "queued": 0,
-      "refused": 264,
+      "refused": 243,
       "errors": 1
+    },
+    {
+      "day": "2026-10-24",
+      "posts": 80,
+      "submitted": 1,
+      "queued": 0,
+      "refused": 79,
+      "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 2189
+      "count": 2201
     },
     {
       "bucket": "Other",
-      "count": 1135
+      "count": 1145
     },
     {
       "bucket": "Opus declined to write",
-      "count": 873
+      "count": 899
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 724
+      "count": 734
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -289,18 +297,34 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 901
+      "count": 914
     },
     {
       "tier": "self_fact_check",
-      "count": 452
+      "count": 475
     },
     {
       "tier": "ifcn_verified",
-      "count": 386
+      "count": 388
     }
   ],
   "notes": [
+    {
+      "post_id": "2113431746419335389",
+      "post_url": "https://x.com/i/web/status/2113431746419335389",
+      "created_at": "2026-10-24T00:24:02+00:00",
+      "outcome": "submitted",
+      "post_text": "A TESLA ROADSTER JUST PLUNGED OFF THE GOLDEN GATE BRIDGE.\nTHEN IT FLEW BACK UP.\n\nThe bridge deck sits 67 meters above the water.\nNo car has ever returned from a fall like that.\n\nThe Roadster plummeted, engaged its thrusters just above the waves,\nand climbed back up to the road. https://t.co/laW2xgbk4r",
+      "note_text": "Per Lead Stories, this video of a Tesla Roadster jumping off the Golden Gate Bridge and flying back onto the deck is AI-generated. It does not show a real event. https://leadstories.com/hoax-alert/2026/10/fake-video-tesla-roadster-jumping-off-golden-gate-bridge-ai-generated-digital-aerobatics.html",
+      "evidence_url": "https://leadstories.com/hoax-alert/2026/10/fake-video-tesla-roadster-jumping-off-golden-gate-bridge-ai-generated-digital-aerobatics.html",
+      "evidence_publisher": "Lead Stories",
+      "evidence_rating": null,
+      "evidence_tier": "self_fact_check",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.manipulated_media"
+      ]
+    },
     {
       "post_id": "2113655094956683752",
       "post_url": "https://x.com/i/web/status/2113655094956683752",
@@ -1266,254 +1290,254 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2113567582884376932",
-      "post_url": "https://x.com/i/web/status/2113567582884376932",
-      "created_at": "2026-10-23T19:04:51+00:00",
-      "post_text": "The Palestinian terror attack this morning would have been an even worse catastrophic event had the @IDF not acted so quickly. Will the media give this as much coverage as when olive pickers get detained for failing to report their activities? https://t.co/5EOryGg73A",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2113304586140397901",
-      "post_url": "https://x.com/i/web/status/2113304586140397901",
-      "created_at": "2026-10-23T19:04:42+00:00",
-      "post_text": "Val Kilmer\u2019s rapid-fire reload during the bank heist in Heat (1995) was so technically perfect that the footage was later used by Special Forces instructors as a training example for \"proper magazine changes under fire.\" https://t.co/DqGWZT7hsI https://t.co/WYZ2dmKznO",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@CinemaTweets1)"
-    },
-    {
-      "post_id": "2113352380016386251",
-      "post_url": "https://x.com/i/web/status/2113352380016386251",
-      "created_at": "2026-10-23T19:04:39+00:00",
-      "post_text": "\u201cOur daughter has no arms.\u201d\n\nIsrael\u2019s genocide consumes every aspect of life in Gaza \u2013 impacting babies before they are even born. https://t.co/NvYxH17izw",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "nbcnews.com"
-    },
-    {
-      "post_id": "2113550265249108320",
-      "post_url": "https://x.com/i/web/status/2113550265249108320",
-      "created_at": "2026-10-23T19:04:38+00:00",
-      "post_text": "\ud83d\ude33 The iPhone Duo\u2019s Biggest Problem in Direct Sunlight? \u2600\ufe0f\ud83d\udcf1\n\nThe two halves of the display look completely different under bright sunlight, with one side appearing much more washed out than the other. Is this a serious display issue? \ud83d\udc40. \n#iPhoneDuo #Apple https://t.co/x9pf3ZK1Jb",
+      "post_id": "2113458583795089634",
+      "post_url": "https://x.com/i/web/status/2113458583795089634",
+      "created_at": "2026-10-24T00:27:39+00:00",
+      "post_text": "Astrobot has officially outsold\u2026 \n\nBayonetta trilogy\nMetroid Dread\nMetroid Prime 4\nMario Luigi Brothership\nKirby and the forgotten land\nXenoblade chronicles 3\nPokemon Legends Z-A\nKirby Air Riders\nSuper Mario Party Jamboree\nPokemon Pokopia\nDonkey Kong Bananza \n\n86% of Switch 2 https://t.co/LdJgia1lu6",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@iTechApples)"
+      "evidence_publisher": "X (@JuankandaJuan)"
     },
     {
-      "post_id": "2113242631077597240",
-      "post_url": "https://x.com/i/web/status/2113242631077597240",
-      "created_at": "2026-10-23T19:04:26+00:00",
-      "post_text": "At some point we have to be honest about the fact that we have so called Republicans telling people to vote for communist @amyactonoh over Hindu @VivekGRamaswamy because a lot of people on the right have been conditioned to irrationally hate Indians. \n\nImagine voting for a",
+      "post_id": "2113544327901380777",
+      "post_url": "https://x.com/i/web/status/2113544327901380777",
+      "created_at": "2026-10-24T00:27:36+00:00",
+      "post_text": "This is insane. Japan just detained a Palestinian comedian for coming to see the country and do a small show with his friends. Absolutely shameful. https://t.co/XYSJ5QuJBu",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@guychristensen_)"
+    },
+    {
+      "post_id": "2113674522490777655",
+      "post_url": "https://x.com/i/web/status/2113674522490777655",
+      "created_at": "2026-10-24T00:27:32+00:00",
+      "post_text": "Talarico will vote to take away your kids and transition them https://t.co/NiVv1KukKF",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2113390311460180102",
-      "post_url": "https://x.com/i/web/status/2113390311460180102",
-      "created_at": "2026-10-23T19:04:21+00:00",
-      "post_text": "\ud83d\udea8Adam Wharton BIG QUOTES on Bruno Fernandes:\n\n\u201cBruno\u2026 you see how good he is in the PL week in week out &amp; how important he is for Man Utd. Player of the year last year i\u2019m sure. So many assists. The amount of chances he creates, I think people look at like sort of the chances https://t.co/bhtOo7KsL2",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@ZaidBalll)"
-    },
-    {
-      "post_id": "2113411284385640873",
-      "post_url": "https://x.com/i/web/status/2113411284385640873",
-      "created_at": "2026-10-23T19:04:17+00:00",
-      "post_text": "@markofbrooklyn If I thought that this report was done in good faith I'd be very concerned but it hasn't.  29 out of 5000 kids in this self-selected sample said they'd experienced antisemitism. That doesn't warrant the measures now being taken - particularly the adoption of the IHRA definition https://t.co/loPskVvJp2",
+      "post_id": "2113464452037140595",
+      "post_url": "https://x.com/i/web/status/2113464452037140595",
+      "created_at": "2026-10-24T00:27:31+00:00",
+      "post_text": "A 71-year-old pedestrian was struck and killed by a Tesla in full self-driving mode on Interstate 80 in Vallejo, California. The driver stayed at the scene. California Highway Patrol noted that full self-driving \"is not fully autonomous.\" https://t.co/n7BsYdLaoX https://t.co/TEByo6G1pI",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "edworkforce.house.gov"
+      "evidence_publisher": "cbsnews.com"
     },
     {
-      "post_id": "2113300791146790915",
-      "post_url": "https://x.com/i/web/status/2113300791146790915",
-      "created_at": "2026-10-23T19:04:13+00:00",
-      "post_text": "A BioWare dev on reddit leaked a Mass Effect 5 trailer... it's called MASS EFFECT UNIVERSE and it's fucking gorgeous. I'm crying. This is everything I wanted. They were a lot farther than we thought. FUCK EA https://t.co/7rXqCrAiSQ",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@kalaelizabeth)"
-    },
-    {
-      "post_id": "2113007095469760774",
-      "post_url": "https://x.com/i/web/status/2113007095469760774",
-      "created_at": "2026-10-23T19:04:09+00:00",
-      "post_text": "This AI video is an Absolute Masterpiece\ud83d\udd25\n\nSeedance 2.5 https://t.co/ImcJN4LJcd",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is primarily an opinion/praise of an AI video with no specific checkable factual claim beyond the vague reference to a product name.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2113256557433557429",
-      "post_url": "https://x.com/i/web/status/2113256557433557429",
-      "created_at": "2026-10-23T19:04:09+00:00",
-      "post_text": "\ud83c\uddeb\ud83c\uddf7 With guys like this at every establishment across France, the riots would have been over in no time.\n\nWriter: Samuel https://t.co/H2v5lR3RkQ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is an opinion or hypothetical about what would have happened with certain people present, with no specific checkable factual claim beyond a vague reference to riots.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2113564136269361625",
-      "post_url": "https://x.com/i/web/status/2113564136269361625",
-      "created_at": "2026-10-23T19:04:08+00:00",
-      "post_text": "Five Israelis wounded and two suspected Palestinian attackers killed in West Bank shooting https://t.co/DITj6SPwU6",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2113339721304936911",
-      "post_url": "https://x.com/i/web/status/2113339721304936911",
-      "created_at": "2026-10-23T19:04:08+00:00",
-      "post_text": "This is horrifying. They're sending armed agents door to door, traumatizing children and demanding proof of citizenship. And next, they'll be at our polling places.\n\u00a0\nThe lengths Trump will go to cling to power are shocking and un-American. https://t.co/SDZhOJELow",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "nbcnews.com"
-    },
-    {
-      "post_id": "2113428225976082521",
-      "post_url": "https://x.com/i/web/status/2113428225976082521",
-      "created_at": "2026-10-23T19:04:06+00:00",
-      "post_text": "Trump: I don't know where da hell we get so much breaking news. It was just revealed. You might have heard this with your modern telephones and receivers https://t.co/ofEv2E3hxw",
+      "post_id": "2113096310119334115",
+      "post_url": "https://x.com/i/web/status/2113096310119334115",
+      "created_at": "2026-10-24T00:27:26+00:00",
+      "post_text": "Women get lonely too. But nobody worries about it, because lonely women don't turn violent - they enroll in grad school, create more art or adopt a rescue dog.",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's text is a vague, quoted remark about breaking news with no specific checkable fact; the substance depends on an unseen linked video or media.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post offers a generalized opinion about lonely women and violence without naming a specific subject, event, or verifiable statistic.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2113365512730325470",
-      "post_url": "https://x.com/i/web/status/2113365512730325470",
-      "created_at": "2026-10-23T19:04:03+00:00",
-      "post_text": "i tried to donate blood today, i had an appointment, and they turned me away.\n\napparently you still can\u2019t donate blood if you\u2019re on PrEP or had anal sex within 3 months? (both disqualified me)\n\ni thought they unbanned gays from donating? how is this not de facto discrimination?",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cacmap.fda.gov"
+      "post_id": "2113412287390486923",
+      "post_url": "https://x.com/i/web/status/2113412287390486923",
+      "created_at": "2026-10-24T00:27:24+00:00",
+      "post_text": "There\u2019s one at every sleepover\ud83d\ude44 https://t.co/Tnm3APD3Kw",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague, sarcastic reaction with no specific checkable factual claim beyond an unverifiable generic remark and a link.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     },
     {
-      "post_id": "2113349543878152408",
-      "post_url": "https://x.com/i/web/status/2113349543878152408",
-      "created_at": "2026-10-23T19:04:01+00:00",
-      "post_text": "Brad Pitt reportedly cut ties with his daughter, Zahara Jolie-Pitt, after claiming he had been giving her a $35,000 weekly allowance following his divorce from Angelina Jolie.\n\nHe also said he provided her with additional money to invest in the entertainment industry, hoping she https://t.co/RKI7CexN7N",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Ghost91ne)"
-    },
-    {
-      "post_id": "2113210812898619826",
-      "post_url": "https://x.com/i/web/status/2113210812898619826",
-      "created_at": "2026-10-23T19:03:54+00:00",
-      "post_text": "He won't tell you that pedri won player of the tournament in Euro 2020 \ud83d\ude05 https://t.co/UVTranCSni https://t.co/ZmgTsKpMAE",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2113284361688580432",
-      "post_url": "https://x.com/i/web/status/2113284361688580432",
-      "created_at": "2026-10-23T19:03:49+00:00",
-      "post_text": "Across the country, hail causes billions of dollars in damage every year, and scientists believe that climate change will make things worse. Hail is getting bigger, and hailstorms are becoming larger and more frequent. https://t.co/8ailfiuYYw",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "nbcnews.com"
-    },
-    {
-      "post_id": "2113532713902981447",
-      "post_url": "https://x.com/i/web/status/2113532713902981447",
-      "created_at": "2026-10-23T19:03:44+00:00",
-      "post_text": "Billie Eilish did breast reduction surgery and Nat Wolff posted this on his story today \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d https://t.co/Kwfqn8zXo2",
+      "post_id": "2113363976688206259",
+      "post_url": "https://x.com/i/web/status/2113363976688206259",
+      "created_at": "2026-10-24T00:27:24+00:00",
+      "post_text": "In 2026, teachers are being threatened with disciplinary action for wearing watermelon badges in solidarity with Palestine and against genocide.\n\nThis is Andy Burnham\u2019s Britain.\n\nShame on him.",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@iam_Mardiyyah)"
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "eric.ed.gov"
     },
     {
-      "post_id": "2113379347751207131",
-      "post_url": "https://x.com/i/web/status/2113379347751207131",
-      "created_at": "2026-10-23T19:03:41+00:00",
-      "post_text": "Man buys $12,000,000 military plane off Facebook Marketplace. \n\nAs of right now, this is the most expensive item ever sold off FB marketplace ever. https://t.co/IjapGX26Xb",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@frankie_lapenna)"
-    },
-    {
-      "post_id": "2113269927209525438",
-      "post_url": "https://x.com/i/web/status/2113269927209525438",
-      "created_at": "2026-10-23T19:03:39+00:00",
-      "post_text": "First Clasico at 16 years old at the Bernabeu. https://t.co/1s2Ynmbiqk",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post relays a personal milestone but the only substantive detail depends on an unseen linked image or video, with no checkable assertion in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2113601882899755061",
-      "post_url": "https://x.com/i/web/status/2113601882899755061",
-      "created_at": "2026-10-23T19:03:37+00:00",
-      "post_text": "Rome wasn't built in a day, but this outfit was picked in 5 minutes \ud83d\ude0c\ud83d\udda4 https://t.co/Fi0wb1ShEr",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a casual fashion remark with a common idiom and no specific, checkable factual claim about the world.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2113379039948009556",
-      "post_url": "https://x.com/i/web/status/2113379039948009556",
-      "created_at": "2026-10-23T19:03:36+00:00",
-      "post_text": "Jared Kushner's iPhone was hacked.\n\nDutch military intelligence got access to his iPhone.\n\nHe had two bank accounts.\n\nSaudi Crown Prince Mohammed bin Salman and Emirati ruler Mohammed bin Zayed deposited up to $700 million dollars in transfers.\n\nAnd Hunter Biden sold a painting. https://t.co/rclTCMVsJR",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@daviddunn177)"
-    },
-    {
-      "post_id": "2113356234774716892",
-      "post_url": "https://x.com/i/web/status/2113356234774716892",
-      "created_at": "2026-10-23T19:03:36+00:00",
-      "post_text": "Jeffery Epstein was a horrible human. Nobody is arguing that.\n\nHowever \n\nPeople need to come to terms with the fact that the Epstein files have been fully released. There\u2019s no point in talking about them in 2026.\n\nInstead, we need to be fighting antisemitism and protecting Jews.",
+      "post_id": "2113433162277863632",
+      "post_url": "https://x.com/i/web/status/2113433162277863632",
+      "created_at": "2026-10-24T00:27:22+00:00",
+      "post_text": "Democrats are desperately trying to make you believe this ad is bad because it is SO GOOD.\n\nAmy Acton's mother, Donna Arthur, worked as an advocate for abused women and children (with Youngstown Children and Family Services) after being physically abused (including being beaten https://t.co/hGQwp9kDSv",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "NPR"
+      "evidence_publisher": "FactCheck.org"
     },
     {
-      "post_id": "2113383545955819780",
-      "post_url": "https://x.com/i/web/status/2113383545955819780",
-      "created_at": "2026-10-23T19:03:27+00:00",
-      "post_text": "I love when WuWa takes inspiration from Genshin and HSR to make copy\ud83e\udd79, Finally WuWa making a copycat version of Columbina + Castorice hybrid version. https://t.co/uK0iejkRnU https://t.co/iOuUGxqpOA",
+      "post_id": "2113619800769351937",
+      "post_url": "https://x.com/i/web/status/2113619800769351937",
+      "created_at": "2026-10-24T00:27:19+00:00",
+      "post_text": "Saving American lives. \n\nBorder security, crushing drug cartels, and law &amp; order policies have led to a massive drop in drug overdoses from the Biden-era peak. https://t.co/hU0tDcspvQ",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is sarcastic commentary calling a game a copycat of other games, with no checkable factual assertion in the text, and the rest depends on unseen linked media.",
+      "refusal_reason": "Hallucination check: The article body only mentions provisional overdose statistics through December 2025, so the 'third consecutive year' and 'began in 2023' claims are unsupported. (unsupported: ['fell in 2025 for the third consecutive year', 'the decline began in 2023, during the Biden administration'])",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cdc.gov"
+    },
+    {
+      "post_id": "2113605969200443655",
+      "post_url": "https://x.com/i/web/status/2113605969200443655",
+      "created_at": "2026-10-24T00:27:19+00:00",
+      "post_text": "Lawyer explains how the trump kids accounts really work.\nSpoiler: its a scam. \n\nPlease just open an account for your children at a reputable bank. \n\nBTW, theres no beneficiary for the trump accounts. Your child dies, you lose every dime. \n\nYes. The trump family found a way to https://t.co/tuNu9ezyAz",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "uscode.house.gov"
+    },
+    {
+      "post_id": "2113457629267931423",
+      "post_url": "https://x.com/i/web/status/2113457629267931423",
+      "created_at": "2026-10-24T00:27:12+00:00",
+      "post_text": "#CyberpunkEdgerunners2 \nBEST SONG FROM THE SEASON? https://t.co/TlhLqzFr89",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post asks for a subjective opinion on the best song and contains no checkable factual claim.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2113390144984064346",
-      "post_url": "https://x.com/i/web/status/2113390144984064346",
-      "created_at": "2026-10-23T19:03:25+00:00",
-      "post_text": "This is a REAL article on a website. It makes me feel sick:\n\n\u201cincreasingly these encounters result in a shared apartment, a mixed-race child, a new surname, and a happy future. A quiet revolution is taking shape across Europe and North America\u2026\n\n\u201cOnce I introduced Karim to my https://t.co/BnsRpHtn1W",
+      "post_id": "2113412326791790922",
+      "post_url": "https://x.com/i/web/status/2113412326791790922",
+      "created_at": "2026-10-24T00:27:10+00:00",
+      "post_text": "\ud83d\udea8 PENNSYLVANIA! \n\u00a0\nEarly Voting, in-person, is UNDERWAY NOW in the Great Commonwealth of Pennsylvania. If you have a mail-in ballot, return it immediately and, if not, GO VOTE at the Polls RIGHT NOW, and get everyone you know to VOTE FOR THE REPUBLICAN IN EVERY RACE, UP AND DOWN",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's text is an emotional reaction to an unseen article and a vague quoted fragment with no named subject, number, date, or verifiable assertion about a specific entity.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post urges voting and gives a call to action but does not assert a checkable fact; the claim that early voting is underway is vague and unverified as a substantive assertion, and the rest is persuasion.",
       "evidence_tier": null,
       "evidence_publisher": null
+    },
+    {
+      "post_id": "2113637064398836217",
+      "post_url": "https://x.com/i/web/status/2113637064398836217",
+      "created_at": "2026-10-24T00:27:10+00:00",
+      "post_text": "Outrage is erupting in Bulgaria after a journalist trying to ask the Parliament Speaker a question was thrown to the ground by security\n\nThey put on the flashing lights and speed away from the scene as she's seen lying motionless on the concrete  https://t.co/CQIwGJwFzN",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@aykiri)"
+    },
+    {
+      "post_id": "2113505573182271549",
+      "post_url": "https://x.com/i/web/status/2113505573182271549",
+      "created_at": "2026-10-24T00:27:08+00:00",
+      "post_text": "Weird how all the gun bros going mental about this photo are such firearms experts but they don\u2019t know what a safety inhibitor is.\n\nThis weapon was physically incapable of firing. \n\nBut again, they know this.\n\nWhat they\u2019re really angry about is a woman in a hijab holding a gun. https://t.co/U30YBsY4O9",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@AVintenAuthor)"
+    },
+    {
+      "post_id": "2113618323560890478",
+      "post_url": "https://x.com/i/web/status/2113618323560890478",
+      "created_at": "2026-10-24T00:27:08+00:00",
+      "post_text": "Avengers: Doomsday (2026) | Exclusive Trailer \"DOOM\"\n\n#AvengersDoomsDay https://t.co/j1cYVVL6EU",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post only shares a trailer link with a title and hashtag; the claim depends on watching unseen video, and it makes no verifiable factual assertion in its text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2113473880459231420",
+      "post_url": "https://x.com/i/web/status/2113473880459231420",
+      "created_at": "2026-10-24T00:27:05+00:00",
+      "post_text": "I\u2019m so fucking confused by this tweet. A game winner\u2026to go up nine????\n\nGutsy??? On 4th and very long? What is going on? Is there a gas leak??? https://t.co/8U1nLLVHun",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is confused commentary about an unseen tweet and relies on a link to a media item the reader cannot see, with no independently checkable assertion in its own words.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2113672397446381585",
+      "post_url": "https://x.com/i/web/status/2113672397446381585",
+      "created_at": "2026-10-24T00:27:03+00:00",
+      "post_text": "Hitler was a far left socialist. Literally in the name of his party! https://t.co/5Jc1YmVs9j",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Snopes"
+    },
+    {
+      "post_id": "2113638337307418754",
+      "post_url": "https://x.com/i/web/status/2113638337307418754",
+      "created_at": "2026-10-24T00:27:00+00:00",
+      "post_text": "SORRY IF THIS OFFENDS GROCERY EXECUTIVES, BUT I\u2019M DONE.\n\nI just pulled a $4.99 box of cereal off the shelf, brought it to the register, and watched the scanner ring it up as $7.49.\n\nWhen I told the cashier, she said: \"Oh, that\u2019s the digital coupon price. You have to download our",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2113649226978927087",
+      "post_url": "https://x.com/i/web/status/2113649226978927087",
+      "created_at": "2026-10-24T00:26:57+00:00",
+      "post_text": "I'd like to report a fraudster in the Oval Office.\n\nTrump promised to lower costs on Day 1.\n\nBut instead he launched a war that increased the prices of everything from gas to groceries. https://t.co/HuaRB8oqaC",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2113636993179513337",
+      "post_url": "https://x.com/i/web/status/2113636993179513337",
+      "created_at": "2026-10-24T00:26:51+00:00",
+      "post_text": "If you encounter ICE, here's what every New Yorker should know. https://t.co/hrjL8JPLyr",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a call to action with a link and no specific factual claim is stated; the content is only implied by the link, so there is nothing checkable in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2113641608943931630",
+      "post_url": "https://x.com/i/web/status/2113641608943931630",
+      "created_at": "2026-10-24T00:26:50+00:00",
+      "post_text": "A Tesla driver told officials he was using the car\u2019s full self-driving mode when he fatally struck a 71-year-old man crossing a\u00a0Solano County highway, according to California Highway Patrol. https://t.co/Xa7NauXuyx",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2113566577312612624",
+      "post_url": "https://x.com/i/web/status/2113566577312612624",
+      "created_at": "2026-10-24T00:26:50+00:00",
+      "post_text": "As a Marine and dad, I\u2019m voting Yes on 9 to keep assault weapons off our streets. https://t.co/eckH0z3Ids",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post expresses a voting intention and opinion about assault weapons without making a checkable factual assertion in its text, and no linked article is provided to define a factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2113578319023083695",
+      "post_url": "https://x.com/i/web/status/2113578319023083695",
+      "created_at": "2026-10-24T00:26:47+00:00",
+      "post_text": "\u203c\ufe0f\u203c\ufe0f Now this is something! \ud83d\udd3d This technical thread suggests (explains) that the entire Starlink/shield slowdown issue is not a consequence of a political decision in the US or by Musk but the result of Ukrainian engineers hacking the system to bypass it's controls and do https://t.co/oUYrPNsx4P",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@tvguidemsk)"
+    },
+    {
+      "post_id": "2113397023173124403",
+      "post_url": "https://x.com/i/web/status/2113397023173124403",
+      "created_at": "2026-10-24T00:26:46+00:00",
+      "post_text": "TRump IS A CHILD RAPIST. fact! https://t.co/L6VDZgOocz",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Snopes"
+    },
+    {
+      "post_id": "2113649888026034432",
+      "post_url": "https://x.com/i/web/status/2113649888026034432",
+      "created_at": "2026-10-24T00:26:43+00:00",
+      "post_text": ".@POTUS: \"I think the Republicans are going to win \u2014 but if there was gridlock, what happens is I veto everything and then the Democrats come and want to make a deal.\" https://t.co/OhqWmWxDey",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@RapidResponse47)"
     }
   ]
 }
