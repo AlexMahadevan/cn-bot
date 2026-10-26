@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-26T11:51:12+00:00",
+  "generated_at": "2026-10-26T15:16:46+00:00",
   "totals": {
-    "posts": 5663,
-    "off_beat": 2487,
-    "evidence_searched": 3176,
-    "evidence_found": 1965,
+    "posts": 5699,
+    "off_beat": 2497,
+    "evidence_searched": 3202,
+    "evidence_found": 1987,
     "notes_written": 65,
     "submitted": 65
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 5663
+      "count": 5699
     },
     {
       "label": "On-beat (US politics)",
-      "count": 3176
+      "count": 3202
     },
     {
       "label": "Evidence found",
-      "count": 1965
+      "count": 1987
     },
     {
       "label": "Note drafted",
@@ -273,33 +273,33 @@
     },
     {
       "day": "2026-10-26",
-      "posts": 96,
+      "posts": 132,
       "submitted": 0,
       "queued": 0,
-      "refused": 96,
+      "refused": 132,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 2487
+      "count": 2497
     },
     {
       "bucket": "Other",
-      "count": 1205
+      "count": 1210
     },
     {
       "bucket": "Opus declined to write",
-      "count": 1015
+      "count": 1029
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 793
+      "count": 799
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 76
+      "count": 77
     },
     {
       "bucket": "No fact-check found",
@@ -313,15 +313,15 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 998
+      "count": 1005
     },
     {
       "tier": "self_fact_check",
-      "count": 556
+      "count": 570
     },
     {
       "tier": "ifcn_verified",
-      "count": 407
+      "count": 408
     }
   ],
   "notes": [
@@ -1369,254 +1369,254 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2114478003959042126",
-      "post_url": "https://x.com/i/web/status/2114478003959042126",
-      "created_at": "2026-10-26T11:33:21+00:00",
-      "post_text": "Jonathan Taylor did not fly back with the rest of the team to Indianapolis, instead opting to stay in Minnesota for unknown reasons.\n\nThe running back has been involved in trade rumors, and with the #Colts falling to 2-5 it\u2019s only a matter of time before the running back is https://t.co/Z1I4fBpctk",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@NFCNorthNewss)"
-    },
-    {
-      "post_id": "2114360269229236230",
-      "post_url": "https://x.com/i/web/status/2114360269229236230",
-      "created_at": "2026-10-26T11:26:49+00:00",
-      "post_text": "HOLY SHIT!!   Minnesota has a USPS inside a MOSQUE. \n\nUNBELIEVABLE!!!!! https://t.co/T1TcbFikGk",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@GDaddyzs)"
-    },
-    {
-      "post_id": "2114365480186306923",
-      "post_url": "https://x.com/i/web/status/2114365480186306923",
-      "created_at": "2026-10-26T11:26:45+00:00",
-      "post_text": "\ud83d\udea8Update: Massive Power Outage Coming! War Department prepares major U.S. mil\u0131tary bases to operate for 90 days without outside support, including civilian power grids and global supply chains!\n\n- Fox News https://t.co/LANvfJieAS",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@defense_civil25)"
-    },
-    {
-      "post_id": "2114509149681627494",
-      "post_url": "https://x.com/i/web/status/2114509149681627494",
-      "created_at": "2026-10-26T11:26:44+00:00",
-      "post_text": "Did we miss somebody? \ud83d\ude05 @Lions https://t.co/IihZlzVYJL",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague, playful question with an emoji and a tag and link, with no specific factual assertion to check.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2114380096790499430",
-      "post_url": "https://x.com/i/web/status/2114380096790499430",
-      "created_at": "2026-10-26T11:26:43+00:00",
-      "post_text": "Trump kept every single promise. \n\nAnd you still betrayed him.\n\nYou\u2019re scum, man.",
+      "post_id": "2114493377823818040",
+      "post_url": "https://x.com/i/web/status/2114493377823818040",
+      "created_at": "2026-10-26T15:16:44+00:00",
+      "post_text": "The communists are again trying to steal the election in Brazil against Bolsonaro",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes a sweeping, vague assertion that Trump kept every promise and insults unnamed people, with no specific, checkable factual detail.",
-      "evidence_tier": null,
-      "evidence_publisher": null
+      "refusal_reason": "evaluate_note: claim_opinion_score -0.459 below 0.50 floor",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2083064555299635572",
-      "post_url": "https://x.com/i/web/status/2083064555299635572",
-      "created_at": "2026-10-26T11:26:43+00:00",
-      "post_text": "After almost a month it's ready, it was interesting to learn something composition\nNow it's time to learn real animation lmao https://t.co/caLIMmzvkP",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a personal update about learning animation with no specific checkable factual claim about the world.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2114429604274536888",
-      "post_url": "https://x.com/i/web/status/2114429604274536888",
-      "created_at": "2026-10-26T11:26:41+00:00",
-      "post_text": "This is treason. USPS inside of a mosque. The people who count mail-in ballots. But our elections are \"safe and secure\" https://t.co/6KJyPrPW4r",
+      "post_id": "2114535400559755535",
+      "post_url": "https://x.com/i/web/status/2114535400559755535",
+      "created_at": "2026-10-26T15:16:41+00:00",
+      "post_text": "Fl\u00e1vio Bolsonaro: \"It is impossible to recognize the (Brazil) election results in the context of how these things happened. We are going to use our legal team, we are going to request the annulment of these elections.\" https://t.co/J1bZbJiP0v https://t.co/p60nVsL8t1",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@GDaddyzs)"
+      "evidence_publisher": "X (@AZ_Intel_)"
     },
     {
-      "post_id": "2114316631757488441",
-      "post_url": "https://x.com/i/web/status/2114316631757488441",
-      "created_at": "2026-10-26T11:26:41+00:00",
-      "post_text": "All Hell Broke Loose at a USPS inside a Mosque in Minnesota. @MNFraudFinder https://t.co/n0x0jkhalX",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post asserts vaguely that 'all hell broke loose' at a USPS inside a Minnesota mosque, but the substance depends on a linked video the reader must watch to understand what happened.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2114498853818798313",
-      "post_url": "https://x.com/i/web/status/2114498853818798313",
-      "created_at": "2026-10-26T11:26:39+00:00",
-      "post_text": "\u201c[Tina Peters] was elected by her county to uphold the elections. Instead, she attacked the elections from within,\u201d says Colorado Secretary of State Jena Griswold. https://t.co/qRleAYmlvn https://t.co/ygNXfoaf1D",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@60Minutes)"
-    },
-    {
-      "post_id": "2114412679389417913",
-      "post_url": "https://x.com/i/web/status/2114412679389417913",
-      "created_at": "2026-10-26T11:26:37+00:00",
-      "post_text": "After Elon Musk posted on X saying he had throttled Ukraine\u2019s use of Starlink after it was used for offensive attacks, House Armed Services Committee member Rep. Jason Crow (D-CO) says the billionaire\u2019s ability to wield that power is \u201cbeyond disturbing to me.\u201d \n\n\u201cIt cannot and https://t.co/e5UiuUa4G2",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@FaceTheNation)"
-    },
-    {
-      "post_id": "2114522629306466383",
-      "post_url": "https://x.com/i/web/status/2114522629306466383",
-      "created_at": "2026-10-26T11:26:34+00:00",
-      "post_text": ".@NICKIMINAJ has been an incredibly strong ally for President Donald J. Trump and his administration.\n\nFrom Trump Accounts to SBA\u2019s Million Dollar Pitch \u2014 Nicki is all-in on supporting a brighter American future! \ud83c\uddfa\ud83c\uddf8 https://t.co/dt4TultOM6",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cnbc.com"
-    },
-    {
-      "post_id": "2114375751831363839",
-      "post_url": "https://x.com/i/web/status/2114375751831363839",
-      "created_at": "2026-10-26T11:26:32+00:00",
-      "post_text": "BREAKING \ud83d\udea8Pro-Palestinian supporters set the American flag on fire in Chicago. \n\nIf they hate America so much, what are they doing there?! https://t.co/waa1LtnLRg",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MAGA_warrio)"
-    },
-    {
-      "post_id": "2114513769976021311",
-      "post_url": "https://x.com/i/web/status/2114513769976021311",
-      "created_at": "2026-10-26T11:26:25+00:00",
-      "post_text": "\ud83c\udde7\ud83c\uddf7 BREAKING: South American countries will not recognize Lula as president",
+      "post_id": "2114493316041457859",
+      "post_url": "https://x.com/i/web/status/2114493316041457859",
+      "created_at": "2026-10-26T15:16:33+00:00",
+      "post_text": "\ud83d\udea8 THE CHEAT IS HAPPENING: Brazil\u2019s Supreme Court just EXTENDED voting hours as polls were closing.\n\nJustice Cristiano Zanin ordered it. He is Lula\u2019s former personal lawyer, put on the court by Lula in 2023.\n\nThe catch. Only stations still open get more time. Bolsonaro",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2114030345855070593",
-      "post_url": "https://x.com/i/web/status/2114030345855070593",
-      "created_at": "2026-10-26T11:26:21+00:00",
-      "post_text": "Steve Rogers is Captain America",
+      "post_id": "2114405925633118674",
+      "post_url": "https://x.com/i/web/status/2114405925633118674",
+      "created_at": "2026-10-26T15:16:31+00:00",
+      "post_text": "Ivermectin and Mebendazole protocol cured stage 4 \nHere is the protocol I used to cure stage 4 lungs cancer. Bookmark it \nProtocol Before Bed: \nIvermectin \u2013 2 ml\nMebendazole \u2013 1050 mg\nDMSO \u2013 1/2 tsp\nC60 \u2013 1 tsp (3 weeks on / 1 week off) Turmeric \u2013 1,600 mg\nResveratrol \u2013 800 mg https://t.co/QRGo6E9bmJ",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Lead Stories"
+    },
+    {
+      "post_id": "2114448397167968256",
+      "post_url": "https://x.com/i/web/status/2114448397167968256",
+      "created_at": "2026-10-26T15:16:20+00:00",
+      "post_text": "olivia rodrigo should be allowed to drag this woman\u2019s ass every day. her saying all this bullshit then doing exactly that to a 17 yo is NASTY asf https://t.co/9DHZSrByrI https://t.co/5JFurcSeki",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post states a fictional role assignment from a comic/film franchise, which is not a falsifiable factual claim about the real world in a meaningful fact-checkable sense.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is insulting commentary that vaguely references unnamed 'bullshit' and an unspecified action toward a 17-year-old, with the actual claim located in links/media the reader cannot see.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2114405374690468243",
-      "post_url": "https://x.com/i/web/status/2114405374690468243",
-      "created_at": "2026-10-26T11:26:21+00:00",
-      "post_text": "Before Electric Fans were invented the British would use Indians to manually pull fans https://t.co/iWBcFnQKn7",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "loc.gov"
+      "post_id": "2114428126726115349",
+      "post_url": "https://x.com/i/web/status/2114428126726115349",
+      "created_at": "2026-10-26T15:16:18+00:00",
+      "post_text": "A lost deleted scene of the SpongeBob episode hooky \ud83d\ude3c https://t.co/ZYLVWdwck3",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post only shares a link to a purported deleted scene and makes no checkable assertion in its own text; understanding it requires viewing the linked media.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     },
     {
-      "post_id": "2114351371793387599",
-      "post_url": "https://x.com/i/web/status/2114351371793387599",
-      "created_at": "2026-10-26T11:26:19+00:00",
-      "post_text": "Took my 12-year-old in for her regular checkup today, and halfway through, the nurse goes,\n\n\u201cMom, can you wait outside for a few mins?\u201d\n\nI said, \u201cNah, I\u2019m good right here.\u201d\n\nShe tried again. \u201cIt\u2019ll only be for a minute.\u201d\n\nI told her, \u201cThat\u2019s okay. Me and her dad already agreed",
+      "post_id": "2114480102549402038",
+      "post_url": "https://x.com/i/web/status/2114480102549402038",
+      "created_at": "2026-10-26T15:16:18+00:00",
+      "post_text": "We have an update regarding our guest announcement for Kirsche Verstahl. Please see below. https://t.co/GGFVdM5MA2",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a personal anecdote about a parent and nurse with no concrete, checkable factual claim about the world; the text is also truncated mid-sentence.",
+      "refusal_reason": "Off-beat: The post only points to an announcement via a link and makes no specific checkable factual claim itself.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2114497515051491650",
-      "post_url": "https://x.com/i/web/status/2114497515051491650",
-      "created_at": "2026-10-26T11:20:18+00:00",
-      "post_text": "An American student with a disability is suffering from a broken wrist and a black eye after ICE wrongfully tackled and detained him in Santa Maria.\n\nAmericans didn\u2019t ask to be brutalized by ICE. \n\nThey sure as hell shouldn\u2019t be paying for its actions with broken limbs. \n\nICE https://t.co/RWhRGf3Cy1",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "nbcnews.com"
+      "post_id": "2114523409539633350",
+      "post_url": "https://x.com/i/web/status/2114523409539633350",
+      "created_at": "2026-10-26T15:16:17+00:00",
+      "post_text": "My favorite thing that chuds do is claim the left send death threats over this kind of thing, then the moment they dont get what they want they do the exact same thing if not worse. \n\nComment section is legit just a KKK meeting planning a lynching. https://t.co/mZPiORo6xi",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is generalized opinion about 'chuds' and the comment section, with no named subject or checkable factual assertion, and the key context relies on an unseen link.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     },
     {
-      "post_id": "2114427638307807643",
-      "post_url": "https://x.com/i/web/status/2114427638307807643",
-      "created_at": "2026-10-26T11:19:59+00:00",
-      "post_text": "How do we know we *aren't* in a full blown cyber war? https://t.co/ixFgQQBJnC",
+      "post_id": "2114513516749341183",
+      "post_url": "https://x.com/i/web/status/2114513516749341183",
+      "created_at": "2026-10-26T15:16:17+00:00",
+      "post_text": "Fans are CONCERNED for Pokimane after she revealed she still believes her cat Mimi is coming back despite her recent passing, with many urging her to take a break to grieve \ud83d\udc94\n\n\u201cI don\u2019t think other people know that she\u2019s coming back.\u201d https://t.co/xtR0vXvvB4",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@veizau)"
+    },
+    {
+      "post_id": "2114283093825892406",
+      "post_url": "https://x.com/i/web/status/2114283093825892406",
+      "created_at": "2026-10-26T15:16:15+00:00",
+      "post_text": "This is my great grandfather who fought for freedom. He didn't fight for Nottinghill Carnival, oat milk or pronouns. Wear your poppy with pride ! (Not that type of Pride btw) . Still no Poppy emoji \ud83d\ude21.\ud83c\uddec\ud83c\udde7\ud83c\uddec\ud83c\udde7\ud83c\uddec\ud83c\udde7\ud83c\uddec\ud83c\udde7\ud83c\uddec\ud83c\udde7\ud83c\uddec\ud83c\udde7 https://t.co/WMEJ16V9IK",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is opinion and sentiment about remembrance and cultural issues, with no checkable factual assertion beyond a vague claim about what the great-grandfather fought for, and the linked image cannot be verified from text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2114384068447965548",
+      "post_url": "https://x.com/i/web/status/2114384068447965548",
+      "created_at": "2026-10-26T15:16:14+00:00",
+      "post_text": "What the actual fuck https://t.co/mhF4ULYwnV",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a rhetorical question speculating about whether a cyber war is occurring, with no specific checkable factual assertion beyond the vague link.",
+      "refusal_reason": "Off-beat: The post is only an emotional exclamation with a bare link and no checkable factual assertion in the text itself.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2114368598596571590",
-      "post_url": "https://x.com/i/web/status/2114368598596571590",
-      "created_at": "2026-10-26T11:19:58+00:00",
-      "post_text": "The only mimic that exists here in the real world https://t.co/Lbxf7TEUu0",
+      "post_id": "2114203550683484251",
+      "post_url": "https://x.com/i/web/status/2114203550683484251",
+      "created_at": "2026-10-26T15:16:13+00:00",
+      "post_text": "The Trump children in their earlier years! https://t.co/pFveuahWwT",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post only gestures at a linked image of the Trump children in their earlier years, with no checkable assertion made in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2114559772972421558",
+      "post_url": "https://x.com/i/web/status/2114559772972421558",
+      "created_at": "2026-10-26T15:16:13+00:00",
+      "post_text": "End Game https://t.co/fUGMpcCMjX",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague, playful remark with a link and no specific checkable factual claim about the world.",
+      "refusal_reason": "Off-beat: The post is just a title and a bare link with no stated factual claim to check.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2114423353989537951",
-      "post_url": "https://x.com/i/web/status/2114423353989537951",
-      "created_at": "2026-10-26T11:19:57+00:00",
-      "post_text": "\ud83d\udd25\ud83d\udea8DEVELOPING: Trail cameras near the U.S.-Mexico border captured a pale, hairless 'humanoid predator' that researchers claim could be \u2018from another dimension\u2019 and is unlike any animal on Earth, and it's reportedly been carrying off chickens, roosters and rabbits.\n\nThe creature https://t.co/pTNKH1ZQfK",
+      "post_id": "2114166336242831496",
+      "post_url": "https://x.com/i/web/status/2114166336242831496",
+      "created_at": "2026-10-26T15:16:13+00:00",
+      "post_text": "\ud83d\udea8 Nashville SC Manager BJ Callaghan: \n\n\"Its sad how football works, no media pages or so called 'neutral journalists' have posted about us winning. When Miami won, even Fifa President came to congratulate them. Looks like football is only for certain players.\" https://t.co/7GEQfOfkLI",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@dom_lucre)"
+      "evidence_publisher": "X (@TheBallZoneX)"
     },
     {
-      "post_id": "2114522066825408801",
-      "post_url": "https://x.com/i/web/status/2114522066825408801",
-      "created_at": "2026-10-26T11:17:29+00:00",
-      "post_text": "\ud83d\udea8BREAKING: Brazilian election on the brink of annulment after Lula\u2019s former lawyer ordered a last minute 2 hour voting extension that locked out on time Bolsonaro precincts while Lula strongholds kept voting until 7 PM. \nElectoral experts warn the result could be voided if the",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2114539126561079300",
-      "post_url": "https://x.com/i/web/status/2114539126561079300",
-      "created_at": "2026-10-26T11:17:13+00:00",
-      "post_text": "BREAKING: Flavio Bolsonaro says he will ask for Brazil\u2019s presidential election to be annulled for tonight's historic defeat.\n\nThe opposition candidate called what happened in Brazil today \"unacceptable,\" saying the rules were changed \"in the middle of the game.\" https://t.co/DigtfFiF4a",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2114439666762146111",
-      "post_url": "https://x.com/i/web/status/2114439666762146111",
-      "created_at": "2026-10-26T11:16:53+00:00",
-      "post_text": "Ladies and gentlemen\u2026 introducing the NEW WHITE HOUSE PRESS SECRETARY! \ud83c\uddfa\ud83c\uddf8\n\nThe liberals are about to LOSE THEIR MINDS! https://t.co/MPScFYE7l9",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post announces a new White House Press Secretary but names no person, and the only detail depends on a link the reader must click; the rest is hype and opinion.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2114508265643983067",
-      "post_url": "https://x.com/i/web/status/2114508265643983067",
-      "created_at": "2026-10-26T11:16:43+00:00",
-      "post_text": "Lula Lula Lula!\n\nCongrats to Brazil for standing up against authoritarianism once again! \ud83c\udde7\ud83c\uddf7 \u2696\ufe0f\u270c\ufe0f",
+      "post_id": "2114397410839707680",
+      "post_url": "https://x.com/i/web/status/2114397410839707680",
+      "created_at": "2026-10-26T15:16:12+00:00",
+      "post_text": "HE\u2019S ACTUALLY A GENIUS FOR THAT https://t.co/n1p9NAs0rR",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a celebratory reaction with political opinion and no specific, checkable factual claim beyond vague praise for 'standing up against authoritarianism'.",
+      "refusal_reason": "Off-beat: The post is an emphatic opinion or reaction with no specific checkable factual claim, only a link whose content is unknown.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2114515422863040653",
-      "post_url": "https://x.com/i/web/status/2114515422863040653",
-      "created_at": "2026-10-26T11:16:42+00:00",
-      "post_text": "Congratulations to Lula on his extraordinary reelection victory in the Brazilian presidential election.\n\nLula has stood up for Brazilian workers &amp; democracy \u2014 and will continue to do so in the next four years.",
+      "post_id": "2114466618432737533",
+      "post_url": "https://x.com/i/web/status/2114466618432737533",
+      "created_at": "2026-10-26T15:16:12+00:00",
+      "post_text": "Initially Elon denied slowing down the Starlink data rates and said only the Pentagon had that authority. We don\u2019t like being lied to. https://t.co/ay2PQWon7D",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "The Hill"
+    },
+    {
+      "post_id": "2114451174493761906",
+      "post_url": "https://x.com/i/web/status/2114451174493761906",
+      "created_at": "2026-10-26T15:16:10+00:00",
+      "post_text": "About 75,000 high school girls get raped by their male coaches each year. There\u2019s less than 40 trans athletes competing at the high school level. Guess which problem these fucking idiots think is worse? https://t.co/Nis2K44GzU",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@CanadaWasFree)"
+    },
+    {
+      "post_id": "2114458476520874137",
+      "post_url": "https://x.com/i/web/status/2114458476520874137",
+      "created_at": "2026-10-26T15:16:09+00:00",
+      "post_text": "Holy shit.\n\nDutch intelligence has uncovered Jared Kushner\u2019s role as a Mossad agent. https://t.co/gQJ1JHcGJW",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2114560008897671476",
+      "post_url": "https://x.com/i/web/status/2114560008897671476",
+      "created_at": "2026-10-26T15:16:06+00:00",
+      "post_text": "BREAKING: Brazil\u2019s stock market falls -20% after President Lula da Silva is unexpectedly re-elected. https://t.co/R3HTIhFSPG",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cnbc.com"
+    },
+    {
+      "post_id": "2114479038844612671",
+      "post_url": "https://x.com/i/web/status/2114479038844612671",
+      "created_at": "2026-10-26T15:15:59+00:00",
+      "post_text": "Polls in Brazil\u2019s presidential runoff election have closed after voting was extended by two hours on Sunday following last-minute pleas from both candidates to electoral authorities. https://t.co/A7bWa6ctyI",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "AFP Fact Check"
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2114506766306177479",
+      "post_url": "https://x.com/i/web/status/2114506766306177479",
+      "created_at": "2026-10-26T15:15:49+00:00",
+      "post_text": "Props to Lula for just blatantly cheating at the 11th hour for all to see rather than relenquishing power.\n\nOne has to almost admire how determined these people are to impose their Marxist ideology at all costs.",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cnbc.com"
+    },
+    {
+      "post_id": "2114296157400670670",
+      "post_url": "https://x.com/i/web/status/2114296157400670670",
+      "created_at": "2026-10-26T15:15:49+00:00",
+      "post_text": "This is quite odd. https://t.co/JUMEQ2qb6H",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post contains only a vague reaction ('This is quite odd') and a link with no stated factual claim to check.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2114410299617140844",
+      "post_url": "https://x.com/i/web/status/2114410299617140844",
+      "created_at": "2026-10-26T15:15:48+00:00",
+      "post_text": "HELLO, do yall not see the ruin sample on the countertop???? https://t.co/XuTSDfOLCP",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague reaction to an image of a countertop sample with no specific checkable factual claim stated in the text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2114278546973581388",
+      "post_url": "https://x.com/i/web/status/2114278546973581388",
+      "created_at": "2026-10-26T15:15:47+00:00",
+      "post_text": "Cricketers making baseball look like the easiest sport ever \ud83d\ude2d\u26be https://t.co/Jj5YYqTL2C",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a joking reaction with an emoji and a link, with no specific checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2114523412035227973",
+      "post_url": "https://x.com/i/web/status/2114523412035227973",
+      "created_at": "2026-10-26T15:15:47+00:00",
+      "post_text": "Like I really dont think these people are above shooting up a con cause they didn't get what they want. \n\nBut then again that also means leaving the house which, lets be honest, a lot of them dont do.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is opinion and insult-laden generalization about a group with no specific, checkable factual claim, plus a joke about leaving the house.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     }
   ]
 }
