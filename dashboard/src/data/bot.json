@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-03T14:41:57+00:00",
+  "generated_at": "2026-11-03T15:04:26+00:00",
   "totals": {
-    "posts": 7534,
-    "off_beat": 3093,
-    "evidence_searched": 4441,
-    "evidence_found": 2947,
+    "posts": 7631,
+    "off_beat": 3115,
+    "evidence_searched": 4516,
+    "evidence_found": 3006,
     "notes_written": 76,
     "submitted": 76
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 7534
+      "count": 7631
     },
     {
       "label": "On-beat (US politics)",
-      "count": 4441
+      "count": 4516
     },
     {
       "label": "Evidence found",
-      "count": 2947
+      "count": 3006
     },
     {
       "label": "Note drafted",
@@ -337,33 +337,33 @@
     },
     {
       "day": "2026-11-03",
-      "posts": 141,
+      "posts": 238,
       "submitted": 2,
       "queued": 0,
-      "refused": 139,
+      "refused": 236,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 3093
+      "count": 3115
     },
     {
       "bucket": "Opus declined to write",
-      "count": 1626
+      "count": 1667
     },
     {
       "bucket": "Other",
-      "count": 1511
+      "count": 1528
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 1122
+      "count": 1138
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 82
+      "count": 83
     },
     {
       "bucket": "No fact-check found",
@@ -377,15 +377,15 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 1460
+      "count": 1495
     },
     {
       "tier": "self_fact_check",
-      "count": 1002
+      "count": 1022
     },
     {
       "tier": "ifcn_verified",
-      "count": 481
+      "count": 485
     }
   ],
   "notes": [
@@ -1609,254 +1609,254 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2117296552561537295",
-      "post_url": "https://x.com/i/web/status/2117296552561537295",
-      "created_at": "2026-11-03T14:41:54+00:00",
-      "post_text": "\ud83d\udea8\ud83c\uddfa\ud83c\uddf8 MAJOR POWER OUTAGE HITS WASHINGTON, D.C.\u2019S DIPLOMATIC DISTRICT\n\nA widespread power outage has struck Foggy Bottom, disrupting traffic signals and affecting key government and international facilities, including the US State Department, World Bank and IMF.\n\n\u26a1 More than 1,100 https://t.co/FqS6hpfBGc",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Apex_Intel24)"
-    },
-    {
-      "post_id": "2117261146369446251",
-      "post_url": "https://x.com/i/web/status/2117261146369446251",
-      "created_at": "2026-11-03T14:41:52+00:00",
-      "post_text": "Seeing as Trump was the guy who tried to incite the violent overthrow of the constitutional order, and the Democrats have never tried to do that, it's a fair answer based in the record of both parties https://t.co/FmbOV55xsk",
+      "post_id": "2117382156599066709",
+      "post_url": "https://x.com/i/web/status/2117382156599066709",
+      "created_at": "2026-11-03T15:04:24+00:00",
+      "post_text": "The Learjet 60 crashed because 1 pilot was completely unqualified, uneducated &amp; unprepared for the flying conditions. The other pilot made a mistake likely because he thought the ice was better managed than it was, but that's why you have two pilots. They are supposed to be https://t.co/4xtPsEP3DP",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
       "evidence_publisher": "cbsnews.com"
     },
     {
-      "post_id": "2117254000437334054",
-      "post_url": "https://x.com/i/web/status/2117254000437334054",
-      "created_at": "2026-11-03T14:41:50+00:00",
-      "post_text": "We lost another legend today. \ud83e\udd79\n\nLegendary Japanese voice actor Ry\u016bji Nakagi has sadly passed away at the age of 89.\n\nBest known for his extensive voice acting career, including roles in Naruto, Gintama, Inuyasha, and Cowboy Bebop.\n\nThroughout his decades-long career, he brought https://t.co/jdJ8Nw8Ync",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "post_id": "2117403553723449673",
+      "post_url": "https://x.com/i/web/status/2117403553723449673",
+      "created_at": "2026-11-03T15:04:15+00:00",
+      "post_text": "\ud83d\udea8\ud83c\uddfa\ud83c\udde6 TORTURE CHAMBER FOUND IN KYIV, UKRAINE \n\n40 men, including a 14 year-old boy, was found in a BASEMENT beaten and starved to NEAR DEATH. \n\nThe Ukrainian Army confirms it was a \u201cfacility\u201d for mobilized and deserted soldiers and REFUSED to allow paramedics inside for HOURS https://t.co/WK784F9ZdA",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@PureSitcoms)"
+      "evidence_publisher": "X (@EthanLevins2)"
     },
     {
-      "post_id": "2117332525723144355",
-      "post_url": "https://x.com/i/web/status/2117332525723144355",
-      "created_at": "2026-11-03T14:41:47+00:00",
-      "post_text": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Pentagon investigates suspected hackers sabotaging food storage freezers at 14 US military bases.",
+      "post_id": "2117134646937108766",
+      "post_url": "https://x.com/i/web/status/2117134646937108766",
+      "created_at": "2026-11-03T15:04:14+00:00",
+      "post_text": "India did pro-capitalist reforms and immediately became richer than sub-Saharan Africa, which they were poorer than until the early 2000s.\n\nIt's insane how good capitalism is. https://t.co/1meLyVp7ys https://t.co/ppX9AmIXHF",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@cremieuxrecueil)"
+    },
+    {
+      "post_id": "2117442057900024172",
+      "post_url": "https://x.com/i/web/status/2117442057900024172",
+      "created_at": "2026-11-03T15:04:03+00:00",
+      "post_text": "RIP Dead By Daylight, Never thought I would see the End Of Service this soon https://t.co/9YMkPKKgM1",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@DeadbyDaylight)"
+    },
+    {
+      "post_id": "2117463965202624867",
+      "post_url": "https://x.com/i/web/status/2117463965202624867",
+      "created_at": "2026-11-03T15:04:02+00:00",
+      "post_text": "\ud83d\udea8 BREAKING: THE U.S. HAS STRUCK IRAN\n\nAmerican forces have reportedly destroyed an Iranian missile launcher on Qeshm Island after Iranian forces fired an anti-aircraft missile toward a U.S. aircraft near the Strait of Hormuz.\n\nWashington says the operation was carried out in https://t.co/HPtYQlJdM8",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
+      "evidence_publisher": "nbcnews.com"
     },
     {
-      "post_id": "2112486333365010763",
-      "post_url": "https://x.com/i/web/status/2112486333365010763",
-      "created_at": "2026-11-03T14:41:40+00:00",
-      "post_text": "Foreign criminals have no place in the UK.\u202f\u202f\u202f \n\u202f\u202f \nThat is why 11,733 foreign national offenders, including murderers and rapists, have been removed since July 2024.",
+      "post_id": "2117281040343638359",
+      "post_url": "https://x.com/i/web/status/2117281040343638359",
+      "created_at": "2026-11-03T15:04:01+00:00",
+      "post_text": "Abdul El Sayed has lost his fucking mind. https://t.co/tDG9AEYfjM",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague insult and opinion about a named person with no specific, checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117126208554955112",
+      "post_url": "https://x.com/i/web/status/2117126208554955112",
+      "created_at": "2026-11-03T15:04:00+00:00",
+      "post_text": "Women are having a brutal year.\n\n&gt;Lindsay Clancy \n&gt;Cornell 7\n&gt;Female pilots https://t.co/xuCFZoD2F8 https://t.co/o2bo60Nyet",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@TheGroypening)"
+    },
+    {
+      "post_id": "2117299974748745821",
+      "post_url": "https://x.com/i/web/status/2117299974748745821",
+      "created_at": "2026-11-03T15:03:58+00:00",
+      "post_text": "Make it easier to find all models that you recently watched. Join one-on-one live session with her \ud83d\udc49 https://t.co/N2jJmNsvon\n\nCreate your perfect AI girlfriend\u2014sexy, witty, and always ready for fun.\u2192https://t.co/5Cl4jIkkBv https://t.co/eTUVVOSr4c",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is promotional spam for adult live sessions and AI companion services with no specific, checkable factual claim, only feature pitches and calls to action.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117430390411390979",
+      "post_url": "https://x.com/i/web/status/2117430390411390979",
+      "created_at": "2026-11-03T15:03:56+00:00",
+      "post_text": "Today, I sent a letter putting New Jersey\u2019s port and terminal operators on notice: importing Russian diesel violates federal law and could carry serious civil and criminal consequences.\n\nNew Jersey will not stand by while Donald Trump supports Vladimir Putin at the expense of https://t.co/xv5TD0oRf4",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@GovSherrillNJ)"
+    },
+    {
+      "post_id": "2117481284934963580",
+      "post_url": "https://x.com/i/web/status/2117481284934963580",
+      "created_at": "2026-11-03T15:03:54+00:00",
+      "post_text": "The entire republican midterm strategy was pretending this guy is a terrorist https://t.co/ROVckiIJhu",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post asserts a vague strategic characterization of Republican midterm tactics and relies on an unseen link to identify 'this guy', with no specific checkable fact stated in the text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117390920329171347",
+      "post_url": "https://x.com/i/web/status/2117390920329171347",
+      "created_at": "2026-11-03T15:03:51+00:00",
+      "post_text": "She wasn\u2019t assaulted because she\u2019s Jewish, she was assaulted because she turned to a bystander and said \u2018doesn\u2019t she dress like she\u2019d be raped in Iran\u2019.\n\nWhether you believe in fighting words or not, this was objectively not the hate crime you\u2019re making it out to be. https://t.co/67jDR5vcu1",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@RheinAmacher)"
+    },
+    {
+      "post_id": "2117278302410768842",
+      "post_url": "https://x.com/i/web/status/2117278302410768842",
+      "created_at": "2026-11-03T15:03:50+00:00",
+      "post_text": "James Talarico on Elon Musk:\n\nThe thing that really upsets people, particularly about the Elon example, is that Tesla was successful because of taxpayer dollars.\n\nTesla got investment from the federal government, which is why it has been so successful.\n\nIf we're all going to https://t.co/rl8CVTpSf7",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Washington Post"
+    },
+    {
+      "post_id": "2117201685047328963",
+      "post_url": "https://x.com/i/web/status/2117201685047328963",
+      "created_at": "2026-11-03T15:03:45+00:00",
+      "post_text": "Her parents have asked over and over, that they don't want their daughter's death used  for politics. Especially by Republicans who are against immigrants. She was a immigrant. Any other situation, she would be a target of ICE. https://t.co/LSQjBLkV0G",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@shiansol)"
+    },
+    {
+      "post_id": "2117133553137860912",
+      "post_url": "https://x.com/i/web/status/2117133553137860912",
+      "created_at": "2026-11-03T15:03:43+00:00",
+      "post_text": "YOU FOUND A SPRITE GIZMO\nYOU FOUND A SPRITE GIZMO \nYOU FOUND A SPRITE GIZMO\nYOU FOUND A SPRITE GIZMO\nYOU FOUND A SPRITE GIZMO\nYOU FOUND A SPRITE GIZMO\nYOU FOUND A SPRITE GIZMO https://t.co/o5Vsw1vguN",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a repeated phrase referencing a game-style notification with no specific, checkable factual assertion about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117355897899102288",
+      "post_url": "https://x.com/i/web/status/2117355897899102288",
+      "created_at": "2026-11-03T15:03:42+00:00",
+      "post_text": "\u26a1\ufe0f\u26a1\ufe0f\u26a1\ufe0fAzov has confirmed that the secret prison for men who went AWOL, recently discovered in Petropavlivska Borshchahivka near Kyiv, belongs to them.\n\nAs a reminder, four men were hospitalized from the facility today with injuries, while dozens more were brought out showing https://t.co/iG1xhSyuCZ",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@HavryshkoMarta)"
+    },
+    {
+      "post_id": "2117379388144758871",
+      "post_url": "https://x.com/i/web/status/2117379388144758871",
+      "created_at": "2026-11-03T15:03:39+00:00",
+      "post_text": "People revolt in Ukraine after Zelenskyy's torture chambers were discovered.   https://t.co/rP8ZGpgkKc",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Panchenko_X)"
+    },
+    {
+      "post_id": "2117335536520270242",
+      "post_url": "https://x.com/i/web/status/2117335536520270242",
+      "created_at": "2026-11-03T15:03:37+00:00",
+      "post_text": "Notice the lack of screaming https://t.co/000xLryqru",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague observation with no specific, checkable factual claim, only a link and a rhetorical remark.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117420467892126072",
+      "post_url": "https://x.com/i/web/status/2117420467892126072",
+      "created_at": "2026-11-03T15:03:36+00:00",
+      "post_text": "This is how you know they are worried about tomorrow. \n\n@FBI https://t.co/iP480wqRr1",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague reaction with an attached link and no specific, checkable factual claim about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117356009765355981",
+      "post_url": "https://x.com/i/web/status/2117356009765355981",
+      "created_at": "2026-11-03T15:03:35+00:00",
+      "post_text": "Dads, y\u2019all cool with this? Rise up. https://t.co/SRYkY7R9Ij",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague call to action with a bare link and no specific, checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117355365931352326",
+      "post_url": "https://x.com/i/web/status/2117355365931352326",
+      "created_at": "2026-11-03T15:03:34+00:00",
+      "post_text": "There are four kinds of Asian: Rice, Mountain, Jungle and Horse https://t.co/MyPEzDvBhC https://t.co/AxXJhSId1A",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post reads as a joke or absurd classification framing with no concrete, checkable factual assertion about the world beyond an obviously satirical taxonomy.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2117423066586485062",
+      "post_url": "https://x.com/i/web/status/2117423066586485062",
+      "created_at": "2026-11-03T15:03:32+00:00",
+      "post_text": "It literally just get worse and worse. \n\nFemale pilot from FL crash, struggling on the radio from a flight 3 months prior. There were signs. There are always signs\u2026 https://t.co/OtGKZankO8",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@holdonitsnature)"
+    },
+    {
+      "post_id": "2117394774990950891",
+      "post_url": "https://x.com/i/web/status/2117394774990950891",
+      "created_at": "2026-11-03T15:03:31+00:00",
+      "post_text": "ZELENSKY HAS TORTURE CHAMBERS IN UKRAINE, WHERE EVEN A 14 YEAR OLD CHILD WAS TORTURED",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2117411896974610909",
+      "post_url": "https://x.com/i/web/status/2117411896974610909",
+      "created_at": "2026-11-03T15:03:24+00:00",
+      "post_text": "Well, the Supreme Court has decided that non-citizens have more rights than Americans to vote. Isn\u2019t that fucking special?",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2117314551951585442",
-      "post_url": "https://x.com/i/web/status/2117314551951585442",
-      "created_at": "2026-11-03T14:41:40+00:00",
-      "post_text": "Are you going to let the democrats steal tomorrow\u2019s elections?",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a rhetorical question and accusation of intent with no specific, checkable factual claim about an event that occurred.",
-      "evidence_tier": null,
-      "evidence_publisher": null
+      "post_id": "2117284030022566106",
+      "post_url": "https://x.com/i/web/status/2117284030022566106",
+      "created_at": "2026-11-03T15:03:21+00:00",
+      "post_text": ".@POTUS: \"We have 2,000 miles of wall \u2014 very strong wall \u2014 but more importantly, we have very strong people at the wall between Border Patrol and ICE.\" https://t.co/k0u1SC7Dvv",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2117200891019231415",
-      "post_url": "https://x.com/i/web/status/2117200891019231415",
-      "created_at": "2026-11-03T14:41:39+00:00",
-      "post_text": "The \"Islamic golden age of science\" was actually the Persian golden age of science.",
+      "post_id": "2117104706850054197",
+      "post_url": "https://x.com/i/web/status/2117104706850054197",
+      "created_at": "2026-11-03T15:03:18+00:00",
+      "post_text": "@Rebecca01750723 @CrunchAlias Twitter isn\u2019t real life sweetheart. I\u2019ve seen trans people murdered hundreds of times for being trans.",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2117331818621936122",
-      "post_url": "https://x.com/i/web/status/2117331818621936122",
-      "created_at": "2026-11-03T14:41:37+00:00",
-      "post_text": "Herrera pays you lip service and tells you he is \"anti-data centers\" on the trail. \n\nBut Trump and his billionaire friends are funding him. He will cave and let them build data centers in your neighborhoods. \n\nThey'll drive up the cost of energy in your home and water. https://t.co/SuquIuvsU2",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@patriottakes)"
-    },
-    {
-      "post_id": "2117363850375020614",
-      "post_url": "https://x.com/i/web/status/2117363850375020614",
-      "created_at": "2026-11-03T14:41:35+00:00",
-      "post_text": "Herrera can't say he is \"pro-responsible data center\" and then take millions from people like Elon Musk. \n\nUnsurprisingly, he will not openly stand up to Trump or Musk on data centers.\n\n\ud83d\udc4967% of his donors are out of state &amp; \n\ud83d\udc49Only 11% are small donors https://t.co/WKmbhxS30s",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@katy4congress)"
-    },
-    {
-      "post_id": "2117232558224105700",
-      "post_url": "https://x.com/i/web/status/2117232558224105700",
-      "created_at": "2026-11-03T14:41:33+00:00",
-      "post_text": "In a late night temper tantrum @TheOmniLiberal calls 25% of his audience leftists while banning them\n\nsays @AbdulElSayed faked being a doctor and he will never support a candidate like that again. \n\nCalls him snakey and trust fund baby\n\nSays brown people take no accountability https://t.co/8AdPEBBO42",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2117359293024416144",
-      "post_url": "https://x.com/i/web/status/2117359293024416144",
-      "created_at": "2026-11-03T14:41:28+00:00",
-      "post_text": "\"Oil Prices are DROPPING LIKE A ROCK, down almost $10 a Barrel, A RECORD...\" - President Donald J. Trump https://t.co/AGRRnhQJB6",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2117274433102729550",
-      "post_url": "https://x.com/i/web/status/2117274433102729550",
-      "created_at": "2026-11-03T14:41:24+00:00",
-      "post_text": "Prior to this, there was plausible deniability about the Mormon influence on \u201cThe Chosen\u201d.\n\nLet\u2019s see what we\u2019ve got in total:\nNo baptism in the Jordan \nNo Holy Spirit\nNo Transfiguration\nYes Native American angels\u2026\n\nShameful. https://t.co/V1F4nxhZfu",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@thechosentv)"
-    },
-    {
-      "post_id": "2117326127874101416",
-      "post_url": "https://x.com/i/web/status/2117326127874101416",
-      "created_at": "2026-11-03T14:41:22+00:00",
-      "post_text": "CAN SOMEONE EXPLAIN THIS TO ME LIKE I'M FIVE\n\nIf credit scores didn't exist until 1989, did all those boomers buy their first house without having to pass a credit check?\n\nGenuinely asking",
-      "refusal_bucket": "Other",
-      "refusal_reason": "evaluate_note: claim_opinion_score 0.242 below 0.50 floor",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Snopes"
-    },
-    {
-      "post_id": "2117015603114336529",
-      "post_url": "https://x.com/i/web/status/2117015603114336529",
-      "created_at": "2026-11-03T14:41:16+00:00",
-      "post_text": "Right-wing cry babies when Charlie Kirk himself said he hated empathy: https://t.co/db1JWM1fDB https://t.co/mTABpx1r83",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@marionumber4)"
-    },
-    {
-      "post_id": "2117022757309579502",
-      "post_url": "https://x.com/i/web/status/2117022757309579502",
-      "created_at": "2026-11-03T14:41:15+00:00",
-      "post_text": "\ud83d\udcaf JUST IN: Elon Musk just told his 241+ MILLION followers on \ud835\udd4f that James Talarico will vote to tr*ns your children\n\nElon Musk is ABSOLUTELY right\n\nVOTE FOR KEN PAXTON https://t.co/aVzTeQ9fcJ",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "PolitiFact"
-    },
-    {
-      "post_id": "2117320360328671233",
-      "post_url": "https://x.com/i/web/status/2117320360328671233",
-      "created_at": "2026-11-03T14:41:11+00:00",
-      "post_text": "Don Jr: Democrats want to make Ohio a state https://t.co/1hYsgHRqzj",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's only substantive text is a short attributed quote-like statement, but the meaning depends on an unseen link and the claim is too vague to verify without it.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2116989672509329848",
-      "post_url": "https://x.com/i/web/status/2116989672509329848",
-      "created_at": "2026-11-03T14:41:11+00:00",
-      "post_text": "I\u2019m immediately suing the establishment because this would cause me trauma. If I go into a 21+ club and you checked my ID to enter I\u2019m assuming everyone is 21+\nI shouldn\u2019t even meet a 20 yr old how did you let a 16 yr old in? Ima own that mf when I\u2019m done https://t.co/r0rHUTgAW3",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a rant about a 16-year-old getting into a 21+ club, but it names no specific venue, person, or event and relies on a linked link the reader cannot see for the underlying incident.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2117005574630260914",
-      "post_url": "https://x.com/i/web/status/2117005574630260914",
-      "created_at": "2026-11-03T14:41:08+00:00",
-      "post_text": "So basically the tent is big enough for Hasan Piker, but not Haley Stevens. https://t.co/cqVkalhHpq",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague political jab expressing an opinion about who belongs in a 'tent' with no specific checkable factual claim beyond an implied stance.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2117347447597044024",
-      "post_url": "https://x.com/i/web/status/2117347447597044024",
-      "created_at": "2026-11-03T14:41:08+00:00",
-      "post_text": "BREAKING: Trump reveals he's giving \"serious thought\" to renaming the Lincoln Memorial Reflecting Pool to Trump Reflecting Pool. https://t.co/QoSmVkDsIf",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Polymarket)"
-    },
-    {
-      "post_id": "2117308983287689693",
-      "post_url": "https://x.com/i/web/status/2117308983287689693",
-      "created_at": "2026-11-03T14:41:07+00:00",
-      "post_text": "My boyfriend\u2019s best friend got way too comfortable in my DMs\u2026\ud83d\ude2d https://t.co/SwOukgktLI",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Personal anecdote about DMs with no specific, checkable factual claim about the world.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2117362928995250464",
-      "post_url": "https://x.com/i/web/status/2117362928995250464",
-      "created_at": "2026-11-03T14:41:06+00:00",
-      "post_text": "\ud83d\udea8\ud83c\uddfa\ud83c\udde6Sickening scenes from Kyiv, Ukraine, where people found a 14-year-old boy who had been tortured and raped by Zelensky's kidnappers.\n\nAmong the more than 40 tortured people found in a basement allegedly run by Zelensky's forces and Azov was a boy just 14 years old.\n\nGod will https://t.co/DyeYcDKKvM",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MarioBojic)"
-    },
-    {
-      "post_id": "2117312617866010932",
-      "post_url": "https://x.com/i/web/status/2117312617866010932",
-      "created_at": "2026-11-03T14:41:05+00:00",
-      "post_text": "This is a Narwhal Cruise Missile.\nI'll just leave this right here.\nYou can probably figure it out. https://t.co/NAGDCvO514",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague teaser with a link and no specific checkable factual claim stated in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2117073852157079833",
-      "post_url": "https://x.com/i/web/status/2117073852157079833",
-      "created_at": "2026-11-03T14:41:03+00:00",
-      "post_text": "The US government downed a civilian fucking plane https://t.co/bwx0nRJSCB",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "The Hill"
-    },
-    {
-      "post_id": "2117321420279894264",
-      "post_url": "https://x.com/i/web/status/2117321420279894264",
-      "created_at": "2026-11-03T14:40:59+00:00",
-      "post_text": "Proud to campaign in LA with my friend and California\u2019s first Latino Governor, Xavier Becerra!\n\nTomorrow is the LAST day to cast your ballot! Make a plan, make your voice heard, and remember- when we vote, we win! \ud83d\uddf3\ufe0f @XavierBecerra @homegirlcafe https://t.co/QiC65XJauj",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@KarenBassLA)"
-    },
-    {
-      "post_id": "2117316308278862201",
-      "post_url": "https://x.com/i/web/status/2117316308278862201",
-      "created_at": "2026-11-03T14:40:54+00:00",
-      "post_text": "\ud83d\udea8\ud83c\uddfa\ud83c\udde6 An angry crowd near Kyiv tried to BREAK THROUGH the gates of a building after allegations emerged that Ukrainian soldiers were being secretly detained and tortured inside.\n\nThe footage is rather disturbing.\n\nPeople are kicking at the gates, demanding access, while reports https://t.co/3shSszAz3d",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MarioNawfal)"
     }
   ]
 }
