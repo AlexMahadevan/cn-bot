@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-11T00:09:11+00:00",
+  "generated_at": "2026-11-11T13:18:14+00:00",
   "totals": {
-    "posts": 9311,
-    "off_beat": 3586,
-    "evidence_searched": 5725,
-    "evidence_found": 3950,
-    "notes_written": 81,
-    "submitted": 81
+    "posts": 9407,
+    "off_beat": 3665,
+    "evidence_searched": 5742,
+    "evidence_found": 3958,
+    "notes_written": 82,
+    "submitted": 82
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 9311
+      "count": 9407
     },
     {
       "label": "On-beat (US politics)",
-      "count": 5725
+      "count": 5742
     },
     {
       "label": "Evidence found",
-      "count": 3950
+      "count": 3958
     },
     {
       "label": "Note drafted",
-      "count": 81
+      "count": 82
     },
     {
       "label": "Submitted to X",
-      "count": 81
+      "count": 82
     }
   ],
   "by_day": [
@@ -401,29 +401,29 @@
     },
     {
       "day": "2026-11-11",
-      "posts": 97,
-      "submitted": 0,
+      "posts": 193,
+      "submitted": 1,
       "queued": 0,
-      "refused": 97,
-      "errors": 0
+      "refused": 189,
+      "errors": 3
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 3586
+      "count": 3665
     },
     {
       "bucket": "Opus declined to write",
-      "count": 2232
+      "count": 2238
     },
     {
       "bucket": "Other",
-      "count": 1831
+      "count": 1836
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 1467
+      "count": 1468
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -431,7 +431,7 @@
     },
     {
       "bucket": "No fact-check found",
-      "count": 10
+      "count": 11
     },
     {
       "bucket": "Too long (over 280 chars)",
@@ -441,18 +441,35 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 1921
+      "count": 1925
     },
     {
       "tier": "self_fact_check",
-      "count": 1458
+      "count": 1461
     },
     {
       "tier": "ifcn_verified",
-      "count": 567
+      "count": 568
     }
   ],
   "notes": [
+    {
+      "post_id": "2120251468317954472",
+      "post_url": "https://x.com/i/web/status/2120251468317954472",
+      "created_at": "2026-11-11T12:00:37+00:00",
+      "outcome": "submitted",
+      "post_text": "R.I.P. Justin Allen 23, Brett Linley 29, Matthew Weikert 29, Justus Bartett 27, Dave Santos 21, Jesse Reed 26, Matthew Johnson 21, Zachary Fisher 24, Brandon King 23, Christopher Goeke 23, and Sheldon Tate 27.... All are Marines who gave their lives this week for us.  No media",
+      "note_text": "Snopes rated this False. The 11 names are not Marines who died this week. They include two Marines, one British soldier and eight U.S. Army soldiers who died in Afghanistan during one week in July 2010. https://www.snopes.com/fact-check/iran-war-list-fallen-marines/",
+      "evidence_url": "https://www.snopes.com/fact-check/iran-war-list-fallen-marines/",
+      "evidence_publisher": "Snopes",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.outdated_information",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
     {
       "post_id": "2119342495914225810",
       "post_url": "https://x.com/i/web/status/2119342495914225810",
@@ -1754,252 +1771,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2119748655531909531",
-      "post_url": "https://x.com/i/web/status/2119748655531909531",
-      "created_at": "2026-11-11T00:09:07+00:00",
-      "post_text": "Florida law requires schools station a sworn law enforcement officer or armed guardian at each school campus. Amendment 3 tax cuts could make that more expensive for school districts to do. https://t.co/GQnzhKDtcP",
+      "post_id": "2120267193573056650",
+      "post_url": "https://x.com/i/web/status/2120267193573056650",
+      "created_at": "2026-11-11T13:16:16+00:00",
+      "post_text": "Breaking News: Alina Habba Mildon, one of President Trump\u2019s former lawyers, was fired by a company days after President Trump became enraged over its $50 million contract with her. https://t.co/xFH3wEF2Y4",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "NPR"
+      "evidence_publisher": "The Hill"
     },
     {
-      "post_id": "2120163794370367715",
-      "post_url": "https://x.com/i/web/status/2120163794370367715",
-      "created_at": "2026-11-11T00:08:46+00:00",
-      "post_text": "BREAKING: GTA 6 will run at 30fps on all consoles, with PS5 Pro enhancements that improve ray tracing. https://t.co/4uejHTxczS https://t.co/55V37HmDoA",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@IGN)"
-    },
-    {
-      "post_id": "2120059502099575282",
-      "post_url": "https://x.com/i/web/status/2120059502099575282",
-      "created_at": "2026-11-11T00:08:38+00:00",
-      "post_text": "Have you ever imagined a folder changing color live during a newscast? The curious fact happened during a broadcast by Sky News. At the time british treasury chancellor Rishi Sunak's portfolio mysteriously changed color over the course of a broadcast. https://t.co/KQYRSHONWp",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Snopes"
-    },
-    {
-      "post_id": "2120148994156302832",
-      "post_url": "https://x.com/i/web/status/2120148994156302832",
-      "created_at": "2026-11-11T00:08:37+00:00",
-      "post_text": "Hollywood has spent a decade depicting Trump supporters as Nazis.\n\nAnd only a few weeks after Charlie Kirk was assassinated, James Gunn had one of his DC \"heroes\" brutally murder women and children because they were Nazis.\n\nGood riddance to James Gunn. https://t.co/YNZLAvD4dH",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@TheMagaHulk)"
-    },
-    {
-      "post_id": "2119912906183811403",
-      "post_url": "https://x.com/i/web/status/2119912906183811403",
-      "created_at": "2026-11-11T00:08:36+00:00",
-      "post_text": "Jensen Huang\u2019s wife pawned her wedding ring in 1995 to keep NVIDIA alive",
+      "post_id": "2119887268815200402",
+      "post_url": "https://x.com/i/web/status/2119887268815200402",
+      "created_at": "2026-11-11T13:16:01+00:00",
+      "post_text": "Russell Brand receiving 10.5 years is interesting because that\u2019s 10.5 years longer than the Afghan \u201crefugee\u201d who stabbed Wayne Broadhurst 14 times to death.\n\nYes, you read that right.",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cnbc.com"
+      "evidence_publisher": "Bloomberg"
     },
     {
-      "post_id": "2120010122957365344",
-      "post_url": "https://x.com/i/web/status/2120010122957365344",
-      "created_at": "2026-11-11T00:08:35+00:00",
-      "post_text": "Georgia Midterm Results have a HUGE problem\n\n\ud83d\udea8 The election results show there were more Republican votes for Agriculture Commissioner than for US Senate and Governor seats\n\nThere is no way Republicans came out to vote for Agriculture Commissioner but not US Senate\n\nRepublican https://t.co/2AvS0HDlDJ",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@WallStreetApes)"
-    },
-    {
-      "post_id": "2120154773173198977",
-      "post_url": "https://x.com/i/web/status/2120154773173198977",
-      "created_at": "2026-11-11T00:08:35+00:00",
-      "post_text": "Can someone PLEASE explain how families are booking $12K Disney vacations, driving $85K suburban SUVs, taking weekend ski trips to Colorado, and putting a $40K inground pool in the backyard...\n\nWhile raising 3 kids, paying private school tuition, and taking two international",
+      "post_id": "2119940183982510585",
+      "post_url": "https://x.com/i/web/status/2119940183982510585",
+      "created_at": "2026-11-11T13:05:54+00:00",
+      "post_text": "Just a reminder that Vivek Ramaswami flew out of the country the second he lost.",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a rhetorical question expressing bewilderment and opinion about spending habits, with no specific checkable factual claim asserted beyond vague cost figures tied to a sarcastic framing.",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2119935517995475454",
-      "post_url": "https://x.com/i/web/status/2119935517995475454",
-      "created_at": "2026-11-11T00:08:34+00:00",
-      "post_text": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Texas Democrats introduce 20 bills seeking new gun restrictions across the state. https://t.co/DtHuNaKGJP",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@remarks)"
-    },
-    {
-      "post_id": "2119901939031040065",
-      "post_url": "https://x.com/i/web/status/2119901939031040065",
-      "created_at": "2026-11-11T00:08:27+00:00",
-      "post_text": "This is pure evil https://t.co/Zk7qOS1LOH",
+      "post_id": "2120284780734320743",
+      "post_url": "https://x.com/i/web/status/2120284780734320743",
+      "created_at": "2026-11-11T13:05:53+00:00",
+      "post_text": "GIANT 'JELLYFISH' UFO FLOATS over ALASKA \u2014 'TENTACLES' SWAYING as it DRIFTS toward US MILITARY BASE before 'DISAPPEARING' https://t.co/v1RmLZQm3x",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a bare value judgment ('pure evil') with a link and no specific checkable factual assertion in the text.",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2120120305763095008",
-      "post_url": "https://x.com/i/web/status/2120120305763095008",
-      "created_at": "2026-11-11T00:08:26+00:00",
-      "post_text": "Russell Brand uses body double to avoid assassination attempt https://t.co/kWD6U7fHiI",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MattWallace888)"
-    },
-    {
-      "post_id": "2120174262380061137",
-      "post_url": "https://x.com/i/web/status/2120174262380061137",
-      "created_at": "2026-11-11T00:08:21+00:00",
-      "post_text": "\ud83d\udea8 MAJOR BREAKING NEWS: GINA HINOJOSA FINALLY APOLOGIZES TO ELON MUSK AFTER 72 HOURS OF INTENSE BACKLASH FROM TEXAS RESIDENTS\n\nAfter three days of mounting pressure, Texas Governor-elect Gina Hinojosa has publicly issued an apology to billionaire entrepreneur Elon Musk following https://t.co/wmgZdlAKzv https://t.co/AfdhpOQXoH",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@jimmieX07)"
-    },
-    {
-      "post_id": "2119777670665761138",
-      "post_url": "https://x.com/i/web/status/2119777670665761138",
-      "created_at": "2026-11-11T00:08:17+00:00",
-      "post_text": "An 8-year-old Haitian boy who lost Temporary Protected Status earlier this year was taken into federal custody after an immigration check-in, according to local advocates and school officials. https://t.co/DZlOHBxOP2",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "nbcnews.com"
-    },
-    {
-      "post_id": "2119762949787234391",
-      "post_url": "https://x.com/i/web/status/2119762949787234391",
-      "created_at": "2026-11-11T00:08:14+00:00",
-      "post_text": "HOLY CR*P \ud83d\udea8  James O\u2019Keefe just got an FBI Official who \u201cdoes investigations\u201d saying NO ONE WILL BE HELD ACCOUNTABLE for the Minnesota fraud exposed\n\nHe says nobody will be arrested. Nobody will go to prison\n\nHe says it\u2019s intentional. (INSANE) https://t.co/gfXjNnjLaV",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@BackChannelQ)"
-    },
-    {
-      "post_id": "2120041319791833437",
-      "post_url": "https://x.com/i/web/status/2120041319791833437",
-      "created_at": "2026-11-11T00:08:13+00:00",
-      "post_text": "The Simpson\u2019s Family Tree \ud83c\udf33 https://t.co/Qq2NVvN6Xf",
+      "post_id": "2120056883373560181",
+      "post_url": "https://x.com/i/web/status/2120056883373560181",
+      "created_at": "2026-11-11T13:05:51+00:00",
+      "post_text": "Did I do good?? \ud83d\ude0c https://t.co/cLNeFk3fNS https://t.co/NV9KXYFLwF",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post shares a family tree graphic with only a title and link, with no specific factual assertion stated in the text.",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2120089078053900721",
-      "post_url": "https://x.com/i/web/status/2120089078053900721",
-      "created_at": "2026-11-11T00:08:12+00:00",
-      "post_text": "BREAKING: Jim Cramer says Nvidia is at its cheapest in 10 years and now's the time to buy",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cnbc.com"
-    },
-    {
-      "post_id": "2120162385843700175",
-      "post_url": "https://x.com/i/web/status/2120162385843700175",
-      "created_at": "2026-11-11T00:08:12+00:00",
-      "post_text": "In the new GTA 6 trailer, we can see Jason raiding a compound alongside a SWAT team.\n\nI think this pretty much confirms that Jason was the person in the bodycam footage in Trailer 1. https://t.co/HCi1ZdcNJN",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@GTASixInfo)"
-    },
-    {
-      "post_id": "2120193867374907421",
-      "post_url": "https://x.com/i/web/status/2120193867374907421",
-      "created_at": "2026-11-11T00:08:08+00:00",
-      "post_text": "Has Pete Hegseth committed impeachable crimes? The question is absurd and the answer is: obviously not.\n\nLike so much of Congress, impeachment has become a ridiculous show that stands in for actual policymaking. Congress has so many tools for registering its policy disagreements.",
+      "post_id": "2120237029942272138",
+      "post_url": "https://x.com/i/web/status/2120237029942272138",
+      "created_at": "2026-11-11T13:05:51+00:00",
+      "post_text": "BREAKING: Seven people taken to hospital after car collides with pedestrians in Glasgow https://t.co/aJXjyz5Tnk",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is opinion and rhetorical framing about impeachment and Congress, with no specific checkable factual claim (the 'obviously not' verdict on impeachable crimes is a value judgment).",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2120184849084600720",
-      "post_url": "https://x.com/i/web/status/2120184849084600720",
-      "created_at": "2026-11-11T00:08:06+00:00",
-      "post_text": "Source: #Raiders have finalized a trade to send Kirk Cousins to the Vikings.\n\nThe expectation is Aidan O\u2019Connell is will take over the starting QB position while Mendoza continues to learn.",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cbsnews.com"
-    },
-    {
-      "post_id": "2119900528197218472",
-      "post_url": "https://x.com/i/web/status/2119900528197218472",
-      "created_at": "2026-11-11T00:07:58+00:00",
-      "post_text": "this is f*cking crazy, Fable 5.2 made me an 83-second anime film and not a single frame is a picture\n\nit is 100% code: 1,992 frames rendered by three.js, no image model touched any of it\n\n8 agent teams worked in parallel, 39 shots, clouds, storm, sunset, stars, all of it drawn by https://t.co/xqZ9Zlvgd8 https://t.co/0qbEXjQAvW",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@noisyb0y1)"
-    },
-    {
-      "post_id": "2119965060668010594",
-      "post_url": "https://x.com/i/web/status/2119965060668010594",
-      "created_at": "2026-11-11T00:07:54+00:00",
-      "post_text": "I\u2019ve met a lot of Palestinians who celebrate the death of Israeli children but never met an Israeli who celebrates Palestinian children dying.",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a generalized anecdotal impression about groups' attitudes rather than a specific, independently verifiable factual assertion about a named subject and event.",
+      "post_id": "2120276572351386002",
+      "post_url": "https://x.com/i/web/status/2120276572351386002",
+      "created_at": "2026-11-11T13:05:50+00:00",
+      "post_text": "What should I do? https://t.co/eZ8JVXeTzJ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2120022538990571683",
-      "post_url": "https://x.com/i/web/status/2120022538990571683",
-      "created_at": "2026-11-11T00:07:53+00:00",
-      "post_text": "WARNING FOR DISCORD USERS!\n\nThere is a new kinda hack going on, where your 'friend' (aka the hacked account) will dm you a fake email screenshot telling you that \"someone reported all users under friends\" in hopes that you'll fall for it and add the account shown in the https://t.co/ohIoQF1JhF",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Blake_TheNerd)"
-    },
-    {
-      "post_id": "2120153064770609211",
-      "post_url": "https://x.com/i/web/status/2120153064770609211",
-      "created_at": "2026-11-11T00:07:51+00:00",
-      "post_text": "House Democrats will deliver a more affordable America.",
+      "post_id": "2120260241551941681",
+      "post_url": "https://x.com/i/web/status/2120260241551941681",
+      "created_at": "2026-11-11T13:05:50+00:00",
+      "post_text": "A Florida woman has been arrested after grabbing her ex-boyfriend\u2019s Pok\u00e9mon card collection during an argument\n\nNadia Hussain allegedly hit him and admitted deliberately taking the cards to upset him because he wasn\u2019t showing her enough affection https://t.co/3hjnMOlwGZ",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague political promise about future intentions and value judgment, with no specific, checkable factual claim.",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2120180048493683007",
-      "post_url": "https://x.com/i/web/status/2120180048493683007",
-      "created_at": "2026-11-11T00:07:51+00:00",
-      "post_text": "A white British person, cannot be stripped of their citizenship on national security or public-good grounds. Yet a British-born citizen from an ethnic minority background, can be.\n\nTwo people, both born here, both British from birth, but afforded different levels of protection",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "U.S. Supreme Court"
-    },
-    {
-      "post_id": "2120190633172410573",
-      "post_url": "https://x.com/i/web/status/2120190633172410573",
-      "created_at": "2026-11-11T00:07:51+00:00",
-      "post_text": "Tesla has updated estimated delivery times for Cybertruck again. \n\nBefore the site gave an estimate of March - June 2027, but now it just says \u201cFuck You\u201d https://t.co/825a304E2c",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@wholemars)"
-    },
-    {
-      "post_id": "2119919594928492778",
-      "post_url": "https://x.com/i/web/status/2119919594928492778",
-      "created_at": "2026-11-11T00:07:49+00:00",
-      "post_text": "The guy who wants to go to war with Russia.. why am I not surprised. https://t.co/7a2cHBkIhV",
+      "post_id": "2120287986306973911",
+      "post_url": "https://x.com/i/web/status/2120287986306973911",
+      "created_at": "2026-11-11T13:05:50+00:00",
+      "post_text": "We don\u2019t work for other countries.\n\nWe work for the United States. https://t.co/88SDqqnusL",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is an opinion-laden reaction about a person's stance with no specific, checkable factual claim beyond vague characterization.",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120302207769932166",
+      "post_url": "https://x.com/i/web/status/2120302207769932166",
+      "created_at": "2026-11-11T13:05:49+00:00",
+      "post_text": ".@SenateGOP is committed to being here and doing whatever it takes to finish this legislative session strong and get as much done as we can for the American people. https://t.co/cxooK9W6lR",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2119980390370955773",
+      "post_url": "https://x.com/i/web/status/2119980390370955773",
+      "created_at": "2026-11-11T13:05:44+00:00",
+      "post_text": "Huh\u2026 interesting https://t.co/9gWg6FzDDr https://t.co/RMKbLr1eG3",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120261708287721751",
+      "post_url": "https://x.com/i/web/status/2120261708287721751",
+      "created_at": "2026-11-11T13:05:43+00:00",
+      "post_text": "\ud83c\uddf8\ud83c\udde6\ud83c\uddf7\ud83c\uddfa Saudi Crown Prince Mohammed bin Salman has reportedly issued a final ultimatum to Russia: stop supplying Iran with missiles and other weapons that Tehran transfers to the Houthis, who are fighting against Saudi Arabia.\n\nOtherwise, he has reportedly threatened to open the oil https://t.co/BBrcGeimR8",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120251805116649872",
+      "post_url": "https://x.com/i/web/status/2120251805116649872",
+      "created_at": "2026-11-11T13:05:43+00:00",
+      "post_text": "Rot in jail you POS https://t.co/MkOuoDpOxf",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2119953260463452610",
+      "post_url": "https://x.com/i/web/status/2119953260463452610",
+      "created_at": "2026-11-11T13:05:42+00:00",
+      "post_text": "@crazyasffr This video is fake, this isn\u2019t a sound Sprites make.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120273886084526212",
+      "post_url": "https://x.com/i/web/status/2120273886084526212",
+      "created_at": "2026-11-11T13:05:42+00:00",
+      "post_text": "\ud83d\udea8 NEVADA MIDTERM SHOCKER: OVER 91,000 VOTES DISAPPEAR FROM ELECTION NIGHT TOTALS!\n\nMy cybersecurity team tracked a MASSIVE drop in reported vote totals in Nevada's 2nd Congressional District.\n\n56,329 Republican votes and 34,957 Democrat votes were REMOVED from the reported https://t.co/2n8uab6bTR",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120208348671012924",
+      "post_url": "https://x.com/i/web/status/2120208348671012924",
+      "created_at": "2026-11-11T13:05:41+00:00",
+      "post_text": "\ud83d\udea8BREAKING: Early cut screeners for 'AVENGERS: DOOMSDAY' confirm Wanda Maximoff has NO conscience left and will kill former Avengers.\n\n\u200b\u2022 Completely forgot her entire past life\n\n\u2022 Dominates a brutal battle against Thor &amp; Sentry\n\nEarly screeners call her \"terrifying\" after she https://t.co/cnRsj9Dnpu",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120280734409851337",
+      "post_url": "https://x.com/i/web/status/2120280734409851337",
+      "created_at": "2026-11-11T13:05:41+00:00",
+      "post_text": "\ud83d\udea8OVERRATED LIBERAL DIVA BETTE MIDLER SAYS SHE CAN NO LONGER AFFORD TO LIVE IN MIDTOWN MANHATTAN AFTER RECEIVING HER 2027 TAX BILL FROM MAMDANI\u2019S CITY HALL!\n\n\u201cThis isn\u2019t my second home,\u201d said Midler. \u201cI shouldn\u2019t have to give him 20 percent of my net worth just because I have https://t.co/KplcqwH2Ec",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2119607484684095561",
+      "post_url": "https://x.com/i/web/status/2119607484684095561",
+      "created_at": "2026-11-11T13:05:40+00:00",
+      "post_text": "Jennifer Welch did exactly what Charlie Kirk did: spoke her mind on a podcast. \n\nYour selective outrage is showing.",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120324517713092938",
+      "post_url": "https://x.com/i/web/status/2120324517713092938",
+      "created_at": "2026-11-11T13:05:40+00:00",
+      "post_text": "BREAKING: The 11 House Democrats who missed the vote that killed Thomas Massie's Hegseth impeachment resolution have all received significant pro-Israel AIPAC money in Congress.\n\nJust seven of them voting against the referral motion would have flipped the 211-204 result.\n\nHaley",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120210495424602429",
+      "post_url": "https://x.com/i/web/status/2120210495424602429",
+      "created_at": "2026-11-11T13:05:39+00:00",
+      "post_text": "Strange: Elko asking for MORE Money? \n\nReporter: What do you think has gone wrong this season?\n\nMike Elko: Everything! We\u2019re simply getting outspent. We\u2019re spending $50 million a year, and apparently that\u2019s not enough. If recruits have a choice between Knoxville and College https://t.co/uvFsmdN7oo",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2119729588104319342",
+      "post_url": "https://x.com/i/web/status/2119729588104319342",
+      "created_at": "2026-11-11T13:05:39+00:00",
+      "post_text": "\ud83c\uddec\ud83c\udde7 #English - Message from the Mayor of Izumiotsu (Osaka): There are only serious concerns about the COVID vaccine.\n\nVideo description:\n\nOn September 30, 2026, the mayor of Izumiotsu City (Osaka), Kenichi Minamide (\u5357\u51fa\u8ce2\u4e00), published an official message regarding the COVID-19 https://t.co/52rNQrtICe",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120302912849265091",
+      "post_url": "https://x.com/i/web/status/2120302912849265091",
+      "created_at": "2026-11-11T13:05:39+00:00",
+      "post_text": "Pete Hegseth is unfit and unqualified to serve as Secretary of Defense.\n\nHouse Republicans just chose to protect him over American servicemembers. https://t.co/tcPgyqXPLA",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120302638860230794",
+      "post_url": "https://x.com/i/web/status/2120302638860230794",
+      "created_at": "2026-11-11T13:05:38+00:00",
+      "post_text": "BREAKING: Thomas Massie\u2019s resolution to impeach Pete Hegseth fails in the House 211-204, after 11 Democrats failed to show up for the vote.\n\nIf those 11 Democrats had showed up, Hegseth would have been impeached 215-211. https://t.co/jjNmTTj6wf",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120237304694579367",
+      "post_url": "https://x.com/i/web/status/2120237304694579367",
+      "created_at": "2026-11-11T13:05:37+00:00",
+      "post_text": "Fable 5.2 + Blender + Unreal Engine.\n\nit's all you need lol. https://t.co/YmEDTLTcwx",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120122886795182521",
+      "post_url": "https://x.com/i/web/status/2120122886795182521",
+      "created_at": "2026-11-11T13:05:37+00:00",
+      "post_text": "Japan just turned a simple pancake into a whole different level of street food! \ud83e\udd2f\ud83c\uddef\ud83c\uddf5 https://t.co/hyDib8Eq5f",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: Filter error: Connection error.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
