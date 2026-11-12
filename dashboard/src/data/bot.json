@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-12T14:18:56+00:00",
+  "generated_at": "2026-11-12T16:04:06+00:00",
   "totals": {
-    "posts": 9669,
-    "off_beat": 3693,
-    "evidence_searched": 5976,
-    "evidence_found": 4154,
+    "posts": 9694,
+    "off_beat": 3701,
+    "evidence_searched": 5993,
+    "evidence_found": 4166,
     "notes_written": 84,
     "submitted": 84
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 9669
+      "count": 9694
     },
     {
       "label": "On-beat (US politics)",
-      "count": 5976
+      "count": 5993
     },
     {
       "label": "Evidence found",
-      "count": 4154
+      "count": 4166
     },
     {
       "label": "Note drafted",
@@ -409,33 +409,33 @@
     },
     {
       "day": "2026-11-12",
-      "posts": 193,
+      "posts": 218,
       "submitted": 1,
       "queued": 0,
-      "refused": 192,
+      "refused": 217,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 3693
+      "count": 3701
     },
     {
       "bucket": "Opus declined to write",
-      "count": 2360
+      "count": 2374
     },
     {
       "bucket": "Other",
-      "count": 1879
+      "count": 1883
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 1537
+      "count": 1535
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 91
+      "count": 92
     },
     {
       "bucket": "No fact-check found",
@@ -449,15 +449,15 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 2014
+      "count": 2023
     },
     {
       "tier": "self_fact_check",
-      "count": 1554
+      "count": 1558
     },
     {
       "tier": "ifcn_verified",
-      "count": 582
+      "count": 581
     }
   ],
   "notes": [
@@ -1811,229 +1811,29 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2120637966288900438",
-      "post_url": "https://x.com/i/web/status/2120637966288900438",
-      "created_at": "2026-11-12T14:12:47+00:00",
-      "post_text": "245 to 175. On Veterans Day, the House forced the Major Richard Star Act onto the floor over leadership's objections. Every one of the 175 NO votes was a Republican. Every Democrat voting said yes. I pulled all 175 names from roll call 320. And there is a catch.\n\nAll 210 https://t.co/gwmYoYwz3h",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "courtney.house.gov"
-    },
-    {
-      "post_id": "2120350918197780990",
-      "post_url": "https://x.com/i/web/status/2120350918197780990",
-      "created_at": "2026-11-12T14:12:46+00:00",
-      "post_text": "BREAKING \ud83d\udc94\n\nNorth Korea's dictator Kim Jong Un is no more, @grok confirm the news quickly!! https://t.co/SeHTG5uzS0",
-      "refusal_bucket": "URL validator rejected (hallucination guard)",
-      "refusal_reason": "url_liveness: HTTP 403",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "AFP Fact Check"
-    },
-    {
-      "post_id": "2120681704340009182",
-      "post_url": "https://x.com/i/web/status/2120681704340009182",
-      "created_at": "2026-11-12T14:12:35+00:00",
-      "post_text": "WOW \ud83d\udea8 Dunkin Donuts cancels Christmas but celebrates Muslim Islamic Holidays and Pride\n\n\u201cDunkin' Donuts \u2014 rolled out a number of Ramadan specials, including \u2018Eid-Credible Delights\u2019 and \u2018Happily Ever Iftar\u2019 Meals. You also had a Ramadan specialty drink.\u201d They also did holiday https://t.co/6rauimp6Pn",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@WallStreetApes)"
-    },
-    {
-      "post_id": "2120642954020962586",
-      "post_url": "https://x.com/i/web/status/2120642954020962586",
-      "created_at": "2026-11-12T14:12:31+00:00",
-      "post_text": "On Veterans Day, of all days, Republicans cut $60 billion in benefits to American veterans.\u00a0\n\nHouse Republican leadership did not have the votes to pass H.R. 9237 through a recorded vote, so they resorted to an outrageous procedural maneuver, rushing the legislation through the",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Congress.gov"
-    },
-    {
-      "post_id": "2120665363444596896",
-      "post_url": "https://x.com/i/web/status/2120665363444596896",
-      "created_at": "2026-11-12T14:12:30+00:00",
-      "post_text": "It\u2019s Veterans Day. And House Republicans just passed a bill to cut Veterans benefits by $57 billion, according to the VA\u2019s own estimates.\n \nThis is how they\u2019re thanking our heroes for their service.",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "The Hill"
-    },
-    {
-      "post_id": "2120519813676122567",
-      "post_url": "https://x.com/i/web/status/2120519813676122567",
-      "created_at": "2026-11-12T14:12:29+00:00",
-      "post_text": "This crashout???? You can't love your side chick to this extent \ud83e\udd23\ud83e\udd23\ud83e\udd23\ud83e\udd23 https://t.co/Ar7HOaPEwn https://t.co/guHFPXlD0u",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a joke or slang reaction about a relationship with no specific checkable factual claim, only emojis and links.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120581321575821642",
-      "post_url": "https://x.com/i/web/status/2120581321575821642",
-      "created_at": "2026-11-12T14:12:28+00:00",
-      "post_text": "R9. \ud83d\udd25 https://t.co/AC5rknyafv",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is only a reaction emoji with a bare link and no stated factual claim to check.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120628341526925361",
-      "post_url": "https://x.com/i/web/status/2120628341526925361",
-      "created_at": "2026-11-12T14:12:27+00:00",
-      "post_text": "David Corenswett on James Gunn stepping down from DC studio\n\n\u201cHonestly, I expected something like this to happen much earlier. I think James Gunn was already long overdue to step down. I respect the work he has done, but I genuinely wish he had handled certain things differently. https://t.co/7GAoXnqspV",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is an opinion-laden quote about James Gunn's departure with vague claims like 'handled certain things differently' and relies on a link the reader must click to understand the context.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120558982444048810",
-      "post_url": "https://x.com/i/web/status/2120558982444048810",
-      "created_at": "2026-11-12T14:12:25+00:00",
-      "post_text": "This Veterans Day, I\u2019m also thinking about all of the veterans who wore the uniform, served our country, and were later deported by the very nation they risked their lives for.\n\nSome estimates have the total number of deported veterans as high as 10,000.\n\nNo veteran should be",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "checkyourfact.com"
-    },
-    {
-      "post_id": "2120014260118139184",
-      "post_url": "https://x.com/i/web/status/2120014260118139184",
-      "created_at": "2026-11-12T14:12:24+00:00",
-      "post_text": "Right wingers are good people larping as villains\n\nLeft wingers are villains larping as good people",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a generalized political opinion and jab with no specific, checkable factual claim about the world.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120523416264638678",
-      "post_url": "https://x.com/i/web/status/2120523416264638678",
-      "created_at": "2026-11-12T14:12:23+00:00",
-      "post_text": "The Eras Tour ruined the concert industry.  This shit has wholly gotten out of control.",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post offers vague opinion that the Eras Tour 'ruined' the concert industry without any specific, verifiable figures, events, or actions.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120698763400597990",
-      "post_url": "https://x.com/i/web/status/2120698763400597990",
-      "created_at": "2026-11-12T14:12:21+00:00",
-      "post_text": "JUST IN: Elon Musk declares it would be \"an honor\" to hire Jensen Huang if he's removed as Nvidia CEO. https://t.co/QLph3eucJf",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Polymarket)"
-    },
-    {
-      "post_id": "2120522955201663100",
-      "post_url": "https://x.com/i/web/status/2120522955201663100",
-      "created_at": "2026-11-12T14:12:19+00:00",
-      "post_text": "A teacher stepped in to break up the fight, but when the student attacked him, he taught him a lesson. https://t.co/KFbP6lORVR",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's text describes a vague anecdote whose full details depend on a linked video the reader cannot see, with no independently checkable named subject or verifiable specifics in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120502012907557236",
-      "post_url": "https://x.com/i/web/status/2120502012907557236",
-      "created_at": "2026-11-12T14:12:17+00:00",
-      "post_text": "Dropped my cat at my mum\u2019s place and i came back to see this, i\u2019m scared\u2026 what is this? \ud83d\ude2d https://t.co/ZGKT1KcIa5",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a personal anecdote and emotional reaction with a link, with no specific checkable factual claim stated in the text itself.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120271382588350642",
-      "post_url": "https://x.com/i/web/status/2120271382588350642",
-      "created_at": "2026-11-12T14:12:16+00:00",
-      "post_text": "Friendly reminder @RepJeffries is a pedophile supporter. https://t.co/a2rJC20yUk",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post makes a broad accusatory label ('pedophile supporter') without a specific checkable action, and its only other content is a link the reader must click to understand the basis.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120550155376324819",
-      "post_url": "https://x.com/i/web/status/2120550155376324819",
-      "created_at": "2026-11-12T14:12:16+00:00",
-      "post_text": "The reason Google doesn't have this already because such routes inherently avoid black neighborhoods.\n\nNot joking, Google devs have said that's why they refuse to build it. https://t.co/hF9FSzSBQL",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@majamediaco)"
-    },
-    {
-      "post_id": "2120613290212512046",
-      "post_url": "https://x.com/i/web/status/2120613290212512046",
-      "created_at": "2026-11-12T14:12:14+00:00",
-      "post_text": "I am a HELL YES on denaturalizing and deporting Yassamin Ansari https://t.co/YEyhXYGfbv",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post expresses an opinion in favor of denaturalizing and deporting a named person but makes no checkable factual assertion, and the rest of its meaning depends on an unseen link.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
       "post_id": "2120620188823425375",
       "post_url": "https://x.com/i/web/status/2120620188823425375",
-      "created_at": "2026-11-12T14:12:13+00:00",
+      "created_at": "2026-11-12T16:04:04+00:00",
       "post_text": "Trump raped a 13 year old girl\n\nYes, I have proof",
       "refusal_bucket": "Other",
-      "refusal_reason": "evaluate_note: claim_opinion_score 0.197 below 0.50 floor",
+      "refusal_reason": "evaluate_note: claim_opinion_score -0.661 below 0.50 floor",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2120354252421841144",
-      "post_url": "https://x.com/i/web/status/2120354252421841144",
-      "created_at": "2026-11-12T14:12:12+00:00",
-      "post_text": "Welcome to Atlanta Mexico Georgia https://t.co/kI3uMmqmvR",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a welcome greeting with a link and contains no specific, checkable factual assertion.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2120545912787243294",
-      "post_url": "https://x.com/i/web/status/2120545912787243294",
-      "created_at": "2026-11-12T14:12:11+00:00",
-      "post_text": "Today I learned that the folding chair was invented by a Black American\u2026which means the Montgomery Brawl was DEEPLY ancestral",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2120597325357752549",
-      "post_url": "https://x.com/i/web/status/2120597325357752549",
-      "created_at": "2026-11-12T14:12:11+00:00",
-      "post_text": "The news that British Universities will offer interest free loans to muslim students is outrageous.\n\nLiterally the definition of \u2018two-tier\u2019.\n\nLabour will push this through - but it\u2019s crucial to note that this outrageous scheme was first concocted by THE TORIES.\n\nIt was Prime",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Snopes"
-    },
-    {
       "post_id": "2120674945177128994",
       "post_url": "https://x.com/i/web/status/2120674945177128994",
-      "created_at": "2026-11-12T14:12:06+00:00",
+      "created_at": "2026-11-12T16:03:56+00:00",
       "post_text": "BREAKING: Anthropic CEO declares cancer, Alzheimer's, heart disease, and mental illness will be cured in less than 10 years",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "link.axios.com"
+      "evidence_publisher": "cbsnews.com"
     },
     {
       "post_id": "2120661658037350415",
       "post_url": "https://x.com/i/web/status/2120661658037350415",
-      "created_at": "2026-11-12T14:12:01+00:00",
+      "created_at": "2026-11-12T16:03:49+00:00",
       "post_text": "Judge denied Yella beezy request to hug &amp; kiss his son before he was escorted out of the courtroom in cuffs https://t.co/GUWC9uJ5j2",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
@@ -2041,24 +1841,224 @@
       "evidence_publisher": "X (@shannonsharpeee)"
     },
     {
-      "post_id": "2120521301680926785",
-      "post_url": "https://x.com/i/web/status/2120521301680926785",
-      "created_at": "2026-11-12T14:11:56+00:00",
-      "post_text": "I still don't understand why America Chavez, the only character capable of traveling the Multiverse is completely absent from Avengers Doomsday, a movie about traveling to different universes to stop incursions. Marvel I'm tired of this bs https://t.co/vY58XNKP52",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a complaint and opinion about a character's absence from a film, not a checkable factual assertion, and the linked content is unseen.",
-      "evidence_tier": null,
-      "evidence_publisher": null
+      "post_id": "2120669128952524849",
+      "post_url": "https://x.com/i/web/status/2120669128952524849",
+      "created_at": "2026-11-12T16:03:46+00:00",
+      "post_text": "House Republicans resorted to a blatant abuse of established procedure\u2014bypassing a fair vote\u2014to sneak the biggest cut to veterans\u2019 benefits in American history. 1/",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "The Hill"
     },
     {
       "post_id": "2120649589644796390",
       "post_url": "https://x.com/i/web/status/2120649589644796390",
-      "created_at": "2026-11-12T14:11:54+00:00",
+      "created_at": "2026-11-12T16:03:44+00:00",
       "post_text": "JUST IN: Jensen Huang fired by Nvidia $NVDA, according to the Wall Street Journal https://t.co/JbzzFIfTcD",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
       "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2120369921834340483",
+      "post_url": "https://x.com/i/web/status/2120369921834340483",
+      "created_at": "2026-11-12T16:03:43+00:00",
+      "post_text": "not to atheist and feminist post or whatever but there is something jarring about seeing the first muslim man elected to the senate as a democrat is still making his wife cover up her whore hair https://t.co/A4hYbdaCFK",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@AbdulElSayed)"
+    },
+    {
+      "post_id": "2120613441371267531",
+      "post_url": "https://x.com/i/web/status/2120613441371267531",
+      "created_at": "2026-11-12T16:03:35+00:00",
+      "post_text": "Ain\u2019t nothing wrong with a little public shaming https://t.co/vokHv6PkQH",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a general opinion about public shaming with no specific, checkable factual claim; the link is not described in the text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120685156251877781",
+      "post_url": "https://x.com/i/web/status/2120685156251877781",
+      "created_at": "2026-11-12T16:03:34+00:00",
+      "post_text": "Trump administration officials currently living on military bases due to threats:\n\n-Attorney General Todd Blanche\n-Secretary of State Marco Rubio\n-War Secretary Pete Hegseth\n-White House Chief of Staff Stephen Miller \n-Treasury Secretary Scott Bessent\n\nPretty insane that",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cnbc.com"
+    },
+    {
+      "post_id": "2120455984002850915",
+      "post_url": "https://x.com/i/web/status/2120455984002850915",
+      "created_at": "2026-11-12T16:03:34+00:00",
+      "post_text": "I am no fan of the racial politics being pushed by Reform UK. But the nonsensical claim that White Brits will be a minority by 2063 could have been debunked as such in debate, not censorship. https://t.co/COrZkacZFC",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "pubmed.ncbi.nlm.nih.gov"
+    },
+    {
+      "post_id": "2120614043203604800",
+      "post_url": "https://x.com/i/web/status/2120614043203604800",
+      "created_at": "2026-11-12T16:03:29+00:00",
+      "post_text": "We just became the fifth state in the nation to effectively end veteran homelessness.\n\nIn Minnesota, we know that taking care of those who raise their hand to serve is a sacred obligation.",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2120230670056517635",
+      "post_url": "https://x.com/i/web/status/2120230670056517635",
+      "created_at": "2026-11-12T16:03:24+00:00",
+      "post_text": "\ud83d\udea8 ELECTION ISSUES: Nevada - Statewide official rolls are at 113.1%. 12 of 17 counties are over 100%.\n\nClark County is at 113.9%, 221,854 over. \n\nWashoe County is at 110.9%, 39,191 over. \n\nLyon County is at 121.6%, 10,154 over. \n\nDouglas County is at 116.9%, 6,959 over. \n\nCarson https://t.co/PyYL5ssp0K",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Lead Stories"
+    },
+    {
+      "post_id": "2120653187061260627",
+      "post_url": "https://x.com/i/web/status/2120653187061260627",
+      "created_at": "2026-11-12T16:03:22+00:00",
+      "post_text": "\ud83d\udea8 BREAKING: AMERICA ON THE BRINK! \ud83d\udea8\nPresident Trump just dropped a BOMBSHELL tease for his MASSIVE Speech to the Nation this Thursday night \u2014 and it\u2019s going to SHAKE the foundations of our Republic!\n\u201cIt\u2019s really BIG news\u2026 REALLY, REALLY BIG news!\u201d he declared. \u201cOur country HAS https://t.co/IsiACZE4YR",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@JudicialFox)"
+    },
+    {
+      "post_id": "2120577298952798605",
+      "post_url": "https://x.com/i/web/status/2120577298952798605",
+      "created_at": "2026-11-12T16:03:19+00:00",
+      "post_text": "He was broke and in debt. He prayed to God for help.\n\nHours later, unexpected checks arrived in his mailbox.\n\nThree months later, he was cast as Jesus in The Chosen. https://t.co/J4WvvYAgyf",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@trad_west_)"
+    },
+    {
+      "post_id": "2120553959429439896",
+      "post_url": "https://x.com/i/web/status/2120553959429439896",
+      "created_at": "2026-11-12T16:03:16+00:00",
+      "post_text": "Shit say 1.2 million dawg \ud83d\ude2d https://t.co/e3ccS7RXWE",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post's text is slang reacting to an unseen image or link and does not state a checkable fact in words; the '1.2 million' figure has no named subject or context.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120638606402535464",
+      "post_url": "https://x.com/i/web/status/2120638606402535464",
+      "created_at": "2026-11-12T16:03:13+00:00",
+      "post_text": "@MTVenture @CreekEss Wrong. Biology says that at conception you have a complete human. Stage of development has no bearing on species. \ud83d\ude09",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "pmc.ncbi.nlm.nih.gov"
+    },
+    {
+      "post_id": "2120426302435922121",
+      "post_url": "https://x.com/i/web/status/2120426302435922121",
+      "created_at": "2026-11-12T16:03:13+00:00",
+      "post_text": "In which room would you feel safe : \n\nRoom 1: 100 trans women \ud83c\udff3\ufe0f\u200d\u26a7\ufe0f\nRoom 2: 1 guy \ud83d\ude4b\ud83c\udffb\u200d\u2642\ufe0f\nRoom 3: 50 lesbians \ud83c\udff3\ufe0f\u200d\ud83c\udf08",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: This is a hypothetical rhetorical question with no specific checkable factual assertion; it is a provocative prompt rather than a verifiable claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120269581625467262",
+      "post_url": "https://x.com/i/web/status/2120269581625467262",
+      "created_at": "2026-11-12T16:03:11+00:00",
+      "post_text": "People in Gaza are facing their fourth winter in tents. A brutal winter storm has flooded tens of thousands of families and killed at least five people.\n\nMeanwhile, severe import restrictions by the Israeli authorities are keeping critical shelter materials out of Gaza. Aid",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "pbs.org"
+    },
+    {
+      "post_id": "2120719893603455385",
+      "post_url": "https://x.com/i/web/status/2120719893603455385",
+      "created_at": "2026-11-12T16:03:11+00:00",
+      "post_text": "Deleted an earlier tweet re Peter Thiel and JD Vance, as it was a parody interview. \n\nSigh. \n\nWe live in a world where it is very hard, when reading the words of the US right, to distinguish between parody and reality. \n\nBut, still, on me, as a journalist, to make proper checks!",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a meta-commentary about deleting a parody tweet and reflecting on difficulty distinguishing satire from reality, with no specific checkable factual claim about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120425009659482410",
+      "post_url": "https://x.com/i/web/status/2120425009659482410",
+      "created_at": "2026-11-12T16:03:10+00:00",
+      "post_text": "To make this more easy to understand, painting the skin darker is the equivalent of someone pulling their eyes to mimic an east Asian person, the post you're replying to was explaining what is offensive about painting your skin very respectfully too so idk why ur arguing back https://t.co/1MToKgSjvO",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is an opinion or analogy about what is offensive in a cultural context and makes no specific, checkable factual claim about events, statistics, or people.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120584951431377264",
+      "post_url": "https://x.com/i/web/status/2120584951431377264",
+      "created_at": "2026-11-12T16:03:08+00:00",
+      "post_text": "AIPAC's contributions to Ayanna Pressley: $0\nAIPAC's contributions to Hakeem Jeffries: $1,741,230. \n\nThe American people want leaders with integrity.",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Snopes"
+    },
+    {
+      "post_id": "2120675904703681016",
+      "post_url": "https://x.com/i/web/status/2120675904703681016",
+      "created_at": "2026-11-12T16:03:05+00:00",
+      "post_text": "None of this is normal.  \n\nMass casualty event incoming. https://t.co/R77I8UIeCm",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague alarm with no specific checkable factual claim; the linked media is not described and the 'incoming' event is a prediction.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120713194918539363",
+      "post_url": "https://x.com/i/web/status/2120713194918539363",
+      "created_at": "2026-11-12T16:03:04+00:00",
+      "post_text": "High school before phones existed  https://t.co/4L4ZH13IJj",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a nostalgic, vague remark about school before phones with no specific checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2120669745573732605",
+      "post_url": "https://x.com/i/web/status/2120669745573732605",
+      "created_at": "2026-11-12T16:03:03+00:00",
+      "post_text": "@cindyhydesmith @Pete2Shawn This video is cringe and there\u2019s no way possible you won Mississippi without cheating.",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "nbcnews.com"
+    },
+    {
+      "post_id": "2120603689199006068",
+      "post_url": "https://x.com/i/web/status/2120603689199006068",
+      "created_at": "2026-11-12T16:03:03+00:00",
+      "post_text": "So GTA doesn\u2019t get released until 2027 now\u2026. \n\nWhat was the point of preloading it onto my ps5 then? \n\nThanks @RockstGames for fumbling the bag again https://t.co/kFTG8uYhmP",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@TactAndTrade)"
+    },
+    {
+      "post_id": "2120611270055612609",
+      "post_url": "https://x.com/i/web/status/2120611270055612609",
+      "created_at": "2026-11-12T16:03:02+00:00",
+      "post_text": "deleting in 5 mins https://t.co/BTl3Q86iUW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague announcement about deleting content with no specific factual claim about the world to check.",
+      "evidence_tier": null,
+      "evidence_publisher": null
     }
   ]
 }
