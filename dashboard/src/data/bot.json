@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-16T14:47:42+00:00",
+  "generated_at": "2026-11-16T16:04:36+00:00",
   "totals": {
-    "posts": 10476,
-    "off_beat": 3981,
-    "evidence_searched": 6495,
-    "evidence_found": 4556,
-    "notes_written": 88,
-    "submitted": 88
+    "posts": 10490,
+    "off_beat": 3982,
+    "evidence_searched": 6508,
+    "evidence_found": 4568,
+    "notes_written": 90,
+    "submitted": 90
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 10476
+      "count": 10490
     },
     {
       "label": "On-beat (US politics)",
-      "count": 6495
+      "count": 6508
     },
     {
       "label": "Evidence found",
-      "count": 4556
+      "count": 4568
     },
     {
       "label": "Note drafted",
-      "count": 88
+      "count": 90
     },
     {
       "label": "Submitted to X",
-      "count": 88
+      "count": 90
     }
   ],
   "by_day": [
@@ -441,29 +441,29 @@
     },
     {
       "day": "2026-11-16",
-      "posts": 136,
-      "submitted": 1,
+      "posts": 150,
+      "submitted": 3,
       "queued": 0,
-      "refused": 135,
+      "refused": 147,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 3981
+      "count": 3982
     },
     {
       "bucket": "Opus declined to write",
-      "count": 2624
+      "count": 2631
     },
     {
       "bucket": "Other",
-      "count": 2003
+      "count": 2004
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 1661
+      "count": 1664
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -481,18 +481,51 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 2219
+      "count": 2223
     },
     {
       "tier": "self_fact_check",
-      "count": 1723
+      "count": 1729
     },
     {
       "tier": "ifcn_verified",
-      "count": 610
+      "count": 612
     }
   ],
   "notes": [
+    {
+      "post_id": "2122172505616175520",
+      "post_url": "https://x.com/i/web/status/2122172505616175520",
+      "created_at": "2026-11-16T16:01:15+00:00",
+      "outcome": "submitted",
+      "post_text": "\ud83d\udea8 BREAKING:\n\nJapan has officially banned all Israeli tourists from entering its territory, citing the atrocities committed by Israel in Gaza. https://t.co/Je5xqU8SUA",
+      "note_text": "Snopes rated this False. Japan has not officially banned Israeli tourists from entering the country. The rumor spread online amid reports of demonstrations outside the Israeli Embassy in Tokyo. https://www.snopes.com/fact-check/japan-ban-israeli-tourists/",
+      "evidence_url": "https://www.snopes.com/fact-check/japan-ban-israeli-tourists/",
+      "evidence_publisher": "Snopes",
+      "evidence_rating": "False",
+      "evidence_tier": "ifcn_verified",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact"
+      ]
+    },
+    {
+      "post_id": "2122165732922331399",
+      "post_url": "https://x.com/i/web/status/2122165732922331399",
+      "created_at": "2026-11-16T16:00:54+00:00",
+      "outcome": "submitted",
+      "post_text": "Pfizer and Moderna COVID-19 mRNA Vaccines cause aggressive cancers called \"Turbo Cancer\"\n\nIt is highly probable that Moderna's flu mRNA Vaccine (mFLUSIVA) will also cause \"Turbo Cancer\" \n\nThe top 5 Turbo Cancers are: \n\n1. Lymphoma\n2. Glioblastoma and other brain tumors\n3. Breast https://t.co/h2xO3kS0nJ",
+      "note_text": "Per FactCheck.org, it has not been shown that COVID-19 vaccines cause or accelerate cancer. A paper about a mouse that died of lymphoma does not \"prove\" the Pfizer/BioNTech vaccine induced \"turbo cancer,\" contrary to social media claims. https://www.factcheck.org/2023/08/covid-19-vaccines-have-not-been-shown-to-cause-turbo-cancer/",
+      "evidence_url": "https://www.factcheck.org/2023/08/covid-19-vaccines-have-not-been-shown-to-cause-turbo-cancer/",
+      "evidence_publisher": "FactCheck.org",
+      "evidence_rating": null,
+      "evidence_tier": "self_fact_check",
+      "misleading_tags": [
+        "MisleadingTag.factual_error",
+        "MisleadingTag.disputed_claim_as_fact",
+        "MisleadingTag.missing_important_context"
+      ]
+    },
     {
       "post_id": "2122166010312581395",
       "post_url": "https://x.com/i/web/status/2122166010312581395",
@@ -1907,119 +1940,19 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2121800371643224372",
-      "post_url": "https://x.com/i/web/status/2121800371643224372",
-      "created_at": "2026-11-16T14:47:40+00:00",
-      "post_text": "You literally can\u2019t rent or own a home without a social security number. Migrants are not causing the housing crisis.",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "2021-2025.state.gov"
-    },
-    {
-      "post_id": "2121899046419955787",
-      "post_url": "https://x.com/i/web/status/2121899046419955787",
-      "created_at": "2026-11-16T14:47:38+00:00",
-      "post_text": "&gt;damascus steel\n&gt;came from India\n\nbiggest L for lore ever - right next to Arabian numerals https://t.co/UOx19FwPjH",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "pubmed.ncbi.nlm.nih.gov"
-    },
-    {
-      "post_id": "2121237086938497424",
-      "post_url": "https://x.com/i/web/status/2121237086938497424",
-      "created_at": "2026-11-16T14:47:33+00:00",
-      "post_text": "Meet Dr Jennifer Cox Taylor, right here in Florida.  who proudly got all the COVID shots and just died suddenly in her sleep at barely 57 years old. \n\nThe comments on her death by her MD colleagues say they are shocked and don't understand\n\nCognitive dissonance will kill you.\ud83d\ude3f\ud83d\ude3f https://t.co/M9ZFhoXzsl",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@unhealthytruth)"
-    },
-    {
-      "post_id": "2121989938162123089",
-      "post_url": "https://x.com/i/web/status/2121989938162123089",
-      "created_at": "2026-11-16T14:47:32+00:00",
-      "post_text": "Again these nerds just need to keep these opinions to themselves tbh. Not even that he\u2019s completely wrong, but the guys pfp is Mario, nintendo haven\u2019t sold a game under $80 in years. Also mind you 2020, Sony and Microsoft were selling disc-less systems. Codes were predicted lol https://t.co/sQVp00nEwb",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2122026566524010764",
-      "post_url": "https://x.com/i/web/status/2122026566524010764",
-      "created_at": "2026-11-16T14:47:25+00:00",
-      "post_text": "A US veteran with stage 4 cancer fled Canada after being offered assisted suicide before she could even see an oncologist.\n \nShe returned to the US, received emergency surgery, and her story is now going viral, sparking a major debate over Canada's medical assistance program.",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "pbs.org"
-    },
-    {
-      "post_id": "2122079900953870408",
-      "post_url": "https://x.com/i/web/status/2122079900953870408",
-      "created_at": "2026-11-16T14:47:23+00:00",
-      "post_text": "FACT-CHECK: FALSE @jahimes \n\nThe FAA\u00a0has around 45,000 employees. Less than 400 were let go, and they were all probationary, meaning they had been hired less than a year ago. Zero air traffic controllers and critical safety personnel were let go. \n\nSo no \u2014 the point that this had https://t.co/fB72TWiJl4",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Axios"
-    },
-    {
-      "post_id": "2122123061914902572",
-      "post_url": "https://x.com/i/web/status/2122123061914902572",
-      "created_at": "2026-11-16T14:47:19+00:00",
-      "post_text": "The Destiny community is one of the largest Community Notes abusers on Twitter, brigading both the notes themselves and their ratings. On the notes Destiny brigades, they use a network of about 4-500ish accounts that vote the same way roughly 98% of the time. Rating notes against https://t.co/PbQFOBZPlm",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@theGhostOfRiel)"
-    },
-    {
-      "post_id": "2122037291057119306",
-      "post_url": "https://x.com/i/web/status/2122037291057119306",
-      "created_at": "2026-11-16T14:47:17+00:00",
-      "post_text": "Blueface reacts angrily after Clavicular called him the N word \ud83d\udc40\ud83d\ude2d https://t.co/PejMbuaaO9",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@jexuxbt)"
-    },
-    {
-      "post_id": "2122096561660555361",
-      "post_url": "https://x.com/i/web/status/2122096561660555361",
-      "created_at": "2026-11-16T14:47:12+00:00",
-      "post_text": "Ok well in 400 years you couldn\u2019t learn proper English grammar\u2026? https://t.co/ML4UlYlcXe",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a rhetorical jab about English grammar with no specific, checkable factual claim beyond a vague opinion-laden remark.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
       "post_id": "2121965318205518072",
       "post_url": "https://x.com/i/web/status/2121965318205518072",
-      "created_at": "2026-11-16T14:47:10+00:00",
+      "created_at": "2026-11-16T16:04:33+00:00",
       "post_text": "Did you notice how VisionQuest has finally explained one of the MCU\u2019s most questionable plot points?\n\nFor 11 years, we complained that Quicksilver\ndidn't dodge Ultron's bullets.\n\nWhen Avengers: Age of Ultron came out, many fans questioned Quicksilver\u2019s d\u20acath. After all, he was a https://t.co/e7GuRcWqVM",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@David_Da_Boss)"
-    },
-    {
-      "post_id": "2121927402322309282",
-      "post_url": "https://x.com/i/web/status/2121927402322309282",
-      "created_at": "2026-11-16T14:47:05+00:00",
-      "post_text": "POV\nI faked getting an inheritance from a relative to see what my CHEATING wife would do and she showed her true colors!! https://t.co/nDvhykbKZW",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Personal anecdote framed as a 'POV' skit with no verifiable factual claim about the outside world; it reads as satire or storytelling rather than a checkable assertion.",
-      "evidence_tier": null,
-      "evidence_publisher": null
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "abcnews.go.com"
     },
     {
       "post_id": "2121992401371660554",
       "post_url": "https://x.com/i/web/status/2121992401371660554",
-      "created_at": "2026-11-16T14:47:03+00:00",
+      "created_at": "2026-11-16T16:04:30+00:00",
       "post_text": "The irony here is that TheBurntPeanut was way more humble about his win last year, meanwhile Ironmouse is scolding people who simply wanted someone else to win. I know the narrative was that TheBurntPeanut winning damaged the 'image' of Vtubers, but Ironmouse is doing far more https://t.co/FSmfTuJjq0",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -2027,39 +1960,19 @@
       "evidence_publisher": "X (@ChumBucketDrama)"
     },
     {
-      "post_id": "2121700999790497903",
-      "post_url": "https://x.com/i/web/status/2121700999790497903",
-      "created_at": "2026-11-16T14:47:02+00:00",
-      "post_text": "@unhealthytruth My wife did not die from this.  It is a private matter.  Remove this post please.",
+      "post_id": "2122117447734206784",
+      "post_url": "https://x.com/i/web/status/2122117447734206784",
+      "created_at": "2026-11-16T16:04:24+00:00",
+      "post_text": "@markjburns88 Blame Danny Divito the lead graphic designer\nPathetic https://t.co/OVmUt7nfnf",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a personal request to remove content and contains no checkable factual claim about the world, only a private matter statement.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2121659424326689085",
-      "post_url": "https://x.com/i/web/status/2121659424326689085",
-      "created_at": "2026-11-16T14:47:00+00:00",
-      "post_text": "Every trans woman in women's sports. \ud83c\udfc5 https://t.co/956CcEKOz6",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The text is a vague, opinion-style statement with no specific verifiable assertion, and its meaning depends on an unseen linked image or video.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2122044131673579666",
-      "post_url": "https://x.com/i/web/status/2122044131673579666",
-      "created_at": "2026-11-16T14:46:59+00:00",
-      "post_text": "Big ring on my finger no fianc\u00e9 \ud83d\udc8d https://t.co/h1YpMCZYnJ",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: Personal remark about wearing a ring with no checkable factual claim about the world, only an emoji and a link.",
+      "refusal_reason": "Off-beat: The post is a jab assigning blame with no specific checkable factual claim, only opinion and an apparent joke about a designer.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2122074009735168337",
       "post_url": "https://x.com/i/web/status/2122074009735168337",
-      "created_at": "2026-11-16T14:46:57+00:00",
+      "created_at": "2026-11-16T16:04:24+00:00",
       "post_text": "I\u2019m done playing nice.\n\nTrump just put it on the table, Butler wasn\u2019t some random kid with a rifle. Fake-name parts. Anonymous cremation. And the same crowd that prayed he\u2019d die is telling you to shut up.\n\nYou don\u2019t get to erase a president and still call yourselves democracy. https://t.co/psDV5BR4rq",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -2069,7 +1982,7 @@
     {
       "post_id": "2122125541876621405",
       "post_url": "https://x.com/i/web/status/2122125541876621405",
-      "created_at": "2026-11-16T14:46:57+00:00",
+      "created_at": "2026-11-16T16:04:24+00:00",
       "post_text": "\ud83d\udea8THIS IS PATHETIC\ud83d\udea8\n\n#Cowboys superstar WRs George Pickens and CeeDee Lamb PULLED THEMSELVES OUT with 2 minutes left against the #49ers because they were tired.\n\nDallas was still in the game.\n\nTHE TWO ARE MAKING A COMBINED $52.8 MILLION THIS SEASON.\n\n\ud83d\ude33 https://t.co/bO4vtnrV2E",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -2077,39 +1990,19 @@
       "evidence_publisher": "abcnews.go.com"
     },
     {
-      "post_id": "2122117447734206784",
-      "post_url": "https://x.com/i/web/status/2122117447734206784",
-      "created_at": "2026-11-16T14:46:57+00:00",
-      "post_text": "@markjburns88 Blame Danny Divito the lead graphic designer\nPathetic https://t.co/OVmUt7nfnf",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a jab with an attribution of blame and no specific checkable factual claim beyond opinion-laden mockery.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2122128324168216662",
-      "post_url": "https://x.com/i/web/status/2122128324168216662",
-      "created_at": "2026-11-16T14:46:56+00:00",
-      "post_text": "\u201cBoo all you want. I can\u2019t help us win if I don\u2019t get the ball\u201d \n\nWow https://t.co/mLxxKiLqQW",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a personal sports-style reaction with no specific, checkable factual claim; the only assertion is opinion-like and vague, with a link that isn't described.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
       "post_id": "2122018897129828557",
       "post_url": "https://x.com/i/web/status/2122018897129828557",
-      "created_at": "2026-11-16T14:46:56+00:00",
+      "created_at": "2026-11-16T16:04:23+00:00",
       "post_text": "Anyway here is MCU Ultron oneshotting MCU Wanda https://t.co/Ewznu8tO63 https://t.co/jIcjXUtlrt",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a playful fan comment about a fictional fight scene in a movie franchise, with no specific checkable real-world factual claim.",
+      "refusal_reason": "Off-beat: This is a playful fan comparison about a fictional movie fight with no concrete, checkable factual claim about the real world.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2121758327222968801",
       "post_url": "https://x.com/i/web/status/2121758327222968801",
-      "created_at": "2026-11-16T14:46:54+00:00",
+      "created_at": "2026-11-16T16:04:22+00:00",
       "post_text": "BREAKING: Former Nvidia CEO Jensen Huang reportedly told a top executive \"I hope you die\" during a meeting",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
@@ -2117,19 +2010,29 @@
       "evidence_publisher": "Lead Stories"
     },
     {
+      "post_id": "2122128324168216662",
+      "post_url": "https://x.com/i/web/status/2122128324168216662",
+      "created_at": "2026-11-16T16:04:21+00:00",
+      "post_text": "\u201cBoo all you want. I can\u2019t help us win if I don\u2019t get the ball\u201d \n\nWow https://t.co/mLxxKiLqQW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a personal sports-style quip with a vague reaction and no specific, checkable factual claim about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
       "post_id": "2121626943997022245",
       "post_url": "https://x.com/i/web/status/2121626943997022245",
-      "created_at": "2026-11-16T14:46:54+00:00",
+      "created_at": "2026-11-16T16:04:20+00:00",
       "post_text": "@QJamzzy octolings are literally coded to be minorities and black, even shown in their concept art so whats hard about admitting that?",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post's central assertion is an opinion about how a fictional character group was designed, with no specific, checkable factual claim that a note could verify or correct beyond interpretive judgment.",
+      "refusal_reason": "Off-beat: The post is an opinion or interpretive claim about how characters are designed and coded, with no specific, checkable factual assertion a note could verify against published evidence.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
       "post_id": "2121907717027618995",
       "post_url": "https://x.com/i/web/status/2121907717027618995",
-      "created_at": "2026-11-16T14:46:52+00:00",
+      "created_at": "2026-11-16T16:04:18+00:00",
       "post_text": "\ud83d\udea8 \ud835\udde1\ud835\uddd8\ud835\uddea Images of James Gunn outside DC Studios Headquarters with wife, Jenifer Holland who reportedly served him divorce papers moments after he was FIRED by Skydance\n\nJenifer previously posted a divorce symbol on her IG story but deleted it minutes later further fueling https://t.co/1XoRoWvytZ",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -2139,7 +2042,7 @@
     {
       "post_id": "2121843856949875142",
       "post_url": "https://x.com/i/web/status/2121843856949875142",
-      "created_at": "2026-11-16T14:46:49+00:00",
+      "created_at": "2026-11-16T16:04:10+00:00",
       "post_text": "Prophet Muhammad PBUH married 9 wives only Aisha R.A was a teenager. She was 17 when she entered the house of prophet Muhammad PBUH. The fanatics ignored the eight widows he married and focused on 1 teenage girl. Ask yourself why? \n\nWell, because they want people to believe Islam",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
@@ -2149,12 +2052,142 @@
     {
       "post_id": "2121939998891192667",
       "post_url": "https://x.com/i/web/status/2121939998891192667",
-      "created_at": "2026-11-16T14:46:42+00:00",
+      "created_at": "2026-11-16T16:04:09+00:00",
       "post_text": "They promised next-level graphics, but nobody warned us they\u2019d be this hard to ignore \ud83d\ude2e\u200d\ud83d\udca8 https://t.co/lx3k9eNKzZ",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague reaction about graphics being hard to ignore, with no specific checkable factual claim.",
+      "refusal_reason": "Off-beat: The post is vague opinion and reaction about graphics with no specific, checkable factual claim.",
       "evidence_tier": null,
       "evidence_publisher": null
+    },
+    {
+      "post_id": "2122092891485225404",
+      "post_url": "https://x.com/i/web/status/2122092891485225404",
+      "created_at": "2026-11-16T16:04:07+00:00",
+      "post_text": "Crazy fact I learned today:\n\nBoise State doesn\u2019t just own the iconic blue turf. They hold a federal trademark on ALL non-green artificial playing fields.\n\nIf another college or pro team wants turf in a color other than green, they have request permission from Boise State first. https://t.co/4tJPePTSti",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "msgboard.snopes.com"
+    },
+    {
+      "post_id": "2122112511327580475",
+      "post_url": "https://x.com/i/web/status/2122112511327580475",
+      "created_at": "2026-11-16T16:04:04+00:00",
+      "post_text": "DSA candidates going door to door in order to do PR for Hakeem Jeffries\n\nPack it up. This entire progressive Democrat movement is completely garbage https://t.co/nMlcsSr9ls",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Popstonox)"
+    },
+    {
+      "post_id": "2122047115002020154",
+      "post_url": "https://x.com/i/web/status/2122047115002020154",
+      "created_at": "2026-11-16T16:04:04+00:00",
+      "post_text": "What happened to JP Sears? \n\nIf you\u2019re not following him on X or YT\u2026.I regret to inform you that after he abandoned his wife and child, he went down the anti-Jew rabbit hole and now enjoys doing videos wearing the Israeli flag, covered in blood, and mocking and demonizing Erika https://t.co/JJSaWGsMlW",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@RealKeriSmith)"
+    },
+    {
+      "post_id": "2122136574989304046",
+      "post_url": "https://x.com/i/web/status/2122136574989304046",
+      "created_at": "2026-11-16T16:04:02+00:00",
+      "post_text": "Severe weather and heavy rain are compounding the already dire humanitarian situation in Gaza as winter takes hold. \n\nTogether with Canada, Italy and the United Kingdom, Australia urges Israel to allow immediate, rapid and unimpeded access of humanitarian aid into Gaza.",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "PolitiFact"
+    },
+    {
+      "post_id": "2122033121600340154",
+      "post_url": "https://x.com/i/web/status/2122033121600340154",
+      "created_at": "2026-11-16T16:03:57+00:00",
+      "post_text": "\u201cJudo doesn\u2019t work in MMA\u201d lol https://t.co/qzWBxyzPZ5",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a short dismissive opinion about judo in MMA that relies on an unseen link for any further context, with no specific checkable factual assertion in the text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2121811918310789513",
+      "post_url": "https://x.com/i/web/status/2121811918310789513",
+      "created_at": "2026-11-16T16:03:54+00:00",
+      "post_text": "Another person I know who took the Covid vaccine dies from turbo cancer.",
+      "refusal_bucket": "Other",
+      "refusal_reason": "evaluate_note: claim_opinion_score -2.293 below 0.50 floor",
+      "evidence_tier": "ifcn_verified",
+      "evidence_publisher": "Full Fact"
+    },
+    {
+      "post_id": "2122117715125022773",
+      "post_url": "https://x.com/i/web/status/2122117715125022773",
+      "created_at": "2026-11-16T16:03:50+00:00",
+      "post_text": "This should upset every single American.\n\nThis is not ok. https://t.co/WvZvMx2Cf7",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is an emotional reaction with a link but makes no specific checkable factual claim in its text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2121995797210202115",
+      "post_url": "https://x.com/i/web/status/2121995797210202115",
+      "created_at": "2026-11-16T16:03:49+00:00",
+      "post_text": "The gold brick that had been sitting there for twenty years was finally taken by someone good at physics. https://t.co/1YzhyxW7RC",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is vague and whimsical, with no named subject or checkable assertion, and its meaning depends on an unseen linked link.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2122021483589546478",
+      "post_url": "https://x.com/i/web/status/2122021483589546478",
+      "created_at": "2026-11-16T16:03:47+00:00",
+      "post_text": "Prostitutes - 97% women\nStrippers - 95% women\nOnly fans creators - 93% women\nThirst traps - 93% women\n\nWomen are shitty too. They just use their sexuality instead of aggression.\nGet lost misandrist \ud83d\udca6 https://t.co/p1M750L0F1",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@_Mavellee_)"
+    },
+    {
+      "post_id": "2122057973585297433",
+      "post_url": "https://x.com/i/web/status/2122057973585297433",
+      "created_at": "2026-11-16T16:03:46+00:00",
+      "post_text": "Why has Iran has pursued a nuclear weapon despite decades of sanctions, security threats, and now war? I explore that question in my new special, \"Iran and the Bomb,\" airing tonight at 8pm ET &amp; PT on @cnn. Here's a sneak preview: https://t.co/Au62EgwJjw",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post asks a question and promotes a TV special; its only assertion is that Iran has pursued a nuclear weapon, which is framed as a question and relies on an unseen preview link.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2122043734816604371",
+      "post_url": "https://x.com/i/web/status/2122043734816604371",
+      "created_at": "2026-11-16T16:03:46+00:00",
+      "post_text": "Willow Smith alongside Jordyn Woods sauntering at The Grove in Los Angeles 2010 https://t.co/lOh0OHI90O",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Hollywoodladyy)"
+    },
+    {
+      "post_id": "2122086735542894981",
+      "post_url": "https://x.com/i/web/status/2122086735542894981",
+      "created_at": "2026-11-16T16:03:43+00:00",
+      "post_text": "From the Yoruba gele to the Igbo ichafu, headwraps hold different names, styles, and cultural meanings across Nigeria. \ud83c\uddf3\ud83c\uddec\u2728 https://t.co/QT5hG5n2KD",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post names headwrap styles and says they carry different names and meanings across Nigerian ethnic groups, which is a general cultural observation rather than a specific, checkable assertion about a named event, number, or status.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2121976782077448496",
+      "post_url": "https://x.com/i/web/status/2121976782077448496",
+      "created_at": "2026-11-16T16:03:43+00:00",
+      "post_text": "\" -maxxing\"\n\noriginating in online incel communities, the suffix is used to describe \"maximizing\" or enhancing a specific aspect of oneself (most commonly physical attractiveness)\n\nrecently the term has been popularized by clavicular 1/2",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Axios"
     }
   ]
 }
