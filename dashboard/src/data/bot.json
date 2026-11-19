@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-19T13:27:23+00:00",
+  "generated_at": "2026-11-19T16:03:13+00:00",
   "totals": {
-    "posts": 11076,
-    "off_beat": 4143,
-    "evidence_searched": 6933,
-    "evidence_found": 4899,
+    "posts": 11101,
+    "off_beat": 4148,
+    "evidence_searched": 6953,
+    "evidence_found": 4913,
     "notes_written": 91,
     "submitted": 91
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 11076
+      "count": 11101
     },
     {
       "label": "On-beat (US politics)",
-      "count": 6933
+      "count": 6953
     },
     {
       "label": "Evidence found",
-      "count": 4899
+      "count": 4913
     },
     {
       "label": "Note drafted",
@@ -465,29 +465,29 @@
     },
     {
       "day": "2026-11-19",
-      "posts": 191,
+      "posts": 216,
       "submitted": 0,
       "queued": 0,
-      "refused": 191,
+      "refused": 216,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 4143
+      "count": 4148
     },
     {
       "bucket": "Opus declined to write",
-      "count": 2844
+      "count": 2855
     },
     {
       "bucket": "Other",
-      "count": 2105
+      "count": 2112
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
-      "count": 1772
+      "count": 1774
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
@@ -505,15 +505,15 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 2374
+      "count": 2380
     },
     {
       "tier": "self_fact_check",
-      "count": 1887
+      "count": 1893
     },
     {
       "tier": "ifcn_verified",
-      "count": 634
+      "count": 636
     }
   ],
   "notes": [
@@ -1980,252 +1980,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2123037363685204405",
-      "post_url": "https://x.com/i/web/status/2123037363685204405",
-      "created_at": "2026-11-19T13:21:44+00:00",
-      "post_text": "I can\u2019t believe Brazilians and Americans are fighting on X over who invented the aeroplane. \n\nMy childhood dream of the world knowing the Wright brothers were a farce has come true.\n\nSantos Dumont 4eva \u270c\ud83c\udffc https://t.co/OM2awKLCEb",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "pbs.org"
-    },
-    {
-      "post_id": "2123202151300448721",
-      "post_url": "https://x.com/i/web/status/2123202151300448721",
-      "created_at": "2026-11-19T13:21:39+00:00",
-      "post_text": "What happened\u2026\n\nElon: Do not use Starlink to kill.\n\nZelensky: I used Starlink to kill.\n\nLegacy Media: Elon is evil for stopping Zelensky from using Starlink to kill.\n\nDemocrats: We must investigate Elon for stopping Zelensky from using Starlink to kill.\n\nIt\u2019s really that simple.",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "NPR"
-    },
-    {
-      "post_id": "2123117268976763075",
-      "post_url": "https://x.com/i/web/status/2123117268976763075",
-      "created_at": "2026-11-19T13:21:32+00:00",
-      "post_text": "Nick Fuentes has a message for Indian immigrants in America.\n\n\"You left India and came here, and you've made all of us VERY uncomfortable with your strange gods and your strange spices and smelly food and customs and your arrogance and the way you take up space.\n\n\"We should have https://t.co/YMsD2uRG1a",
+      "post_id": "2123213106956693543",
+      "post_url": "https://x.com/i/web/status/2123213106956693543",
+      "created_at": "2026-11-19T16:03:11+00:00",
+      "post_text": "\ud83d\udea8BREAKING: Sen. John Thune reportedly took $1.58M from the Illegal-Labor Lobby pushing amnesty. That\u2019s why he won\u2019t force the SAVE Act to the floor. A new website has launched to hold him accountable. https://t.co/NjpndO7Q9S",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@GRYPRX)"
+      "evidence_publisher": "X (@MarktMatts)"
     },
     {
-      "post_id": "2123089279907987947",
-      "post_url": "https://x.com/i/web/status/2123089279907987947",
-      "created_at": "2026-11-19T13:21:27+00:00",
-      "post_text": "Imagine being shown undeniable evidence that humanity is not alone.\n\nNow imagine nobody believes you.\n\nWatch this.\n\nHangzhou, China. 2010. https://t.co/R8JZhHdTnK",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2123179418743177537",
-      "post_url": "https://x.com/i/web/status/2123179418743177537",
-      "created_at": "2026-11-19T13:21:26+00:00",
-      "post_text": "China was buying overpriced oil to keep gas prices high to kill us in the midterms. Sadly, it worked. https://t.co/Ul4daungoy",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2122728732989489460",
-      "post_url": "https://x.com/i/web/status/2122728732989489460",
-      "created_at": "2026-11-19T13:21:26+00:00",
-      "post_text": "\ud83d\udea8BREAKING: ICE agents have been UNLEASHED into Minneapolis and are rounding up and arresting entire illegal alien families.\n\nGod bless ICE &amp; President Trump. I voted for this. https://t.co/eBcRJBhKlR",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cbsnews.com"
-    },
-    {
-      "post_id": "2123099298288070668",
-      "post_url": "https://x.com/i/web/status/2123099298288070668",
-      "created_at": "2026-11-19T13:21:21+00:00",
-      "post_text": "Woke up to gta 6 being in a arguably worse state than launch cyberpunk #youlovetoseeit",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a vague, opinion-based comparison of GTA 6's state to Cyberpunk at launch, with no specific verifiable fact such as a number, date, or documented event.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2122983000107545076",
-      "post_url": "https://x.com/i/web/status/2122983000107545076",
-      "created_at": "2026-11-19T13:21:18+00:00",
-      "post_text": "Lucia Shower Scene \ud83e\udd75\ud83c\udf1e\n\n#GTA6 #GrandTheftAutoVI https://t.co/RkDjz0SKKi",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a promotional/hype caption with an emoji and hashtags and makes no specific checkable factual assertion about the world.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123082474561417353",
-      "post_url": "https://x.com/i/web/status/2123082474561417353",
-      "created_at": "2026-11-19T13:21:17+00:00",
-      "post_text": "We waited 13 years for GTA 6.\n\nWe quit after 2 hours.\n\nMy brother and I had everything ready. Beer in the fridge. Pizza on the table. Phones off. When the download hit 100% at midnight, we screamed like kids.\n\nBy 2 AM the room was dead silent.\n\nHere\u2019s what nobody on YouTube will https://t.co/dDpVYgQWMz",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a personal anecdote about playing GTA 6 with vague, unfinished commentary, and the only substantive content sits behind an unseen link.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123079428624601125",
-      "post_url": "https://x.com/i/web/status/2123079428624601125",
-      "created_at": "2026-11-19T13:21:14+00:00",
-      "post_text": "This little Sooners fan was getting aggressive with another student at a recent game and was told not to touch him and the little Sooner said \u201c\u00cd will touch you all I want boy\u201dand then called him a Bitch ass and kept saying meet me outside while clapping his hands like a seal. https://t.co/2dAFmujOG4",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@Suzierizzo1)"
-    },
-    {
-      "post_id": "2123077590390890969",
-      "post_url": "https://x.com/i/web/status/2123077590390890969",
-      "created_at": "2026-11-19T13:21:13+00:00",
-      "post_text": "A Somali American rideshare driver is fighting for his life after he was brutally attacked in MN last weekend. Republicans\u2019 dangerous rhetoric against our Somali neighbors has devastating consequences. We must speak with one MN voice: hate has no place here.",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cbsnews.com"
-    },
-    {
-      "post_id": "2123150444394353142",
-      "post_url": "https://x.com/i/web/status/2123150444394353142",
-      "created_at": "2026-11-19T13:21:07+00:00",
-      "post_text": "NEW:  Right-wing Colombian president rejects Hegseth's plan to conduct joint military operations against drug gangs, dealing the Trump administration a significant setback   w/@Abihabib  https://t.co/tf3IUH15U5",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2123166556733542865",
-      "post_url": "https://x.com/i/web/status/2123166556733542865",
-      "created_at": "2026-11-19T13:21:06+00:00",
-      "post_text": "\ud83d\udea8#BREAKING: I am hearing that THOUSANDS of people in Spartanburg SC have now FULLY RUN OUT OF WATER at their homes.\n\nPeople are PANIC BUYING water at stores just to flush toilets and have water to drink tonight.\n\nMultiple stores have now also run out of bottled water. https://t.co/m1NltHi5Zq",
+      "post_id": "2123151521827160091",
+      "post_url": "https://x.com/i/web/status/2123151521827160091",
+      "created_at": "2026-11-19T16:03:11+00:00",
+      "post_text": "Glad I got everyone\u2019s attention\u2026 \n\nNow who\u2019s willing to cosponsor a bill that actually stops scaring seniors?\n\nMy Stop Scaring Seniors Act simply prevents Social Security benefits from being reduced when the trust fund is depleted. https://t.co/D255lbUaJ0",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@mattvanswol)"
+      "evidence_publisher": "X (@SenRonJohnson)"
     },
     {
-      "post_id": "2123009239949943232",
-      "post_url": "https://x.com/i/web/status/2123009239949943232",
-      "created_at": "2026-11-19T13:21:04+00:00",
-      "post_text": "GTA 6 is the highest rated game OF ALL TIME on Metacritic with 99.\n\nTied with the original \u2018Legend of Zelda: Ocarina of Time\u2019 game. https://t.co/BuarguLVso",
+      "post_id": "2122661204564877756",
+      "post_url": "https://x.com/i/web/status/2122661204564877756",
+      "created_at": "2026-11-19T16:03:06+00:00",
+      "post_text": "The Brazilians just get this insane propaganda drilled into them at like 9 years old, I've seen this shit for years and no matter how many times someone brings up that the wright flyer didn't use a catapult for its first flight they never admit their wrong https://t.co/GKXBdzqC7U",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@Cezartsz)"
+    },
+    {
+      "post_id": "2123073850850079101",
+      "post_url": "https://x.com/i/web/status/2123073850850079101",
+      "created_at": "2026-11-19T16:03:00+00:00",
+      "post_text": "\ud83d\udea8\u201cEspresso\u201d by Sabrina Carpenter is featured on the GTA VI pop radio! https://t.co/gO3W0IAcWi",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@lokebrina)"
+    },
+    {
+      "post_id": "2123103197304701028",
+      "post_url": "https://x.com/i/web/status/2123103197304701028",
+      "created_at": "2026-11-19T16:03:00+00:00",
+      "post_text": "Measles isn't contagious. \n\nFear is.",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
+      "evidence_publisher": "cdc.gov"
     },
     {
-      "post_id": "2122682140299067538",
-      "post_url": "https://x.com/i/web/status/2122682140299067538",
-      "created_at": "2026-11-19T13:21:02+00:00",
-      "post_text": "We Palestinians are the rightful owners of this holy land \ud83c\uddf5\ud83c\uddf8",
+      "post_id": "2123000796161638591",
+      "post_url": "https://x.com/i/web/status/2123000796161638591",
+      "created_at": "2026-11-19T16:02:55+00:00",
+      "post_text": "The northern lights train , Norway \ud83c\uddf3\ud83c\uddf4 https://t.co/53Dx3Gk7q3",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post expresses a political or historical claim of ownership, which is a value judgment and not a specific checkable factual assertion.",
+      "refusal_reason": "Off-beat: The post is a short caption with a photo-style link and no specific checkable factual assertion beyond a vague location and a possibly scenic image.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123142428412801366",
-      "post_url": "https://x.com/i/web/status/2123142428412801366",
-      "created_at": "2026-11-19T13:21:00+00:00",
-      "post_text": "BREAKING: FBI Director Kash Patel and Dan Bongino reportedly pushed for the Epstein files to be released during the first week of the Trump administration but were blocked by former White House Chief of Staff Susie Wiles, according to John McEntee.",
+      "post_id": "2123216052599574915",
+      "post_url": "https://x.com/i/web/status/2123216052599574915",
+      "created_at": "2026-11-19T16:02:54+00:00",
+      "post_text": "Palmer Luckey is American degeneracy personified, a no-talent hack who stole the design for a 25 year old VR headset and conned Zuckerberg out of $800M for it.\n\nPeter Thiel took him under his wing and now this incel is suddenly qualified to discuss life &amp; death geopolitics. We https://t.co/Vs90oCFyX3",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@wallstengine)"
+    },
+    {
+      "post_id": "2123248560338620882",
+      "post_url": "https://x.com/i/web/status/2123248560338620882",
+      "created_at": "2026-11-19T16:02:53+00:00",
+      "post_text": "BREAKING: India named world's top travel destination for 2027",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2123201859653361725",
-      "post_url": "https://x.com/i/web/status/2123201859653361725",
-      "created_at": "2026-11-19T13:20:55+00:00",
-      "post_text": "NEW: In GTA 6, left-wing protesters demand a bear be freed from captivity, then it immediately mauls them to death.\n\nIt\u2019s resulting in mass backlash from the Left. \n\nThe developers are genius \ud83e\udd23 https://t.co/uTZ9vaw04Y",
+      "post_id": "2123232252750360681",
+      "post_url": "https://x.com/i/web/status/2123232252750360681",
+      "created_at": "2026-11-19T16:02:51+00:00",
+      "post_text": "The elections are over and she\u2019s still tweeting about @hasanthehun https://t.co/TyTE2jmBRI",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post describes a fictional video game scenario (GTA 6) and its reception, relying on a linked video the reader must watch, so it makes no verifiable real-world factual claim.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post's only assertion is a vague jab that a person is still tweeting about a named account, and the substance depends on an unseen linked tweet or media.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123109731803804105",
-      "post_url": "https://x.com/i/web/status/2123109731803804105",
-      "created_at": "2026-11-19T13:20:53+00:00",
-      "post_text": "\ud83d\udea8 GTA 6 is the cheapest GTA ever https://t.co/CZwllTpGHV https://t.co/mLSKPbna59",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's text asserts GTA 6 is the cheapest GTA ever, which is checkable, but the claim relies on linked media the bot cannot view and gives no specific price or source in the text.",
+      "post_id": "2123000111508930608",
+      "post_url": "https://x.com/i/web/status/2123000111508930608",
+      "created_at": "2026-11-19T16:02:49+00:00",
+      "post_text": "She doesn't know his husband back to home...\ud83d\ude0a\ud83d\udcaa https://t.co/MvJklyexyX",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is vague and gossip-like with no specific checkable factual claim beyond an unclear relationship remark, and it is mostly a reaction with emojis.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123151521827160091",
-      "post_url": "https://x.com/i/web/status/2123151521827160091",
-      "created_at": "2026-11-19T13:20:52+00:00",
-      "post_text": "Glad I got everyone\u2019s attention\u2026 \n\nNow who\u2019s willing to cosponsor a bill that actually stops scaring seniors?\n\nMy Stop Scaring Seniors Act simply prevents Social Security benefits from being reduced when the trust fund is depleted. https://t.co/D255lbUaJ0",
+      "post_id": "2123137773410410619",
+      "post_url": "https://x.com/i/web/status/2123137773410410619",
+      "created_at": "2026-11-19T16:02:48+00:00",
+      "post_text": "The Holocaust was \"made large\" by returning US GIs who saw with their own eyes Nazi concentration camps, mass graves and mountains of clothing, shoes and gold fillings. My father was one of them. https://t.co/KL63uoAPrT",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "x_post",
-      "evidence_publisher": "X (@SenRonJohnson)"
+      "evidence_publisher": "X (@HenMazzig)"
     },
     {
-      "post_id": "2123213106956693543",
-      "post_url": "https://x.com/i/web/status/2123213106956693543",
-      "created_at": "2026-11-19T13:20:50+00:00",
-      "post_text": "\ud83d\udea8BREAKING: Sen. John Thune reportedly took $1.58M from the Illegal-Labor Lobby pushing amnesty. That\u2019s why he won\u2019t force the SAVE Act to the floor. A new website has launched to hold him accountable. https://t.co/NjpndO7Q9S",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "FEC"
-    },
-    {
-      "post_id": "2122661204564877756",
-      "post_url": "https://x.com/i/web/status/2122661204564877756",
-      "created_at": "2026-11-19T13:20:49+00:00",
-      "post_text": "The Brazilians just get this insane propaganda drilled into them at like 9 years old, I've seen this shit for years and no matter how many times someone brings up that the wright flyer didn't use a catapult for its first flight they never admit their wrong https://t.co/GKXBdzqC7U",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "grc.nasa.gov"
-    },
-    {
-      "post_id": "2123135601134186742",
-      "post_url": "https://x.com/i/web/status/2123135601134186742",
-      "created_at": "2026-11-19T13:20:45+00:00",
-      "post_text": "Jim Cramer was wild for this one\n$NVDA https://t.co/Y7jep04V7X",
+      "post_id": "2123143592776548828",
+      "post_url": "https://x.com/i/web/status/2123143592776548828",
+      "created_at": "2026-11-19T16:02:47+00:00",
+      "post_text": "I think about this photo all the time cause holy shit THE MUSCLES???!!!! https://t.co/CrxnyObOGI https://t.co/m31ITXb4v2",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague reaction ('was wild for this one') that links to unseen content and makes no specific checkable factual claim on its own.",
+      "refusal_reason": "Off-beat: The post is an emotional reaction to a photo with no specific checkable factual claim stated in the text.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123067122901201286",
-      "post_url": "https://x.com/i/web/status/2123067122901201286",
-      "created_at": "2026-11-19T13:20:45+00:00",
-      "post_text": "1 minute compilation of BUGS found in GTA 6 just 3 hours after release\ud83d\ude2c https://t.co/RE7TG1X9NZ",
+      "post_id": "2123091860763885725",
+      "post_url": "https://x.com/i/web/status/2123091860763885725",
+      "created_at": "2026-11-19T16:02:46+00:00",
+      "post_text": "\ud83d\udea8THIS IS URGENT  \ud83d\udea8 https://t.co/PnX7vMTmkW",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is only an urgent-sounding alert with a bare link and no specific factual claim stated in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123155959686258844",
+      "post_url": "https://x.com/i/web/status/2123155959686258844",
+      "created_at": "2026-11-19T16:02:45+00:00",
+      "post_text": "Cold as Ice\u2026 https://t.co/YnSr3yJdsG",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague reaction phrase with a link and contains no specific, checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123240734283477135",
+      "post_url": "https://x.com/i/web/status/2123240734283477135",
+      "created_at": "2026-11-19T16:02:44+00:00",
+      "post_text": "Lmao damn rockstar ain\u2019t bullshittin . My boy just posted this on IG https://t.co/JNHWiz6zHJ",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is casual reaction with only a vague reference to something a friend posted and a link, with no specific checkable factual claim in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123088809927557262",
+      "post_url": "https://x.com/i/web/status/2123088809927557262",
+      "created_at": "2026-11-19T16:02:44+00:00",
+      "post_text": "It just keeps getting better and better. \ud83d\ude02\ud83e\udd23 https://t.co/cUFk3C2kLp",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague reaction with emojis and a link, with no specific checkable factual claim in the text.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123196143756877948",
+      "post_url": "https://x.com/i/web/status/2123196143756877948",
+      "created_at": "2026-11-19T16:02:43+00:00",
+      "post_text": "So, is the Philippine mainstream media really not going to talk about the choice of music played by the Chinese government as Bongbong Marcos Jr. entered to meet Chinese President Xi Jinping at APEC 2026? \ud83d\ude02 https://t.co/UVAKEmvaBD",
       "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post only gestures at a linked video compilation of bugs without stating a checkable claim in words; the video cannot be verified from the text.",
+      "refusal_reason": "No specific falsifiable claim in post text: The post asks a rhetorical question about media coverage and hints at music choice shown in a link the reader cannot see, with no verifiable assertion stated in words.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123103197304701028",
-      "post_url": "https://x.com/i/web/status/2123103197304701028",
-      "created_at": "2026-11-19T13:20:43+00:00",
-      "post_text": "Measles isn't contagious. \n\nFear is.",
-      "refusal_bucket": "URL validator rejected (hallucination guard)",
-      "refusal_reason": "url_liveness: HTTP 403",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cdc.gov"
+      "post_id": "2123114813538627652",
+      "post_url": "https://x.com/i/web/status/2123114813538627652",
+      "created_at": "2026-11-19T16:02:42+00:00",
+      "post_text": "Nearly 1 in 3 Brits wrongly believe the Southport attacker was a Muslim asylum seeker. He was a Christian born in Wales.\n\nZeteo UK polling also finds 59% believe or are unsure whether UK areas are run under Sharia law. They aren\u2019t.\n\n@ShehabKhan breaks it down. https://t.co/4d3nBjg7eT",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@zeteouk)"
     },
     {
-      "post_id": "2123251109787533456",
-      "post_url": "https://x.com/i/web/status/2123251109787533456",
-      "created_at": "2026-11-19T13:20:42+00:00",
-      "post_text": "What\u2019s truly foolish is that our laws let him do it. https://t.co/t1EL44ohva",
+      "post_id": "2123231869793964186",
+      "post_url": "https://x.com/i/web/status/2123231869793964186",
+      "created_at": "2026-11-19T16:02:41+00:00",
+      "post_text": "IShowSpeed was CRASHING OUT after realizing GTA 6 was a waste of money... \ud83d\ude2d https://t.co/hQZNX5hWMJ",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@auckyyy)"
+    },
+    {
+      "post_id": "2123135213018701866",
+      "post_url": "https://x.com/i/web/status/2123135213018701866",
+      "created_at": "2026-11-19T16:02:40+00:00",
+      "post_text": "This game really should have been called the BLM simulator. https://t.co/4ZOPLGULxG",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is an opinion about laws being foolish with no specific, checkable factual claim, and the link alone gives nothing verifiable to assess.",
+      "refusal_reason": "Off-beat: The post offers only a subjective jab about a game's name with no specific, checkable factual claim, though it is borderline and could be read as implying a factual claim about the game's content.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2122839975435657584",
+      "post_url": "https://x.com/i/web/status/2122839975435657584",
+      "created_at": "2026-11-19T16:02:38+00:00",
+      "post_text": "HONKAI STAR RAIL \u00d7 FINAL FANTASY VII REMAKE\n\nVersion 5.4 \u2013 Summer 2027\n\nNEW PLAYABLE CHARACTERS:\n\u2022 Tifa Lockhart\n\u2022 Yuffie\n\nCAMEO APPEARANCES:\n\u2022 Cloud\n\u2022 Barret\n\nVia Mainleakflow, keitaro_gg &amp; rainydasha (STC)\n\n#HonkaiStarRail https://t.co/TUyEHr3NL7",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@StarRailVerse1)"
+    },
+    {
+      "post_id": "2123186311842713686",
+      "post_url": "https://x.com/i/web/status/2123186311842713686",
+      "created_at": "2026-11-19T16:02:38+00:00",
+      "post_text": "at some point we're going to have to have a conversation about how playing The Mass Shooting Simulator is probably quite corrosive to the soul. this is demonstrably very different from an arcade FPS where you shoot generic \"bad guys\". https://t.co/MFdOjOV6FL",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is mainly an opinion that a game is corrosive to the soul, though it also says the game is demonstrably different from arcade FPS games, which is a vague comparative claim with no concrete checkable fact.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123241782725202218",
+      "post_url": "https://x.com/i/web/status/2123241782725202218",
+      "created_at": "2026-11-19T16:02:38+00:00",
+      "post_text": "taylor swift serving vocals on the cmas! show off taylor!!! https://t.co/ajLc7T4vFV",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is an enthusiastic opinion about a performance with no specific checkable factual assertion beyond vague praise.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2122803346314756135",
+      "post_url": "https://x.com/i/web/status/2122803346314756135",
+      "created_at": "2026-11-19T16:02:37+00:00",
+      "post_text": "They used to. Due to intense discrimination and assimilation, the majority of mainland Ainu (that weren't forcibly displaced or trafficked outside of Ainu Mosir) intermarried with Japanese people to \"breed out\" their features, so many modern day Ainu look different from before https://t.co/SaNqd5rmw7",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "pmc.ncbi.nlm.nih.gov"
+    },
+    {
+      "post_id": "2122730496950173979",
+      "post_url": "https://x.com/i/web/status/2122730496950173979",
+      "created_at": "2026-11-19T16:02:36+00:00",
+      "post_text": "Nami Cosplays as Enel https://t.co/xcJTMCfzKI",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a casual announcement of a cosplay photo with no specific, checkable factual claim about the world.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
