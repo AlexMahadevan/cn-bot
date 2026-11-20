@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-20T16:03:52+00:00",
+  "generated_at": "2026-11-20T20:03:25+00:00",
   "totals": {
-    "posts": 11334,
-    "off_beat": 4280,
-    "evidence_searched": 7054,
-    "evidence_found": 4980,
+    "posts": 11381,
+    "off_beat": 4295,
+    "evidence_searched": 7086,
+    "evidence_found": 5000,
     "notes_written": 91,
     "submitted": 91
   },
   "funnel": [
     {
       "label": "Eligible posts seen",
-      "count": 11334
+      "count": 11381
     },
     {
       "label": "On-beat (US politics)",
-      "count": 7054
+      "count": 7086
     },
     {
       "label": "Evidence found",
-      "count": 4980
+      "count": 5000
     },
     {
       "label": "Note drafted",
@@ -473,25 +473,25 @@
     },
     {
       "day": "2026-11-20",
-      "posts": 212,
+      "posts": 259,
       "submitted": 0,
       "queued": 0,
-      "refused": 212,
+      "refused": 259,
       "errors": 0
     }
   ],
   "refusal_buckets": [
     {
       "bucket": "Off-beat (not US politics)",
-      "count": 4280
+      "count": 4295
     },
     {
       "bucket": "Opus declined to write",
-      "count": 2901
+      "count": 2919
     },
     {
       "bucket": "Other",
-      "count": 2146
+      "count": 2158
     },
     {
       "bucket": "Picker: candidate doesn't match claim",
@@ -499,7 +499,7 @@
     },
     {
       "bucket": "URL validator rejected (hallucination guard)",
-      "count": 95
+      "count": 97
     },
     {
       "bucket": "No fact-check found",
@@ -513,15 +513,15 @@
   "evidence_tiers": [
     {
       "tier": "x_post",
-      "count": 2411
+      "count": 2418
     },
     {
       "tier": "self_fact_check",
-      "count": 1925
+      "count": 1936
     },
     {
       "tier": "ifcn_verified",
-      "count": 640
+      "count": 642
     }
   ],
   "notes": [
@@ -1988,252 +1988,252 @@
   ],
   "recent_refusals": [
     {
-      "post_id": "2123527433194213736",
-      "post_url": "https://x.com/i/web/status/2123527433194213736",
-      "created_at": "2026-11-20T16:03:49+00:00",
-      "post_text": "Myron Gaines BREAKS down on camera after he was DENIED entry to Nick Fuentes's speaking EVENT for Being BLACK despite being \"one of the good ones\" \ud83d\ude33\n\n\"I thought I was the only black person allowed...call nick fuentes now\" \ud83d\ude2c https://t.co/0euFRqVwfi",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@alogmissile)"
-    },
-    {
-      "post_id": "2123521942716297328",
-      "post_url": "https://x.com/i/web/status/2123521942716297328",
-      "created_at": "2026-11-20T16:03:49+00:00",
-      "post_text": "Fiona the hippo died cause some dumb ass threw a hat in her enclosure. Humans are a fucking disease on this planet",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2123475552552063271",
-      "post_url": "https://x.com/i/web/status/2123475552552063271",
-      "created_at": "2026-11-20T16:03:44+00:00",
-      "post_text": "Cardi B has the most songs featured on GTA VI out of any female rapper so far:\n\n- Don\u2019t Chart\n- Outside \n- Up https://t.co/BuY2CrEkVg",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "cbsnews.com"
-    },
-    {
-      "post_id": "2123476711136432176",
-      "post_url": "https://x.com/i/web/status/2123476711136432176",
-      "created_at": "2026-11-20T16:03:34+00:00",
-      "post_text": "Conservatives are wrong about the basic facts.\n\nYesterday, I called them out.\n\nWith our new immigration plan, we\u2019re keeping arrivals at stable, sustainable levels while helping provinces retain the skilled workers who are already here contributing to Canada.",
-      "refusal_bucket": "Picker: candidate doesn't match claim",
-      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2123112577991356438",
-      "post_url": "https://x.com/i/web/status/2123112577991356438",
-      "created_at": "2026-11-20T16:03:32+00:00",
-      "post_text": "Imagine how animalistic you have to be to beat a young White girl like this..\n\n He needs to be charged with attempted murder but we all know he will be released by evening time. https://t.co/4U7ucaICUv",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's claims rely on a linked video the reader must watch to know who was beaten and what happened; the text itself only offers emotional commentary and a prediction about release.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123557146469994555",
-      "post_url": "https://x.com/i/web/status/2123557146469994555",
-      "created_at": "2026-11-20T16:03:32+00:00",
-      "post_text": "So, he's openly stating that we're moving to  decentralized currency, which goes hand in hand with social credit scores. \n\nWe're so fucked.  https://t.co/f4qRd419G2",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post vaguely says 'he' is 'openly stating' a move to decentralized currency tied to social credit scores without naming the person or quoting a checkable statement, and the substance depends on an unseen link.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123428771118096829",
-      "post_url": "https://x.com/i/web/status/2123428771118096829",
-      "created_at": "2026-11-20T16:03:30+00:00",
-      "post_text": "The truth is simple. Democrats had a chance to modernize our outdated air traffic control systems but kicked the can down the road. Now the American people are paying the price. https://t.co/0aoV7Bivpt",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Washington Post"
-    },
-    {
-      "post_id": "2123531946236244418",
-      "post_url": "https://x.com/i/web/status/2123531946236244418",
-      "created_at": "2026-11-20T16:03:29+00:00",
-      "post_text": "Niko Bellic makes a return GTA6?? https://t.co/Z51l8YdqLP",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post is a speculative question about whether a character returns in GTA 6, and the substance depends on an unseen linked media item rather than a stated checkable fact.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123416244129018140",
-      "post_url": "https://x.com/i/web/status/2123416244129018140",
-      "created_at": "2026-11-20T16:03:29+00:00",
-      "post_text": "BREAKING:\n\nI'm seeing many military vehicle entering the Tucson area from I-10. Word is they are seizing all \"ballots\" and voting machines in Pima County.\n\nThank you, President Trump.\n\nIT'S HAPPENING!!",
-      "refusal_bucket": "Other",
-      "refusal_reason": "Hallucination check: The note gives a specific date, Nov. 7, 2026, that does not appear in the provided article text, while the publisher, FBI/DHS, and Texas/Arizona details are supported. (unsupported: ['on or before Nov. 7, 2026'])",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "hoax-alert.leadstories.com"
-    },
-    {
-      "post_id": "2123600723455733950",
-      "post_url": "https://x.com/i/web/status/2123600723455733950",
-      "created_at": "2026-11-20T16:03:27+00:00",
-      "post_text": "According to multiple sources: A skyscraper housing offices of Saudi Arabia\u2019s Public Investment Fund was heavily damaged in a missile attack targeting Riyadh today,\n\nThe missile attack hit the King Abdullah Financial District in Riyadh, which includes the tallest building in the https://t.co/WhsTl9Prdb https://t.co/2hSyJV0WiY",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
-    },
-    {
-      "post_id": "2123452227599712288",
-      "post_url": "https://x.com/i/web/status/2123452227599712288",
-      "created_at": "2026-11-20T16:03:26+00:00",
-      "post_text": "BREAKING: Texas Democrats just proposed banning child marriage. https://t.co/jlO46qa823",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Axios"
-    },
-    {
-      "post_id": "2123591743845343587",
-      "post_url": "https://x.com/i/web/status/2123591743845343587",
-      "created_at": "2026-11-20T16:03:19+00:00",
-      "post_text": "\ud83d\udea8\ud83c\uddfa\ud83c\uddf8 This is NOT GTA 6 footage\u2026 this was earlier this evening in Los Angeles. \n\nMy guy had time to stop during a police chase to top off the tank! He still got away!\n\nRemember\u2026 Democrats will be the majority party over the whole country, come January. Not just California.",
+      "post_id": "2123649267466203521",
+      "post_url": "https://x.com/i/web/status/2123649267466203521",
+      "created_at": "2026-11-20T20:03:22+00:00",
+      "post_text": "Grand Theft Auto VI now the most refunded game in history.",
       "refusal_bucket": "Picker: candidate doesn't match claim",
       "refusal_reason": "Fact checks found, but none directly address this post's claim.",
       "evidence_tier": "ifcn_verified",
       "evidence_publisher": "PolitiFact"
     },
     {
-      "post_id": "2123535586959200507",
-      "post_url": "https://x.com/i/web/status/2123535586959200507",
-      "created_at": "2026-11-20T16:03:17+00:00",
-      "post_text": "You still haven\u2019t addressed the fact that Abdul El-Sayed slaughtered thousands of puppies\n\nDo you only care about animals when they fit your political interests? https://t.co/bXUtLEd4XV",
-      "refusal_bucket": "Other",
-      "refusal_reason": "evaluate_note: claim_opinion_score -1.503 below 0.50 floor",
-      "evidence_tier": "ifcn_verified",
-      "evidence_publisher": "Snopes"
-    },
-    {
-      "post_id": "2123483988857589764",
-      "post_url": "https://x.com/i/web/status/2123483988857589764",
-      "created_at": "2026-11-20T16:03:08+00:00",
-      "post_text": "One year ago, the President made a death threat against me and five other members of Congress for stating the law. He tried to scare us into silence and he later tried to have us imprisoned. \n\nToday, as ever, I remain undeterred. I won't be intimidated. Not for a single second.",
+      "post_id": "2123418239677976636",
+      "post_url": "https://x.com/i/web/status/2123418239677976636",
+      "created_at": "2026-11-20T20:03:19+00:00",
+      "post_text": "Being outside the EU is costing 6% of UK economy, or \u00a33.7bn per week So really no point in bickering over the exact fraction of that sum UK would have to pay into EU budget. Better just to get pledges to join EU into election manifestos and work with EU to prepare.",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "The Hill"
+      "evidence_publisher": "cnbc.com"
     },
     {
-      "post_id": "2123347445975224419",
-      "post_url": "https://x.com/i/web/status/2123347445975224419",
-      "created_at": "2026-11-20T16:03:06+00:00",
-      "post_text": "It's easy to see why this is the most hyped game ever. #GTA6 \ud83d\udc63\ud83d\udc60 https://t.co/TvwkjZ9pqO",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague opinion about hype with no specific, checkable factual claim beyond an unsupported superlative.",
-      "evidence_tier": null,
-      "evidence_publisher": null
-    },
-    {
-      "post_id": "2123393742069527013",
-      "post_url": "https://x.com/i/web/status/2123393742069527013",
-      "created_at": "2026-11-20T16:03:04+00:00",
-      "post_text": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 \u201cHere\u2019s the truth Americans must face: Carney does not want a trade deal with the United States. He never did.\u201d\n\n\u270d\ud83c\udffb My debut in @nypost \u2014\n\nhttps://t.co/gqMlQFzPqk",
+      "post_id": "2123467622998262267",
+      "post_url": "https://x.com/i/web/status/2123467622998262267",
+      "created_at": "2026-11-20T20:03:16+00:00",
+      "post_text": "Calla Walsh dropping into Nazi talking points is unfortunately, very expected. Leo Frank was very obviously not guilty under any form of reasonable doubt, and lynched for being a Jew. \n\nRevisionism on this topic is 1910s level anti-semitism https://t.co/G9WC5Z1gi0",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
       "evidence_publisher": "Washington Post"
     },
     {
-      "post_id": "2123578259652665727",
-      "post_url": "https://x.com/i/web/status/2123578259652665727",
-      "created_at": "2026-11-20T16:03:02+00:00",
-      "post_text": "Franklin from GTA 5 GOES OFF in an interview were he is asked if GTA 6 lived up to the hype, says that the game is trash and needs a black protagonist again and that Jason isnt cool \ud83d\ude2c\n\n\u201cThey need me and Lamar in it\u201d\n\u201cNo disrespect to Jason\u201d\n\u201cThe game isnt the same man\u201d\n\u201cToo soft https://t.co/Iavhgeimrw",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@backndfendi)"
-    },
-    {
-      "post_id": "2123507358580216247",
-      "post_url": "https://x.com/i/web/status/2123507358580216247",
-      "created_at": "2026-11-20T16:03:01+00:00",
-      "post_text": "Frame 4 ,nobody noticed it? https://t.co/NsiPBDbFHm",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague prompt pointing to an unspecified image or video frame with no stated factual claim to check.",
+      "post_id": "2123434445906559286",
+      "post_url": "https://x.com/i/web/status/2123434445906559286",
+      "created_at": "2026-11-20T20:03:10+00:00",
+      "post_text": "HOLY CRAP AS the broadcast was rolling on cnn, all HELL BROKE loose: \"We have things COMING IN, so we are going to un-mic... we do need to move pretty quickly.\" https://t.co/MIpGJVqjAb",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post describes a CNN broadcast moment with vague excitement and relies on a link to a video the reader must watch to understand what happened.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123474337185374221",
-      "post_url": "https://x.com/i/web/status/2123474337185374221",
-      "created_at": "2026-11-20T16:03:00+00:00",
-      "post_text": "This video shows what happened in the minutes before the plane crash in Kazakhstan. The plane repeatedly went up and down before crashing. https://t.co/BGjdPcAHS8",
+      "post_id": "2123593043710472623",
+      "post_url": "https://x.com/i/web/status/2123593043710472623",
+      "created_at": "2026-11-20T20:03:09+00:00",
+      "post_text": "japanese person scared of adult proportions https://t.co/FUJkS3LOyo",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague, unclear fragment with a link and no specific checkable factual assertion about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123455830653911490",
+      "post_url": "https://x.com/i/web/status/2123455830653911490",
+      "created_at": "2026-11-20T20:03:08+00:00",
+      "post_text": "GTA on Xbox or Ps5? Which one has a better graphics.. https://t.co/Qb5sHNF7uV",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a question asking for a preference or opinion about which console has better graphics, with no factual assertion to check.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123545395070480568",
+      "post_url": "https://x.com/i/web/status/2123545395070480568",
+      "created_at": "2026-11-20T20:03:08+00:00",
+      "post_text": "I'm sorry to tell you but this scene happens in Tolkien's book lol precisely it happens in the Silmarillion where Sauron uses the same trick to deceive another character in the same way he does in the show with Celeborn. Ppl need to educate themselves before talking in circles https://t.co/tNke3dMqlm",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "x_post",
+      "evidence_publisher": "X (@baroneiof)"
+    },
+    {
+      "post_id": "2123553176574132612",
+      "post_url": "https://x.com/i/web/status/2123553176574132612",
+      "created_at": "2026-11-20T20:03:07+00:00",
+      "post_text": "The Golden Age is now. https://t.co/572ytj8Yxm",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a vague, evaluative slogan ('The Golden Age is now') with no specific checkable factual claim.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123735377357725734",
+      "post_url": "https://x.com/i/web/status/2123735377357725734",
+      "created_at": "2026-11-20T20:03:07+00:00",
+      "post_text": "Apparently Danny Tomo is due to be sentenced today. \n\nJust so you all know, in line with sentencing guidelines criminal damage doesn\u2019t carry a custodial sentence.\n\nIf he isn\u2019t released today/time served, this will be one of the biggest injustices of the two tier legal system, to",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "The Hill"
+    },
+    {
+      "post_id": "2123155471351820418",
+      "post_url": "https://x.com/i/web/status/2123155471351820418",
+      "created_at": "2026-11-20T20:03:06+00:00",
+      "post_text": "here's your game of the year bro https://t.co/FVowdvqGZ1",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a casual remark with a link and no specific factual claim the note could check.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123452745336189038",
+      "post_url": "https://x.com/i/web/status/2123452745336189038",
+      "created_at": "2026-11-20T20:03:05+00:00",
+      "post_text": "@linaa_ai Guide please",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is a short request for guidance with no factual assertion about the world to check.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123535689493119361",
+      "post_url": "https://x.com/i/web/status/2123535689493119361",
+      "created_at": "2026-11-20T20:03:05+00:00",
+      "post_text": "This is why society will never reach utopia. Here you have a giant streamer publicly crashing out because a video game is showing you how to be a good partner. And it's optional; it's not even a mandatory mission.\n\nGod forbid we teach young people that buying small gifts like",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is opinion and commentary about a streamer's reaction to a video game, with no concrete verifiable factual assertion; the text is also cut off mid-sentence.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123606622136119584",
+      "post_url": "https://x.com/i/web/status/2123606622136119584",
+      "created_at": "2026-11-20T20:03:04+00:00",
+      "post_text": "Manni L. Perez goes live for the first time since revealing she plays Lucia in GTA 6 and shows off her recoil \ud83d\udc40 https://t.co/QW5cY5Njbh",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "bostonglobe.com"
+    },
+    {
+      "post_id": "2123579140175491299",
+      "post_url": "https://x.com/i/web/status/2123579140175491299",
+      "created_at": "2026-11-20T20:03:03+00:00",
+      "post_text": "So, because it was 13 years before we became best friends, we\u2019re supposed to ignore that Israel tried to stage a false flag (including planting explosives in US owned facilities) in order to lie a great power into a war against THEIR enemy, to do THEIR dirty work for them? https://t.co/bYJ2NaB5rK",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "history.state.gov"
+    },
+    {
+      "post_id": "2123460324191883304",
+      "post_url": "https://x.com/i/web/status/2123460324191883304",
+      "created_at": "2026-11-20T20:03:00+00:00",
+      "post_text": "Macaulay Culkin, the Home Alone actor, just revealed that Michael Jackson never hurt him or any other kid at Neverland ranch, saying people want him to lie to satisfy their sick narrative towards the King of Pop. https://t.co/2fAbRPxvvf",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "cbsnews.com"
+    },
+    {
+      "post_id": "2123471853658501375",
+      "post_url": "https://x.com/i/web/status/2123471853658501375",
+      "created_at": "2026-11-20T20:02:50+00:00",
+      "post_text": "Aishah Sofey lifted that leg.. and gave a full slip 6\ud83d\ude33\ud83d\udd25 https://t.co/g11LFKnU2c",
+      "refusal_bucket": "URL validator rejected (hallucination guard)",
+      "refusal_reason": "No specific falsifiable claim in post text: The post is a reaction to an unseen video or image linked via a URL, with no checkable factual assertion in the text itself.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123594174473584980",
+      "post_url": "https://x.com/i/web/status/2123594174473584980",
+      "created_at": "2026-11-20T20:02:47+00:00",
+      "post_text": "We have to do something about conservatives not understanding meta-ironic satire because I'm about to have an aneurysm. The game is making fun of you, you are the butt of the jokes and the developers hate you and want you to suffer. https://t.co/eApaxs6YvI",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post is opinion and commentary about political audiences and a game's satire, with no specific checkable factual claim about the world.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123741826473668698",
+      "post_url": "https://x.com/i/web/status/2123741826473668698",
+      "created_at": "2026-11-20T20:02:45+00:00",
+      "post_text": "BREAKING: Chinese AI hacking tool ARTEX lets anyone with a smartphone launch cyberattacks using plain language commands, per NYP.\n\nMicrosoft says China linked hackers have already used it to attack hundreds of organizations worldwide. https://t.co/JfeRIgAX5p",
+      "refusal_bucket": "Opus declined to write",
+      "refusal_reason": "Model declined.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "Axios"
+    },
+    {
+      "post_id": "2123763524208124231",
+      "post_url": "https://x.com/i/web/status/2123763524208124231",
+      "created_at": "2026-11-20T20:02:45+00:00",
+      "post_text": "New York City Mayor Zohran Mamdani just announced a plan to close Rikers Island prison.",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
       "evidence_publisher": "nbcnews.com"
     },
     {
-      "post_id": "2123483200437514576",
-      "post_url": "https://x.com/i/web/status/2123483200437514576",
-      "created_at": "2026-11-20T16:02:59+00:00",
-      "post_text": "thank you for highlighting how Adam Mockler harassed a woman off of twitter for not supporting Jon Ossoff! \n\ngreat point Micah https://t.co/5n5jb50u9y",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@micah_erfan)"
-    },
-    {
-      "post_id": "2123094526898389275",
-      "post_url": "https://x.com/i/web/status/2123094526898389275",
-      "created_at": "2026-11-20T16:02:53+00:00",
-      "post_text": "ohnePixel discovered its impossible to fail this GTA VI mission \ud83d\ude2d https://t.co/kLNSBOWH3b",
-      "refusal_bucket": "Other",
-      "refusal_reason": "No specific falsifiable claim in post text: The post's text only gestures at a linked video showing an alleged GTA VI mission that cannot be failed, with no verifiable claim stated in words.",
+      "post_id": "2123453378353414429",
+      "post_url": "https://x.com/i/web/status/2123453378353414429",
+      "created_at": "2026-11-20T20:02:43+00:00",
+      "post_text": "An unusual recipe with only three Ingredients. https://t.co/6DfooUbY6m",
+      "refusal_bucket": "Off-beat (not US politics)",
+      "refusal_reason": "Off-beat: The post only announces a recipe with three ingredients and a link, with no specific factual claim about the world that could be checked.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123549719599480934",
-      "post_url": "https://x.com/i/web/status/2123549719599480934",
-      "created_at": "2026-11-20T16:02:51+00:00",
-      "post_text": "The new 'Grand Theft Auto' features the franchise's first female protagonist \u2014 and some men are mad they have to treat her with respect.\n\nhttps://t.co/abSiCNx2EJ",
+      "post_id": "2123627107880480838",
+      "post_url": "https://x.com/i/web/status/2123627107880480838",
+      "created_at": "2026-11-20T20:02:42+00:00",
+      "post_text": "That\u2019s because the Russell Brand rape case is real https://t.co/F4tiupXv98",
       "refusal_bucket": "Opus declined to write",
       "refusal_reason": "Model declined.",
       "evidence_tier": "self_fact_check",
-      "evidence_publisher": "Bloomberg"
+      "evidence_publisher": "nbcnews.com"
     },
     {
-      "post_id": "2123330917511168469",
-      "post_url": "https://x.com/i/web/status/2123330917511168469",
-      "created_at": "2026-11-20T16:02:50+00:00",
-      "post_text": "They've already started doing this. Indian sarees and traditional clothing are being relabelled as \"Exotic Western Region Chinese Clothing\" \ud83d\ude43\ud83d\ude43 https://t.co/vVhns9DzEV https://t.co/BH7mXZhKER",
-      "refusal_bucket": "Opus declined to write",
-      "refusal_reason": "Model declined.",
-      "evidence_tier": "x_post",
-      "evidence_publisher": "X (@MoguMoguOnly)"
-    },
-    {
-      "post_id": "2123481567771160756",
-      "post_url": "https://x.com/i/web/status/2123481567771160756",
-      "created_at": "2026-11-20T16:02:44+00:00",
-      "post_text": "How did the first guy even manage to get his sh/t tucked into his waistband with his hands cuffed behind his back? https://t.co/sPNLHyAZDh",
-      "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a casual rhetorical question about a video's physical plausibility with no specific checkable factual assertion about the world.",
+      "post_id": "2123374563975377179",
+      "post_url": "https://x.com/i/web/status/2123374563975377179",
+      "created_at": "2026-11-20T20:02:42+00:00",
+      "post_text": "\"YOU CAN'T STEAL CARS IN GTA 6. THIS IS INSANE!\"\n\n...????? https://t.co/kCrVtVDMMX https://t.co/Givz34vfCJ",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The post's claim about GTA 6 gameplay is only stated as an exclamation with no verifiable detail, and the rest relies on unseen linked media.",
       "evidence_tier": null,
       "evidence_publisher": null
     },
     {
-      "post_id": "2123558825269846147",
-      "post_url": "https://x.com/i/web/status/2123558825269846147",
-      "created_at": "2026-11-20T16:02:42+00:00",
-      "post_text": "if it\u2019s bigger than 4 inches \u2661 this\ud83d\ude0b\ud83e\udd2d !! https://t.co/lU27MW4WAC",
+      "post_id": "2123490362929127430",
+      "post_url": "https://x.com/i/web/status/2123490362929127430",
+      "created_at": "2026-11-20T20:02:41+00:00",
+      "post_text": "Mike Florio making a Hitler joke about Mike Vrabel and laughing it off because the Holocaust was 81 years ago is dangerous, harmful and flat out wrong. Nothing about the Holocaust is funny and 81 years later doesn\u2019t make it a joking matter.",
+      "refusal_bucket": "Picker: candidate doesn't match claim",
+      "refusal_reason": "Fact checks found, but none directly address this post's claim.",
+      "evidence_tier": "self_fact_check",
+      "evidence_publisher": "bostonglobe.com"
+    },
+    {
+      "post_id": "2123542825887322365",
+      "post_url": "https://x.com/i/web/status/2123542825887322365",
+      "created_at": "2026-11-20T20:02:41+00:00",
+      "post_text": "Am i too mediterranean for thinking that a 19 having sex with a 17 while both were drinking is not in any particularly out of normal much less criminal, or even newsworthy? https://t.co/3dNcWSGLCA",
       "refusal_bucket": "Off-beat (not US politics)",
-      "refusal_reason": "Off-beat: The post is a vague, emoji-laden sexual innuendo with no specific, checkable factual claim about the world.",
+      "refusal_reason": "Off-beat: The post is an opinion question about social norms and legality, with no specific checkable factual claim about events or statistics.",
+      "evidence_tier": null,
+      "evidence_publisher": null
+    },
+    {
+      "post_id": "2123399563587551730",
+      "post_url": "https://x.com/i/web/status/2123399563587551730",
+      "created_at": "2026-11-20T20:02:40+00:00",
+      "post_text": "Low caste Indian children kowtowing to a Brahmin. \nThe Caste system in India is still alive and well. \nObviously India is forsaken by modernity and enlightenment. https://t.co/FC8MKg3zp4",
+      "refusal_bucket": "Other",
+      "refusal_reason": "No specific falsifiable claim in post text: The claim that low caste children are kowtowing to a Brahmin rests on a linked image/video the reader cannot see, and the remaining statements are vague generalizations and opinion.",
       "evidence_tier": null,
       "evidence_publisher": null
     }
